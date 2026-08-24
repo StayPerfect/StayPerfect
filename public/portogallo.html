@@ -378,6 +378,139 @@ section{
 }
 
 
+
+.quiz{
+  max-width:900px;
+  margin:40px auto 0;
+  background:#fff;
+  color:var(--i);
+  border-radius:28px;
+  padding:30px;
+  box-shadow:0 20px 70px rgba(0,0,0,.18);
+}
+
+.quiz-progress{
+  height:8px;
+  background:#e9eef5;
+  border-radius:999px;
+  overflow:hidden;
+  margin-bottom:28px;
+}
+
+.quiz-progress-bar{
+  height:100%;
+  width:0%;
+  background:var(--b);
+  transition:width .3s ease;
+}
+
+.question{
+  display:none;
+}
+
+.question.active{
+  display:block;
+}
+
+.question-number{
+  color:var(--b);
+  font-size:12px;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+
+.question h3{
+  font-size:28px;
+  letter-spacing:-.035em;
+  margin:8px 0 20px;
+}
+
+.answers{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.answer{
+  border:1px solid var(--l);
+  background:#fff;
+  border-radius:17px;
+  padding:17px;
+  text-align:left;
+  cursor:pointer;
+  font-weight:750;
+  color:var(--i);
+  transition:
+    border-color .2s ease,
+    background .2s ease,
+    transform .2s ease;
+}
+
+.answer:hover{
+  border-color:#9fc3f6;
+  background:#f7fbff;
+  transform:translateY(-1px);
+}
+
+.answer.selected{
+  border-color:var(--b);
+  background:#eef6ff;
+}
+
+.quiz-controls{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  margin-top:25px;
+}
+
+.quiz-btn{
+  padding:12px 18px;
+  border-radius:13px;
+  border:1px solid var(--l);
+  background:#fff;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.quiz-btn.next{
+  background:var(--b);
+  color:#fff;
+  border-color:var(--b);
+}
+
+.result{
+  display:none;
+  margin-top:25px;
+  border-radius:22px;
+  background:#f7f9fc;
+  padding:28px;
+  text-align:center;
+}
+
+.result.show{
+  display:block;
+}
+
+.result-icon{
+  font-size:48px;
+}
+
+.result h3{
+  margin:10px 0;
+}
+
+.result p{
+  color:var(--m);
+  line-height:1.7;
+}
+
+.result-link{
+  margin-top:15px;
+}
+
+
 /* =========================
    DESTINATIONS
 ========================= */
