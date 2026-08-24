@@ -1,0 +1,11 @@
+node_modules/
+.wrangler/
+
+backups_local/
+public/_backup_before_*/
+public/*.bak
+public/*.bak2
+public/*.backup
+
+*.backup
+public-BACKUP-*/

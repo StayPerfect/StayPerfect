@@ -1,0 +1,2048 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Fuerteventura — Find Your Perfect Match | StayPerfect</title>
+
+<meta name="description" content="Discover Fuerteventura with StayPerfect. Explore beaches, dunes, surfing, volcanic landscapes, villages and relaxed island experiences.">
+
+<style>
+:root{
+  --blue:#1769e8;
+  --dark:#10204a;
+  --muted:#68758b;
+  --soft:#eef6ff;
+  --line:#e4eaf2;
+  --bg:#f7f9fc;
+  --white:#fff;
+  --sand:#f5ead7;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--dark);
+  background:#fff;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font-family:inherit;
+}
+
+.w{
+  max-width:1150px;
+  margin:auto;
+  padding:0 22px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+nav{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:25px;
+  font-weight:900;
+  letter-spacing:-.05em;
+}
+
+.logo span{
+  color:var(--blue);
+}
+
+.links{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  font-size:14px;
+  font-weight:750;
+}
+
+.links a:hover{
+  color:var(--blue);
+}
+
+.pill{
+  color:#fff!important;
+  background:var(--blue);
+  padding:10px 16px;
+  border-radius:999px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  min-height:680px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  color:#fff;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7,19,44,.88),
+      rgba(7,19,44,.48),
+      rgba(7,19,44,.16)
+    ),
+    url("https://loremflickr.com/1800/1100/fuerteventura,canary,islands")
+    center/cover no-repeat;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      180deg,
+      transparent 60%,
+      rgba(7,19,44,.55)
+    );
+  pointer-events:none;
+}
+
+.hero-grid{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:60px;
+  align-items:center;
+}
+
+.ey{
+  color:var(--blue);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.hero .ey{
+  color:#8fc1ff;
+}
+
+.hero h1{
+  margin:15px 0 20px;
+  font-size:clamp(50px,7vw,78px);
+  line-height:.94;
+  letter-spacing:-.06em;
+}
+
+.hero h1 em{
+  color:#76b4ff;
+  font-style:normal;
+}
+
+.hero p{
+  max-width:650px;
+  color:#e7eefb;
+  font-size:19px;
+  line-height:1.6;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:27px;
+}
+
+.btn{
+  display:inline-block;
+  border:0;
+  border-radius:14px;
+  padding:14px 18px;
+  font-weight:850;
+  cursor:pointer;
+}
+
+.primary{
+  background:var(--blue);
+  color:#fff;
+}
+
+.primary:hover{
+  opacity:.9;
+}
+
+.secondary{
+  background:#fff;
+  border:1px solid var(--line);
+}
+
+.hero .secondary{
+  background:rgba(255,255,255,.12);
+  border-color:rgba(255,255,255,.35);
+  color:#fff;
+  backdrop-filter:blur(10px);
+}
+
+/* =========================
+   HERO PANEL
+========================= */
+
+.hero-panel{
+  background:rgba(255,255,255,.95);
+  color:var(--dark);
+  border:1px solid rgba(255,255,255,.5);
+  border-radius:28px;
+  padding:24px;
+  box-shadow:0 25px 70px rgba(0,0,0,.25);
+  backdrop-filter:blur(12px);
+}
+
+.panel-title{
+  font-weight:900;
+  font-size:19px;
+  margin-bottom:14px;
+}
+
+.plan-row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:13px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.plan-icon{
+  width:44px;
+  height:44px;
+  border-radius:14px;
+  background:var(--soft);
+  display:grid;
+  place-items:center;
+  font-size:21px;
+  flex-shrink:0;
+}
+
+.plan-row strong{
+  display:block;
+  font-size:14px;
+}
+
+.plan-row span{
+  display:block;
+  color:var(--muted);
+  font-size:12px;
+}
+
+.score{
+  margin-top:17px;
+  background:var(--soft);
+  border-radius:16px;
+  padding:16px;
+}
+
+.score-top{
+  display:flex;
+  justify-content:space-between;
+  font-weight:900;
+}
+
+.bar{
+  height:8px;
+  margin-top:9px;
+  background:#dfe9f5;
+  border-radius:99px;
+  overflow:hidden;
+}
+
+.bar i{
+  display:block;
+  width:96%;
+  height:100%;
+  background:var(--blue);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+  padding:76px 0;
+}
+
+.center{
+  text-align:center;
+}
+
+.title{
+  margin:8px 0 12px;
+  font-size:38px;
+  letter-spacing:-.045em;
+}
+
+.lead{
+  max-width:760px;
+  margin:auto;
+  color:var(--muted);
+  line-height:1.65;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro{
+  background:#fff;
+}
+
+.intro-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center;
+}
+
+.intro-photo{
+  min-height:420px;
+  border-radius:27px;
+  background:
+    linear-gradient(
+      180deg,
+      transparent 45%,
+      rgba(0,0,0,.35)
+    ),
+    url("https://loremflickr.com/1000/800/fuerteventura,beach")
+    center/cover no-repeat;
+  box-shadow:0 20px 55px rgba(16,32,74,.14);
+}
+
+.intro-copy h2{
+  margin:8px 0 15px;
+  font-size:40px;
+  line-height:1;
+  letter-spacing:-.05em;
+}
+
+.intro-copy p{
+  color:var(--muted);
+  line-height:1.7;
+}
+
+.highlights{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-top:22px;
+}
+
+.highlight{
+  padding:15px;
+  background:var(--bg);
+  border-radius:15px;
+}
+
+.highlight strong{
+  display:block;
+  font-size:14px;
+}
+
+.highlight span{
+  display:block;
+  margin-top:4px;
+  color:var(--muted);
+  font-size:12px;
+}
+
+/* =========================
+   DESTINATIONS
+========================= */
+
+.destinations{
+  background:var(--bg);
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:36px;
+}
+
+.card{
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:#fff;
+  transition:.2s ease;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 18px 45px rgba(16,32,74,.12);
+}
+
+.card-photo{
+  height:220px;
+  overflow:hidden;
+}
+
+.card-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .35s ease;
+}
+
+.card:hover .card-photo img{
+  transform:scale(1.05);
+}
+
+.card-content{
+  padding:21px;
+}
+
+.card-icon{
+  font-size:27px;
+}
+
+.card h3{
+  margin:8px 0 7px;
+  font-size:21px;
+}
+
+.card p{
+  margin:0 0 16px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.55;
+}
+
+.card .btn{
+  padding:10px 13px;
+  font-size:12px;
+}
+
+/* =========================
+   EXPERIENCES
+========================= */
+
+.experiences{
+  background:#fff;
+}
+
+.experience-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:36px;
+}
+
+.experience{
+  border:1px solid var(--line);
+  border-radius:21px;
+  padding:23px;
+  background:#fff;
+}
+
+.experience-icon{
+  width:48px;
+  height:48px;
+  border-radius:14px;
+  background:var(--soft);
+  display:grid;
+  place-items:center;
+  font-size:23px;
+}
+
+.experience h3{
+  margin:15px 0 8px;
+}
+
+.experience p{
+  color:var(--muted);
+  line-height:1.55;
+  font-size:14px;
+}
+
+/* =========================
+   PERFECT MATCH
+========================= */
+
+.match{
+  background:var(--dark);
+  color:#fff;
+}
+
+.match-box{
+  margin-top:36px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  align-items:stretch;
+}
+
+.match-copy{
+  padding:32px;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:25px;
+  background:rgba(255,255,255,.06);
+}
+
+.match-copy h3{
+  font-size:31px;
+  margin:10px 0 12px;
+  letter-spacing:-.04em;
+}
+
+.match-copy p{
+  color:#cbd4e5;
+  line-height:1.65;
+}
+
+.match-list{
+  margin-top:22px;
+  display:grid;
+  gap:10px;
+}
+
+.match-item{
+  display:flex;
+  align-items:center;
+  gap:11px;
+  color:#e8eef8;
+  font-size:14px;
+}
+
+.match-item span{
+  width:30px;
+  height:30px;
+  display:grid;
+  place-items:center;
+  border-radius:10px;
+  background:rgba(118,180,255,.14);
+}
+
+.match-result{
+  padding:32px;
+  border-radius:25px;
+  background:#fff;
+  color:var(--dark);
+}
+
+.match-result .ey{
+  color:var(--blue);
+}
+
+.match-result h3{
+  font-size:30px;
+  margin:8px 0;
+}
+
+.match-score{
+  margin:20px 0;
+  padding:18px;
+  background:var(--soft);
+  border-radius:18px;
+}
+
+.match-score-top{
+  display:flex;
+  justify-content:space-between;
+  font-weight:900;
+}
+
+.match-score strong{
+  color:var(--blue);
+}
+
+.match-result p{
+  color:var(--muted);
+  line-height:1.55;
+  font-size:14px;
+}
+
+/* =========================
+   ACTIVITIES
+========================= */
+
+.activities{
+  background:var(--bg);
+}
+
+.activity-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+  margin-top:36px;
+}
+
+.activity{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+  padding:22px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+}
+
+.activity-icon{
+  width:50px;
+  height:50px;
+  flex-shrink:0;
+  display:grid;
+  place-items:center;
+  border-radius:15px;
+  background:var(--soft);
+  font-size:24px;
+}
+
+.activity h3{
+  margin:2px 0 6px;
+}
+
+.activity p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.5;
+  font-size:13px;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+  background:#fff;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:36px;
+}
+
+.service{
+  border:1px solid var(--line);
+  border-radius:21px;
+  padding:23px;
+}
+
+.service-icon{
+  width:48px;
+  height:48px;
+  border-radius:14px;
+  background:var(--soft);
+  display:grid;
+  place-items:center;
+  font-size:23px;
+}
+
+.service h3{
+  margin:14px 0 7px;
+}
+
+.service p{
+  color:var(--muted);
+  line-height:1.55;
+  font-size:13px;
+}
+
+.service .btn{
+  padding:10px 13px;
+  font-size:12px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+  background:var(--bg);
+}
+
+.cta-box{
+  border-radius:27px;
+  padding:45px;
+  text-align:center;
+  color:#fff;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8,20,48,.88),
+      rgba(8,20,48,.58)
+    ),
+    url("https://loremflickr.com/1400/700/fuerteventura,sunset")
+    center/cover no-repeat;
+}
+
+.cta-box h2{
+  margin:8px 0 12px;
+  font-size:40px;
+  letter-spacing:-.05em;
+}
+
+.cta-box p{
+  max-width:650px;
+  margin:auto;
+  color:#e7eefb;
+  line-height:1.6;
+}
+
+/* =========================
+   DISCLOSURE
+========================= */
+
+.disclosure{
+  border-top:1px solid var(--line);
+  padding:45px 0;
+}
+
+.disclosure p{
+  max-width:780px;
+  margin:auto;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  border-top:1px solid var(--line);
+  padding:30px 0;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.foot{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+  .links{
+    display:none;
+  }
+
+  .hero-grid,
+  .intro-grid,
+  .match-box{
+    grid-template-columns:1fr;
+  }
+
+  .cards,
+  .experience-grid,
+  .service-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .activity-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:650px){
+
+  .w{
+    padding:0 18px;
+  }
+
+  .hero{
+    min-height:760px;
+  }
+
+  .hero-grid{
+    gap:35px;
+  }
+
+  .hero h1{
+    font-size:47px;
+  }
+
+  .title{
+    font-size:30px;
+  }
+
+  .intro-copy h2{
+    font-size:33px;
+  }
+
+  .cards,
+  .experience-grid,
+  .service-grid,
+  .highlights{
+    grid-template-columns:1fr;
+  }
+
+  .intro-photo{
+    min-height:320px;
+  }
+
+  .cta-box{
+    padding:35px 22px;
+  }
+
+  .cta-box h2{
+    font-size:31px;
+  }
+
+  .foot{
+    display:block;
+  }
+
+  .foot div+div{
+    margin-top:12px;
+  }
+}
+</style>
+  <link rel="canonical" href="https://stayperfect.jos-iul88.workers.dev/fuerteventura.html">
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="w">
+
+<nav>
+
+<a class="logo" href="index.html">
+Stay<span>Perfect</span>
+</a>
+
+<div class="links">
+
+<a href="index.html#destinations">
+Destinations
+</a>
+
+<a href="index.html#services">
+Travel Services
+</a>
+
+<a href="index.html#how">
+How it works
+</a>
+
+<a href="index.html#match">
+Perfect Match
+</a>
+
+<a class="pill" href="index.html#contact">
+Contact
+</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<div class="w hero-grid">
+
+<div>
+
+<div class="ey">
+<a href="canary-islands.html">Canary Islands</a> · Spain
+</div>
+
+<h1>
+Fuerteventura.<br>
+<em>Wild freedom.</em>
+</h1>
+
+<p>
+Discover endless beaches, Atlantic waves, volcanic landscapes and a slower way of travelling on one of the most spectacular islands in the Canary Islands.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="index.html#match">
+Find My Perfect Match
+</a>
+
+<a class="btn secondary" href="#destinations">
+Explore Fuerteventura
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-panel">
+
+<div class="panel-title">
+✨ Why Fuerteventura?
+</div>
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🏖️
+</div>
+
+<div>
+<strong>Exceptional beaches</strong>
+<span>Long sandy beaches and turquoise Atlantic water</span>
+</div>
+
+</div>
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🏄
+</div>
+
+<div>
+<strong>Watersports</strong>
+<span>Surfing, kitesurfing and windsurfing</span>
+</div>
+
+</div>
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🌋
+</div>
+
+<div>
+<strong>Volcanic landscapes</strong>
+<span>Wild scenery and dramatic natural spaces</span>
+</div>
+
+</div>
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🌿
+</div>
+
+<div>
+<strong>Nature</strong>
+<span>Hiking, dunes and protected landscapes</span>
+</div>
+
+</div>
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🚗
+</div>
+
+<div>
+<strong>Road trips</strong>
+<span>Discover the island at your own pace</span>
+</div>
+
+</div>
+
+<div class="score">
+
+<div class="score-top">
+<span>Perfect Match</span>
+<span>96%</span>
+</div>
+
+<div class="bar">
+<i></i>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section class="intro">
+
+<div class="w intro-grid">
+
+<div class="intro-photo"></div>
+
+<div class="intro-copy">
+
+<div class="ey">
+Discover Fuerteventura
+</div>
+
+<h2>
+The island for space, sea and freedom.
+</h2>
+
+<p>
+Fuerteventura is one of the Canary Islands' most distinctive destinations. Its enormous beaches, clear Atlantic waters, volcanic terrain and relaxed atmosphere make it ideal for travellers who want to combine nature, adventure and beach time.
+</p>
+
+<p>
+Whether you want to surf, explore dunes, enjoy a quiet beach or simply drive through dramatic landscapes, Fuerteventura gives you room to travel at your own rhythm.
+</p>
+
+<div class="highlights">
+
+<div class="highlight">
+<strong>🏖️ Beaches</strong>
+<span>Some of the Canary Islands' most spectacular beaches.</span>
+</div>
+
+<div class="highlight">
+<strong>🏄 Adventure</strong>
+<span>Surf, kitesurf, windsurf and outdoor activities.</span>
+</div>
+
+<div class="highlight">
+<strong>🌋 Nature</strong>
+<span>Volcanic landscapes, dunes and protected areas.</span>
+</div>
+
+<div class="highlight">
+<strong>🚗 Road trips</strong>
+<span>A great island to explore by car.</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     DESTINATIONS
+========================= -->
+
+<section id="destinations" class="destinations">
+
+<div class="w center">
+
+<div class="ey">
+Explore the island
+</div>
+
+<h2 class="title">
+Where to go in Fuerteventura
+</h2>
+
+<p class="lead">
+From Corralejo in the north to Morro Jable in the south, discover some of the island's most interesting areas.
+</p>
+
+</div>
+
+
+<div class="w cards">
+
+
+<!-- Corralejo -->
+
+<div class="card">
+
+<div class="card-photo">
+
+<img
+src="https://loremflickr.com/900/600/corralejo,fuerteventura"
+alt="Corralejo Fuerteventura"
+loading="lazy"
+>
+
+</div>
+
+<div class="card-content">
+
+<div class="card-icon">
+🌊
+</div>
+
+<h3>Corralejo</h3>
+
+<p>
+A lively northern base with beaches, restaurants, shops, nightlife and access to the famous dunes.
+</p>
+
+<a class="btn primary" href="#match">
+Perfect Match →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- El Cotillo -->
+
+<div class="card">
+
+<div class="card-photo">
+
+<img
+src="https://loremflickr.com/900/600/el,cotillo,fuerteventura"
+alt="El Cotillo Fuerteventura"
+loading="lazy"
+>
+
+</div>
+
+<div class="card-content">
+
+<div class="card-icon">
+🏖️
+</div>
+
+<h3>El Cotillo</h3>
+
+<p>
+A relaxed coastal village known for beautiful beaches, sunsets and a more peaceful atmosphere.
+</p>
+
+<a class="btn primary" href="#match">
+Perfect Match →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Cofete -->
+
+<div class="card">
+
+<div class="card-photo">
+
+<img
+src="https://loremflickr.com/900/600/cofete,fuerteventura"
+alt="Cofete Fuerteventura"
+loading="lazy"
+>
+
+</div>
+
+<div class="card-content">
+
+<div class="card-icon">
+🏔️
+</div>
+
+<h3>Cofete</h3>
+
+<p>
+A spectacular and remote coastline surrounded by mountains and one of the island's wildest landscapes.
+</p>
+
+<a class="btn primary" href="#match">
+Perfect Match →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Morro Jable -->
+
+<div class="card">
+
+<div class="card-photo">
+
+<img
+src="https://loremflickr.com/900/600/morro,jable,fuerteventura"
+alt="Morro Jable Fuerteventura"
+loading="lazy"
+>
+
+</div>
+
+<div class="card-content">
+
+<div class="card-icon">
+☀️
+</div>
+
+<h3>Morro Jable</h3>
+
+<p>
+A popular southern destination with a long beach, restaurants, services and easy access to the Jandía peninsula.
+</p>
+
+<a class="btn primary" href="#match">
+Perfect Match →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Caleta de Fuste -->
+
+<div class="card">
+
+<div class="card-photo">
+
+<img
+src="https://loremflickr.com/900/600/caleta,de,fuste,fuerteventura"
+alt="Caleta de Fuste Fuerteventura"
+loading="lazy"
+>
+
+</div>
+
+<div class="card-content">
+
+<div class="card-icon">
+🌴
+</div>
+
+<h3>Caleta de Fuste</h3>
+
+<p>
+A convenient resort area with beaches, restaurants, activities and easy access from the airport.
+</p>
+
+<a class="btn primary" href="#match">
+Perfect Match →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Costa Calma -->
+
+<div class="card">
+
+<div class="card-photo">
+
+<img
+src="https://loremflickr.com/900/600/costa,calma,fuerteventura"
+alt="Costa Calma Fuerteventura"
+loading="lazy"
+>
+
+</div>
+
+<div class="card-content">
+
+<div class="card-icon">
+🌊
+</div>
+
+<h3>Costa Calma</h3>
+
+<p>
+A southern beach destination with wide sandy shores and excellent conditions for relaxing and watersports.
+</p>
+
+<a class="btn primary" href="#match">
+Perfect Match →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Betancuria -->
+
+<div class="card">
+
+<div class="card-photo">
+
+<img
+src="https://loremflickr.com/900/600/betancuria,fuerteventura"
+alt="Betancuria Fuerteventura"
+loading="lazy"
+>
+
+</div>
+
+<div class="card-content">
+
+<div class="card-icon">
+🏘️
+</div>
+
+<h3>Betancuria</h3>
+
+<p>
+Historic inland scenery, traditional architecture and a completely different side of the island.
+</p>
+
+<a class="btn primary" href="#match">
+Perfect Match →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Jandía -->
+
+<div class="card">
+
+<div class="card-photo">
+
+<img
+src="https://loremflickr.com/900/600/jandia,fuerteventura"
+alt="Jandía Fuerteventura"
+loading="lazy"
+>
+
+</div>
+
+<div class="card-content">
+
+<div class="card-icon">
+🏝️
+</div>
+
+<h3>Jandía</h3>
+
+<p>
+A spectacular peninsula with long beaches, dramatic scenery and some of the island's best coastal landscapes.
+</p>
+
+<a class="btn primary" href="#match">
+Perfect Match →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Lobos -->
+
+<div class="card">
+
+<div class="card-photo">
+
+<img
+src="https://loremflickr.com/900/600/isla,lobos,fuerteventura"
+alt="Lobos Island"
+loading="lazy"
+>
+
+</div>
+
+<div class="card-content">
+
+<div class="card-icon">
+🏝️
+</div>
+
+<h3>Isla de Lobos</h3>
+
+<p>
+A protected island escape close to Corralejo, ideal for hiking, swimming and nature.
+</p>
+
+<a class="btn primary" href="#match">
+Perfect Match →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCES
+========================= -->
+
+<section class="experiences">
+
+<div class="w center">
+
+<div class="ey">
+Travel your way
+</div>
+
+<h2 class="title">
+Things to do in Fuerteventura
+</h2>
+
+<p class="lead">
+Fuerteventura is especially strong for travellers who want a combination of beach, nature and outdoor experiences.
+</p>
+
+</div>
+
+
+<div class="w experience-grid">
+
+
+<div class="experience">
+
+<div class="experience-icon">
+🏄
+</div>
+
+<h3>Surfing</h3>
+
+<p>
+Discover some of the island's best-known surf areas and enjoy the Atlantic from the water.
+</p>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-icon">
+🪁
+</div>
+
+<h3>Kitesurfing</h3>
+
+<p>
+Wind and open beaches make Fuerteventura one of Europe's best-known destinations for wind sports.
+</p>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-icon">
+🏜️
+</div>
+
+<h3>Dunes</h3>
+
+<p>
+Walk through the spectacular dunes around Corralejo and experience one of the island's signature landscapes.
+</p>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-icon">
+🥾
+</div>
+
+<h3>Hiking</h3>
+
+<p>
+Explore volcanic terrain, mountain paths, coastal routes and protected natural landscapes.
+</p>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-icon">
+🚗
+</div>
+
+<h3>Road Trips</h3>
+
+<p>
+Rent a car and discover beaches, villages and viewpoints across the island at your own pace.
+</p>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-icon">
+🌅
+</div>
+
+<h3>Sunsets</h3>
+
+<p>
+Finish the day on the Atlantic coast with dramatic sunsets and relaxed seaside atmosphere.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PERFECT MATCH
+========================= -->
+
+<section class="match" id="match">
+
+<div class="w center">
+
+<div class="ey" style="color:#8fc1ff">
+StayPerfect recommendation
+</div>
+
+<h2 class="title">
+Could Fuerteventura be your Perfect Match?
+</h2>
+
+<p class="lead" style="color:#cbd4e5">
+Fuerteventura is particularly suited to travellers who value beaches, nature, adventure and freedom.
+</p>
+
+</div>
+
+
+<div class="w match-box">
+
+<div class="match-copy">
+
+<div class="ey" style="color:#8fc1ff">
+Why choose it
+</div>
+
+<h3>
+Fuerteventura is made for travellers who want space.
+</h3>
+
+<p>
+If your ideal holiday combines beautiful beaches with outdoor activities and a relaxed atmosphere, Fuerteventura deserves a place near the top of your list.
+</p>
+
+<div class="match-list">
+
+<div class="match-item">
+<span>🏖️</span>
+Strong beach match
+</div>
+
+<div class="match-item">
+<span>🌿</span>
+Excellent nature match
+</div>
+
+<div class="match-item">
+<span>🏄</span>
+Excellent adventure match
+</div>
+
+<div class="match-item">
+<span>🚗</span>
+Excellent road-trip destination
+</div>
+
+</div>
+
+</div>
+
+
+<div class="match-result">
+
+<div class="ey">
+Perfect Match
+</div>
+
+<h3>
+Fuerteventura
+</h3>
+
+<div class="match-score">
+
+<div class="match-score-top">
+<span>Typical Match</span>
+<strong>96%</strong>
+</div>
+
+<div class="bar">
+<i style="width:96%"></i>
+</div>
+
+</div>
+
+<p>
+Fuerteventura can be an excellent choice for travellers looking for beaches, outdoor activities, natural landscapes and a relaxed island experience.
+</p>
+
+<a class="btn primary" href="index.html#match">
+Take the full Perfect Match →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ACTIVITIES
+========================= -->
+
+<section class="activities">
+
+<div class="w center">
+
+<div class="ey">
+Build your trip
+</div>
+
+<h2 class="title">
+Fuerteventura experiences
+</h2>
+
+<p class="lead">
+Mix relaxation and adventure to create the kind of trip that suits you.
+</p>
+
+</div>
+
+
+<div class="w activity-grid">
+
+<div class="activity">
+
+<div class="activity-icon">
+🏖️
+</div>
+
+<div>
+
+<h3>Beach days</h3>
+
+<p>
+Spend the day discovering different beaches instead of staying in one place.</p>
+
+</div>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">
+🏄
+</div>
+
+<div>
+
+<h3>Water activities</h3>
+
+<p>
+Surfing, kitesurfing, windsurfing, swimming and other Atlantic experiences.</p>
+
+</div>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">
+🌋
+</div>
+
+<div>
+
+<h3>Volcanic landscapes</h3>
+
+<p>
+Discover the geological character of the island through viewpoints and hiking routes.</p>
+
+</div>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">
+🐬
+</div>
+
+<div>
+
+<h3>Ocean experiences</h3>
+
+<p>
+Explore the Atlantic with boat trips and opportunities to discover marine life.</p>
+
+</div>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">
+🍴
+</div>
+
+<div>
+
+<h3>Local food</h3>
+
+<p>
+Try Canarian cuisine, fresh seafood and traditional island specialities.</p>
+
+</div>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">
+🌅
+</div>
+
+<div>
+
+<h3>Slow travel</h3>
+
+<p>
+Enjoy quiet villages, long beaches and the island's relaxed rhythm.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="services" id="services">
+
+<div class="w center">
+
+<div class="ey">
+Travel Services
+</div>
+
+<h2 class="title">
+Plan your Fuerteventura trip
+</h2>
+
+<p class="lead">
+Use StayPerfect's travel services to organise the practical side of your journey.
+</p>
+
+</div>
+
+
+<div class="w service-grid">
+
+
+<div class="service">
+
+<div class="service-icon">
+✈️
+</div>
+
+<h3>Flights</h3>
+
+<p>
+Search flight options for your trip to Fuerteventura.
+</p>
+
+<a
+class="btn primary"
+href="https://aviasales.tpx.gr/xaccp3pU"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Search Flights →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🚗
+</div>
+
+<h3>Car Rental</h3>
+
+<p>
+A rental car can make exploring Fuerteventura much easier.
+</p>
+
+<a
+class="btn primary"
+href="https://autoeurope.tpx.gr/PYK42wVM"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Rent a Car →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🎟️
+</div>
+
+<h3>Activities</h3>
+
+<p>
+Find tours, excursions and activities for your stay.
+</p>
+
+<a
+class="btn primary"
+href="https://kkday.tpx.gr/lk2ssfVX"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Explore Activities →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🏨
+</div>
+
+<h3>Hotels & Activities</h3>
+
+<p>
+Discover accommodation and experiences with Klook.
+</p>
+
+<a
+class="btn primary"
+href="https://klook.tpx.gr/HyAQ5Z8G"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Explore Klook →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🚐
+</div>
+
+<h3>Airport Transfers</h3>
+
+<p>
+Arrange transport between the airport and your accommodation.
+</p>
+
+<a
+class="btn primary"
+href="https://intui.tpx.gr/JsoT6ciu"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Book Transfer →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+📱
+</div>
+
+<h3>Travel eSIM</h3>
+
+<p>
+Stay connected while exploring the island.
+</p>
+
+<a
+class="btn primary"
+href="https://saily.tpx.gr/qqzwC6gB"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Get an eSIM →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+<div class="w">
+
+<div class="cta-box">
+
+<div class="ey" style="color:#8fc1ff">
+Ready to explore?
+</div>
+
+<h2>
+Find your perfect destination.
+</h2>
+
+<p>
+Not sure whether Fuerteventura, Tenerife, Gran Canaria or another destination is right for you? Let StayPerfect compare your preferences.
+</p>
+
+<div class="buttons" style="justify-content:center">
+
+<a class="btn primary" href="index.html#match">
+Find My Perfect Match →
+</a>
+
+<a class="btn secondary" href="index.html#destinations">
+Explore All Destinations
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     DISCLOSURE
+========================= -->
+
+<section class="disclosure">
+
+<div class="w center">
+
+<div class="ey">
+Transparency
+</div>
+
+<h2 class="title" style="font-size:28px">
+Affiliate disclosure
+</h2>
+
+<p>
+Some links on StayPerfect are affiliate links. If you click a link and make a qualifying purchase, StayPerfect may receive a commission at no additional cost to you.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="w foot">
+
+<div>
+<strong>StayPerfect</strong> — Find your perfect trip.
+</div>
+
+<div>
+© 2026 StayPerfect ·
+<a href="privacy.html">Privacy</a>
+·
+<a href="index.html#contact">Contact</a>
+</div>
+
+</div>
+
+</footer>
+
+</main>
+
+</body>
+</html>

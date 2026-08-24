@@ -1,0 +1,1511 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Seville Travel Guide | Explore Seville, Spain</title>
+
+<meta name="description"
+content="Discover Seville, Spain. Explore the Real Alcázar, Cathedral, Giralda, Plaza de España, Triana, María Luisa Park, flamenco, Andalusian food and the best things to do in Seville.">
+
+<meta name="keywords"
+content="Seville, Sevilla Spain, Seville travel guide, Seville tourism, Real Alcazar, Plaza de España, Triana, Maria Luisa Park, Spain travel">
+
+<meta name="author" content="Explore Spain">
+
+<meta property="og:title" content="Seville Travel Guide | Explore Seville">
+<meta property="og:description" content="Discover Seville, the vibrant capital of Andalusia.">
+<meta property="og:type" content="website">
+
+<link rel="canonical" href="sevilla.html">
+
+<style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f5f1;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(255,255,255,.97);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.45rem;
+    font-weight: 800;
+    letter-spacing: .5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    font-size: .95rem;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.nav-links a:hover {
+    color: #b85c38;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 90vh;
+    margin-top: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.38),
+            rgba(0,0,0,.62)
+        ),
+        url("https://images.unsplash.com/photo-1559386484-97dfc0e15539?auto=format&fit=crop&w=2000&q=85")
+        center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 900px;
+    padding: 40px 25px;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-label {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 18px;
+
+    border: 1px solid rgba(255,255,255,.65);
+    border-radius: 30px;
+
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(3.5rem,9vw,7rem);
+    line-height: .95;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+.hero p {
+    max-width: 720px;
+    margin: auto;
+    font-size: 1.15rem;
+    opacity: .95;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: .3s ease;
+}
+
+.btn-primary {
+    background: white;
+    color: #222;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #222;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 90px 30px;
+}
+
+.section-header {
+    max-width: 760px;
+    margin-bottom: 50px;
+}
+
+.section-label {
+    color: #b85c38;
+
+    font-size: .8rem;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.section h2 {
+    font-size: clamp(2.2rem,5vw,4rem);
+    line-height: 1.05;
+    margin-bottom: 18px;
+}
+
+.section-header p {
+    color: #666;
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.intro {
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.intro-text p {
+    margin-bottom: 18px;
+    color: #555;
+    font-size: 1.05rem;
+}
+
+.intro-image {
+    border-radius: 22px;
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.12);
+}
+
+.intro-image img {
+    height: 500px;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.intro-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   IMAGE STANDARD
+========================================================= */
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   HIGHLIGHTS
+========================================================= */
+
+.highlights {
+    background: #ebe7df;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,.07);
+
+    transition: .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.12);
+}
+
+.card-image {
+    height: 240px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #666;
+    font-size: .95rem;
+}
+
+
+/* =========================================================
+   EXPERIENCES
+========================================================= */
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+
+.experience {
+    min-height: 320px;
+
+    border-radius: 18px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    color: white;
+
+    overflow: hidden;
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+
+    transition: transform .3s ease;
+}
+
+.experience:hover {
+    transform: translateY(-5px);
+}
+
+.experience::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            transparent 15%,
+            rgba(0,0,0,.85)
+        );
+}
+
+.experience-content {
+    position: relative;
+    z-index: 2;
+}
+
+.experience h3 {
+    font-size: 1.7rem;
+    margin-bottom: 6px;
+}
+
+.experience p {
+    opacity: .9;
+}
+
+.experience-1 {
+    background-image:
+        url("https://images.unsplash.com/photo-1565552645632-d725f8bfc19a?auto=format&fit=crop&w=1400&q=85");
+}
+
+.experience-2 {
+    background-image:
+        url("https://images.unsplash.com/photo-1559386484-97dfc0e15539?auto=format&fit=crop&w=1400&q=85");
+}
+
+.experience-3 {
+    background-image:
+        url("https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=1400&q=85");
+}
+
+.experience-4 {
+    background-image:
+        url("https://images.unsplash.com/photo-1518834103327-4b0f1f4a0e4e?auto=format&fit=crop&w=1400&q=85");
+}
+
+
+/* =========================================================
+   FOOD
+========================================================= */
+
+.food-section {
+    background: #222;
+    color: white;
+}
+
+.food-section .section-header p {
+    color: #bbb;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.food-card {
+    padding: 25px;
+
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 15px;
+
+    background: rgba(255,255,255,.04);
+}
+
+.food-card span {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.food-card h3 {
+    margin-bottom: 8px;
+}
+
+.food-card p {
+    color: #bbb;
+    font-size: .9rem;
+}
+
+
+/* =========================================================
+   NEIGHBORHOODS
+========================================================= */
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.area {
+    padding: 28px;
+
+    background: white;
+    border-radius: 15px;
+    border: 1px solid #e6e2da;
+
+    transition: .3s ease;
+}
+
+.area:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+}
+
+.area h3 {
+    margin-bottom: 8px;
+}
+
+.area p {
+    color: #666;
+    font-size: .92rem;
+}
+
+
+/* =========================================================
+   MARIA LUISA
+========================================================= */
+
+.maria-luisa-image {
+    border-radius: 22px;
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.12);
+}
+
+.maria-luisa-image img {
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   TIPS
+========================================================= */
+
+.tips {
+    background: #ebe7df;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.tip {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.tip strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.tip p {
+    color: #666;
+    font-size: .9rem;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta {
+    max-width: 1200px;
+    margin: auto;
+    padding: 90px 30px;
+    text-align: center;
+}
+
+.cta-box {
+    padding: 80px 30px;
+
+    border-radius: 25px;
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.48),
+            rgba(0,0,0,.65)
+        ),
+        url("https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+}
+
+.cta-box h2 {
+    font-size: clamp(2.3rem,5vw,4rem);
+    margin-bottom: 18px;
+}
+
+.cta-box p {
+    max-width: 650px;
+    margin: auto;
+    opacity: .9;
+}
+
+.cta-box .btn {
+    margin-top: 28px;
+    background: white;
+    color: #222;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    background: #111;
+    color: #aaa;
+    padding: 50px 30px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    transition: .3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: 30px auto 0;
+
+    padding-top: 25px;
+
+    border-top:
+        1px solid rgba(255,255,255,.1);
+
+    font-size: .85rem;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .food-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .areas-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .nav-container {
+        padding: 16px 20px;
+    }
+
+    .hero {
+        min-height: 82vh;
+    }
+
+    .section {
+        padding: 65px 20px;
+    }
+
+    .cards,
+    .experience-grid,
+    .food-grid,
+    .areas-grid,
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-image img,
+    .maria-luisa-image img {
+        height: 350px;
+    }
+
+    .hero h1 {
+        font-size: 3.6rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            Explore Spain
+        </a>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="spain.html">Spain</a></li>
+                <li><a href="barcelona.html">Barcelona</a></li>
+                <li><a href="madrid.html">Madrid</a></li>
+                <li><a href="valencia.html">Valencia</a></li>
+                <li><a href="sevilla.html">Seville</a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            Spain · Andalusia
+        </span>
+
+        <h1>
+            Seville
+        </h1>
+
+        <p>
+            Discover the passionate heart of Andalusia — a city of
+            royal palaces, historic streets, colourful plazas,
+            flamenco, tapas and unforgettable Mediterranean warmth.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#discover" class="btn btn-primary">
+                Discover Seville
+            </a>
+
+            <a href="spain.html" class="btn btn-outline">
+                Back to Spain
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     INTRODUCTION
+===================================================== -->
+
+<section class="section" id="discover">
+
+    <div class="intro">
+
+        <div class="intro-text">
+
+            <div class="section-label">
+                Welcome to Seville
+            </div>
+
+            <h2>
+                The soul of Andalusia.
+            </h2>
+
+            <p>
+                Seville is a city where centuries of history,
+                architecture and Andalusian culture come together.
+                The historic centre brings together the Cathedral,
+                Giralda and Real Alcázar within a remarkably compact area.
+            </p>
+
+            <p>
+                Spend your morning exploring royal palaces and
+                historic squares, walk through Santa Cruz in the
+                afternoon and cross the Guadalquivir towards Triana
+                as the city begins to glow at sunset.
+            </p>
+
+            <p>
+                At night, discover traditional tapas, local cuisine
+                and the unmistakable rhythm of flamenco.
+            </p>
+
+        </div>
+
+        <div class="intro-image">
+
+            <img
+                class="photo"
+                src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?auto=format&fit=crop&w=1400&q=85"
+                alt="Seville historic centre"
+                loading="lazy"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     HIGHLIGHTS
+===================================================== -->
+
+<section class="section highlights">
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Must See
+        </div>
+
+        <h2>
+            Seville highlights
+        </h2>
+
+        <p>
+            Begin with the landmarks that define the historic
+            and cultural identity of Seville.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <article class="card">
+
+            <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1565552645632-d725f8bfc19a?auto=format&fit=crop&w=1400&q=85"
+                alt="Real Alcázar of Seville"
+                loading="lazy"
+            >
+
+            <div class="card-content">
+
+                <h3>
+                    Real Alcázar
+                </h3>
+
+                <p>
+                    Explore one of Europe's oldest royal palace complexes,
+                    known for remarkable architecture, courtyards and gardens.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="card">
+
+            <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1400&q=85"
+                alt="Seville Cathedral and Giralda"
+                loading="lazy"
+            >
+
+            <div class="card-content">
+
+                <h3>
+                    Cathedral & Giralda
+                </h3>
+
+                <p>
+                    Discover Seville Cathedral and the famous Giralda,
+                    one of the city's most recognisable landmarks.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="card">
+
+            <img
+                class="card-image"
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Sevilla%2C%20Plaza%20de%20Espa%C3%B1a.jpg?width=1400"
+                alt="Plaza de España in Seville"
+                loading="lazy"
+            >
+
+            <div class="card-content">
+
+                <h3>
+                    Plaza de España
+                </h3>
+
+                <p>
+                    Admire the monumental semicircular square,
+                    colourful ceramic details, bridges and canals.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EXPERIENCES
+===================================================== -->
+
+<section class="section">
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Experience
+        </div>
+
+        <h2>
+            Things to do in Seville
+        </h2>
+
+        <p>
+            Experience the city through architecture, neighbourhoods,
+            gardens, music and local traditions.
+        </p>
+
+    </div>
+
+
+    <div class="experience-grid">
+
+
+        <article class="experience experience-1">
+
+            <div class="experience-content">
+
+                <h3>
+                    Royal Seville
+                </h3>
+
+                <p>
+                    Wander through the Real Alcázar and the historic
+                    streets surrounding the Cathedral and Giralda.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="experience experience-2">
+
+            <div class="experience-content">
+
+                <h3>
+                    Plaza de España
+                </h3>
+
+                <p>
+                    Walk beneath the arches, admire the ceramic details
+                    and explore María Luisa Park.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="experience experience-3">
+
+            <div class="experience-content">
+
+                <h3>
+                    Discover Triana
+                </h3>
+
+                <p>
+                    Cross the Guadalquivir and explore colourful streets,
+                    riverside views, ceramics, cafés and local life.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="experience experience-4">
+
+            <div class="experience-content">
+
+                <h3>
+                    Flamenco
+                </h3>
+
+                <p>
+                    Experience the music, guitar, singing and dance
+                    that form one of Andalusia's most recognisable traditions.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOD
+===================================================== -->
+
+<section class="section food-section">
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Taste Seville
+        </div>
+
+        <h2>
+            Eat like a Sevillian.
+        </h2>
+
+        <p>
+            Seville is made for long lunches, tapas, local dishes
+            and relaxed evenings in neighbourhood bars.
+        </p>
+
+    </div>
+
+
+    <div class="food-grid">
+
+        <article class="food-card">
+
+            <span>🍢</span>
+
+            <h3>
+                Tapas
+            </h3>
+
+            <p>
+                Discover small plates and traditional Andalusian flavours
+                in the historic centre and local neighbourhoods.
+            </p>
+
+        </article>
+
+
+        <article class="food-card">
+
+            <span>🐟</span>
+
+            <h3>
+                Pescaíto
+            </h3>
+
+            <p>
+                Try traditional Andalusian fried fish and seafood dishes
+                served in relaxed local restaurants.
+            </p>
+
+        </article>
+
+
+        <article class="food-card">
+
+            <span>🥘</span>
+
+            <h3>
+                Andalusian Cuisine
+            </h3>
+
+            <p>
+                Enjoy regional dishes, gazpacho, montaditos and
+                other flavours from southern Spain.
+            </p>
+
+        </article>
+
+
+        <article class="food-card">
+
+            <span>🍷</span>
+
+            <h3>
+                Local Bars
+            </h3>
+
+            <p>
+                Join the local rhythm with a drink, tapas and a
+                relaxed evening atmosphere.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     NEIGHBORHOODS
+===================================================== -->
+
+<section class="section">
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Explore
+        </div>
+
+        <h2>
+            Seville's neighborhoods
+        </h2>
+
+        <p>
+            Discover the different personalities that make Seville
+            more than just its famous monuments.
+        </p>
+
+    </div>
+
+
+    <div class="areas-grid">
+
+        <article class="area">
+            <h3>Santa Cruz</h3>
+            <p>
+                A historic neighbourhood of narrow streets,
+                flower-filled courtyards, plazas and traditional
+                Andalusian architecture.
+            </p>
+        </article>
+
+
+        <article class="area">
+            <h3>Triana</h3>
+            <p>
+                Famous for ceramics, colourful riverside streets,
+                flamenco traditions and lively local atmosphere.
+            </p>
+        </article>
+
+
+        <article class="area">
+            <h3>El Arenal</h3>
+            <p>
+                A central area close to the river, Cathedral,
+                Torre del Oro and traditional restaurants.
+            </p>
+        </article>
+
+
+        <article class="area">
+            <h3>Alameda</h3>
+            <p>
+                A lively area known for restaurants, cafés,
+                nightlife and a more alternative side of Seville.
+            </p>
+        </article>
+
+
+        <article class="area">
+            <h3>Macarena</h3>
+            <p>
+                A historic neighbourhood offering local atmosphere,
+                traditional architecture and cultural sites.
+            </p>
+        </article>
+
+
+        <article class="area">
+            <h3>Centro</h3>
+            <p>
+                The central shopping and historic area where visitors
+                can explore many sights on foot.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MARIA LUISA
+===================================================== -->
+
+<section class="section">
+
+    <div class="intro">
+
+        <div class="intro-text">
+
+            <div class="section-label">
+                Green Seville
+            </div>
+
+            <h2>
+                María Luisa Park.
+            </h2>
+
+            <p>
+                María Luisa Park is one of Seville's most beautiful
+                green spaces and provides a peaceful contrast to
+                the historic centre.
+            </p>
+
+            <p>
+                Wander beneath the trees, discover fountains and gardens,
+                and continue towards the spectacular Plaza de España.
+            </p>
+
+            <p>
+                It is an ideal place to slow down during a busy day
+                of sightseeing.
+            </p>
+
+        </div>
+
+
+        <div class="maria-luisa-image">
+
+            <img
+                class="photo"
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Parque%20de%20Mar%C3%ADa%20Luisa%20-%20Seville%20-%20Plaza%20de%20Espa%C3%B1a%20-%20panoramic%20%2814727865355%29.jpg?width=1400"
+                alt="María Luisa Park and Plaza de España in Seville"
+                loading="lazy"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EXTRA PHOTO
+===================================================== -->
+
+<section class="section">
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Seville
+        </div>
+
+        <h2>
+            The Guadalquivir at sunset.
+        </h2>
+
+        <p>
+            Finish the day beside the river and enjoy the atmosphere
+            of Seville as the historic city lights begin to appear.
+        </p>
+
+    </div>
+
+
+    <div class="intro-image">
+
+        <img
+            class="photo"
+            style="height:520px;"
+            src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1800&q=85"
+            alt="Seville at sunset"
+            loading="lazy"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TRAVEL TIPS
+===================================================== -->
+
+<section class="section tips">
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Travel Tips
+        </div>
+
+        <h2>
+            Before you go
+        </h2>
+
+        <p>
+            A few simple tips will help you make the most of
+            your Seville experience.
+        </p>
+
+    </div>
+
+
+    <div class="tips-grid">
+
+        <article class="tip">
+
+            <strong>
+                Best time to visit
+            </strong>
+
+            <p>
+                Spring and autumn are especially attractive for walking,
+                sightseeing and enjoying outdoor spaces.
+            </p>
+
+        </article>
+
+
+        <article class="tip">
+
+            <strong>
+                Getting around
+            </strong>
+
+            <p>
+                Much of central Seville is easy to explore on foot,
+                with public transport available for longer distances.
+            </p>
+
+        </article>
+
+
+        <article class="tip">
+
+            <strong>
+                How long to stay
+            </strong>
+
+            <p>
+                Three days is a good starting point, while four days
+                allows more time for neighbourhoods and experiences.
+            </p>
+
+        </article>
+
+
+        <article class="tip">
+
+            <strong>
+                Explore slowly
+            </strong>
+
+            <p>
+                Leave time for tapas, evening walks, plazas and
+                the relaxed rhythm of Andalusian life.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta">
+
+    <div class="cta-box">
+
+        <h2>
+            Ready to discover Seville?
+        </h2>
+
+        <p>
+            Explore the passionate capital of Andalusia and continue
+            your journey through Spain's most unforgettable cities.
+        </p>
+
+        <a href="spain.html" class="btn">
+            Explore Spain
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            Explore Spain
+        </div>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="spain.html">Spain</a>
+            <a href="barcelona.html">Barcelona</a>
+            <a href="madrid.html">Madrid</a>
+            <a href="valencia.html">Valencia</a>
+            <a href="sevilla.html">Seville</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+        © 2026 Explore Spain. All rights reserved.
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     IMAGE FALLBACK SYSTEM
+===================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const fallback =
+        "https://images.unsplash.com/photo-1559386484-97dfc0e15539?auto=format&fit=crop&w=1600&q=80";
+
+    document.querySelectorAll("img").forEach(function (img) {
+
+        img.addEventListener("error", function () {
+
+            if (this.src !== fallback) {
+                this.src = fallback;
+            }
+
+        });
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
+```

@@ -1,0 +1,1676 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Balearic Islands — Find Your Perfect Trip | StayPerfect</title>
+
+<meta
+name="description"
+content="Discover the Balearic Islands with StayPerfect. Explore Mallorca, Menorca, Ibiza, Formentera, Cabrera and Dragonera and find the island that fits your travel style."
+>
+
+<style>
+
+:root{
+  --blue:#1769e8;
+  --dark:#10204a;
+  --muted:#68758b;
+  --soft:#eef6ff;
+  --line:#e4eaf2;
+  --bg:#f7f9fc;
+  --white:#fff;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color:var(--dark);
+  background:#fff;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font-family:inherit;
+}
+
+.w{
+  max-width:1150px;
+  margin:auto;
+  padding:0 22px;
+}
+
+/* =========================
+HEADER
+========================= */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:#fff;
+  border-bottom:1px solid var(--line);
+}
+
+nav{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:25px;
+  font-weight:900;
+  letter-spacing:-.05em;
+}
+
+.logo span{
+  color:var(--blue);
+}
+
+.links{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  font-size:14px;
+  font-weight:750;
+}
+
+.links a:hover{
+  color:var(--blue);
+}
+
+.pill{
+  color:#fff!important;
+  background:var(--blue);
+  padding:10px 16px;
+  border-radius:999px;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+  min-height:700px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  color:#fff;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8,20,48,.88),
+      rgba(8,20,48,.52),
+      rgba(8,20,48,.18)
+    ),
+    url("https://loremflickr.com/1800/1100/mallorca,balearic,islands")
+    center/cover no-repeat;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent 55%,
+      rgba(8,20,48,.5)
+    );
+
+  pointer-events:none;
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:760px;
+  padding:90px 0;
+}
+
+.ey{
+  color:var(--blue);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.hero .ey{
+  color:#8fc1ff;
+}
+
+.hero h1{
+  margin:15px 0 20px;
+  font-size:clamp(48px,7vw,78px);
+  line-height:.95;
+  letter-spacing:-.06em;
+}
+
+.hero h1 em{
+  color:#76b4ff;
+  font-style:normal;
+}
+
+.hero p{
+  max-width:700px;
+  color:#e7eefb;
+  font-size:19px;
+  line-height:1.6;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:27px;
+}
+
+.btn{
+  display:inline-block;
+  border:0;
+  border-radius:14px;
+  padding:14px 18px;
+  font-weight:850;
+  cursor:pointer;
+}
+
+.primary{
+  background:var(--blue);
+  color:#fff;
+}
+
+.primary:hover{
+  opacity:.9;
+}
+
+.secondary{
+  background:#fff;
+  border:1px solid var(--line);
+}
+
+.hero .secondary{
+  background:rgba(255,255,255,.12);
+  border-color:rgba(255,255,255,.35);
+  color:#fff;
+  backdrop-filter:blur(10px);
+}
+
+/* =========================
+INTRO
+========================= */
+
+section{
+  padding:78px 0;
+}
+
+.center{
+  text-align:center;
+}
+
+.title{
+  margin:8px 0 12px;
+  font-size:38px;
+  letter-spacing:-.045em;
+}
+
+.lead{
+  max-width:760px;
+  margin:auto;
+  color:var(--muted);
+  line-height:1.65;
+}
+
+/* =========================
+ISLAND GRID
+========================= */
+
+.islands{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:38px;
+}
+
+.island{
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:21px;
+  transition:.2s ease;
+}
+
+.island:hover{
+  transform:translateY(-4px);
+  box-shadow:0 18px 45px rgba(16,32,74,.13);
+}
+
+.island-photo{
+  height:220px;
+  overflow:hidden;
+  background:#dce8f6;
+}
+
+.island-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .35s ease;
+}
+
+.island:hover .island-photo img{
+  transform:scale(1.05);
+}
+
+.island-content{
+  padding:22px;
+}
+
+.island-icon{
+  font-size:28px;
+}
+
+.island h3{
+  margin:8px 0 6px;
+  font-size:22px;
+}
+
+.island p{
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.55;
+  margin:0 0 17px;
+}
+
+/* =========================
+HIGHLIGHT
+========================= */
+
+.highlight{
+  background:var(--bg);
+}
+
+.highlight-box{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+  align-items:center;
+}
+
+.highlight-image{
+  min-height:420px;
+  border-radius:28px;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent,
+      rgba(0,0,0,.25)
+    ),
+    url("https://loremflickr.com/1000/800/mallorca,spain")
+    center/cover no-repeat;
+}
+
+.highlight-content h2{
+  margin:8px 0 15px;
+  font-size:40px;
+  letter-spacing:-.05em;
+}
+
+.highlight-content p{
+  color:var(--muted);
+  line-height:1.65;
+}
+
+.feature-list{
+  display:grid;
+  gap:10px;
+  margin-top:22px;
+}
+
+.feature{
+  padding:14px 16px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+}
+
+.feature strong{
+  display:block;
+}
+
+.feature span{
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* =========================
+MATCH
+========================= */
+
+.dark{
+  background:var(--dark);
+  color:#fff;
+}
+
+.dark .lead{
+  color:#cbd4e5;
+}
+
+.match-box{
+  margin-top:35px;
+  background:#fff;
+  color:var(--dark);
+  border-radius:27px;
+  padding:30px;
+  box-shadow:0 20px 60px rgba(0,0,0,.2);
+}
+
+.match-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+
+.match-option{
+  border:1px solid var(--line);
+  border-radius:17px;
+  padding:20px;
+  background:#fff;
+}
+
+.match-option strong{
+  display:block;
+  margin-bottom:5px;
+}
+
+.match-option span{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.45;
+}
+
+.match-icon{
+  font-size:27px;
+  margin-bottom:10px;
+}
+
+/* =========================
+SERVICES
+========================= */
+
+.services{
+  background:var(--bg);
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:36px;
+}
+
+.service{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:21px;
+  padding:24px;
+}
+
+.service:hover{
+  box-shadow:0 12px 35px rgba(16,32,74,.08);
+}
+
+.service-icon{
+  width:46px;
+  height:46px;
+  border-radius:14px;
+  background:var(--soft);
+  display:grid;
+  place-items:center;
+  font-size:22px;
+}
+
+.service h3{
+  margin:15px 0 8px;
+}
+
+.service p{
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.55;
+}
+
+.service .btn{
+  padding:11px 14px;
+  font-size:13px;
+}
+
+/* =========================
+FAQ
+========================= */
+
+.faq{
+  max-width:850px;
+  margin:38px auto 0;
+}
+
+details{
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:18px 20px;
+  margin-bottom:10px;
+  background:#fff;
+}
+
+summary{
+  cursor:pointer;
+  font-weight:850;
+}
+
+details p{
+  color:var(--muted);
+  line-height:1.6;
+  font-size:14px;
+  margin:14px 0 0;
+}
+
+/* =========================
+CTA
+========================= */
+
+.cta{
+  background:
+    linear-gradient(
+      135deg,
+      #10204a,
+      #1769e8
+    );
+  color:#fff;
+}
+
+.cta-box{
+  text-align:center;
+  max-width:800px;
+  margin:auto;
+}
+
+.cta h2{
+  font-size:42px;
+  letter-spacing:-.05em;
+  margin:8px 0 12px;
+}
+
+.cta p{
+  color:#dce8fa;
+  line-height:1.6;
+}
+
+/* =========================
+DISCLOSURE
+========================= */
+
+.disclosure{
+  border-top:1px solid var(--line);
+  padding:45px 0;
+}
+
+.disclosure p{
+  max-width:780px;
+  margin:auto;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+  border-top:1px solid var(--line);
+  padding:30px 0;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.foot{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+  .links{
+    display:none;
+  }
+
+  .islands,
+  .service-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .highlight-box{
+    grid-template-columns:1fr;
+  }
+
+  .match-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+@media(max-width:650px){
+
+  .w{
+    padding:0 18px;
+  }
+
+  .hero{
+    min-height:720px;
+  }
+
+  .hero-content{
+    padding:70px 0;
+  }
+
+  .hero h1{
+    font-size:46px;
+  }
+
+  .title{
+    font-size:30px;
+  }
+
+  .islands,
+  .service-grid,
+  .match-grid{
+    grid-template-columns:1fr;
+  }
+
+  .highlight-image{
+    min-height:320px;
+  }
+
+  .highlight-content h2{
+    font-size:32px;
+  }
+
+  .cta h2{
+    font-size:32px;
+  }
+
+  .foot{
+    display:block;
+  }
+
+  .foot div+div{
+    margin-top:12px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- =========================
+HEADER
+========================= -->
+
+<header>
+
+<div class="w">
+
+<nav>
+
+<a class="logo" href="index.html">
+Stay<span>Perfect</span>
+</a>
+
+<div class="links">
+
+<a href="index.html#destinations">
+Destinations
+</a>
+
+<a href="index.html#services">
+Travel Services
+</a>
+
+<a href="index.html#match">
+Perfect Match
+</a>
+
+<a class="pill" href="#islands">
+Explore Islands
+</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================
+HERO
+========================= -->
+
+<section class="hero">
+
+<div class="w">
+
+<div class="hero-content">
+
+<div class="ey">
+Spain · Mediterranean Islands
+</div>
+
+<h1>
+Discover the <em>Balearic Islands.</em>
+</h1>
+
+<p>
+From the beaches and mountains of Mallorca to the quiet coves of Menorca,
+the legendary energy of Ibiza and the turquoise waters of Formentera,
+discover the Balearic Islands and find the destination that fits you.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="#islands">
+Explore the Islands →
+</a>
+
+<a class="btn secondary" href="index.html#match">
+Find My Perfect Match ✨
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+INTRO
+========================= -->
+
+<section>
+
+<div class="w center">
+
+<div class="ey">
+Mediterranean Spain
+</div>
+
+<h2 class="title">
+Six very different island experiences
+</h2>
+
+<p class="lead">
+The Balearic Islands offer much more than beaches. Choose between
+Mediterranean cities, dramatic coastlines, nature reserves, nightlife,
+slow travel and authentic island escapes.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+ISLANDS
+========================= -->
+
+<section id="islands" class="highlight">
+
+<div class="w">
+
+<div class="center">
+
+<div class="ey">
+Choose your island
+</div>
+
+<h2 class="title">
+Which Balearic Island fits you?
+</h2>
+
+<p class="lead">
+Each island has its own personality. Explore the options below and
+discover where your perfect trip could begin.
+</p>
+
+</div>
+
+
+<div class="islands">
+
+
+<!-- MALLORCA -->
+
+<div class="island">
+
+<div class="island-photo">
+
+<img
+src="https://loremflickr.com/900/600/mallorca,spain"
+alt="Mallorca Spain"
+loading="lazy"
+>
+
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">
+🏝️
+</div>
+
+<h3>
+Mallorca
+</h3>
+
+<p>
+The most versatile Balearic island, combining beaches, mountains,
+villages, food, resorts and vibrant Mediterranean life.
+</p>
+
+<a class="btn primary" href="mallorca.html">
+Explore Mallorca →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- MENORCA -->
+
+<div class="island">
+
+<div class="island-photo">
+
+<img
+src="https://loremflickr.com/900/600/menorca,spain"
+alt="Menorca Spain"
+loading="lazy"
+>
+
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">
+🌿
+</div>
+
+<h3>
+Menorca
+</h3>
+
+<p>
+Quiet coves, natural landscapes, turquoise water and a slower,
+more peaceful Mediterranean atmosphere.
+</p>
+
+<a class="btn primary" href="menorca.html">
+Explore Menorca →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- IBIZA -->
+
+<div class="island">
+
+<div class="island-photo">
+
+<img
+src="https://loremflickr.com/900/600/ibiza,spain"
+alt="Ibiza Spain"
+loading="lazy"
+>
+
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">
+🎶
+</div>
+
+<h3>
+Ibiza
+</h3>
+
+<p>
+World-famous nightlife, beautiful beaches, stylish restaurants and
+quiet hidden corners beyond the clubs.
+</p>
+
+<a class="btn primary" href="ibiza.html">
+Explore Ibiza →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- FORMENTERA -->
+
+<div class="island">
+
+<div class="island-photo">
+
+<img
+src="https://loremflickr.com/900/600/formentera,spain"
+alt="Formentera Spain"
+loading="lazy"
+>
+
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">
+💎
+</div>
+
+<h3>
+Formentera
+</h3>
+
+<p>
+Crystal-clear water, spectacular beaches, cycling and an intimate
+island atmosphere.
+</p>
+
+<a class="btn primary" href="formentera.html">
+Explore Formentera →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- CABRERA -->
+
+<div class="island">
+
+<div class="island-photo">
+
+<img
+src="https://loremflickr.com/900/600/cabrera,spain"
+alt="Cabrera Spain"
+loading="lazy"
+>
+
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">
+🏞️
+</div>
+
+<h3>
+Cabrera
+</h3>
+
+<p>
+A protected island paradise with clear waters, marine life and
+peaceful Mediterranean nature.
+</p>
+
+<a class="btn primary" href="cabrera.html">
+Explore Cabrera →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- DRAGONERA -->
+
+<div class="island">
+
+<div class="island-photo">
+
+<img
+src="https://loremflickr.com/900/600/dragonera,mallorca"
+alt="Dragonera Mallorca"
+loading="lazy"
+>
+
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">
+🌊
+</div>
+
+<h3>
+Dragonera
+</h3>
+
+<p>
+A wild natural escape known for hiking, coastal scenery and a
+peaceful atmosphere away from the main tourist centres.
+</p>
+
+<a class="btn primary" href="dragonera.html">
+Explore Dragonera →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+MALLORCA FEATURE
+========================= -->
+
+<section>
+
+<div class="w">
+
+<div class="highlight-box">
+
+<div class="highlight-image"></div>
+
+<div class="highlight-content">
+
+<div class="ey">
+The all-rounder
+</div>
+
+<h2>
+Mallorca
+</h2>
+
+<p>
+Mallorca is one of the most complete destinations in the Mediterranean.
+It can work equally well for beach holidays, couples, families,
+adventure trips and travellers looking for a mix of nature and culture.
+</p>
+
+<div class="feature-list">
+
+<div class="feature">
+<strong>🏖️ Beaches</strong>
+<span>
+From famous resort beaches to hidden coves.
+</span>
+</div>
+
+<div class="feature">
+<strong>🏔️ Nature</strong>
+<span>
+The Serra de Tramuntana offers spectacular landscapes and hiking.
+</span>
+</div>
+
+<div class="feature">
+<strong>🍽️ Food & Culture</strong>
+<span>
+Local cuisine, villages, markets and historic towns.
+</span>
+</div>
+
+<div class="feature">
+<strong>🚗 Road Trips</strong>
+<span>
+An excellent island for exploring by car.
+</span>
+</div>
+
+</div>
+
+<div class="buttons">
+
+<a class="btn primary" href="mallorca.html">
+Explore Mallorca →
+</a>
+
+<a class="btn secondary" href="index.html#match">
+Perfect Match ✨
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+PERFECT MATCH
+========================= -->
+
+<section class="dark">
+
+<div class="w">
+
+<div class="center">
+
+<div class="ey">
+StayPerfect
+</div>
+
+<h2 class="title">
+Which Balearic Island is right for you?
+</h2>
+
+<p class="lead">
+Different travellers need different islands. Start with what matters
+most to you and let StayPerfect help you narrow the choice.
+</p>
+
+</div>
+
+
+<div class="match-box">
+
+<div class="match-grid">
+
+<div class="match-option">
+
+<div class="match-icon">
+🏖️
+</div>
+
+<strong>
+Beach & Relaxation
+</strong>
+
+<span>
+For turquoise water, beautiful coves and slower Mediterranean days.
+</span>
+
+</div>
+
+
+<div class="match-option">
+
+<div class="match-icon">
+🎶
+</div>
+
+<strong>
+Nightlife
+</strong>
+
+<span>
+Ibiza is the obvious choice, with Mallorca also offering plenty of evening life.
+</span>
+
+</div>
+
+
+<div class="match-option">
+
+<div class="match-icon">
+🌿
+</div>
+
+<strong>
+Nature
+</strong>
+
+<span>
+Menorca, Cabrera and Dragonera are excellent choices for natural escapes.
+</span>
+
+</div>
+
+
+<div class="match-option">
+
+<div class="match-icon">
+❤️
+</div>
+
+<strong>
+Couples
+</strong>
+
+<span>
+For romantic escapes consider Mallorca, Menorca, Ibiza or Formentera.
+</span>
+
+</div>
+
+
+<div class="match-option">
+
+<div class="match-icon">
+👨‍👩‍👧
+</div>
+
+<strong>
+Families
+</strong>
+
+<span>
+Mallorca and Menorca offer a wide variety of family-friendly experiences.
+</span>
+
+</div>
+
+
+<div class="match-option">
+
+<div class="match-icon">
+🏄
+</div>
+
+<strong>
+Adventure
+</strong>
+
+<span>
+Choose hiking, watersports, cycling and outdoor experiences across the islands.
+</span>
+
+</div>
+
+</div>
+
+
+<div class="buttons">
+
+<a class="btn primary" href="index.html#match">
+Start Perfect Match →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+SERVICES
+========================= -->
+
+<section class="services" id="services">
+
+<div class="w center">
+
+<div class="ey">
+Travel Services
+</div>
+
+<h2 class="title">
+Plan more of your Balearic trip
+</h2>
+
+<p class="lead">
+Use StayPerfect's travel services to organise flights, cars,
+activities, transfers and connectivity.
+</p>
+
+</div>
+
+
+<div class="w service-grid">
+
+
+<div class="service">
+
+<div class="service-icon">
+✈️
+</div>
+
+<h3>
+Flights
+</h3>
+
+<p>
+Search flight options for travelling to the Balearic Islands.
+</p>
+
+<a
+class="btn primary"
+href="https://aviasales.tpx.gr/xaccp3pU"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Search Flights →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🚗
+</div>
+
+<h3>
+Car Rentals
+</h3>
+
+<p>
+Compare rental options and explore the islands at your own pace.
+</p>
+
+<a
+class="btn primary"
+href="https://autoeurope.tpx.gr/PYK42wVM"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Rent a Car →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🎟️
+</div>
+
+<h3>
+Activities
+</h3>
+
+<p>
+Discover tours, attractions and experiences for your island trip.
+</p>
+
+<a
+class="btn primary"
+href="https://kkday.tpx.gr/lk2ssfVX"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Explore Activities →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🏨
+</div>
+
+<h3>
+Hotels & Activities
+</h3>
+
+<p>
+Discover accommodation, attractions and experiences with Klook.
+</p>
+
+<a
+class="btn primary"
+href="https://klook.tpx.gr/HyAQ5Z8G"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Explore Klook →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🚐
+</div>
+
+<h3>
+Airport Transfers
+</h3>
+
+<p>
+Arrange a smoother arrival and departure from the airport.
+</p>
+
+<a
+class="btn primary"
+href="https://intui.tpx.gr/JsoT6ciu"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Book Transfer →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+📱
+</div>
+
+<h3>
+Travel eSIM
+</h3>
+
+<p>
+Stay connected while exploring Spain and the Balearic Islands.
+</p>
+
+<a
+class="btn primary"
+href="https://saily.tpx.gr/qqzwC6gB"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Get an eSIM →
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+FAQ
+========================= -->
+
+<section>
+
+<div class="w">
+
+<div class="center">
+
+<div class="ey">
+Balearic Islands FAQ
+</div>
+
+<h2 class="title">
+Planning your trip
+</h2>
+
+<p class="lead">
+A few useful things to consider before choosing your island.
+</p>
+
+</div>
+
+
+<div class="faq">
+
+
+<details>
+
+<summary>
+Which Balearic Island is best for beaches?
+</summary>
+
+<p>
+Formentera is particularly famous for its turquoise water and beaches.
+Menorca is another excellent choice for travellers looking for beautiful
+coves and a quieter atmosphere. Mallorca offers the greatest variety.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Which island is best for nightlife?
+</summary>
+
+<p>
+Ibiza is the most famous choice for nightlife, but Mallorca also offers
+a wide selection of bars, restaurants and evening entertainment.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Which Balearic Island is best for families?
+</summary>
+
+<p>
+Mallorca and Menorca are strong choices because they combine beaches,
+activities, accommodation options and a broad range of travel styles.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Which island is best for nature?
+</summary>
+
+<p>
+Menorca, Cabrera and Dragonera are excellent choices for travellers
+looking for protected landscapes, hiking and quieter surroundings.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Can I visit more than one Balearic Island?
+</summary>
+
+<p>
+Yes. Travellers can combine islands depending on their itinerary and
+available transport connections. A multi-island trip can be a great way
+to experience different sides of the Balearics.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Is Mallorca good for a first trip?
+</summary>
+
+<p>
+Mallorca is one of the easiest choices for a first Balearic holiday
+because of its variety. You can combine beaches, mountains, villages,
+restaurants, culture and activities in one trip.
+</p>
+
+</details>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+CTA
+========================= -->
+
+<section class="cta">
+
+<div class="w">
+
+<div class="cta-box">
+
+<div class="ey">
+Find your perfect island
+</div>
+
+<h2>
+Your Balearic adventure starts here.
+</h2>
+
+<p>
+Tell StayPerfect what matters to you and discover the destination
+that best matches your travel style.
+</p>
+
+<div class="buttons" style="justify-content:center">
+
+<a
+class="btn primary"
+href="index.html#match"
+>
+Find My Perfect Match ✨
+</a>
+
+<a
+class="btn secondary"
+href="index.html#destinations"
+>
+Explore Spain →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+DISCLOSURE
+========================= -->
+
+<section class="disclosure">
+
+<div class="w center">
+
+<div class="ey">
+Transparency
+</div>
+
+<h2
+class="title"
+style="font-size:28px"
+>
+Affiliate disclosure
+</h2>
+
+<p>
+Some links on StayPerfect are affiliate links. If you click a link
+and make a qualifying purchase, StayPerfect may receive a commission
+at no additional cost to you.
+</p>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+<div class="w foot">
+
+<div>
+<strong>StayPerfect</strong> — Find your perfect trip.
+</div>
+
+<div>
+© 2026 StayPerfect ·
+<a href="privacy.html">
+Privacy
+</a>
+·
+<a href="index.html#contact">
+Contact
+</a>
+</div>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>

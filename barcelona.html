@@ -1,0 +1,2456 @@
+<!doctype html>
+<html lang="it">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Barcelona — StayPerfect</title>
+
+<meta name="description"
+content="Discover Barcelona with StayPerfect. Explore Gaudí, beaches, culture, food, nightlife and the best experiences for your travel style.">
+
+<style>
+
+:root{
+  --blue:#1769e8;
+  --dark:#10204a;
+  --muted:#68758b;
+  --soft:#eef6ff;
+  --line:#e4eaf2;
+  --bg:#f7f9fc;
+  --white:#fff;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--dark);
+  background:#fff;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font-family:inherit;
+}
+
+.w{
+  max-width:1150px;
+  margin:auto;
+  padding:0 22px;
+}
+
+/* =========================
+HEADER
+========================= */
+
+header{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+nav{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:25px;
+  font-weight:900;
+  letter-spacing:-.05em;
+}
+
+.logo span{
+  color:var(--blue);
+}
+
+.links{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  font-size:14px;
+  font-weight:750;
+}
+
+.links a:hover{
+  color:var(--blue);
+}
+
+.pill{
+  color:#fff!important;
+  background:var(--blue);
+  padding:10px 16px;
+  border-radius:999px;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+  min-height:690px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  color:#fff;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8,20,48,.90),
+      rgba(8,20,48,.58),
+      rgba(8,20,48,.20)
+    ),
+    url("https://loremflickr.com/1800/1100/barcelona,spain")
+    center/cover no-repeat;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent 60%,
+      rgba(8,20,48,.55)
+    );
+
+  pointer-events:none;
+}
+
+.hero-grid{
+  position:relative;
+  z-index:2;
+
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:60px;
+  align-items:center;
+}
+
+.ey{
+  color:var(--blue);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.hero .ey{
+  color:#8fc1ff;
+}
+
+.hero h1{
+  margin:15px 0 20px;
+
+  font-size:clamp(48px,7vw,78px);
+  line-height:.95;
+
+  letter-spacing:-.06em;
+}
+
+.hero h1 em{
+  color:#76b4ff;
+  font-style:normal;
+}
+
+.hero p{
+  max-width:680px;
+
+  color:#e7eefb;
+  font-size:19px;
+  line-height:1.6;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:27px;
+}
+
+.btn{
+  display:inline-block;
+
+  border:0;
+  border-radius:14px;
+
+  padding:14px 18px;
+
+  font-weight:850;
+
+  cursor:pointer;
+}
+
+.primary{
+  background:var(--blue);
+  color:#fff;
+}
+
+.primary:hover{
+  opacity:.9;
+}
+
+.secondary{
+  background:#fff;
+  border:1px solid var(--line);
+}
+
+.hero .secondary{
+  background:rgba(255,255,255,.12);
+  border-color:rgba(255,255,255,.35);
+  color:#fff;
+  backdrop-filter:blur(10px);
+}
+
+/* =========================
+HERO PANEL
+========================= */
+
+.hero-panel{
+  background:rgba(255,255,255,.95);
+  color:var(--dark);
+
+  border:1px solid rgba(255,255,255,.5);
+
+  border-radius:28px;
+
+  padding:24px;
+
+  box-shadow:
+    0 25px 70px rgba(0,0,0,.25);
+
+  backdrop-filter:blur(12px);
+}
+
+.panel-title{
+  font-weight:900;
+  font-size:19px;
+  margin-bottom:14px;
+}
+
+.plan-row{
+  display:flex;
+  align-items:center;
+
+  gap:12px;
+
+  padding:13px 0;
+
+  border-bottom:1px solid var(--line);
+}
+
+.plan-icon{
+  width:44px;
+  height:44px;
+
+  border-radius:14px;
+
+  background:var(--soft);
+
+  display:grid;
+  place-items:center;
+
+  font-size:21px;
+
+  flex-shrink:0;
+}
+
+.plan-row strong{
+  display:block;
+  font-size:14px;
+}
+
+.plan-row span{
+  display:block;
+
+  color:var(--muted);
+
+  font-size:12px;
+}
+
+.score{
+  margin-top:17px;
+
+  background:var(--soft);
+
+  border-radius:16px;
+
+  padding:16px;
+}
+
+.score-top{
+  display:flex;
+  justify-content:space-between;
+
+  font-weight:900;
+}
+
+.bar{
+  height:8px;
+
+  margin-top:9px;
+
+  background:#dfe9f5;
+
+  border-radius:99px;
+
+  overflow:hidden;
+}
+
+.bar i{
+  display:block;
+
+  width:96%;
+  height:100%;
+
+  background:var(--blue);
+}
+
+/* =========================
+SECTIONS
+========================= */
+
+section{
+  padding:76px 0;
+}
+
+.center{
+  text-align:center;
+}
+
+.title{
+  margin:8px 0 12px;
+
+  font-size:38px;
+
+  letter-spacing:-.045em;
+}
+
+.lead{
+  max-width:750px;
+
+  margin:auto;
+
+  color:var(--muted);
+
+  line-height:1.65;
+}
+
+/* =========================
+QUICK MATCH
+========================= */
+
+.quick{
+  background:var(--bg);
+}
+
+.quick-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap:18px;
+
+  margin-top:36px;
+}
+
+.quick-card{
+  background:#fff;
+
+  border:1px solid var(--line);
+
+  border-radius:21px;
+
+  padding:24px;
+}
+
+.quick-icon{
+  width:48px;
+  height:48px;
+
+  border-radius:14px;
+
+  background:var(--soft);
+
+  display:grid;
+  place-items:center;
+
+  font-size:23px;
+}
+
+.quick-card h3{
+  margin:15px 0 7px;
+}
+
+.quick-card p{
+  color:var(--muted);
+
+  font-size:14px;
+
+  line-height:1.55;
+}
+
+/* =========================
+HIGHLIGHTS
+========================= */
+
+.highlights{
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:18px;
+
+  margin-top:36px;
+}
+
+.highlight{
+  min-height:260px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+
+  padding:25px;
+
+  color:#fff;
+
+  border-radius:23px;
+
+  overflow:hidden;
+
+  position:relative;
+
+  background:#17233d;
+}
+
+.highlight:before{
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,0,0,.02),
+      rgba(0,0,0,.75)
+    );
+}
+
+.highlight > *{
+  position:relative;
+  z-index:1;
+}
+
+.highlight h3{
+  margin:8px 0 6px;
+
+  font-size:25px;
+
+  letter-spacing:-.035em;
+}
+
+.highlight p{
+  margin:0;
+
+  color:#edf3fc;
+
+  font-size:13px;
+
+  line-height:1.5;
+}
+
+.highlight-gaudi{
+  background:
+    url("https://loremflickr.com/900/700/sagrada,familia,barcelona")
+    center/cover;
+}
+
+.highlight-beach{
+  background:
+    url("https://loremflickr.com/900/700/barceloneta,barcelona")
+    center/cover;
+}
+
+.highlight-gothic{
+  background:
+    url("https://loremflickr.com/900/700/gothic,quarter,barcelona")
+    center/cover;
+}
+
+/* =========================
+PLACES
+========================= */
+
+.places{
+  background:var(--bg);
+}
+
+.place-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  gap:18px;
+
+  margin-top:36px;
+}
+
+.place{
+  background:#fff;
+
+  border:1px solid var(--line);
+
+  border-radius:21px;
+
+  overflow:hidden;
+}
+
+.place-photo{
+  height:230px;
+
+  overflow:hidden;
+}
+
+.place-photo img{
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  display:block;
+
+  transition:.35s ease;
+}
+
+.place:hover img{
+  transform:scale(1.05);
+}
+
+.place-content{
+  padding:23px;
+}
+
+.place-icon{
+  font-size:27px;
+}
+
+.place h3{
+  margin:8px 0 7px;
+
+  font-size:22px;
+}
+
+.place p{
+  color:var(--muted);
+
+  font-size:14px;
+
+  line-height:1.55;
+}
+
+.place .btn{
+  margin-top:8px;
+
+  padding:11px 14px;
+
+  font-size:13px;
+}
+
+/* =========================
+TRAVEL STYLES
+========================= */
+
+.styles{
+  background:#fff;
+}
+
+.style-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:18px;
+
+  margin-top:36px;
+}
+
+.style-card{
+  border:1px solid var(--line);
+
+  border-radius:21px;
+
+  padding:24px;
+
+  background:#fff;
+}
+
+.style-icon{
+  font-size:28px;
+}
+
+.style-card h3{
+  margin:12px 0 7px;
+}
+
+.style-card p{
+  color:var(--muted);
+
+  font-size:14px;
+
+  line-height:1.55;
+}
+
+/* =========================
+ACTIVITIES
+========================= */
+
+.activities{
+  background:var(--dark);
+  color:#fff;
+}
+
+.activities .lead{
+  color:#cbd4e5;
+}
+
+.activity-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:18px;
+
+  margin-top:36px;
+}
+
+.activity{
+  background:#fff;
+
+  color:var(--dark);
+
+  border-radius:21px;
+
+  padding:24px;
+}
+
+.activity-icon{
+  width:48px;
+  height:48px;
+
+  border-radius:14px;
+
+  background:var(--soft);
+
+  display:grid;
+  place-items:center;
+
+  font-size:23px;
+}
+
+.activity h3{
+  margin:15px 0 7px;
+}
+
+.activity p{
+  color:var(--muted);
+
+  font-size:14px;
+
+  line-height:1.55;
+}
+
+/* =========================
+SERVICES
+========================= */
+
+.service-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:18px;
+
+  margin-top:36px;
+}
+
+.service{
+  border:1px solid var(--line);
+
+  border-radius:21px;
+
+  padding:24px;
+
+  background:#fff;
+}
+
+.service-icon{
+  width:48px;
+  height:48px;
+
+  border-radius:14px;
+
+  background:var(--soft);
+
+  display:grid;
+  place-items:center;
+
+  font-size:23px;
+}
+
+.service h3{
+  margin:15px 0 7px;
+}
+
+.service p{
+  color:var(--muted);
+
+  font-size:14px;
+
+  line-height:1.55;
+}
+
+.service .btn{
+  margin-top:8px;
+
+  padding:11px 14px;
+
+  font-size:13px;
+}
+
+/* =========================
+ITINERARY
+========================= */
+
+.itinerary{
+  background:var(--bg);
+}
+
+.itinerary-box{
+  margin-top:36px;
+
+  background:#fff;
+
+  border:1px solid var(--line);
+
+  border-radius:25px;
+
+  padding:30px;
+}
+
+.day{
+  display:grid;
+
+  grid-template-columns:90px 1fr;
+
+  gap:22px;
+
+  padding:20px 0;
+
+  border-bottom:1px solid var(--line);
+}
+
+.day:last-child{
+  border-bottom:0;
+}
+
+.day-number{
+  color:var(--blue);
+
+  font-weight:900;
+
+  font-size:14px;
+}
+
+.day h3{
+  margin:0 0 6px;
+}
+
+.day p{
+  margin:0;
+
+  color:var(--muted);
+
+  font-size:14px;
+
+  line-height:1.55;
+}
+
+/* =========================
+MATCH CTA
+========================= */
+
+.match-cta{
+  background:#fff;
+}
+
+.cta-box{
+  background:
+    linear-gradient(
+      135deg,
+      #eef6ff,
+      #ffffff
+    );
+
+  border:1px solid var(--line);
+
+  border-radius:28px;
+
+  padding:40px;
+
+  text-align:center;
+}
+
+.cta-box h2{
+  margin:8px 0 10px;
+
+  font-size:36px;
+
+  letter-spacing:-.045em;
+}
+
+.cta-box p{
+  max-width:650px;
+
+  margin:auto;
+
+  color:var(--muted);
+
+  line-height:1.6;
+}
+
+/* =========================
+DISCLOSURE
+========================= */
+
+.disclosure{
+  border-top:1px solid var(--line);
+
+  padding:45px 0;
+}
+
+.disclosure p{
+  max-width:780px;
+
+  margin:auto;
+
+  color:var(--muted);
+
+  font-size:13px;
+
+  line-height:1.6;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+  border-top:1px solid var(--line);
+
+  padding:30px 0;
+
+  color:var(--muted);
+
+  font-size:13px;
+}
+
+.foot{
+  display:flex;
+
+  justify-content:space-between;
+
+  gap:20px;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+  .links{
+    display:none;
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+
+  .quick-grid,
+  .style-grid,
+  .activity-grid,
+  .service-grid{
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+}
+
+@media(max-width:650px){
+
+  .w{
+    padding:0 18px;
+  }
+
+  .hero{
+    min-height:850px;
+  }
+
+  .hero-grid{
+    gap:35px;
+  }
+
+  .hero h1{
+    font-size:46px;
+  }
+
+  .title{
+    font-size:30px;
+  }
+
+  .quick-grid,
+  .highlights,
+  .place-grid,
+  .style-grid,
+  .activity-grid,
+  .service-grid{
+    grid-template-columns:1fr;
+  }
+
+  .highlight{
+    min-height:300px;
+  }
+
+  .day{
+    grid-template-columns:1fr;
+
+    gap:7px;
+  }
+
+  .cta-box{
+    padding:28px 20px;
+  }
+
+  .cta-box h2{
+    font-size:30px;
+  }
+
+  .foot{
+    display:block;
+  }
+
+  .foot div+div{
+    margin-top:12px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+HEADER
+========================= -->
+
+<header>
+
+<div class="w">
+
+<nav>
+
+<a class="logo" href="index.html">
+Stay<span>Perfect</span>
+</a>
+
+<div class="links">
+
+<a href="#highlights">
+Highlights
+</a>
+
+<a href="#places">
+Places
+</a>
+
+<a href="#activities">
+Activities
+</a>
+
+<a href="#services">
+Services
+</a>
+
+<a class="pill" href="#match">
+Perfect Match
+</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+<!-- =========================
+HERO
+========================= -->
+
+<section class="hero">
+
+<div class="w hero-grid">
+
+<div>
+
+<div class="ey">
+Spain · Catalonia · Mediterranean
+</div>
+
+<h1>
+Barcelona.<br>
+Made for <em>you.</em>
+</h1>
+
+<p>
+Discover a city where Gaudí, Mediterranean beaches, historic neighbourhoods,
+food, culture and nightlife come together in one unforgettable trip.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="#places">
+Explore Barcelona
+</a>
+
+<a class="btn secondary" href="#match">
+Find My Perfect Match ✨
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-panel">
+
+<div class="panel-title">
+✨ Why Barcelona?
+</div>
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🏛️
+</div>
+
+<div>
+
+<strong>Architecture</strong>
+
+<span>
+Gaudí, Modernisme and historic Barcelona
+</span>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🏖️
+</div>
+
+<div>
+
+<strong>Mediterranean</strong>
+
+<span>
+Urban beaches and seaside atmosphere
+</span>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🍴
+</div>
+
+<div>
+
+<strong>Food & culture</strong>
+
+<span>
+Catalan cuisine, markets and museums
+</span>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🌙
+</div>
+
+<div>
+
+<strong>Nightlife</strong>
+
+<span>
+Bars, restaurants, rooftops and evenings out
+</span>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🚶
+</div>
+
+<div>
+
+<strong>City exploration</strong>
+
+<span>
+Neighbourhoods made for walking
+</span>
+
+</div>
+
+</div>
+
+
+<div class="score">
+
+<div class="score-top">
+
+<span>
+StayPerfect Match
+</span>
+
+<span>
+96%
+</span>
+
+</div>
+
+<div class="bar">
+<i></i>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+QUICK PROFILE
+========================= -->
+
+<section class="quick">
+
+<div class="w center">
+
+<div class="ey">
+Barcelona at a glance
+</div>
+
+<h2 class="title">
+What kind of trip is Barcelona?
+</h2>
+
+<p class="lead">
+Barcelona works particularly well for travellers who want variety:
+culture in the morning, the Mediterranean in the afternoon and restaurants,
+rooftops or nightlife in the evening.
+</p>
+
+</div>
+
+
+<div class="w quick-grid">
+
+<div class="quick-card">
+
+<div class="quick-icon">
+🏖️
+</div>
+
+<h3>
+Beach
+</h3>
+
+<p>
+Enjoy the Mediterranean without leaving the city.
+</p>
+
+</div>
+
+
+<div class="quick-card">
+
+<div class="quick-icon">
+🏛️
+</div>
+
+<h3>
+Culture
+</h3>
+
+<p>
+Explore Gaudí, museums, Modernisme and historic neighbourhoods.
+</p>
+
+</div>
+
+
+<div class="quick-card">
+
+<div class="quick-icon">
+🍽️
+</div>
+
+<h3>
+Food
+</h3>
+
+<p>
+From traditional Catalan dishes to modern gastronomy and markets.
+</p>
+
+</div>
+
+
+<div class="quick-card">
+
+<div class="quick-icon">
+🌙
+</div>
+
+<h3>
+Nightlife
+</h3>
+
+<p>
+Restaurants, bars, music and late Mediterranean evenings.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+HIGHLIGHTS
+========================= -->
+
+<section id="highlights">
+
+<div class="w center">
+
+<div class="ey">
+The Barcelona experience
+</div>
+
+<h2 class="title">
+Three sides of the city
+</h2>
+
+<p class="lead">
+Barcelona is more than a city break. Its strongest experiences combine
+architecture, the sea and neighbourhoods full of character.
+</p>
+
+</div>
+
+
+<div class="w highlights">
+
+
+<div class="highlight highlight-gaudi">
+
+<div class="ey">
+01
+</div>
+
+<h3>
+Gaudí & Modernisme
+</h3>
+
+<p>
+Sagrada Família, Park Güell, Casa Batlló, La Pedrera and more.
+</p>
+
+</div>
+
+
+<div class="highlight highlight-beach">
+
+<div class="ey">
+02
+</div>
+
+<h3>
+Mediterranean life
+</h3>
+
+<p>
+Walk by the sea, relax on the beaches and enjoy the waterfront.
+</p>
+
+</div>
+
+
+<div class="highlight highlight-gothic">
+
+<div class="ey">
+03
+</div>
+
+<h3>
+Old Barcelona
+</h3>
+
+<p>
+Discover the Gothic Quarter, El Born, historic streets and hidden corners.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+PLACES
+========================= -->
+
+<section id="places" class="places">
+
+<div class="w center">
+
+<div class="ey">
+Must-see Barcelona
+</div>
+
+<h2 class="title">
+Places worth exploring
+</h2>
+
+<p class="lead">
+Start with Barcelona's iconic landmarks, then leave time to explore the
+neighbourhoods and experiences between them.
+</p>
+
+</div>
+
+
+<div class="w place-grid">
+
+
+<!-- SAGRADA FAMILIA -->
+
+<div class="place">
+
+<div class="place-photo">
+
+<img
+src="https://loremflickr.com/900/600/sagrada,familia,barcelona"
+alt="Sagrada Familia Barcelona"
+loading="lazy"
+>
+
+</div>
+
+<div class="place-content">
+
+<div class="place-icon">
+⛪
+</div>
+
+<h3>
+Sagrada Família
+</h3>
+
+<p>
+Gaudí's extraordinary basilica is one of Barcelona's defining landmarks
+and one of the city's essential experiences.
+</p>
+
+<a
+class="btn primary"
+href="https://www.sagradafamilia.org/"
+target="_blank"
+rel="noopener noreferrer"
+>
+Discover Sagrada Família →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PARK GUELL -->
+
+<div class="place">
+
+<div class="place-photo">
+
+<img
+src="https://loremflickr.com/900/600/park,guell,barcelona"
+alt="Park Guell Barcelona"
+loading="lazy"
+>
+
+</div>
+
+<div class="place-content">
+
+<div class="place-icon">
+🌳
+</div>
+
+<h3>
+Park Güell
+</h3>
+
+<p>
+A unique combination of architecture, gardens and panoramic views over
+Barcelona and the Mediterranean.
+</p>
+
+<a
+class="btn primary"
+href="https://parkguell.barcelona/"
+target="_blank"
+rel="noopener noreferrer"
+>
+Discover Park Güell →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- GOTHIC -->
+
+<div class="place">
+
+<div class="place-photo">
+
+<img
+src="https://loremflickr.com/900/600/gothic,quarter,barcelona"
+alt="Gothic Quarter Barcelona"
+loading="lazy"
+>
+
+</div>
+
+<div class="place-content">
+
+<div class="place-icon">
+🏘️
+</div>
+
+<h3>
+Gothic Quarter
+</h3>
+
+<p>
+Medieval streets, historic squares, cafés, shops and some of the oldest
+parts of the city.
+</p>
+
+<a
+class="btn primary"
+href="#activities"
+>
+Explore the area →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- CASA BATLLO -->
+
+<div class="place">
+
+<div class="place-photo">
+
+<img
+src="https://loremflickr.com/900/600/casa,batllo,barcelona"
+alt="Casa Batllo Barcelona"
+loading="lazy"
+>
+
+</div>
+
+<div class="place-content">
+
+<div class="place-icon">
+🏛️
+</div>
+
+<h3>
+Casa Batlló
+</h3>
+
+<p>
+One of Gaudí's most recognisable works, located on Passeig de Gràcia.
+</p>
+
+<a
+class="btn primary"
+href="https://www.casabatllo.es/"
+target="_blank"
+rel="noopener noreferrer"
+>
+Discover Casa Batlló →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- MONTJUIC -->
+
+<div class="place">
+
+<div class="place-photo">
+
+<img
+src="https://loremflickr.com/900/600/montjuic,barcelona"
+alt="Montjuic Barcelona"
+loading="lazy"
+>
+
+</div>
+
+<div class="place-content">
+
+<div class="place-icon">
+🌄
+</div>
+
+<h3>
+Montjuïc
+</h3>
+
+<p>
+Gardens, museums, viewpoints and Olympic heritage make Montjuïc one of
+Barcelona's most varied areas.
+</p>
+
+<a
+class="btn primary"
+href="#activities"
+>
+Explore Montjuïc →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- BARCELONETA -->
+
+<div class="place">
+
+<div class="place-photo">
+
+<img
+src="https://loremflickr.com/900/600/barceloneta,barcelona"
+alt="Barceloneta Barcelona"
+loading="lazy"
+>
+
+</div>
+
+<div class="place-content">
+
+<div class="place-icon">
+🌊
+</div>
+
+<h3>
+Barceloneta
+</h3>
+
+<p>
+A classic place to experience Barcelona's relationship with the
+Mediterranean, beaches and waterfront.
+</p>
+
+<a
+class="btn primary"
+href="#activities"
+>
+Explore Barceloneta →
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+TRAVEL STYLES
+========================= -->
+
+<section class="styles">
+
+<div class="w center">
+
+<div class="ey">
+Find your style
+</div>
+
+<h2 class="title">
+Barcelona for every traveller
+</h2>
+
+<p class="lead">
+The best Barcelona itinerary depends on what you want from the trip.
+</p>
+
+</div>
+
+
+<div class="w style-grid">
+
+
+<div class="style-card">
+
+<div class="style-icon">
+❤️
+</div>
+
+<h3>
+Couples
+</h3>
+
+<p>
+Rooftop evenings, architecture, food, beaches and romantic walks through
+the old city.
+</p>
+
+</div>
+
+
+<div class="style-card">
+
+<div class="style-icon">
+👨‍👩‍👧
+</div>
+
+<h3>
+Families
+</h3>
+
+<p>
+Beaches, parks, attractions, food and activities create plenty of options
+for a family city break.
+</p>
+
+</div>
+
+
+<div class="style-card">
+
+<div class="style-icon">
+👯
+</div>
+
+<h3>
+Friends
+</h3>
+
+<p>
+Great restaurants, nightlife, beaches, football and activities make
+Barcelona an easy group destination.
+</p>
+
+</div>
+
+
+<div class="style-card">
+
+<div class="style-icon">
+🧳
+</div>
+
+<h3>
+Solo travellers
+</h3>
+
+<p>
+Walkable neighbourhoods, museums, cafés, architecture and a huge range
+of experiences make exploring independently easy.
+</p>
+
+</div>
+
+
+<div class="style-card">
+
+<div class="style-icon">
+📸
+</div>
+
+<h3>
+Culture lovers
+</h3>
+
+<p>
+Gaudí, Picasso, Catalan Modernisme, museums, music and historic
+architecture provide endless inspiration.
+</p>
+
+</div>
+
+
+<div class="style-card">
+
+<div class="style-icon">
+🍴
+</div>
+
+<h3>
+Food lovers
+</h3>
+
+<p>
+Markets, Catalan cuisine, tapas, restaurants and modern gastronomy are
+central to the Barcelona experience.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+ACTIVITIES
+========================= -->
+
+<section id="activities" class="activities">
+
+<div class="w center">
+
+<div class="ey">
+Things to do
+</div>
+
+<h2 class="title">
+Build your Barcelona experience
+</h2>
+
+<p class="lead">
+Mix iconic sights with experiences that fit your interests.
+</p>
+
+</div>
+
+
+<div class="w activity-grid">
+
+
+<div class="activity">
+
+<div class="activity-icon">
+🏛️
+</div>
+
+<h3>
+Gaudí discovery
+</h3>
+
+<p>
+Explore the architectural legacy of Antoni Gaudí across Barcelona.
+</p>
+
+<a
+class="btn primary"
+href="https://www.barcelonaturisme.com/"
+target="_blank"
+rel="noopener noreferrer"
+>
+Explore experiences →
+</a>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">
+🚶
+</div>
+
+<h3>
+Walking tours
+</h3>
+
+<p>
+Discover the Gothic Quarter, El Born, Passeig de Gràcia and the city's
+historic streets on foot.
+</p>
+
+<a
+class="btn primary"
+href="https://www.barcelonaturisme.com/"
+target="_blank"
+rel="noopener noreferrer"
+>
+Find tours →
+</a>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">
+🍷
+</div>
+
+<h3>
+Food experiences
+</h3>
+
+<p>
+Explore markets, Catalan cuisine, food tours and Barcelona's gastronomic
+scene.
+</p>
+
+<a
+class="btn primary"
+href="https://www.barcelonaturisme.com/"
+target="_blank"
+rel="noopener noreferrer"
+>
+Explore food →
+</a>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">
+🌊
+</div>
+
+<h3>
+Mediterranean
+</h3>
+
+<p>
+Combine city sightseeing with beaches, the waterfront and seaside
+experiences.
+</p>
+
+<a
+class="btn primary"
+href="https://www.barcelonaturisme.com/"
+target="_blank"
+rel="noopener noreferrer"
+>
+Discover the coast →
+</a>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">
+🎨
+</div>
+
+<h3>
+Museums & art
+</h3>
+
+<p>
+Discover Picasso, MNAC, contemporary art and Barcelona's wider cultural
+scene.
+</p>
+
+<a
+class="btn primary"
+href="https://www.barcelonaturisme.com/"
+target="_blank"
+rel="noopener noreferrer"
+>
+Explore culture →
+</a>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">
+⚽
+</div>
+
+<h3>
+Football
+</h3>
+
+<p>
+Football fans can include FC Barcelona experiences in their Barcelona
+trip.
+</p>
+
+<a
+class="btn primary"
+href="https://www.fcbarcelona.com/"
+target="_blank"
+rel="noopener noreferrer"
+>
+Discover Barça →
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+ITINERARY
+========================= -->
+
+<section class="itinerary">
+
+<div class="w center">
+
+<div class="ey">
+Suggested itinerary
+</div>
+
+<h2 class="title">
+Barcelona in 4 days
+</h2>
+
+<p class="lead">
+A balanced first visit combining architecture, historic neighbourhoods,
+culture and the Mediterranean.
+</p>
+
+</div>
+
+
+<div class="w itinerary-box">
+
+
+<div class="day">
+
+<div class="day-number">
+DAY 01
+</div>
+
+<div>
+
+<h3>
+Gaudí & central Barcelona
+</h3>
+
+<p>
+Start with Sagrada Família, continue towards Passeig de Gràcia and explore
+Casa Batlló and La Pedrera. Finish with dinner in the city centre.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="day">
+
+<div class="day-number">
+DAY 02
+</div>
+
+<div>
+
+<h3>
+Park Güell & old Barcelona
+</h3>
+
+<p>
+Visit Park Güell in the morning, then explore the Gothic Quarter, La
+Rambla and El Born.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="day">
+
+<div class="day-number">
+DAY 03
+</div>
+
+<div>
+
+<h3>
+Montjuïc & culture
+</h3>
+
+<p>
+Explore Montjuïc, its viewpoints, gardens and museums before spending the
+evening discovering Barcelona's food scene.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="day">
+
+<div class="day-number">
+DAY 04
+</div>
+
+<div>
+
+<h3>
+Mediterranean Barcelona
+</h3>
+
+<p>
+Slow the pace down with Barceloneta, the waterfront and a relaxed final
+day by the Mediterranean.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+SERVICES
+========================= -->
+
+<section id="services">
+
+<div class="w center">
+
+<div class="ey">
+Plan your trip
+</div>
+
+<h2 class="title">
+Travel services for Barcelona
+</h2>
+
+<p class="lead">
+Use StayPerfect to connect your destination discovery with the practical
+parts of your journey.
+</p>
+
+</div>
+
+
+<div class="w service-grid">
+
+
+<div class="service">
+
+<div class="service-icon">
+✈️
+</div>
+
+<h3>
+Flights
+</h3>
+
+<p>
+Search flight options for your Barcelona trip.
+</p>
+
+<a
+class="btn primary"
+href="https://aviasales.tpx.gr/xaccp3pU"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Search Flights →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🏨
+</div>
+
+<h3>
+Hotels & Activities
+</h3>
+
+<p>
+Discover accommodation, attractions and experiences.
+</p>
+
+<a
+class="btn primary"
+href="https://klook.tpx.gr/HyAQ5Z8G"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Explore Klook →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🎟️
+</div>
+
+<h3>
+Activities
+</h3>
+
+<p>
+Find tours, attractions and experiences for your Barcelona itinerary.
+</p>
+
+<a
+class="btn primary"
+href="https://kkday.tpx.gr/lk2ssfVX"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Explore Activities →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🚗
+</div>
+
+<h3>
+Car Rental
+</h3>
+
+<p>
+Compare rental options if you plan to explore Catalonia beyond Barcelona.
+</p>
+
+<a
+class="btn primary"
+href="https://autoeurope.tpx.gr/PYK42wVM"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Rent a Car →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🚐
+</div>
+
+<h3>
+Airport Transfers
+</h3>
+
+<p>
+Arrange a smoother arrival and departure.
+</p>
+
+<a
+class="btn primary"
+href="https://intui.tpx.gr/JsoT6ciu"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Book Transfer →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+📱
+</div>
+
+<h3>
+Travel eSIM
+</h3>
+
+<p>
+Stay connected while exploring Barcelona and the rest of Spain.
+</p>
+
+<a
+class="btn primary"
+href="https://saily.tpx.gr/qqzwC6gB"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Get an eSIM →
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+PERFECT MATCH CTA
+========================= -->
+
+<section id="match" class="match-cta">
+
+<div class="w">
+
+<div class="cta-box">
+
+<div class="ey">
+Not sure if Barcelona is right for you?
+</div>
+
+<h2>
+Find your Perfect Match ✨
+</h2>
+
+<p>
+Tell StayPerfect what matters most to you and compare Barcelona with the
+other destinations in Spain and Portugal.
+</p>
+
+<div class="buttons" style="justify-content:center">
+
+<a
+class="btn primary"
+href="index.html#match"
+>
+Start Perfect Match →
+</a>
+
+<a
+class="btn secondary"
+href="spain.html"
+>
+Explore Spain →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+DISCLOSURE
+========================= -->
+
+<section class="disclosure">
+
+<div class="w center">
+
+<div class="ey">
+Transparency
+</div>
+
+<h2 class="title" style="font-size:28px">
+Affiliate disclosure
+</h2>
+
+<p>
+Some links on StayPerfect are affiliate links. If you click a link and
+make a qualifying purchase, StayPerfect may receive a commission at no
+additional cost to you.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+CONTACT
+========================= -->
+
+<section>
+
+<div class="w center">
+
+<div class="ey">
+StayPerfect
+</div>
+
+<h2 class="title" style="font-size:28px">
+Build your Barcelona trip
+</h2>
+
+<p class="lead">
+Barcelona is one of those destinations where the best itinerary depends
+on how you want to travel. Use StayPerfect to discover the right mix of
+places, experiences and travel services.
+</p>
+
+<div class="buttons" style="justify-content:center">
+
+<a
+class="btn primary"
+href="mailto:stayperfectofficial@outlook.com"
+>
+Contact StayPerfect
+</a>
+
+<a
+class="btn secondary"
+href="index.html"
+>
+Back to StayPerfect →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+<div class="w foot">
+
+<div>
+
+<strong>StayPerfect</strong>
+— Find your perfect trip.
+
+</div>
+
+<div>
+
+© 2026 StayPerfect ·
+
+<a href="privacy.html">
+Privacy
+</a>
+
+·
+
+<a href="index.html#contact">
+Contact
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>

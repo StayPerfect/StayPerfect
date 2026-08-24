@@ -1,0 +1,1031 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>La Graciosa — StayPerfect</title>
+
+<meta name="description" content="Scopri La Graciosa con StayPerfect: spiagge, natura, ciclismo, escursioni e un'autentica esperienza slow travel alle Canarie.">
+
+<style>
+
+:root{
+  --blue:#1769e8;
+  --dark:#10204a;
+  --muted:#68758b;
+  --soft:#eef6ff;
+  --line:#e4eaf2;
+  --bg:#f7f9fc;
+  --white:#fff;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--dark);
+  background:#fff;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font-family:inherit;
+}
+
+.w{
+  max-width:1150px;
+  margin:auto;
+  padding:0 22px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+nav{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:25px;
+  font-weight:900;
+  letter-spacing:-.05em;
+}
+
+.logo span{
+  color:var(--blue);
+}
+
+.links{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  font-size:14px;
+  font-weight:750;
+}
+
+.links a:hover{
+  color:var(--blue);
+}
+
+.pill{
+  color:#fff!important;
+  background:var(--blue);
+  padding:10px 16px;
+  border-radius:999px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  min-height:680px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  color:#fff;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8,20,48,.88),
+      rgba(8,20,48,.45),
+      rgba(8,20,48,.12)
+    ),
+    url("https://loremflickr.com/1800/1100/la,graciosa,canary,islands")
+    center/cover no-repeat;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent 55%,
+      rgba(8,20,48,.55)
+    );
+
+  pointer-events:none;
+}
+
+.hero-grid{
+  position:relative;
+  z-index:2;
+}
+
+.ey{
+  color:#76b4ff;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.hero h1{
+  margin:15px 0 20px;
+  font-size:clamp(52px,8vw,86px);
+  line-height:.94;
+  letter-spacing:-.06em;
+}
+
+.hero p{
+  max-width:720px;
+  color:#e7eefb;
+  font-size:19px;
+  line-height:1.6;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:27px;
+}
+
+.btn{
+  display:inline-block;
+  border:0;
+  border-radius:14px;
+  padding:14px 18px;
+  font-weight:850;
+  cursor:pointer;
+}
+
+.primary{
+  background:var(--blue);
+  color:#fff;
+}
+
+.primary:hover{
+  opacity:.9;
+}
+
+.secondary{
+  background:#fff;
+  border:1px solid var(--line);
+}
+
+.hero .secondary{
+  background:rgba(255,255,255,.12);
+  border-color:rgba(255,255,255,.35);
+  color:#fff;
+  backdrop-filter:blur(10px);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+  padding:76px 0;
+}
+
+.center{
+  text-align:center;
+}
+
+.title{
+  margin:8px 0 12px;
+  font-size:38px;
+  letter-spacing:-.045em;
+}
+
+.lead{
+  max-width:760px;
+  margin:auto;
+  color:var(--muted);
+  line-height:1.65;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro{
+  background:var(--bg);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:36px;
+}
+
+.card{
+  border:1px solid var(--line);
+  border-radius:21px;
+  padding:24px;
+  background:#fff;
+  transition:.2s ease;
+}
+
+.card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 15px 40px rgba(16,32,74,.08);
+}
+
+.icon{
+  width:48px;
+  height:48px;
+  border-radius:14px;
+  background:var(--soft);
+  display:grid;
+  place-items:center;
+  font-size:23px;
+}
+
+.card h3{
+  margin:15px 0 8px;
+}
+
+.card p{
+  color:var(--muted);
+  line-height:1.55;
+  font-size:14px;
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.feature{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+  align-items:stretch;
+  margin-top:36px;
+}
+
+.photo{
+  min-height:410px;
+  border-radius:25px;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent,
+      rgba(0,0,0,.18)
+    ),
+    url("https://loremflickr.com/1200/900/la,graciosa,beach")
+    center/cover no-repeat;
+}
+
+.content{
+  padding:30px;
+  border:1px solid var(--line);
+  border-radius:25px;
+  background:#fff;
+}
+
+.content h3{
+  font-size:30px;
+  margin:0 0 12px;
+  letter-spacing:-.04em;
+}
+
+.content p{
+  color:var(--muted);
+  line-height:1.65;
+}
+
+.list{
+  display:grid;
+  gap:10px;
+  margin-top:20px;
+}
+
+.list div{
+  padding:14px 15px;
+  border-radius:13px;
+  background:var(--bg);
+  font-size:14px;
+  line-height:1.45;
+}
+
+/* =========================
+   DARK SECTION
+========================= */
+
+.dark{
+  background:var(--dark);
+  color:#fff;
+}
+
+.dark .lead{
+  color:#cbd4e5;
+}
+
+.dark .card{
+  background:#fff;
+  color:var(--dark);
+}
+
+/* =========================
+   PRACTICAL INFO
+========================= */
+
+.info-box{
+  margin-top:36px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.info{
+  border:1px solid var(--line);
+  border-radius:21px;
+  padding:23px;
+  background:#fff;
+}
+
+.info-top{
+  display:flex;
+  align-items:center;
+  gap:13px;
+}
+
+.info h3{
+  margin:0;
+  font-size:18px;
+}
+
+.info p{
+  color:var(--muted);
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+  background:var(--bg);
+}
+
+.cta-box{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:25px;
+
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:23px;
+  padding:30px;
+}
+
+.cta-box p{
+  color:var(--muted);
+  line-height:1.55;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  border-top:1px solid var(--line);
+  padding:30px 0;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.foot{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:850px){
+
+  .links{
+    display:none;
+  }
+
+  .grid,
+  .feature,
+  .info-box{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    min-height:720px;
+  }
+
+}
+
+@media(max-width:650px){
+
+  .w{
+    padding:0 18px;
+  }
+
+  .hero h1{
+    font-size:52px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  .title{
+    font-size:30px;
+  }
+
+  .photo{
+    min-height:300px;
+  }
+
+  .content{
+    padding:23px;
+  }
+
+  .cta-box{
+    display:block;
+  }
+
+  .cta-box .btn{
+    margin-top:15px;
+  }
+
+  .foot{
+    display:block;
+  }
+
+  .foot div+div{
+    margin-top:12px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="w">
+
+<nav>
+
+<a class="logo" href="index.html">
+Stay<span>Perfect</span>
+</a>
+
+<div class="links">
+
+<a href="index.html#destinations">
+Destinations
+</a>
+
+<a href="index.html#services">
+Travel Services
+</a>
+
+<a href="index.html#match">
+Perfect Match
+</a>
+
+<a class="pill" href="index.html#contact">
+Contact
+</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<div class="w hero-grid">
+
+<div>
+
+<div class="ey">
+Canary Islands · Spain 🇪🇸
+</div>
+
+<h1>
+La Graciosa
+</h1>
+
+<p>
+Un'isola diversa dalle altre: spiagge selvagge,
+strade sterrate, paesaggi vulcanici e un ritmo
+di viaggio incredibilmente lento. La Graciosa è
+ideale per chi vuole staccare dalla routine e vivere
+le Canarie in modo autentico.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="#discover">
+Discover La Graciosa ↓
+</a>
+
+<a class="btn secondary" href="index.html#match">
+Perfect Match ✨
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section id="discover" class="intro">
+
+<div class="w center">
+
+<div class="ey" style="color:var(--blue)">
+Why La Graciosa?
+</div>
+
+<h2 class="title">
+Piccola, selvaggia, autentica.
+</h2>
+
+<p class="lead">
+La Graciosa è una destinazione perfetta per rallentare.
+Qui il paesaggio vulcanico incontra acque turchesi,
+spiagge remote e un'atmosfera semplice e rilassata.
+</p>
+
+</div>
+
+
+<div class="w grid">
+
+<div class="card">
+
+<div class="icon">
+🏝️
+</div>
+
+<h3>
+Spiagge
+</h3>
+
+<p>
+Calette tranquille, sabbia dorata e acque limpide
+lontane dall'atmosfera delle grandi località turistiche.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">
+🚲
+</div>
+
+<h3>
+Ciclismo
+</h3>
+
+<p>
+Esplora l'isola in bicicletta lungo percorsi panoramici
+e strade sterrate circondate da paesaggi vulcanici.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">
+🌋
+</div>
+
+<h3>
+Natura
+</h3>
+
+<p>
+Vulcani, sentieri, coste selvagge e panorami aperti
+rendono l'isola ideale per chi ama stare all'aria aperta.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCE
+========================= -->
+
+<section>
+
+<div class="w">
+
+<div class="center">
+
+<div class="ey" style="color:var(--blue)">
+The experience
+</div>
+
+<h2 class="title">
+Cosa fare a La Graciosa
+</h2>
+
+<p class="lead">
+Non serve un programma pieno. Il bello dell'isola
+è proprio la libertà di esplorare senza fretta.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="photo"></div>
+
+
+<div class="content">
+
+<h3>
+Una giornata perfetta
+</h3>
+
+<p>
+Parti da Caleta de Sebo, percorri l'isola in bici
+o a piedi e raggiungi una delle sue spiagge più tranquille.
+Fermati per un pranzo semplice, goditi il mare e torna
+verso il paese al tramonto.
+</p>
+
+
+<div class="list">
+
+<div>
+🚲 <strong>Esplora in bici</strong> —
+uno dei modi migliori per muoversi.
+</div>
+
+<div>
+🏖️ <strong>Raggiungi Playa de las Conchas</strong> —
+una delle spiagge più scenografiche.
+</div>
+
+<div>
+🥾 <strong>Cammina verso i vulcani</strong> —
+sentieri e panorami sull'Atlantico.
+</div>
+
+<div>
+🌅 <strong>Guarda il tramonto</strong> —
+luce spettacolare sull'oceano e Lanzarote.
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PERFECT FOR
+========================= -->
+
+<section class="dark">
+
+<div class="w center">
+
+<div class="ey">
+Perfect for
+</div>
+
+<h2 class="title">
+Per chi è La Graciosa?
+</h2>
+
+<p class="lead">
+Una scelta particolarmente interessante se cerchi
+mare, natura e tranquillità più che nightlife e grandi resort.
+</p>
+
+</div>
+
+
+<div class="w grid">
+
+<div class="card">
+
+<div class="icon">
+🧘
+</div>
+
+<h3>
+Relax
+</h3>
+
+<p>
+Ritmi lenti, poca frenesia e tanta natura.
+Perfetta per staccare completamente.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">
+❤️
+</div>
+
+<h3>
+Coppie
+</h3>
+
+<p>
+Atmosfera intima, spiagge e tramonti
+per una fuga romantica.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">
+🧳
+</div>
+
+<h3>
+Solo travellers
+</h3>
+
+<p>
+Una destinazione semplice da vivere in autonomia
+per chi ama esplorare.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PRACTICAL INFO
+========================= -->
+
+<section>
+
+<div class="w center">
+
+<div class="ey" style="color:var(--blue)">
+Good to know
+</div>
+
+<h2 class="title">
+Prima di partire
+</h2>
+
+<p class="lead">
+La Graciosa è volutamente semplice.
+Questa è parte del suo fascino, ma conviene organizzarsi
+in anticipo.
+</p>
+
+</div>
+
+
+<div class="w info-box">
+
+
+<div class="info">
+
+<div class="info-top">
+
+<div class="icon">
+⛴️
+</div>
+
+<h3>
+Come arrivare
+</h3>
+
+</div>
+
+<p>
+L'isola è collegata a Lanzarote via mare.
+Caleta de Sebo è il principale punto di arrivo.
+</p>
+
+</div>
+
+
+<div class="info">
+
+<div class="info-top">
+
+<div class="icon">
+🚲
+</div>
+
+<h3>
+Come muoversi
+</h3>
+
+</div>
+
+<p>
+Le biciclette sono una delle opzioni più piacevoli.
+I percorsi sono in gran parte sterrati.
+</p>
+
+</div>
+
+
+<div class="info">
+
+<div class="info-top">
+
+<div class="icon">
+☀️
+</div>
+
+<h3>
+Quando andare
+</h3>
+
+</div>
+
+<p>
+Il clima è mite per gran parte dell'anno.
+Porta protezione solare e acqua durante le escursioni.
+</p>
+
+</div>
+
+
+<div class="info">
+
+<div class="info-top">
+
+<div class="icon">
+🥾
+</div>
+
+<h3>
+Escursioni
+</h3>
+
+</div>
+
+<p>
+Scarpe comode sono consigliate per esplorare
+sentieri e paesaggi vulcanici.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     MATCH CTA
+========================= -->
+
+<section class="cta">
+
+<div class="w">
+
+<div class="cta-box">
+
+<div>
+
+<div class="ey" style="color:var(--blue)">
+Ready to explore?
+</div>
+
+<h2 class="title" style="font-size:30px">
+La Graciosa potrebbe essere il tuo Perfect Match.
+</h2>
+
+<p>
+Scopri se questa isola si adatta davvero
+al tuo stile di viaggio.
+</p>
+
+</div>
+
+<a class="btn primary" href="index.html#match">
+Find My Perfect Match →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="w foot">
+
+<div>
+<strong>StayPerfect</strong>
+— Find your perfect trip.
+</div>
+
+<div>
+
+© 2026 StayPerfect ·
+
+<a href="privacy.html">
+Privacy
+</a>
+
+·
+
+<a href="index.html#contact">
+Contact
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>

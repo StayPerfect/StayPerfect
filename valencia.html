@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Valencia Travel Guide | Explore Valencia, Spain</title>
+
+<meta name="description"
+content="Discover Valencia, Spain. Explore the City of Arts and Sciences, historic centre, Turia Gardens, Central Market, beaches, Albufera, paella and the best things to do in Valencia.">
+
+<meta name="keywords"
+content="Valencia, Valencia Spain, Valencia travel guide, Valencia tourism, City of Arts and Sciences, Albufera, Spain travel">
+
+<meta name="author" content="Explore Spain">
+
+<meta property="og:title" content="Valencia Travel Guide | Explore Valencia">
+<meta property="og:description" content="Discover Valencia, one of Spain's most beautiful Mediterranean cities.">
+<meta property="og:type" content="website">
+
+<link rel="canonical" href="valencia.html">
+
+<style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f5f1;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 18px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.45rem;
+    font-weight: 800;
+    letter-spacing: .5px;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    font-size: .95rem;
+    font-weight: 600;
+
+    transition: .3s ease;
+}
+
+.nav-links a:hover {
+    color: #b85c38;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 90vh;
+    margin-top: 72px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    background: #555;
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.42),
+            rgba(0,0,0,.60)
+        );
+
+    z-index: 1;
+}
+
+.hero-content {
+    max-width: 900px;
+    padding: 40px 25px;
+
+    color: white;
+
+    position: relative;
+    z-index: 2;
+}
+
+.hero-label {
+    display: inline-block;
+
+    margin-bottom: 20px;
+    padding: 8px 18px;
+
+    border: 1px solid rgba(255,255,255,.65);
+    border-radius: 30px;
+
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(3.5rem,9vw,7rem);
+
+    line-height: .95;
+    margin-bottom: 25px;
+
+    font-weight: 800;
+}
+
+.hero p {
+    max-width: 720px;
+
+    margin: auto;
+
+    font-size: 1.15rem;
+    opacity: .95;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    transition: .3s ease;
+}
+
+.btn-primary {
+    background: white;
+    color: #222;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #222;
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 90px 30px;
+}
+
+.section-header {
+    max-width: 760px;
+
+    margin-bottom: 50px;
+}
+
+.section-label {
+    color: #b85c38;
+
+    font-size: .8rem;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.section h2 {
+    font-size: clamp(2.2rem,5vw,4rem);
+
+    line-height: 1.05;
+
+    margin-bottom: 18px;
+}
+
+.section-header p {
+    color: #666;
+
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.intro {
+    display: grid;
+
+    grid-template-columns: 1.05fr .95fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.intro-text p {
+    margin-bottom: 18px;
+
+    color: #555;
+
+    font-size: 1.05rem;
+}
+
+.image-box {
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.12);
+
+    background: #ddd;
+}
+
+.image-box img {
+    height: 500px;
+
+    object-fit: cover;
+
+    transition: transform .5s ease;
+}
+
+.image-box:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   HIGHLIGHTS
+========================================================= */
+
+.highlights {
+    background: #ebe7df;
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,.07);
+
+    transition: .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.12);
+}
+
+.card-image {
+    height: 240px;
+
+    object-fit: cover;
+
+    background: #ddd;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-size: 1.35rem;
+
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #666;
+
+    font-size: .95rem;
+}
+
+
+/* =========================================================
+   EXPERIENCES
+========================================================= */
+
+.experience-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 25px;
+}
+
+.experience {
+    min-height: 300px;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    background: #555;
+}
+
+.experience img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.experience-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            transparent 20%,
+            rgba(0,0,0,.82)
+        );
+}
+
+.experience-content {
+    position: absolute;
+
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+
+    z-index: 2;
+
+    color: white;
+}
+
+.experience h3 {
+    font-size: 1.7rem;
+
+    margin-bottom: 6px;
+}
+
+.experience p {
+    opacity: .9;
+}
+
+
+/* =========================================================
+   FOOD
+========================================================= */
+
+.food-section {
+    background: #222;
+    color: white;
+}
+
+.food-section .section-header p {
+    color: #bbb;
+}
+
+.food-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 20px;
+}
+
+.food-card {
+    padding: 25px;
+
+    border:
+        1px solid rgba(255,255,255,.15);
+
+    border-radius: 15px;
+
+    background:
+        rgba(255,255,255,.04);
+}
+
+.food-card span {
+    display: block;
+
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+}
+
+.food-card h3 {
+    margin-bottom: 8px;
+}
+
+.food-card p {
+    color: #bbb;
+
+    font-size: .9rem;
+}
+
+
+/* =========================================================
+   AREAS
+========================================================= */
+
+.areas-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 20px;
+}
+
+.area {
+    padding: 28px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    border: 1px solid #e6e2da;
+
+    transition: .3s ease;
+}
+
+.area:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+}
+
+.area h3 {
+    margin-bottom: 8px;
+}
+
+.area p {
+    color: #666;
+
+    font-size: .92rem;
+}
+
+
+/* =========================================================
+   ALBUFERA
+========================================================= */
+
+.albufera {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   TIPS
+========================================================= */
+
+.tips {
+    background: #ebe7df;
+}
+
+.tips-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 20px;
+}
+
+.tip {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+}
+
+.tip strong {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 1.05rem;
+}
+
+.tip p {
+    color: #666;
+
+    font-size: .9rem;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 90px 30px;
+
+    text-align: center;
+}
+
+.cta-box {
+    position: relative;
+
+    padding: 80px 30px;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    color: white;
+
+    background: #555;
+}
+
+.cta-box img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+.cta-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.52),
+            rgba(0,0,0,.62)
+        );
+
+    z-index: 1;
+}
+
+.cta-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+.cta-box h2 {
+    font-size: clamp(2.3rem,5vw,4rem);
+
+    margin-bottom: 18px;
+}
+
+.cta-box p {
+    max-width: 650px;
+
+    margin: auto;
+
+    opacity: .9;
+}
+
+.cta-box .btn {
+    margin-top: 28px;
+
+    background: white;
+
+    color: #222;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    background: #111;
+
+    color: #aaa;
+
+    padding: 50px 30px;
+}
+
+.footer-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    color: white;
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.copyright {
+    max-width: 1200px;
+
+    margin: 30px auto 0;
+
+    padding-top: 25px;
+
+    border-top:
+        1px solid rgba(255,255,255,.1);
+
+    font-size: .85rem;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width:900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .intro,
+    .albufera {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .food-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .areas-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:600px) {
+
+    .nav-container {
+        padding: 16px 20px;
+    }
+
+    .hero {
+        min-height: 82vh;
+    }
+
+    .section {
+        padding: 65px 20px;
+    }
+
+    .cards,
+    .experience-grid,
+    .food-grid,
+    .areas-grid,
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-box img {
+        height: 350px;
+    }
+
+    .hero h1 {
+        font-size: 3.6rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            Explore Spain
+        </a>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="spain.html">Spain</a>
+                </li>
+
+                <li>
+                    <a href="barcelona.html">Barcelona</a>
+                </li>
+
+                <li>
+                    <a href="madrid.html">Madrid</a>
+                </li>
+
+                <li>
+                    <a href="valencia.html">Valencia</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+    <img
+        class="hero-image"
+        src="images/valencia-01.jpg"
+        alt="Valencia Spain"
+        data-fallback="https://loremflickr.com/1920/1080/valencia,spain"
+    >
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            Spain · Mediterranean City
+        </span>
+
+        <h1>Valencia</h1>
+
+        <p>
+            Discover a Mediterranean city where futuristic architecture,
+            historic streets, green gardens, golden beaches and authentic
+            Spanish cuisine come together.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#discover" class="btn btn-primary">
+                Discover Valencia
+            </a>
+
+            <a href="spain.html" class="btn btn-outline">
+                Back to Spain
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section class="section" id="discover">
+
+    <div class="intro">
+
+        <div class="intro-text">
+
+            <div class="section-label">
+                Welcome to Valencia
+            </div>
+
+            <h2>
+                Where Mediterranean life meets modern Spain.
+            </h2>
+
+            <p>
+                Valencia is one of Spain's most fascinating cities,
+                combining centuries of history with bold contemporary
+                architecture and a relaxed Mediterranean atmosphere.
+            </p>
+
+            <p>
+                Wander through the historic centre, visit the Central
+                Market and Silk Exchange, cycle through the Turia Gardens,
+                and continue towards the spectacular City of Arts and
+                Sciences.
+            </p>
+
+            <p>
+                When the day slows down, head towards the coast for
+                fresh seafood, Valencian paella and a sunset beside
+                the Mediterranean.
+            </p>
+
+        </div>
+
+        <div class="image-box">
+
+            <img
+                src="images/valencia-center.jpg"
+                alt="Valencia city centre"
+                data-fallback="https://loremflickr.com/1200/800/valencia,spain"
+                loading="lazy"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     HIGHLIGHTS
+===================================================== -->
+
+<section class="section highlights">
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Must See
+        </div>
+
+        <h2>
+            Valencia highlights
+        </h2>
+
+        <p>
+            Start with the landmarks and experiences that define
+            this Mediterranean city.
+        </p>
+
+    </div>
+
+    <div class="cards">
+
+
+        <article class="card">
+
+            <img
+                class="card-image"
+                src="images/valencia-arts.jpg"
+                alt="City of Arts and Sciences Valencia"
+                data-fallback="https://loremflickr.com/1200/800/valencia,arts,sciences"
+                loading="lazy"
+            >
+
+            <div class="card-content">
+
+                <h3>
+                    City of Arts and Sciences
+                </h3>
+
+                <p>
+                    Valencia's futuristic architectural icon,
+                    surrounded by water and modern cultural spaces.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="card">
+
+            <img
+                class="card-image"
+                src="images/valencia-market.jpg"
+                alt="Central Market Valencia"
+                data-fallback="https://loremflickr.com/1200/800/valencia,market"
+                loading="lazy"
+            >
+
+            <div class="card-content">
+
+                <h3>
+                    Central Market
+                </h3>
+
+                <p>
+                    Discover one of Valencia's most famous historic
+                    markets and experience the city's food culture.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="card">
+
+            <img
+                class="card-image"
+                src="images/valencia-cathedral.jpg"
+                alt="Valencia Cathedral"
+                data-fallback="https://loremflickr.com/1200/800/valencia,cathedral"
+                loading="lazy"
+            >
+
+            <div class="card-content">
+
+                <h3>
+                    Valencia Cathedral
+                </h3>
+
+                <p>
+                    Explore the historic cathedral and enjoy panoramic
+                    views from the famous Miguelete tower.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EXPERIENCES
+===================================================== -->
+
+<section class="section">
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Experience
+        </div>
+
+        <h2>
+            Things to do in Valencia
+        </h2>
+
+        <p>
+            Mix culture, nature, architecture, food and Mediterranean
+            life during your stay.
+        </p>
+
+    </div>
+
+
+    <div class="experience-grid">
+
+
+        <article class="experience">
+
+            <img
+                src="images/valencia-arts.jpg"
+                alt="City of Arts and Sciences"
+                data-fallback="https://loremflickr.com/1200/800/valencia,architecture"
+                loading="lazy"
+            >
+
+            <div class="experience-overlay"></div>
+
+            <div class="experience-content">
+
+                <h3>
+                    Futuristic Valencia
+                </h3>
+
+                <p>
+                    Explore the extraordinary City of Arts and Sciences
+                    and its spectacular architecture.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="experience">
+
+            <img
+                src="images/valencia-market.jpg"
+                alt="Valencia local market"
+                data-fallback="https://loremflickr.com/1200/800/valencia,market"
+                loading="lazy"
+            >
+
+            <div class="experience-overlay"></div>
+
+            <div class="experience-content">
+
+                <h3>
+                    Local Food
+                </h3>
+
+                <p>
+                    Explore the Central Market and discover the flavours
+                    of authentic Valencian cuisine.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="experience">
+
+            <img
+                src="images/valencia-turia.jpg"
+                alt="Turia Gardens Valencia"
+                data-fallback="https://loremflickr.com/1200/800/valencia,gardens"
+                loading="lazy"
+            >
+
+            <div class="experience-overlay"></div>
+
+            <div class="experience-content">
+
+                <h3>
+                    Turia Gardens
+                </h3>
+
+                <p>
+                    Walk or cycle through the former Turia riverbed,
+                    now one of Spain's great urban parks.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="experience">
+
+            <img
+                src="images/valencia-beach.jpg"
+                alt="Valencia Mediterranean beach"
+                data-fallback="https://loremflickr.com/1200/800/valencia,beach"
+                loading="lazy"
+            >
+
+            <div class="experience-overlay"></div>
+
+            <div class="experience-content">
+
+                <h3>
+                    Mediterranean Beaches
+                </h3>
+
+                <p>
+                    Enjoy Malvarrosa and Las Arenas, just a short
+                    distance from the city centre.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOD
+===================================================== -->
+
+<section class="section food-section">
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Taste Valencia
+        </div>
+
+        <h2>
+            Eat like a Valencian.
+        </h2>
+
+        <p>
+            Valencia is famous for rice dishes, Mediterranean ingredients
+            and a strong local food culture.
+        </p>
+
+    </div>
+
+
+    <div class="food-grid">
+
+        <article class="food-card">
+
+            <span>🥘</span>
+
+            <h3>Paella Valenciana</h3>
+
+            <p>
+                Taste the traditional Valencian rice dish in the region
+                where paella originated.
+            </p>
+
+        </article>
+
+
+        <article class="food-card">
+
+            <span>🍊</span>
+
+            <h3>Valencian Oranges</h3>
+
+            <p>
+                Discover the citrus flavours associated with Valencia
+                and its Mediterranean landscape.
+            </p>
+
+        </article>
+
+
+        <article class="food-card">
+
+            <span>🥛</span>
+
+            <h3>Horchata</h3>
+
+            <p>
+                Try the refreshing local drink traditionally enjoyed
+                with sweet fartons.
+            </p>
+
+        </article>
+
+
+        <article class="food-card">
+
+            <span>🍷</span>
+
+            <h3>Mediterranean Dining</h3>
+
+            <p>
+                Enjoy seafood, tapas, local restaurants and relaxed
+                evenings throughout the city.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     NEIGHBORHOODS
+===================================================== -->
+
+<section class="section">
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Explore
+        </div>
+
+        <h2>
+            Valencia's neighborhoods
+        </h2>
+
+        <p>
+            Discover different sides of Valencia by moving beyond
+            the main tourist attractions.
+        </p>
+
+    </div>
+
+
+    <div class="areas-grid">
+
+        <article class="area">
+
+            <h3>Ciutat Vella</h3>
+
+            <p>
+                Valencia's historic centre, filled with monuments,
+                churches, plazas and centuries of history.
+            </p>
+
+        </article>
+
+
+        <article class="area">
+
+            <h3>El Carmen</h3>
+
+            <p>
+                Historic streets, cafés, bars, galleries and a lively
+                evening atmosphere.
+            </p>
+
+        </article>
+
+
+        <article class="area">
+
+            <h3>Ruzafa</h3>
+
+            <p>
+                Creative, modern and full of restaurants, cafés,
+                independent shops and nightlife.
+            </p>
+
+        </article>
+
+
+        <article class="area">
+
+            <h3>Cabanyal</h3>
+
+            <p>
+                A historic maritime neighbourhood close to the beach,
+                known for colourful architecture and local life.
+            </p>
+
+        </article>
+
+
+        <article class="area">
+
+            <h3>Malvarrosa</h3>
+
+            <p>
+                A famous urban beach area ideal for Mediterranean walks
+                and seaside dining.
+            </p>
+
+        </article>
+
+
+        <article class="area">
+
+            <h3>City of Arts</h3>
+
+            <p>
+                Valencia's modern architectural district dominated by
+                futuristic cultural buildings.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ALBUFERA
+===================================================== -->
+
+<section class="section">
+
+    <div class="albufera">
+
+        <div class="intro-text">
+
+            <div class="section-label">
+                Beyond the City
+            </div>
+
+            <h2>
+                Discover Albufera.
+            </h2>
+
+            <p>
+                Just outside Valencia lies the Albufera Natural Park,
+                a peaceful landscape of wetlands, rice fields,
+                traditional boats and Mediterranean nature.
+            </p>
+
+            <p>
+                The area is closely connected with Valencian rice
+                cultivation and the culinary traditions surrounding
+                paella.
+            </p>
+
+            <p>
+                A sunset excursion to Albufera is one of the best
+                ways to experience the natural side of Valencia.
+            </p>
+
+        </div>
+
+
+        <div class="image-box">
+
+            <img
+                src="images/valencia-albufera.jpg"
+                alt="Albufera Natural Park near Valencia"
+                data-fallback="https://loremflickr.com/1200/800/albufera,valencia"
+                loading="lazy"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TRAVEL TIPS
+===================================================== -->
+
+<section class="section tips">
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Travel Tips
+        </div>
+
+        <h2>
+            Before you go
+        </h2>
+
+        <p>
+            A few simple tips can help you get the most from your
+            Valencia trip.
+        </p>
+
+    </div>
+
+
+    <div class="tips-grid">
+
+        <article class="tip">
+
+            <strong>Best time to visit</strong>
+
+            <p>
+                Spring and autumn are particularly pleasant for
+                sightseeing and outdoor activities.
+            </p>
+
+        </article>
+
+
+        <article class="tip">
+
+            <strong>Getting around</strong>
+
+            <p>
+                Valencia is relatively flat and easy to explore on
+                foot, by bicycle, metro and public transport.
+            </p>
+
+        </article>
+
+
+        <article class="tip">
+
+            <strong>How long to stay</strong>
+
+            <p>
+                Three days is a good starting point, while four or
+                five days allows time for beaches and Albufera.
+            </p>
+
+        </article>
+
+
+        <article class="tip">
+
+            <strong>Take your time</strong>
+
+            <p>
+                Leave space for long lunches, evening walks and
+                relaxed Mediterranean moments.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta">
+
+    <div class="cta-box">
+
+        <img
+            src="images/valencia-evening.jpg"
+            alt="Valencia at sunset"
+            data-fallback="https://loremflickr.com/1600/900/valencia,sunset"
+            loading="lazy"
+        >
+
+        <div class="cta-overlay"></div>
+
+        <div class="cta-content">
+
+            <h2>
+                Ready to discover Valencia?
+            </h2>
+
+            <p>
+                Explore one of Spain's most exciting Mediterranean cities
+                and continue your journey through the country's best
+                destinations.
+            </p>
+
+            <a href="spain.html" class="btn">
+                Explore Spain
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            Explore Spain
+        </div>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="spain.html">Spain</a>
+
+            <a href="barcelona.html">Barcelona</a>
+
+            <a href="madrid.html">Madrid</a>
+
+            <a href="valencia.html">Valencia</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+        © 2026 Explore Spain. All rights reserved.
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     IMAGE FALLBACK SYSTEM
+===================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const images = document.querySelectorAll("img[data-fallback]");
+
+    images.forEach(function (image) {
+
+        image.addEventListener("error", function () {
+
+            const fallback = image.getAttribute("data-fallback");
+
+            if (
+                fallback &&
+                image.src !== fallback
+            ) {
+
+                image.src = fallback;
+
+            }
+
+        });
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
