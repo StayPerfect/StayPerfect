@@ -1775,11 +1775,13 @@ Explore Your Match →
       scores.culture +
       scores.nightlife;
 
-    var natureScore =
-      scores.nature +
-      scores.mountains +
-      scores.adventure +
-      scores.islands;
+   var islandScore =
+     scores.islands;
+
+   var natureScore =
+     scores.nature +
+     scores.mountains +
+     scores.adventure;
 
     var romanticScore =
       scores.romance +
@@ -1792,6 +1794,33 @@ Explore Your Match →
 
 
     var resultData;
+
+if(
+  islandScore >= romanticScore &&
+  islandScore >= cityScore &&
+  islandScore >= natureScore &&
+  islandScore >= coastScore &&
+  islandScore >= foodScore
+){
+
+  resultData = {
+    icon:"🌋",
+    title:"Your Match: Madeira & Azores",
+    text:
+      "The Atlantic islands are your perfect Portugal. " +
+      "Discover Madeira and the Azores for volcanic landscapes, " +
+      "dramatic coastlines, hiking, nature, ocean views and unforgettable island experiences.",
+    link:"madeira.html"
+  };
+
+}
+
+else if(
+  romanticScore >= cityScore &&
+  romanticScore >= natureScore &&
+  romanticScore >= coastScore &&
+  romanticScore >= foodScore
+){
 
 
 if(
