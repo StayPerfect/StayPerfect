@@ -11,7 +11,7 @@
 
 <meta
   name="description"
-  content="Discover Portugal with StayPerfect. Explore Lisbon, Porto, the Algarve, Madeira, the Azores, beaches, culture, nature, food, surfing and travel styles."
+  content="Explore the best places to visit in Portugal, from Lisbon and Porto to the Algarve, Madeira and the Azores. Find your perfect Portuguese destination with StayPerfect."
 >
 
 <link rel="canonical" href="https://stayperfect.jos-iul88.workers.dev/portogallo.html">
@@ -1734,12 +1734,16 @@ Explore Your Match →
      PERFECT MATCH JAVASCRIPT
 ========================================================= -->
 
+
 <script>
 
 (function(){
 
   var questions =
     document.querySelectorAll("#perfect-match .question");
+
+  var answerButtons =
+    document.querySelectorAll("#perfect-match .answer");
 
   var nextBtn =
     document.getElementById("nextBtn");
@@ -1772,7 +1776,7 @@ Explore Your Match →
 
   function showQuestion(index){
 
-    questions.forEach(function(question,i){
+    questions.forEach(function(question, i){
 
       question.classList.toggle(
         "active",
@@ -1784,23 +1788,47 @@ Explore Your Match →
     var progress =
       ((index + 1) / questions.length) * 100;
 
-    progressBar.style.width =
-      progress + "%";
+    if(progressBar){
+      progressBar.style.width =
+        progress + "%";
+    }
 
-    backBtn.style.visibility =
-      index === 0 ? "hidden" : "visible";
+    if(backBtn){
+      backBtn.style.visibility =
+        index === 0 ? "hidden" : "visible";
+    }
 
-    nextBtn.textContent =
-      index === questions.length - 1
-      ? "Show My Match →"
-      : "Next →";
+    if(nextBtn){
+      nextBtn.textContent =
+        index === questions.length - 1
+          ? "Show My Match →"
+          : "Next →";
+    }
+
+    /* Ripristina la risposta precedentemente scelta */
+    if(answers[index]){
+
+      answerButtons.forEach(function(button){
+
+        button.classList.toggle(
+          "selected",
+          button.getAttribute("data-score") === answers[index]
+        );
+
+      });
+
+    } else {
+
+      answerButtons.forEach(function(button){
+        button.classList.remove("selected");
+      });
+
+    }
 
   }
 
 
-  document.querySelectorAll(
-    "#perfect-match .answer"
-  ).forEach(function(button){
+  answerButtons.forEach(function(button){
 
     button.addEventListener(
       "click",
@@ -1840,10 +1868,11 @@ Explore Your Match →
 
         showQuestion(current);
 
-        return;
-      }
+      } else {
 
-      showResult();
+        showResult();
+
+      }
 
     }
   );
@@ -1891,150 +1920,169 @@ Explore Your Match →
 
     answers.forEach(function(answer){
 
-      if(scores.hasOwnProperty(answer)){
+      if(
+        Object.prototype.hasOwnProperty.call(
+          scores,
+          answer
+        )
+      ){
+
         scores[answer]++;
+
       }
 
     });
 
 
-    var coastScore =
-      scores.coast +
-      scores.relax;
+    /*
+     * =====================================================
+     * PORTUGAL PERFECT MATCH
+     * RISULTATI POSSIBILI:
+     *
+     * Madeira
+     * Azores
+     * Algarve
+     * Lisbon
+     * Porto
+     * Northern & Central Portugal
+     * =====================================================
+     */
 
-    var cityScore =
-      scores.city +
+
+    var madeiraScore =
+      scores.islands * 5 +
+      scores.nature * 2 +
+      scores.adventure * 2 +
+      scores.mountains +
+      scores.coast;
+
+
+    var azoresScore =
+      scores.islands * 5 +
+      scores.nature * 3 +
+      scores.adventure * 2 +
+      scores.mountains +
+      scores.coast;
+
+
+    var algarveScore =
+      scores.coast * 4 +
+      scores.relax * 3 +
+      scores.romance * 2 +
+      scores.beach;
+
+
+    var lisbonScore =
+      scores.city * 4 +
+      scores.cityscape * 3 +
+      scores.culture * 2 +
+      scores.nightlife +
+      scores.food;
+
+
+    var portoScore =
+      scores.city * 3 +
+      scores.food * 3 +
+      scores.culture * 2 +
       scores.cityscape +
-      scores.culture +
-      scores.nightlife;
-
-   var islandScore =
-     scores.islands;
-
-   var natureScore =
-     scores.nature +
-     scores.mountains +
-     scores.adventure;
-
-    var romanticScore =
-      scores.romance +
-      scores.couple +
-      scores.relax;
-
-    var foodScore =
-      scores.food +
-      scores.culture;
+      scores.romance;
 
 
-    var resultData;
-
-if(
-  islandScore >= romanticScore &&
-  islandScore >= cityScore &&
-  islandScore >= natureScore &&
-  islandScore >= coastScore &&
-  islandScore >= foodScore
-){
-
-  resultData = {
-    icon:"🌋",
-    title:"Your Match: Madeira & Azores",
-    text:
-      "The Atlantic islands are your perfect Portugal. " +
-      "Discover Madeira and the Azores for volcanic landscapes, " +
-      "dramatic coastlines, hiking, nature, ocean views and unforgettable island experiences.",
-    link:"madeira.html"
-  };
-
-}
-
-else if(
-  romanticScore >= cityScore &&
-  romanticScore >= natureScore &&
-  romanticScore >= coastScore &&
-  romanticScore >= foodScore
-){
+    var northernCentralScore =
+      scores.nature * 3 +
+      scores.mountains * 3 +
+      scores.food * 2 +
+      scores.culture * 2 +
+      scores.city;
 
 
-if(
-  romanticScore >= cityScore &&
-  romanticScore >= natureScore &&
-  romanticScore >= coastScore &&
-  romanticScore >= foodScore
-){
+    var results = [
 
-  resultData = {
-    icon:"❤️",
-    title:"Your Match: Romantic Portugal",
-    text:
-      "Your perfect Portugal combines beautiful cities, coastal scenery, wine, " +
-      "romantic stays and unforgettable experiences. Explore Lisbon, Porto, " +
-      "the Algarve or Madeira.",
-    link:"algarve.html"
-  };
+      {
+        name:"Madeira",
+        icon:"🌋",
+        title:"Your Match: Madeira",
+        text:
+          "Madeira is your perfect Portugal. Discover dramatic " +
+          "mountains, volcanic landscapes, ocean views, hiking trails " +
+          "and unforgettable Atlantic experiences.",
+        link:"madeira.html",
+        score:madeiraScore
+      },
 
-}
+      {
+        name:"Azores",
+        icon:"🌿",
+        title:"Your Match: Azores",
+        text:
+          "The Azores are your perfect Portugal. Explore volcanic " +
+          "islands, green landscapes, crater lakes, ocean experiences " +
+          "and spectacular nature.",
+        link:"azores.html",
+        score:azoresScore
+      },
 
-else if(
-  coastScore >= cityScore &&
-  coastScore >= natureScore &&
-  coastScore >= foodScore
-){
+      {
+        name:"Algarve",
+        icon:"🏖️",
+        title:"Your Match: Algarve",
+        text:
+          "The Algarve is your perfect Portugal. Enjoy golden beaches, " +
+          "dramatic cliffs, sunshine, coastal towns, relaxed days " +
+          "and beautiful Atlantic scenery.",
+        link:"algarve.html",
+        score:algarveScore
+      },
 
-  resultData = {
-    icon:"🌊",
-    title:"Your Match: Portugal & Atlantic Coast",
-    text:
-      "You are made for the sea. Discover the Algarve, Portugal's Atlantic coast, " +
-      "Madeira and the Azores for beaches, cliffs, ocean views and island escapes.",
-    link:"algarve.html"
-  };
+      {
+        name:"Lisbon",
+        icon:"🏛️",
+        title:"Your Match: Lisbon",
+        text:
+          "Lisbon is your perfect Portugal. Discover historic streets, " +
+          "architecture, viewpoints, museums, restaurants, nightlife " +
+          "and the energy of Portugal's capital.",
+        link:"lisbon.html",
+        score:lisbonScore
+      },
 
-}
+      {
+        name:"Porto",
+        icon:"🍷",
+        title:"Your Match: Porto",
+        text:
+          "Porto is your perfect Portugal. Explore historic streets, " +
+          "the Douro, Portuguese food and wine, architecture and " +
+          "an authentic northern atmosphere.",
+        link:"porto.html",
+        score:portoScore
+      },
 
-else if(
-  natureScore >= cityScore &&
-  natureScore >= foodScore
-){
+      {
+        name:"Northern & Central Portugal",
+        icon:"⛰️",
+        title:"Your Match: Northern & Central Portugal",
+        text:
+          "Northern and Central Portugal are your perfect match. " +
+          "Discover mountains, historic towns, countryside, local food, " +
+          "wine regions and authentic Portuguese landscapes.",
+        link:"portogallo.html",
+        score:northernCentralScore
+      }
 
-  resultData = {
-    icon:"🌿",
-    title:"Your Match: Madeira & Azores",
-    text:
-      "Nature is your priority. Madeira and the Azores are perfect for hiking, " +
-      "volcanic landscapes, forests, viewpoints, whale watching and outdoor adventures.",
-    link:"madeira.html"
-  };
+    ];
 
-}
 
-else if(
-  foodScore >= cityScore
-){
+    results.sort(function(a, b){
 
-  resultData = {
-    icon:"🍷",
-    title:"Your Match: Food, Wine & Portugal",
-    text:
-      "Discover Portugal through its food, wine and local culture. Explore Lisbon, " +
-      "Porto, the Douro Valley, regional cuisine, markets and authentic villages.",
-    link:"porto.html"
-  };
+      return b.score - a.score;
 
-}
+    });
 
-else{
 
-  resultData = {
-    icon:"🏛️",
-    title:"Your Match: Portuguese Cities",
-    text:
-      "Your perfect Portugal is cultural and urban. Explore Lisbon, Porto and " +
-      "historic Portuguese cities, architecture, museums, cafés and local life.",
-    link:"portogallo.html"
-  };
+    var resultData =
+      results[0];
 
-}
 
     resultIcon.textContent =
       resultData.icon;

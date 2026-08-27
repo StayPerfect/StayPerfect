@@ -8,7 +8,7 @@
 
 <title>France Travel Guide – Best Places to Visit</title>
 
-<meta name="description" content="Discover France with StayPerfect. Explore Paris, the French Riviera, Provence, the Alps, Normandy, Corsica, historic cities and diverse landscapes.">
+<meta name="description" content="Explore the best places to visit in France, from Paris and the French Riviera to Provence, Corsica and historic cities. Find your perfect French destination with StayPerfect.">
 
 <link rel="canonical" href="https://stayperfect.jos-iul88.workers.dev/france.html">
 
@@ -1094,10 +1094,6 @@ France
 Spain
 </a>
 
-<a href="#perfect-match">
-Perfect Match
-</a>
-
 <a
   class="pill"
   href="#services"
@@ -1142,14 +1138,6 @@ cuisine, France offers a destination for almost every type of traveller.
 </p>
 
 <div class="buttons">
-
-<a
-  class="btn primary"
-  href="#perfect-match"
->
-Find My Perfect Match →
-</a>
-
 <a
   class="btn secondary"
   href="#destinations"
@@ -1175,10 +1163,6 @@ Explore France
 <div class="w">
 
 <div class="quick-list">
-
-<a href="#perfect-match">
-Perfect Match
-</a>
 
 <a href="#destinations">
 Destinations
@@ -2750,19 +2734,11 @@ Ready to find your France?
 </h2>
 
 <p class="lead">
-Take the Perfect Match quiz, discover the destination that fits
-you and start planning your next French adventure.
+Discover the French destination that fits your travel style
+and start planning your next French adventure.
 </p>
 
 <div class="buttons">
-
-<a
-  class="btn primary"
-  href="#perfect-match"
->
-Take the Perfect Match →
-</a>
-
 <a
   class="btn secondary"
   href="index.html#destinations"
@@ -2905,6 +2881,9 @@ Contact
 
 (function(){
 
+  "use strict";
+
+
   var questions =
     document.querySelectorAll(".question");
 
@@ -2948,14 +2927,20 @@ Contact
 
     });
 
+
     var progress =
       ((index + 1) / questions.length) * 100;
+
 
     progressBar.style.width =
       progress + "%";
 
+
     backBtn.style.visibility =
-      index === 0 ? "hidden" : "visible";
+      index === 0
+      ? "hidden"
+      : "visible";
+
 
     nextBtn.textContent =
       index === questions.length - 1
@@ -2964,6 +2949,10 @@ Contact
 
   }
 
+
+  /* ========================================================
+     ANSWER BUTTONS
+  ======================================================== */
 
   document.querySelectorAll(".answer")
     .forEach(function(button){
@@ -2975,13 +2964,18 @@ Contact
           var parent =
             button.closest(".question");
 
+
           parent
             .querySelectorAll(".answer")
             .forEach(function(item){
+
               item.classList.remove("selected");
+
             });
 
+
           button.classList.add("selected");
+
 
           answers[current] =
             button.getAttribute("data-score");
@@ -2992,6 +2986,10 @@ Contact
     });
 
 
+  /* ========================================================
+     NEXT
+  ======================================================== */
+
   nextBtn.addEventListener(
     "click",
     function(){
@@ -3000,6 +2998,7 @@ Contact
         return;
       }
 
+
       if(current < questions.length - 1){
 
         current++;
@@ -3007,13 +3006,19 @@ Contact
         showQuestion(current);
 
         return;
+
       }
+
 
       showResult();
 
     }
   );
 
+
+  /* ========================================================
+     BACK
+  ======================================================== */
 
   backBtn.addEventListener(
     "click",
@@ -3030,6 +3035,23 @@ Contact
     }
   );
 
+
+  /* ========================================================
+     RESULTS
+
+     ONLY:
+     - Paris
+     - French Riviera
+     - Provence
+     - Bordeaux
+     - Corsica
+     - French Mountains
+
+     NO Spain
+     NO Portugal
+     NO Balearic Islands
+     NO Canary Islands
+     ======================================================== */
 
   function showResult(){
 
@@ -3058,7 +3080,9 @@ Contact
     answers.forEach(function(answer){
 
       if(scores.hasOwnProperty(answer)){
+
         scores[answer]++;
+
       }
 
     });
@@ -3069,140 +3093,253 @@ Contact
       scores.riviera +
       scores.relax;
 
+
     var cityScore =
       scores.city +
       scores.cityscape +
       scores.culture +
       scores.nightlife;
 
+
     var natureScore =
       scores.nature +
       scores.mountains +
       scores.adventure;
 
-    var romanticScore =
-      scores.romance +
-      scores.couple +
-      scores.riviera;
 
     var foodScore =
       scores.food +
       scores.culture;
 
 
+    var romanceScore =
+      scores.romance +
+      scores.couple +
+      scores.riviera;
+
+
+    var corsicaScore =
+      scores.coast +
+      scores.riviera +
+      scores.nature +
+      scores.mountains +
+      scores.adventure +
+      scores.relax;
+
+
     var resultData;
 
 
-if(
-  romanticScore >= cityScore &&
-  romanticScore >= natureScore &&
-  romanticScore >= coastScore &&
-  romanticScore >= foodScore
-){
+    /* ======================================================
+       CORSICA
+       ====================================================== */
 
-  resultData = {
-    icon:"❤️",
-    title:"Your Match: Romantic France & Corsica",
-    text:
-      "Your perfect trip combines romance, beautiful scenery and unforgettable moments. " +
-      "Explore Paris, Provence, the French Riviera or Corsica for boutique stays, " +
-      "coastal sunsets, great food and intimate escapes.",
-    link:"provence.html"
-  };
+    if(
+      corsicaScore >= 5 &&
+      natureScore >= cityScore &&
+      natureScore >= foodScore
+    ){
 
-}
+      resultData = {
 
-else if(
-  coastScore >= cityScore &&
-  coastScore >= natureScore &&
-  coastScore >= foodScore
-){
+        icon:"🏝️",
 
-  resultData = {
-    icon:"🌊",
-    title:"Your Match: French Coast & Corsica",
-    text:
-      "You are made for the coast. Discover the French Riviera, Mediterranean beaches, " +
-      "Atlantic landscapes and the spectacular coastline of Corsica.",
-    link:"corsica.html"
-  };
+        title:"Your Match: Corsica",
 
-}
+        text:
+          "Your perfect France combines Mediterranean beaches, " +
+          "dramatic mountains, nature and outdoor experiences. " +
+          "Corsica is ideal for discovering beautiful coastlines, " +
+          "mountain landscapes, villages and authentic island life.",
 
-else if(
-  natureScore >= cityScore &&
-  natureScore >= foodScore
-){
+        link:"corsica.html"
 
-  resultData = {
-    icon:"🌿",
-    title:"Your Match: Nature & Adventure",
-    text:
-      "Your ideal France is outdoors. Explore the Alps, Pyrenees, countryside, " +
-      "Corsican mountains, hiking trails and spectacular natural landscapes.",
-    link:"corsican-mountains.html"
-  };
+      };
 
-}
+    }
 
-else if(
-  foodScore >= cityScore
-){
 
-  resultData = {
-    icon:"🍷",
-    title:"Your Match: Food, Culture & France",
-    text:
-      "You should experience France through its food and culture. " +
-      "Discover Provence, Lyon, Bordeaux, Corsica and regional cuisine, " +
-      "markets, wine and historic neighbourhoods.",
-    link:"provence.html"
-  };
+    /* ======================================================
+       FRENCH RIVIERA
+       ====================================================== */
 
-}
+    else if(
+      scores.riviera >= 1 &&
+      coastScore >= natureScore &&
+      coastScore >= foodScore
+    ){
 
-else{
+      resultData = {
 
-  resultData = {
-    icon:"🗼",
-    title:"Your Match: French Cities",
-    text:
-      "Your perfect France is vibrant and cultural. Explore Paris, Lyon, Bordeaux, " +
-      "Marseille, Nice and other historic French cities.",
-    link:"france.html"
-  };
+        icon:"🌊",
 
-}
+        title:"Your Match: French Riviera",
+
+        text:
+          "Your perfect France is Mediterranean and elegant. " +
+          "Discover the French Riviera, beautiful beaches, " +
+          "coastal towns, restaurants, culture and sunshine " +
+          "along the Mediterranean coast.",
+
+        link:"france.html"
+
+      };
+
+    }
+
+
+    /* ======================================================
+       PROVENCE
+       ====================================================== */
+
+    else if(
+      natureScore >= cityScore &&
+      natureScore >= foodScore &&
+      romanceScore >= 2
+    ){
+
+      resultData = {
+
+        icon:"🌿",
+
+        title:"Your Match: Provence",
+
+        text:
+          "Your ideal French escape is slower and atmospheric. " +
+          "Discover Provence through beautiful countryside, " +
+          "historic villages, local markets, food, landscapes " +
+          "and romantic Mediterranean surroundings.",
+
+        link:"provence.html"
+
+      };
+
+    }
+
+
+    /* ======================================================
+       BORDEAUX
+       ====================================================== */
+
+    else if(
+      foodScore >= cityScore &&
+      foodScore >= natureScore
+    ){
+
+      resultData = {
+
+        icon:"🍷",
+
+        title:"Your Match: Bordeaux",
+
+        text:
+          "Your perfect France is built around food, wine, culture " +
+          "and beautiful city experiences. Bordeaux offers historic " +
+          "architecture, excellent cuisine, wine culture and easy " +
+          "access to the Atlantic coast.",
+
+        link:"bordeaux.html"
+
+      };
+
+    }
+
+
+    /* ======================================================
+       FRENCH MOUNTAINS
+       ====================================================== */
+
+    else if(
+      natureScore >= cityScore &&
+      natureScore >= foodScore
+    ){
+
+      resultData = {
+
+        icon:"⛰️",
+
+        title:"Your Match: French Mountains",
+
+        text:
+          "You are looking for nature, adventure and spectacular " +
+          "landscapes. The French Alps and mountain regions offer " +
+          "hiking, outdoor activities, villages and unforgettable scenery.",
+
+        link:"france.html"
+
+      };
+
+    }
+
+
+    /* ======================================================
+       PARIS / FRENCH CITIES
+       ====================================================== */
+
+    else {
+
+      resultData = {
+
+        icon:"🗼",
+
+        title:"Your Match: Paris",
+
+        text:
+          "Your perfect France is vibrant, cultural and full of things " +
+          "to discover. Paris offers iconic landmarks, museums, " +
+          "restaurants, cafés, architecture, shopping and French city life.",
+
+        link:"france.html"
+
+      };
+
+    }
+
 
     resultIcon.textContent =
       resultData.icon;
 
+
     resultTitle.textContent =
       resultData.title;
+
 
     resultText.textContent =
       resultData.text;
 
+
     resultLink.href =
       resultData.link;
 
+
     result.classList.add("show");
+
 
     nextBtn.style.display =
       "none";
 
+
     backBtn.style.display =
       "none";
 
+
     result.scrollIntoView({
+
       behavior:"smooth",
+
       block:"center"
+
     });
 
   }
 
 
+  /* ========================================================
+     INITIAL STATE
+  ======================================================== */
+
   showQuestion(0);
+
 
 })();
 
