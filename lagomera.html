@@ -1,0 +1,2113 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>La Gomera — Find Your Perfect Match | StayPerfect</title>
+
+<meta name="description" content="Discover La Gomera with StayPerfect. Explore Garajonay, hiking trails, forests, villages, viewpoints and peaceful Canary Island landscapes.">
+
+<style>
+
+:root{
+  --blue:#1769e8;
+  --dark:#10204a;
+  --muted:#68758b;
+  --soft:#eef6ff;
+  --line:#e4eaf2;
+  --bg:#f7f9fc;
+  --white:#fff;
+  --green:#3f8f68;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--dark);
+  background:#fff;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font-family:inherit;
+}
+
+.w{
+  max-width:1150px;
+  margin:auto;
+  padding:0 22px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+nav{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:25px;
+  font-weight:900;
+  letter-spacing:-.05em;
+}
+
+.logo span{
+  color:var(--blue);
+}
+
+.links{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  font-size:14px;
+  font-weight:750;
+}
+
+.links a:hover{
+  color:var(--blue);
+}
+
+.pill{
+  color:#fff!important;
+  background:var(--blue);
+  padding:10px 16px;
+  border-radius:999px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  min-height:720px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  color:#fff;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8,20,48,.88),
+      rgba(8,20,48,.48),
+      rgba(8,20,48,.12)
+    ),
+    url("https://loremflickr.com/1800/1100/la,gomera,canary,islands")
+    center/cover no-repeat;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      180deg,
+      transparent 60%,
+      rgba(8,20,48,.5)
+    );
+  pointer-events:none;
+}
+
+.hero-grid{
+  position:relative;
+  z-index:2;
+
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:60px;
+  align-items:center;
+}
+
+.ey{
+  color:var(--blue);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.hero .ey{
+  color:#8fc1ff;
+}
+
+.hero h1{
+  margin:15px 0 20px;
+  font-size:clamp(48px,7vw,78px);
+  line-height:.95;
+  letter-spacing:-.06em;
+}
+
+.hero h1 em{
+  color:#76b4ff;
+  font-style:normal;
+}
+
+.hero p{
+  max-width:650px;
+  color:#e7eefb;
+  font-size:19px;
+  line-height:1.6;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:27px;
+}
+
+.btn{
+  display:inline-block;
+  border:0;
+  border-radius:14px;
+  padding:14px 18px;
+  font-weight:850;
+  cursor:pointer;
+}
+
+.primary{
+  background:var(--blue);
+  color:#fff;
+}
+
+.primary:hover{
+  opacity:.9;
+}
+
+.secondary{
+  background:#fff;
+  border:1px solid var(--line);
+}
+
+.hero .secondary{
+  background:rgba(255,255,255,.12);
+  border-color:rgba(255,255,255,.35);
+  color:#fff;
+  backdrop-filter:blur(10px);
+}
+
+/* =========================
+   HERO PANEL
+========================= */
+
+.hero-panel{
+  background:rgba(255,255,255,.95);
+  color:var(--dark);
+
+  border:1px solid rgba(255,255,255,.5);
+  border-radius:28px;
+
+  padding:24px;
+
+  box-shadow:
+    0 25px 70px rgba(0,0,0,.25);
+
+  backdrop-filter:blur(12px);
+}
+
+.panel-title{
+  font-weight:900;
+  font-size:19px;
+  margin-bottom:14px;
+}
+
+.plan-row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  padding:13px 0;
+
+  border-bottom:1px solid var(--line);
+}
+
+.plan-icon{
+  width:44px;
+  height:44px;
+
+  border-radius:14px;
+
+  background:var(--soft);
+
+  display:grid;
+  place-items:center;
+
+  font-size:21px;
+
+  flex-shrink:0;
+}
+
+.plan-row strong{
+  display:block;
+  font-size:14px;
+}
+
+.plan-row span{
+  display:block;
+  color:var(--muted);
+  font-size:12px;
+}
+
+.score{
+  margin-top:17px;
+  background:var(--soft);
+  border-radius:16px;
+  padding:16px;
+}
+
+.score-top{
+  display:flex;
+  justify-content:space-between;
+  font-weight:900;
+}
+
+.bar{
+  height:8px;
+  margin-top:9px;
+
+  background:#dfe9f5;
+  border-radius:99px;
+  overflow:hidden;
+}
+
+.bar i{
+  display:block;
+  width:94%;
+  height:100%;
+  background:var(--blue);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+  padding:76px 0;
+}
+
+.center{
+  text-align:center;
+}
+
+.title{
+  margin:8px 0 12px;
+  font-size:38px;
+  letter-spacing:-.045em;
+}
+
+.lead{
+  max-width:750px;
+  margin:auto;
+
+  color:var(--muted);
+
+  line-height:1.65;
+}
+
+.soft-section{
+  background:var(--bg);
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+  margin-top:38px;
+}
+
+.info-card{
+  border:1px solid var(--line);
+  border-radius:23px;
+  padding:27px;
+  background:#fff;
+}
+
+.info-icon{
+  width:50px;
+  height:50px;
+  border-radius:15px;
+  background:var(--soft);
+  display:grid;
+  place-items:center;
+  font-size:24px;
+}
+
+.info-card h3{
+  margin:15px 0 8px;
+}
+
+.info-card p{
+  color:var(--muted);
+  line-height:1.6;
+  font-size:14px;
+}
+
+/* =========================
+   DESTINATION CARDS
+========================= */
+
+.destination-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:36px;
+}
+
+.destination-card{
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  transition:.2s ease;
+}
+
+.destination-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 18px 45px rgba(16,32,74,.12);
+}
+
+.destination-photo{
+  height:220px;
+  overflow:hidden;
+  background:#dce8f6;
+}
+
+.destination-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .35s ease;
+}
+
+.destination-card:hover img{
+  transform:scale(1.05);
+}
+
+.destination-content{
+  padding:22px;
+}
+
+.destination-icon{
+  font-size:27px;
+}
+
+.destination-content h3{
+  margin:8px 0 7px;
+  font-size:21px;
+}
+
+.destination-content p{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.55;
+  margin:0 0 15px;
+}
+
+.destination-content .btn{
+  padding:10px 13px;
+  font-size:12px;
+}
+
+/* =========================
+   FEATURE
+========================= */
+
+.feature{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(16,32,74,.93),
+      rgba(16,32,74,.62)
+    ),
+    url("https://loremflickr.com/1600/900/garajonay,la,gomera")
+    center/cover no-repeat;
+
+  color:#fff;
+}
+
+.feature-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+
+.feature .ey{
+  color:#8fc1ff;
+}
+
+.feature h2{
+  font-size:44px;
+  letter-spacing:-.05em;
+  margin:12px 0 15px;
+}
+
+.feature p{
+  color:#dce5f4;
+  line-height:1.65;
+}
+
+.feature-list{
+  display:grid;
+  gap:12px;
+}
+
+.feature-item{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+
+  padding:15px;
+
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:16px;
+
+  backdrop-filter:blur(8px);
+}
+
+.feature-item strong{
+  display:block;
+  margin-bottom:3px;
+}
+
+.feature-item span{
+  color:#cbd6e7;
+  font-size:13px;
+}
+
+/* =========================
+   EXPERIENCES
+========================= */
+
+.experience-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:36px;
+}
+
+.experience{
+  border:1px solid var(--line);
+  border-radius:21px;
+  padding:23px;
+  background:#fff;
+}
+
+.experience-icon{
+  font-size:29px;
+}
+
+.experience h3{
+  margin:13px 0 8px;
+}
+
+.experience p{
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.55;
+}
+
+/* =========================
+   TRAVEL STYLE
+========================= */
+
+.style-box{
+  margin-top:38px;
+
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:25px;
+
+  padding:30px;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+}
+
+.style-list{
+  display:grid;
+  gap:10px;
+}
+
+.style-item{
+  display:flex;
+  gap:12px;
+  align-items:center;
+
+  padding:13px;
+
+  background:var(--bg);
+  border-radius:14px;
+}
+
+.style-item span{
+  font-size:22px;
+}
+
+.style-item strong{
+  font-size:14px;
+}
+
+.style-copy p{
+  color:var(--muted);
+  line-height:1.65;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:36px;
+}
+
+.service{
+  border:1px solid var(--line);
+  border-radius:21px;
+  padding:23px;
+  background:#fff;
+}
+
+.service-icon{
+  width:46px;
+  height:46px;
+  border-radius:14px;
+  background:var(--soft);
+  display:grid;
+  place-items:center;
+  font-size:22px;
+}
+
+.service h3{
+  margin:13px 0 8px;
+}
+
+.service p{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.5;
+}
+
+.service .btn{
+  padding:10px 13px;
+  font-size:12px;
+}
+
+/* =========================
+   PERFECT MATCH
+========================= */
+
+.match{
+  background:var(--dark);
+  color:#fff;
+}
+
+.match-box{
+  margin-top:36px;
+
+  background:#fff;
+  color:var(--dark);
+
+  border-radius:27px;
+  padding:30px;
+
+  box-shadow:0 20px 60px rgba(0,0,0,.2);
+}
+
+.match-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+}
+
+.match-item{
+  background:var(--bg);
+  border-radius:16px;
+  padding:18px;
+  text-align:center;
+}
+
+.match-item span{
+  display:block;
+  font-size:28px;
+  margin-bottom:8px;
+}
+
+.match-item strong{
+  display:block;
+  font-size:14px;
+}
+
+.match-item small{
+  color:var(--muted);
+  font-size:11px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+  background:var(--bg);
+}
+
+.cta-box{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:25px;
+  padding:35px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:25px;
+}
+
+.cta-box h2{
+  margin:0 0 8px;
+  font-size:32px;
+  letter-spacing:-.04em;
+}
+
+.cta-box p{
+  margin:0;
+  color:var(--muted);
+}
+
+/* =========================
+   DISCLOSURE
+========================= */
+
+.disclosure{
+  border-top:1px solid var(--line);
+  padding:45px 0;
+}
+
+.disclosure p{
+  max-width:780px;
+  margin:auto;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  border-top:1px solid var(--line);
+  padding:30px 0;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.foot{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+  .links{
+    display:none;
+  }
+
+  .hero-grid,
+  .feature-grid,
+  .intro-grid,
+  .style-box{
+    grid-template-columns:1fr;
+  }
+
+  .destination-grid,
+  .experience-grid,
+  .service-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .match-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+@media(max-width:650px){
+
+  .w{
+    padding:0 18px;
+  }
+
+  .hero{
+    min-height:800px;
+  }
+
+  .hero-grid{
+    gap:35px;
+  }
+
+  .hero h1{
+    font-size:46px;
+  }
+
+  .title{
+    font-size:30px;
+  }
+
+  .destination-grid,
+  .experience-grid,
+  .service-grid,
+  .match-grid{
+    grid-template-columns:1fr;
+  }
+
+  .feature h2{
+    font-size:35px;
+  }
+
+  .cta-box{
+    display:block;
+  }
+
+  .cta-box .btn{
+    margin-top:18px;
+  }
+
+  .foot{
+    display:block;
+  }
+
+  .foot div+div{
+    margin-top:12px;
+  }
+
+}
+
+</style>
+  <link rel="canonical" href="https://stayperfect.jos-iul88.workers.dev/lagomera.html">
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="w">
+
+<nav>
+
+<a class="logo" href="index.html">
+Stay<span>Perfect</span>
+</a>
+
+<div class="links">
+
+<a href="#discover">
+Discover
+</a>
+
+<a href="#experiences">
+Experiences
+</a>
+
+<a href="#services">
+Travel Services
+</a>
+
+<a href="#match">
+Perfect Match
+</a>
+
+<a class="pill" href="index.html#destinations">
+All Destinations
+</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<div class="w hero-grid">
+
+<div>
+
+<div class="ey">
+<a href="canary-islands.html">Canary Islands</a> · Spain
+</div>
+
+<h1>
+Discover <em>La Gomera.</em>
+</h1>
+
+<p>
+A quieter side of the Canary Islands, where ancient forests, dramatic ravines, volcanic beaches and mountain trails come together in one extraordinary island escape.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="#discover">
+Explore La Gomera →
+</a>
+
+<a class="btn secondary" href="index.html#match">
+Perfect Match ✨
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-panel">
+
+<div class="panel-title">
+✨ La Gomera at a glance
+</div>
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🌿
+</div>
+
+<div>
+
+<strong>
+Garajonay
+</strong>
+
+<span>
+Ancient laurel forest & hiking
+</span>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🥾
+</div>
+
+<div>
+
+<strong>
+Hiking
+</strong>
+
+<span>
+Trails across mountains and ravines
+</span>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🏖️
+</div>
+
+<div>
+
+<strong>
+Black-sand beaches
+</strong>
+
+<span>
+Wild Atlantic coastline
+</span>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🌴
+</div>
+
+<div>
+
+<strong>
+Valle Gran Rey
+</strong>
+
+<span>
+Palms, beaches and relaxed atmosphere
+</span>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🏘️
+</div>
+
+<div>
+
+<strong>
+Authentic villages
+</strong>
+
+<span>
+Agulo, Hermigua & San Sebastián
+</span>
+
+</div>
+
+</div>
+
+
+<div class="score">
+
+<div class="score-top">
+
+<span>
+Perfect Match potential
+</span>
+
+<span>
+94%
+</span>
+
+</div>
+
+<div class="bar">
+<i></i>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section id="discover">
+
+<div class="w center">
+
+<div class="ey">
+Why La Gomera?
+</div>
+
+<h2 class="title">
+Small island. Big landscapes.
+</h2>
+
+<p class="lead">
+La Gomera is especially suited to travellers who want nature, hiking, peaceful beaches and an authentic island atmosphere rather than large-scale resort tourism.
+</p>
+
+</div>
+
+
+<div class="w intro-grid">
+
+<div class="info-card">
+
+<div class="info-icon">
+🌿
+</div>
+
+<h3>
+A paradise for nature lovers
+</h3>
+
+<p>
+At the heart of the island lies Garajonay National Park, famous for its ancient laurel forest and extensive network of trails. The park is a UNESCO World Heritage Site.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="info-icon">
+🥾
+</div>
+
+<h3>
+Made for walking
+</h3>
+
+<p>
+La Gomera offers a huge network of paths connecting forests, mountains, valleys, villages and the coast. It is one of the Canary Islands' strongest destinations for hiking.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PLACES
+========================= -->
+
+<section class="soft-section">
+
+<div class="w center">
+
+<div class="ey">
+Places to discover
+</div>
+
+<h2 class="title">
+The best of La Gomera
+</h2>
+
+<p class="lead">
+From the historic capital to green mountain villages and relaxed coastal valleys, every part of the island has a different character.
+</p>
+
+</div>
+
+
+<div class="w destination-grid">
+
+
+<!-- San Sebastián -->
+
+<div class="destination-card">
+
+<div class="destination-photo">
+
+<img
+src="https://loremflickr.com/900/600/san,sebastian,la,gomera"
+alt="San Sebastián de La Gomera"
+loading="lazy"
+>
+
+</div>
+
+<div class="destination-content">
+
+<div class="destination-icon">
+🏛️
+</div>
+
+<h3>
+San Sebastián
+</h3>
+
+<p>
+The island capital, built around a natural bay and rich in historic sites, local culture and coastal experiences.
+</p>
+
+<a class="btn primary" href="#match">
+Explore San Sebastián →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Valle Gran Rey -->
+
+<div class="destination-card">
+
+<div class="destination-photo">
+
+<img
+src="https://loremflickr.com/900/600/valle,gran,rey,la,gomera"
+alt="Valle Gran Rey"
+loading="lazy"
+>
+
+</div>
+
+<div class="destination-content">
+
+<div class="destination-icon">
+🌴
+</div>
+
+<h3>
+Valle Gran Rey
+</h3>
+
+<p>
+A relaxed southwest valley with palm trees, volcanic beaches, restaurants, water activities and spectacular scenery.
+</p>
+
+<a class="btn primary" href="#match">
+Explore Valle Gran Rey →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Agulo -->
+
+<div class="destination-card">
+
+<div class="destination-photo">
+
+<img
+src="https://loremflickr.com/900/600/agulo,la,gomera"
+alt="Agulo La Gomera"
+loading="lazy"
+>
+
+</div>
+
+<div class="destination-content">
+
+<div class="destination-icon">
+🏘️
+</div>
+
+<h3>
+Agulo
+</h3>
+
+<p>
+A beautiful northern village known for its traditional character, dramatic views and the Abrante viewpoint.
+</p>
+
+<a class="btn primary" href="#match">
+Explore Agulo →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Hermigua -->
+
+<div class="destination-card">
+
+<div class="destination-photo">
+
+<img
+src="https://loremflickr.com/900/600/hermigua,la,gomera"
+alt="Hermigua La Gomera"
+loading="lazy"
+>
+
+</div>
+
+<div class="destination-content">
+
+<div class="destination-icon">
+🌿
+</div>
+
+<h3>
+Hermigua
+</h3>
+
+<p>
+A green valley surrounded by mountains, plantations and hiking routes, with access to the coast.
+</p>
+
+<a class="btn primary" href="#match">
+Explore Hermigua →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Vallehermoso -->
+
+<div class="destination-card">
+
+<div class="destination-photo">
+
+<img
+src="https://loremflickr.com/900/600/vallehermoso,la,gomera"
+alt="Vallehermoso La Gomera"
+loading="lazy"
+>
+
+</div>
+
+<div class="destination-content">
+
+<div class="destination-icon">
+🏔️
+</div>
+
+<h3>
+Vallehermoso
+</h3>
+
+<p>
+A mountainous area surrounded by dramatic landscapes, trails and access to the island's interior.
+</p>
+
+<a class="btn primary" href="#match">
+Explore Vallehermoso →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Garajonay -->
+
+<div class="destination-card">
+
+<div class="destination-photo">
+
+<img
+src="https://loremflickr.com/900/600/garajonay,la,gomera"
+alt="Garajonay National Park"
+loading="lazy"
+>
+
+</div>
+
+<div class="destination-content">
+
+<div class="destination-icon">
+🌲
+</div>
+
+<h3>
+Garajonay
+</h3>
+
+<p>
+Ancient laurel forests, misty mountain landscapes and some of the island's most memorable hiking routes.
+</p>
+
+<a class="btn primary" href="#experiences">
+Explore Garajonay →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     GARAJONAY FEATURE
+========================= -->
+
+<section class="feature">
+
+<div class="w feature-grid">
+
+<div>
+
+<div class="ey">
+The island's natural heart
+</div>
+
+<h2>
+Garajonay National Park 🌿
+</h2>
+
+<p>
+The centrepiece of La Gomera is its UNESCO-listed Garajonay National Park, home to ancient laurel forest and a network of trails crossing one of the island's most distinctive landscapes.
+</p>
+
+<p>
+For travellers who love hiking, forests and dramatic scenery, this is one of the strongest reasons to choose La Gomera.
+</p>
+
+<a
+class="btn primary"
+href="https://lagomera.travel/en/nature-spaces/la-gomera/garajonay-national-park/"
+target="_blank"
+rel="noopener noreferrer"
+>
+Discover Garajonay →
+</a>
+
+</div>
+
+
+<div class="feature-list">
+
+<div class="feature-item">
+
+<div>🥾</div>
+
+<div>
+
+<strong>
+Hiking trails
+</strong>
+
+<span>
+Routes through ancient laurel forests and mountain landscapes.
+</span>
+
+</div>
+
+</div>
+
+
+<div class="feature-item">
+
+<div>🌲</div>
+
+<div>
+
+<strong>
+Laurisilva forest
+</strong>
+
+<span>
+A unique ecosystem and one of the island's defining natural treasures.
+</span>
+
+</div>
+
+</div>
+
+
+<div class="feature-item">
+
+<div>🏔️</div>
+
+<div>
+
+<strong>
+Mountain scenery
+</strong>
+
+<span>
+Ravines, peaks, valleys and panoramic viewpoints.
+</span>
+
+</div>
+
+</div>
+
+
+<div class="feature-item">
+
+<div>📸</div>
+
+<div>
+
+<strong>
+Wild landscapes
+</strong>
+
+<span>
+A completely different atmosphere from the busier resort islands.
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCES
+========================= -->
+
+<section id="experiences">
+
+<div class="w center">
+
+<div class="ey">
+Things to do
+</div>
+
+<h2 class="title">
+Experience La Gomera your way
+</h2>
+
+<p class="lead">
+The island is ideal for active travellers, nature lovers and anyone looking for a slower Atlantic escape.
+</p>
+
+</div>
+
+
+<div class="w experience-grid">
+
+
+<div class="experience">
+
+<div class="experience-icon">
+🥾
+</div>
+
+<h3>
+Hiking
+</h3>
+
+<p>
+Explore trails through Garajonay, valleys, ravines and coastal landscapes. La Gomera has an extensive network of paths across the island.
+</p>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-icon">
+🌊
+</div>
+
+<h3>
+Black-sand beaches
+</h3>
+
+<p>
+Discover volcanic beaches and small coastal spots surrounded by cliffs and dramatic Atlantic scenery.
+</p>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-icon">
+🐋
+</div>
+
+<h3>
+Whale & dolphin watching
+</h3>
+
+<p>
+The southern coast offers opportunities to discover marine life and experience La Gomera from the Atlantic.
+</p>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-icon">
+🚲
+</div>
+
+<h3>
+Cycling
+</h3>
+
+<p>
+Mountain landscapes and winding roads create an excellent setting for cyclists looking for a more active island experience.
+</p>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-icon">
+🌅
+</div>
+
+<h3>
+Sunset by the ocean
+</h3>
+
+<p>
+Valle Gran Rey and other western coastal areas are ideal for slowing down and enjoying the Atlantic at the end of the day.
+</p>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-icon">
+🎶
+</div>
+
+<h3>
+Discover local culture
+</h3>
+
+<p>
+Experience traditional villages, island cuisine and the famous Silbo Gomero whistled language.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     TRAVEL STYLE
+========================= -->
+
+<section class="soft-section">
+
+<div class="w center">
+
+<div class="ey">
+Is La Gomera right for you?
+</div>
+
+<h2 class="title">
+A perfect match for slow adventure.
+</h2>
+
+<p class="lead">
+La Gomera works particularly well for travellers who value nature, hiking, authenticity and peaceful surroundings.
+</p>
+
+</div>
+
+
+<div class="w style-box">
+
+<div class="style-list">
+
+<div class="style-item">
+<span>🌿</span>
+<strong>Nature lovers</strong>
+</div>
+
+<div class="style-item">
+<span>🥾</span>
+<strong>Hikers & outdoor travellers</strong>
+</div>
+
+<div class="style-item">
+<span>🧘</span>
+<strong>Slow travel & relaxation</strong>
+</div>
+
+<div class="style-item">
+<span>❤️</span>
+<strong>Couples looking for something different</strong>
+</div>
+
+<div class="style-item">
+<span>📸</span>
+<strong>Landscape & photography lovers</strong>
+</div>
+
+</div>
+
+
+<div class="style-copy">
+
+<h3>
+Why choose La Gomera?
+</h3>
+
+<p>
+Choose La Gomera if your ideal trip is more about mountains, forests, trails, villages and authentic landscapes than large resorts and intense nightlife.
+</p>
+
+<p>
+It is particularly attractive for travellers who want to combine outdoor adventure with peaceful evenings, local food and small coastal communities.
+</p>
+
+<a class="btn primary" href="index.html#match">
+Find My Perfect Match →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section id="services">
+
+<div class="w center">
+
+<div class="ey">
+Plan your trip
+</div>
+
+<h2 class="title">
+Everything you need for La Gomera
+</h2>
+
+<p class="lead">
+Use StayPerfect's travel services to organise the practical side of your journey.
+</p>
+
+</div>
+
+
+<div class="w service-grid">
+
+
+<div class="service">
+
+<div class="service-icon">
+✈️
+</div>
+
+<h3>
+Flights
+</h3>
+
+<p>
+Search flight options for your journey to the Canary Islands.
+</p>
+
+<a
+class="btn primary"
+href="https://aviasales.tpx.gr/xaccp3pU"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Search Flights →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🚗
+</div>
+
+<h3>
+Car Rental
+</h3>
+
+<p>
+A rental car can be useful for exploring La Gomera's mountain roads, villages and viewpoints.
+</p>
+
+<a
+class="btn primary"
+href="https://autoeurope.tpx.gr/PYK42wVM"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Rent a Car →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🎟️
+</div>
+
+<h3>
+Activities
+</h3>
+
+<p>
+Discover tours, experiences and activities for your island adventure.
+</p>
+
+<a
+class="btn primary"
+href="https://kkday.tpx.gr/lk2ssfVX"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Explore Activities →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🏨
+</div>
+
+<h3>
+Hotels & Experiences
+</h3>
+
+<p>
+Find accommodation, attractions and experiences for your trip.
+</p>
+
+<a
+class="btn primary"
+href="https://klook.tpx.gr/HyAQ5Z8G"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Explore Klook →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🚐
+</div>
+
+<h3>
+Airport Transfers
+</h3>
+
+<p>
+Arrange a smoother transfer for the beginning or end of your journey.
+</p>
+
+<a
+class="btn primary"
+href="https://intui.tpx.gr/JsoT6ciu"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Book Transfer →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+📱
+</div>
+
+<h3>
+Travel eSIM
+</h3>
+
+<p>
+Stay connected while exploring the island.
+</p>
+
+<a
+class="btn primary"
+href="https://saily.tpx.gr/qqzwC6gB"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Get an eSIM →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PERFECT MATCH
+========================= -->
+
+<section id="match" class="match">
+
+<div class="w">
+
+<div class="center">
+
+<div class="ey">
+StayPerfect recommendation
+</div>
+
+<h2 class="title">
+Could La Gomera be your Perfect Match?
+</h2>
+
+<p class="lead">
+If you choose nature, adventure, relaxation and authentic experiences, La Gomera could be one of your strongest Canary Islands matches.
+</p>
+
+</div>
+
+
+<div class="match-box">
+
+<div class="match-grid">
+
+<div class="match-item">
+
+<span>
+🌿
+</span>
+
+<strong>
+Nature
+</strong>
+
+<small>
+Excellent
+</small>
+
+</div>
+
+
+<div class="match-item">
+
+<span>
+🥾
+</span>
+
+<strong>
+Adventure
+</strong>
+
+<small>
+Excellent
+</small>
+
+</div>
+
+
+<div class="match-item">
+
+<span>
+🧘
+</span>
+
+<strong>
+Relaxation
+</strong>
+
+<small>
+Excellent
+</small>
+
+</div>
+
+
+<div class="match-item">
+
+<span>
+🌙
+</span>
+
+<strong>
+Nightlife
+</strong>
+
+<small>
+Low-key
+</small>
+
+</div>
+
+</div>
+
+
+<div class="buttons" style="justify-content:center">
+
+<a
+class="btn primary"
+href="index.html#match"
+>
+Take the Perfect Match Quiz →
+</a>
+
+<a
+class="btn secondary"
+href="#discover"
+>
+Explore La Gomera
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+<div class="w">
+
+<div class="cta-box">
+
+<div>
+
+<h2>
+Ready to discover La Gomera?
+</h2>
+
+<p>
+Explore the island and see how it compares with your travel style.
+</p>
+
+</div>
+
+<a
+class="btn primary"
+href="index.html#match"
+>
+Find My Perfect Match →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     DISCLOSURE
+========================= -->
+
+<section class="disclosure">
+
+<div class="w center">
+
+<div class="ey">
+Transparency
+</div>
+
+<h2 class="title" style="font-size:28px">
+Affiliate disclosure
+</h2>
+
+<p>
+Some links on StayPerfect are affiliate links. If you click a link and make a qualifying purchase, StayPerfect may receive a commission at no additional cost to you.
+</p>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="w foot">
+
+<div>
+<strong>StayPerfect</strong> — Find your perfect trip.
+</div>
+
+<div>
+
+© 2026 StayPerfect ·
+
+<a href="privacy.html">
+Privacy
+</a>
+
+·
+
+<a href="index.html#contact">
+Contact
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>

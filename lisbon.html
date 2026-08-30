@@ -1,0 +1,1662 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Lisbon — Find Your Perfect Trip | StayPerfect</title>
+
+<meta name="description" content="Discover Lisbon with historic neighborhoods, viewpoints, food, culture, nearby beaches and unforgettable Portuguese experiences.">
+    
+<meta name="robots" content="index, follow">
+    
+<link rel="canonical" href="https://stayperfect.jos-iul88.workers.dev/lisbon.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lisbon — Find Your Perfect Trip | StayPerfect">
+<meta property="og:description" content="Explore Lisbon's neighbourhoods, culture, beaches, food, nightlife and unforgettable experiences.">
+<meta property="og:url" content="https://stayperfect.jos-iul88.workers.dev/lisbon.html">
+<meta property="og:site_name" content="StayPerfect">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Lisbon — Find Your Perfect Trip | StayPerfect">
+<meta name="twitter:description" content="Discover Lisbon with StayPerfect.">
+
+<style>
+
+:root{
+  --b:#1769e8;
+  --i:#10204a;
+  --m:#68758b;
+  --s:#eef6ff;
+  --l:#e4eaf2;
+  --bg:#f7f9fc;
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--i);
+  background:#fff;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+button,a{
+  -webkit-tap-highlight-color:transparent;
+}
+
+.w{
+  max-width:1100px;
+  margin:auto;
+  padding:0 22px;
+}
+
+nav{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:25px;
+  font-weight:900;
+  letter-spacing:-.04em;
+}
+
+.logo span{color:var(--b)}
+
+.links{
+  display:flex;
+  gap:20px;
+  align-items:center;
+  font-size:14px;
+  font-weight:700;
+}
+
+.links a:hover{color:var(--b)}
+
+.links .pill:hover{
+  color:#fff;
+  opacity:.9;
+}
+
+.pill{
+  background:var(--b);
+  color:#fff;
+  padding:10px 16px;
+  border-radius:999px;
+}
+
+.hero{
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  background-color:#31546e;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(8,25,55,.88),
+      rgba(8,25,55,.50),
+      rgba(8,25,55,.15)
+    ),
+    url("https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=2000&q=85");
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  color:#fff;
+}
+
+.hero-content{
+  max-width:720px;
+  padding:95px 0;
+}
+
+.ey{
+  font-size:12px;
+  color:#8fc0ff;
+  font-weight:900;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+.hero h1{
+  font-size:clamp(48px,7vw,78px);
+  line-height:.94;
+  letter-spacing:-.06em;
+  margin:15px 0 20px;
+}
+
+.hero h1 em{
+  color:#8fc0ff;
+  font-style:normal;
+}
+
+.hero p{
+  max-width:680px;
+  font-size:19px;
+  line-height:1.65;
+  color:#e7eef9;
+}
+
+.buttons{
+  display:flex;
+  gap:12px;
+  margin-top:28px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 18px;
+  border-radius:14px;
+  font-weight:850;
+  transition:.2s ease;
+}
+
+.btn:hover{
+  transform:translateY(-1px);
+}
+
+.primary{
+  background:var(--b);
+  color:#fff !important;
+}
+
+.primary:hover{opacity:.92}
+
+.secondary{
+  background:#fff !important;
+  color:var(--i) !important;
+  border:1px solid var(--l);
+}
+
+.secondary:hover{
+  background:#f4f8fd !important;
+  border-color:#a9bfdc;
+}
+
+.explore{
+  display:inline-block;
+  margin-top:16px;
+  padding:10px 14px;
+  border-radius:11px;
+  background:var(--b);
+  color:#fff;
+  font-size:13px;
+  font-weight:850;
+}
+
+.explore:hover{opacity:.9}
+
+section{padding:75px 0}
+
+.center{text-align:center}
+
+.title{
+  font-size:36px;
+  letter-spacing:-.04em;
+  margin:8px 0 12px;
+}
+
+.lead{
+  max-width:760px;
+  margin:auto;
+  color:var(--m);
+  line-height:1.65;
+}
+
+.quick{
+  background:var(--bg);
+  padding:25px 0;
+}
+
+.quick-list{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.quick-list a{
+  background:#fff;
+  border:1px solid var(--l);
+  border-radius:999px;
+  padding:9px 14px;
+  font-size:13px;
+  font-weight:800;
+}
+
+.quick-list a:hover{
+  border-color:#a9c7f4;
+  color:var(--b);
+}
+
+.intro{
+  background:#fff;
+}
+
+.intro-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center;
+}
+
+.intro-photo{
+  min-height:430px;
+  border-radius:25px;
+  background:
+    url("https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=1200&q=85")
+    center/cover no-repeat;
+}
+
+.intro-text h2{
+  font-size:38px;
+  letter-spacing:-.045em;
+  margin:8px 0 15px;
+}
+
+.intro-text p{
+  color:var(--m);
+  line-height:1.7;
+}
+
+.highlight-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:25px;
+}
+
+.highlight{
+  background:var(--bg);
+  border-radius:15px;
+  padding:15px;
+}
+
+.highlight strong{
+  display:block;
+  font-size:14px;
+}
+
+.highlight span{
+  display:block;
+  color:var(--m);
+  font-size:12px;
+  margin-top:4px;
+}
+
+.neighborhoods{
+  background:var(--bg);
+}
+
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:35px;
+}
+
+.card{
+  background:#fff;
+  border:1px solid var(--l);
+  border-radius:20px;
+  padding:24px;
+}
+
+.card-icon{
+  width:46px;
+  height:46px;
+  border-radius:14px;
+  background:var(--s);
+  display:grid;
+  place-items:center;
+  font-size:22px;
+}
+
+.card h3{
+  margin:15px 0 8px;
+  font-size:20px;
+}
+
+.card p{
+  color:var(--m);
+  font-size:14px;
+  line-height:1.6;
+  margin:0;
+}
+
+.destinations{
+  background:#fff;
+}
+
+.destination-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:35px;
+}
+
+.destination{
+  border:1px solid var(--l);
+  border-radius:21px;
+  overflow:hidden;
+  background:#fff;
+}
+
+.destination-photo{
+  height:205px;
+  background-size:cover;
+  background-position:center;
+}
+
+.photo-alfama{
+  background-image:url("https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=1000&q=85");
+}
+
+.photo-belem{
+  background-image:url("https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=85");
+}
+
+.photo-cascais{
+  background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85");
+}
+
+.destination-content{
+  padding:21px;
+}
+
+.destination h3{
+  margin:0 0 8px;
+  font-size:21px;
+}
+
+.destination p{
+  color:var(--m);
+  font-size:14px;
+  line-height:1.6;
+  margin:0;
+}
+
+.beaches{
+  background:var(--bg);
+}
+
+.beach-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  margin-top:35px;
+}
+
+.beach-card{
+  background:#fff;
+  border:1px solid var(--l);
+  border-radius:20px;
+  padding:24px;
+}
+
+.beach-card h3{
+  margin:15px 0 8px;
+}
+
+.beach-card p{
+  color:var(--m);
+  font-size:14px;
+  line-height:1.6;
+}
+
+.culture{
+  background:#fff;
+}
+
+.culture-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:35px;
+}
+
+.food{
+  background:var(--bg);
+}
+
+.food-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:35px;
+}
+
+.activities{
+  background:#fff;
+}
+
+.activity-list{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  margin-top:35px;
+}
+
+.activity{
+  border:1px solid var(--l);
+  border-radius:17px;
+  padding:18px;
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+}
+
+.activity-icon{
+  width:42px;
+  height:42px;
+  border-radius:12px;
+  background:var(--s);
+  display:grid;
+  place-items:center;
+  font-size:20px;
+  flex-shrink:0;
+}
+
+.activity strong{
+  display:block;
+  margin-bottom:4px;
+}
+
+.activity span{
+  color:var(--m);
+  font-size:13px;
+  line-height:1.5;
+}
+
+.styles{
+  background:var(--bg);
+}
+
+.style-table{
+  margin-top:35px;
+  border:1px solid var(--l);
+  border-radius:22px;
+  overflow:hidden;
+  background:#fff;
+}
+
+.style-row{
+  display:grid;
+  grid-template-columns:180px 1fr;
+  border-bottom:1px solid var(--l);
+}
+
+.style-row:last-child{border-bottom:0}
+
+.style-row strong{
+  padding:18px;
+  background:#f8fbff;
+}
+
+.style-row span{
+  padding:18px;
+  color:var(--m);
+  line-height:1.55;
+  font-size:14px;
+}
+
+.services{
+  background:#fff;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:35px;
+}
+
+.service{
+  border:1px solid var(--l);
+  border-radius:20px;
+  padding:23px;
+}
+
+.service .icon{
+  width:46px;
+  height:46px;
+  border-radius:14px;
+  background:var(--s);
+  display:grid;
+  place-items:center;
+  font-size:22px;
+}
+
+.service h3{
+  margin:14px 0 7px;
+}
+
+.service p{
+  color:var(--m);
+  font-size:14px;
+  line-height:1.55;
+}
+
+.service .btn{
+  padding:11px 14px;
+  font-size:13px;
+}
+
+.cta{
+  background:
+    radial-gradient(circle at 80% 20%,#2b82ff 0,transparent 30%),
+    var(--i);
+  color:#fff;
+  text-align:center;
+}
+
+.cta .lead{color:#cbd4e5}
+
+.cta .buttons{justify-content:center}
+
+.disclosure{
+  padding:45px 0;
+  background:#fff;
+  border-top:1px solid var(--l);
+}
+
+.disclosure p{
+  max-width:760px;
+  margin:auto;
+  color:var(--m);
+  font-size:13px;
+  line-height:1.6;
+}
+
+.contact{
+  padding:50px 0;
+}
+
+footer{
+  border-top:1px solid var(--l);
+  padding:30px 0;
+  color:var(--m);
+  font-size:13px;
+}
+
+.foot{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.foot a:hover{color:var(--b)}
+
+@media(max-width:850px){
+
+  .links{display:none}
+
+  .intro-grid{
+    grid-template-columns:1fr;
+  }
+
+  .destination-grid,
+  .culture-grid,
+  .food-grid,
+  .service-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .hero{
+    min-height:580px;
+  }
+
+  .hero-content{
+    padding:75px 0;
+  }
+
+  .hero h1{
+    font-size:52px;
+  }
+}
+
+@media(max-width:600px){
+
+  .w{padding:0 18px}
+
+  section{padding:60px 0}
+
+  .hero h1{font-size:46px}
+
+  .hero p{font-size:17px}
+
+  .destination-grid,
+  .culture-grid,
+  .food-grid,
+  .service-grid,
+  .neighborhoods .card-grid,
+  .beach-grid,
+  .activity-list{
+    grid-template-columns:1fr;
+  }
+
+  .highlight-grid{
+    grid-template-columns:1fr;
+  }
+
+  .style-row{
+    grid-template-columns:1fr;
+  }
+
+  .style-row strong{
+    padding-bottom:8px;
+  }
+
+  .style-row span{
+    padding-top:8px;
+  }
+
+  .intro-photo{
+    min-height:320px;
+  }
+
+  .title{
+    font-size:30px;
+  }
+
+  .foot{
+    display:block;
+  }
+
+  .foot div+div{
+    margin-top:12px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+
+  html{scroll-behavior:auto}
+
+  *,
+  *::before,
+  *::after{
+    transition:none !important;
+  }
+}
+
+</style>
+
+<script>
+(function(){
+  var script=document.createElement("script");
+  script.async=true;
+  script.setAttribute("data-cmp-ab","2");
+  script.src="https://tp-em.com/NTYyMDY1.js?t=562065";
+  document.head.appendChild(script);
+})();
+</script>
+
+</head>
+
+<body>
+
+<header>
+<div class="w">
+<nav>
+
+<a class="logo" href="index.html" aria-label="StayPerfect home">
+Stay<span>Perfect</span>
+</a>
+
+<div class="links">
+
+<a href="index.html#destinations">Destinations</a> <a href="portogallo.html">Portugal</a> <a href="#activities">Activities</a> <a href="#services">Travel Services</a> <a class="pill" href="#contact">Contact</a>
+
+</div>
+</nav>
+</div>
+</header>
+
+<main>
+
+<section class="hero">
+
+<div class="w">
+
+<div class="hero-content">
+
+<div class="ey">
+Portugal · Lisbon · Atlantic
+</div>
+
+<h1>
+Discover <em>Lisbon.</em>
+</h1>
+
+<p>
+A city of historic neighbourhoods, colourful streets, Atlantic
+light, viewpoints, architecture, food, culture and easy access
+to some of Portugal's most beautiful coastal destinations.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="#explore">
+Explore Lisbon
+</a>
+
+<a class="btn secondary" href="portogallo.html">
+← Portugal
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="quick">
+
+<div class="w">
+
+<div class="quick-list">
+
+<a href="#explore">Explore</a> <a href="#neighborhoods">Neighbourhoods</a> <a href="#beaches">Beaches</a> <a href="#culture">Culture</a> <a href="#food">Food</a> <a href="#activities">Activities</a> <a href="#styles">Travel Styles</a> <a href="#services">Services</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="intro">
+
+<div class="w intro-grid">
+
+<div class="intro-photo"></div>
+
+<div class="intro-text">
+
+<div class="ey">
+Why Lisbon?
+</div>
+
+<h2>
+A city made for exploring.
+</h2>
+
+<p>
+Lisbon combines historic streets, tiled buildings, viewpoints,
+tram-lined neighbourhoods, traditional cafés and a lively modern
+city scene.
+</p>
+
+<p>
+It is also an excellent starting point for exploring the wider
+Lisbon region, with beaches, coastal towns, palaces and nature
+within easy reach.
+</p>
+
+<div class="highlight-grid">
+
+<div class="highlight">
+<strong>🏛️ History</strong>
+<span>Historic streets, monuments and architecture</span>
+</div>
+
+<div class="highlight">
+<strong>🌊 Coast</strong>
+<span>Atlantic beaches and coastal escapes</span>
+</div>
+
+<div class="highlight">
+<strong>🍽️ Food</strong>
+<span>Portuguese cuisine, cafés and restaurants</span>
+</div>
+
+<div class="highlight">
+<strong>🌅 Views</strong>
+<span>Miradouros and unforgettable sunsets</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="explore" class="destinations">
+
+<div class="w center">
+
+<div class="ey">
+Explore Lisbon
+</div>
+
+<h2 class="title">
+Discover the city and beyond
+</h2>
+
+<p class="lead">
+From historic neighbourhoods to Atlantic coast escapes, Lisbon gives
+you many ways to build your perfect trip.
+</p>
+
+</div>
+
+<div class="w destination-grid">
+
+<div class="destination">
+
+<div class="destination-photo photo-alfama"></div>
+
+<div class="destination-content">
+
+<h3>🏘️ Alfama</h3>
+
+<p>
+Wander through one of Lisbon's oldest neighbourhoods, with narrow
+streets, viewpoints, tiled façades and traditional atmosphere.
+</p>
+
+<a class="explore" href="#neighborhoods">
+Explore Alfama →
+</a>
+
+</div>
+
+</div>
+
+<div class="destination">
+
+<div class="destination-photo photo-belem"></div>
+
+<div class="destination-content">
+
+<h3>🏛️ Belém</h3>
+
+<p>
+Explore Lisbon's monumental riverside district, museums, gardens
+and landmarks connected with Portugal's maritime history.
+</p>
+
+<a class="explore" href="#culture">
+Explore Belém →
+</a>
+
+</div>
+
+</div>
+
+<div class="destination">
+
+<div class="destination-photo photo-cascais"></div>
+
+<div class="destination-content">
+
+<h3>🏖️ Cascais & Coast</h3>
+
+<p>
+Combine Lisbon with Atlantic beaches, coastal scenery and a relaxed
+day trip around Cascais and the surrounding coastline.
+</p>
+
+<a class="explore" href="#beaches">
+Explore the Coast →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="neighborhoods" class="neighborhoods">
+
+<div class="w center">
+
+<div class="ey">
+City Guide
+</div>
+
+<h2 class="title">
+Lisbon neighbourhoods
+</h2>
+
+<p class="lead">
+Each area has its own atmosphere, making Lisbon especially rewarding
+to explore on foot.
+</p>
+
+</div>
+
+<div class="w card-grid">
+
+<div class="card">
+<div class="card-icon">🏘️</div>
+<h3>Alfama</h3>
+<p>
+Historic lanes, viewpoints, traditional buildings and the atmosphere
+of old Lisbon.
+</p>
+<a class="explore" href="#culture">Explore →</a>
+</div>
+
+<div class="card">
+<div class="card-icon">🎶</div>
+<h3>Bairro Alto</h3>
+<p>
+A lively area known for restaurants, bars, nightlife and evening
+atmosphere.
+</p>
+<a class="explore" href="#activities">Explore →</a>
+</div>
+
+<div class="card">
+<div class="card-icon">☕</div>
+<h3>Chiado</h3>
+<p>
+Elegant streets, cafés, shops, theatres and a central location
+between historic Lisbon districts.
+</p>
+<a class="explore" href="#food">Explore →</a>
+</div>
+
+<div class="card">
+<div class="card-icon">🌊</div>
+<h3>Belém</h3>
+<p>
+Riverside walks, monuments, museums, gardens and views towards
+the Tagus.
+</p>
+<a class="explore" href="#culture">Explore →</a>
+</div>
+
+<div class="card">
+<div class="card-icon">🌿</div>
+<h3>Príncipe Real</h3>
+<p>
+Tree-lined squares, design shops, restaurants and a more relaxed
+urban atmosphere.
+</p>
+<a class="explore" href="#styles">Explore →</a>
+</div>
+
+<div class="card">
+<div class="card-icon">🚋</div>
+<h3>Baixa</h3>
+<p>
+The central historic grid with grand squares, pedestrian streets
+and easy access to many major sights.
+</p>
+<a class="explore" href="#culture">Explore →</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="beaches" class="beaches">
+
+<div class="w center">
+
+<div class="ey">
+Lisbon Coast
+</div>
+
+<h2 class="title">
+Beaches near Lisbon
+</h2>
+
+<p class="lead">
+One of Lisbon's biggest advantages is the ability to combine a
+city break with Atlantic beach days.
+</p>
+
+</div>
+
+<div class="w beach-grid">
+
+<div class="beach-card">
+<div class="card-icon">🏖️</div>
+<h3>Cascais</h3>
+<p>
+A popular coastal destination with beaches, restaurants, promenades
+and an easy connection with Lisbon.
+</p>
+<a class="explore" href="#services">Plan Your Coast Trip →</a>
+</div>
+
+<div class="beach-card">
+<div class="card-icon">🌊</div>
+<h3>Estoril</h3>
+<p>
+A classic seaside area with beaches, waterfront scenery and a
+relaxed atmosphere close to Lisbon.
+</p>
+<a class="explore" href="#activities">Explore Activities →</a>
+</div>
+
+<div class="beach-card">
+<div class="card-icon">🏄</div>
+<h3>Carcavelos</h3>
+<p>
+A convenient beach option close to the city and a popular area
+for Atlantic beach and surf experiences.
+</p>
+<a class="explore" href="#activities">Explore Surfing →</a>
+</div>
+
+<div class="beach-card">
+<div class="card-icon">🌅</div>
+<h3>Sintra Coast</h3>
+<p>
+Dramatic Atlantic scenery and beaches can be combined with a visit
+to the wider Sintra region.
+</p>
+<a class="explore" href="#services">Plan a Day Trip →</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="culture" class="culture">
+
+<div class="w center">
+
+<div class="ey">
+History & Culture
+</div>
+
+<h2 class="title">
+What to see in Lisbon
+</h2>
+
+<p class="lead">
+Lisbon's identity is shaped by centuries of history, maritime
+tradition, architecture, music and everyday Portuguese life.
+</p>
+
+</div>
+
+<div class="w culture-grid">
+
+<div class="card">
+<div class="card-icon">🏰</div>
+<h3>Castelo de São Jorge</h3>
+<p>
+Discover one of Lisbon's most recognisable historic landmarks and
+enjoy views across the city.
+</p>
+<a class="explore" href="#activities">Explore →</a>
+</div>
+
+<div class="card">
+<div class="card-icon">⛪</div>
+<h3>Jerónimos & Belém</h3>
+<p>
+Explore Lisbon's monumental Belém district and its connection with
+Portugal's maritime history.
+</p>
+<a class="explore" href="#activities">Explore →</a>
+</div>
+
+<div class="card">
+<div class="card-icon">🎵</div>
+<h3>Fado</h3>
+<p>
+Experience one of Portugal's best-known musical traditions in
+intimate venues around the historic city.
+</p>
+<a class="explore" href="#food">Explore Lisbon Nights →</a>
+</div>
+
+<div class="card">
+<div class="card-icon">🚋</div>
+<h3>Historic Trams</h3>
+<p>
+Ride through Lisbon's hills and neighbourhoods on one of the city's
+most recognisable forms of transport.
+</p>
+<a class="explore" href="#activities">Explore →</a>
+</div>
+
+<div class="card">
+<div class="card-icon">🖼️</div>
+<h3>Museums</h3>
+<p>
+Art, history, design and Portuguese culture can all become part of
+a Lisbon itinerary.
+</p>
+<a class="explore" href="#styles">Explore Culture →</a>
+</div>
+
+<div class="card">
+<div class="card-icon">🌅</div>
+<h3>Miradouros</h3>
+<p>
+Lisbon's viewpoints offer memorable panoramas over rooftops,
+historic districts and the Tagus.
+</p>
+<a class="explore" href="#activities">Explore Views →</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="food" class="food">
+
+<div class="w center">
+
+<div class="ey">
+Taste Lisbon
+</div>
+
+<h2 class="title">
+Food & drink
+</h2>
+
+<p class="lead">
+Lisbon is a great destination for travellers who want to build
+their trip around Portuguese food, cafés, markets and evenings out.
+</p>
+
+</div>
+
+<div class="w food-grid">
+
+<div class="card">
+<div class="card-icon">🐟</div>
+<h3>Seafood</h3>
+<p>
+Fresh Atlantic fish and seafood are an important part of Portuguese
+cuisine.
+</p>
+<a class="explore" href="#services">Find Experiences →</a>
+</div>
+
+<div class="card">
+<div class="card-icon">🥐</div>
+<h3>Pastéis</h3>
+<p>
+Discover Lisbon's famous pastry culture through traditional bakeries
+and cafés.
+</p>
+<a class="explore" href="#activities">Explore Food →</a>
+</div>
+
+<div class="card">
+<div class="card-icon">🍷</div>
+<h3>Portuguese Wine</h3>
+<p>
+Pair Lisbon's restaurants with Portuguese wines from different
+regions of the country.
+</p>
+<a class="explore" href="#services">Explore Experiences →</a>
+</div>
+
+<div class="card">
+<div class="card-icon">☕</div>
+<h3>Café Culture</h3>
+<p>
+Slow down with coffee and pastries while watching everyday Lisbon
+life unfold.
+</p>
+<a class="explore" href="#neighborhoods">Explore Neighbourhoods →</a>
+</div>
+
+<div class="card">
+<div class="card-icon">🍽️</div>
+<h3>Restaurants</h3>
+<p>
+From traditional Portuguese cooking to modern restaurants, Lisbon
+has plenty of choices.
+</p>
+<a class="explore" href="#services">Find Experiences →</a>
+</div>
+
+<div class="card">
+<div class="card-icon">🌙</div>
+<h3>Nightlife</h3>
+<p>
+Enjoy dinner, bars, live music and Lisbon's lively evening
+atmosphere.
+</p>
+<a class="explore" href="#activities">Explore Nightlife →</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="activities" class="activities">
+
+<div class="w center">
+
+<div class="ey">
+Things to Do
+</div>
+
+<h2 class="title">
+Activities in Lisbon
+</h2>
+
+<p class="lead">
+Build your Lisbon itinerary around culture, food, coast, history
+and outdoor experiences.
+</p>
+
+</div>
+
+<div class="w activity-list">
+
+<div class="activity">
+<div class="activity-icon">🚋</div>
+<div>
+<strong>Historic Tram Ride</strong>
+<span>
+Explore Lisbon's hills and historic neighbourhoods by tram.
+</span>
+</div>
+</div>
+
+<div class="activity">
+<div class="activity-icon">🥾</div>
+<div>
+<strong>Walking Tours</strong>
+<span>
+Discover the city through its streets, viewpoints and historic
+districts.
+</span>
+</div>
+</div>
+
+<div class="activity">
+<div class="activity-icon">🍷</div>
+<div>
+<strong>Food & Wine</strong>
+<span>
+Build your trip around Portuguese cuisine, tastings and local
+culinary experiences.
+</span>
+</div>
+</div>
+
+<div class="activity">
+<div class="activity-icon">⛵</div>
+<div>
+<strong>Tagus Boat Trips</strong>
+<span>
+See Lisbon from the water and experience the city from the
+Tagus.
+</span>
+</div>
+</div>
+
+<div class="activity">
+<div class="activity-icon">🏄</div>
+<div>
+<strong>Surfing</strong>
+<span>
+Combine Lisbon with Atlantic surf beaches around the region.
+</span>
+</div>
+</div>
+
+<div class="activity">
+<div class="activity-icon">🏰</div>
+<div>
+<strong>History & Architecture</strong>
+<span>
+Explore monuments, castles, churches, tiled façades and historic
+squares.
+</span>
+</div>
+</div>
+
+<div class="activity">
+<div class="activity-icon">🌅</div>
+<div>
+<strong>Sunset Viewpoints</strong>
+<span>
+Watch the sun set over Lisbon, the Tagus and the Atlantic coast.
+</span>
+</div>
+</div>
+
+<div class="activity">
+<div class="activity-icon">🚗</div>
+<div>
+<strong>Day Trips</strong>
+<span>
+Explore Cascais, Sintra and other destinations around the Lisbon
+region.
+</span>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="styles" class="styles">
+
+<div class="w center">
+
+<div class="ey">
+Choose Your Style
+</div>
+
+<h2 class="title">
+Which Lisbon is right for you?
+</h2>
+
+<p class="lead">
+Lisbon can work as a quick city break or as the base for a longer
+Portuguese adventure.
+</p>
+
+</div>
+
+<div class="w style-table">
+
+<div class="style-row">
+<strong>🏙️ City Break</strong>
+<span>
+Focus on historic neighbourhoods, viewpoints, architecture,
+restaurants, shopping and culture.
+</span>
+</div>
+
+<div class="style-row">
+<strong>❤️ Couple</strong>
+<span>
+Combine romantic streets, sunsets, wine, restaurants and coastal
+experiences.
+</span>
+</div>
+
+<div class="style-row">
+<strong>🍽️ Food Trip</strong>
+<span>
+Build the itinerary around Portuguese restaurants, cafés, markets,
+pastries and wine.
+</span>
+</div>
+
+<div class="style-row">
+<strong>🏖️ Beach</strong>
+<span>
+Combine Lisbon with Cascais, Estoril and other Atlantic beaches
+around the region.
+</span>
+</div>
+
+<div class="style-row">
+<strong>🏛️ Culture</strong>
+<span>
+Explore monuments, museums, historic districts, architecture and
+Portuguese traditions.
+</span>
+</div>
+
+<div class="style-row">
+<strong>🚗 Road Trip</strong>
+<span>
+Use Lisbon as a starting point for Sintra, Cascais and wider
+Portuguese destinations.
+</span>
+</div>
+
+</div>
+
+</section>
+
+<section id="services" class="services">
+
+<div class="w center">
+
+<div class="ey">
+Travel Services
+</div>
+
+<h2 class="title">
+Plan your Lisbon trip
+</h2>
+
+<p class="lead">
+Use the services below to organise flights, transport, activities,
+transfers and connectivity for your Lisbon journey.
+</p>
+
+</div>
+
+<div class="w service-grid">
+
+<div class="service">
+<div class="icon">✈️</div>
+<h3>Flights</h3>
+<p>Search flight options for your trip to Lisbon.</p>
+<a class="btn primary" href="https://aviasales.tpx.gr/xaccp3pU" target="_blank" rel="sponsored noopener noreferrer">
+Search Flights →
+</a>
+</div>
+
+<div class="service">
+<div class="icon">🚗</div>
+<h3>Car Rentals</h3>
+<p>Compare rental options for Lisbon and the surrounding region.</p>
+<a class="btn primary" href="https://autoeurope.tpx.gr/PYK42wVM" target="_blank" rel="sponsored noopener noreferrer">
+Rent a Car →
+</a>
+<br><br>
+<a class="btn secondary" href="https://economybookings.tpx.gr/JR0hRPPw" target="_blank" rel="sponsored noopener noreferrer">
+More Car Options →
+</a>
+</div>
+
+<div class="service">
+<div class="icon">🎟️</div>
+<h3>Activities</h3>
+<p>Discover tours, attractions and experiences in Lisbon.</p>
+<a class="btn primary" href="https://kkday.tpx.gr/lk2ssfVX" target="_blank" rel="sponsored noopener noreferrer">
+Explore Activities →
+</a>
+<br><br>
+<a class="btn secondary" href="https://wegotrip.tpx.gr/1cZDpzjP" target="_blank" rel="sponsored noopener noreferrer">
+More Experiences →
+</a>
+</div>
+
+<div class="service">
+<div class="icon">🏨</div>
+<h3>Hotels & Activities</h3>
+<p>Discover hotels, attractions, tours and experiences with Klook.</p>
+<a class="btn primary" href="https://klook.tpx.gr/HyAQ5Z8G" target="_blank" rel="sponsored noopener noreferrer">
+Explore Klook →
+</a>
+</div>
+
+<div class="service">
+<div class="icon">🚐</div>
+<h3>Airport Transfers</h3>
+<p>Arrange a transfer for a smoother Lisbon arrival and departure.</p>
+<a class="btn primary" href="https://intui.tpx.gr/JsoT6ciu" target="_blank" rel="sponsored noopener noreferrer">
+Book a Transfer →
+</a>
+</div>
+
+<div class="service">
+<div class="icon">🚕</div>
+<h3>Private Transfers</h3>
+<p>Find private and airport transfer options with GetTransfer.</p>
+<a class="btn primary" href="https://gettransfer.tpx.gr/I1UPhx3j" target="_blank" rel="sponsored noopener noreferrer">
+Find a Transfer →
+</a>
+</div>
+
+<div class="service">
+<div class="icon">📱</div>
+<h3>Travel eSIM</h3>
+<p>Stay connected while travelling around Lisbon and Portugal.</p>
+<a class="btn primary" href="https://saily.tpx.gr/qqzwC6gB" target="_blank" rel="sponsored noopener noreferrer">
+Get an eSIM →
+</a>
+</div>
+
+<div class="service">
+<div class="icon">🛫</div>
+<h3>Flight Compensation</h3>
+<p>Explore available compensation information after a disrupted flight.</p>
+<a class="btn primary" href="https://compensair.tpx.gr/oenuQeYD" target="_blank" rel="sponsored noopener noreferrer">
+Check Compensation →
+</a>
+</div>
+
+<div class="service">
+<div class="icon">🚲</div>
+<h3>Bike Rental</h3>
+<p>Find bicycle rental options for exploring Lisbon on two wheels.</p>
+<a class="btn primary" href="https://bikesbooking.tpx.gr/9t1J9s1c" target="_blank" rel="sponsored noopener noreferrer">
+Find Bikes →
+</a>
+</div>
+
+<div class="service">
+<div class="icon">🗺️</div>
+<h3>More Travel Experiences</h3>
+<p>Discover additional tours, activities and travel experiences.</p>
+<a class="btn primary" href="https://ektatraveling.tpx.gr/cq9ta1K6" target="_blank" rel="sponsored noopener noreferrer">
+Explore More →
+</a>
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<div class="w">
+
+<div class="ey">
+Your Lisbon Trip
+</div>
+
+<h2 class="title">
+Ready to explore Lisbon?
+</h2>
+
+<p class="lead">
+Discover historic streets, Atlantic beaches, Portuguese food,
+culture and unforgettable city experiences.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="#services">
+Start Planning →
+</a>
+
+<a class="btn secondary" href="portogallo.html">
+Explore Portugal
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="disclosure">
+
+<div class="w center">
+
+<div class="ey">
+Transparency
+</div>
+
+<h2 class="title" style="font-size:28px">
+Affiliate disclosure
+</h2>
+
+<p>
+Some links on StayPerfect are affiliate links. If you click a link
+and make a qualifying purchase, StayPerfect may receive a commission
+at no additional cost to you. Affiliate relationships do not change
+the price you pay. We aim to keep recommendations useful and transparent.
+</p>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<div class="w center">
+
+<div class="ey">
+StayPerfect
+</div>
+
+<h2 class="title" style="font-size:28px">
+Build your perfect Lisbon trip
+</h2>
+
+<p class="lead">
+StayPerfect helps travellers discover destinations, experiences and
+travel services that fit the way they want to travel.
+</p>
+
+<div class="buttons" style="justify-content:center">
+
+<a class="btn primary" href="mailto:hello@stayperfect.example">
+Contact StayPerfect
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<div class="w foot">
+
+<div>
+<strong>StayPerfect</strong>
+— Find your perfect trip.
+</div>
+
+<div>
+© 2026 StayPerfect ·
+<a href="privacy.html">Privacy</a>
+·
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>

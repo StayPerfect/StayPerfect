@@ -1,0 +1,1837 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>El Hierro — Find Your Perfect Match | StayPerfect</title>
+
+<meta name="description" content="Discover El Hierro with StayPerfect. Explore volcanic landscapes, nature, diving, hiking, quiet villages and authentic island experiences.">
+
+<style>
+:root{
+  --blue:#1769e8;
+  --dark:#10204a;
+  --muted:#68758b;
+  --soft:#eef6ff;
+  --line:#e4eaf2;
+  --bg:#f7f9fc;
+  --white:#fff;
+  --green:#16855b;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--dark);
+  background:#fff;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font-family:inherit;
+}
+
+.w{
+  max-width:1150px;
+  margin:auto;
+  padding:0 22px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+nav{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:25px;
+  font-weight:900;
+  letter-spacing:-.05em;
+}
+
+.logo span{
+  color:var(--blue);
+}
+
+.links{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  font-size:14px;
+  font-weight:750;
+}
+
+.links a:hover{
+  color:var(--blue);
+}
+
+.pill{
+  color:#fff!important;
+  background:var(--blue);
+  padding:10px 16px;
+  border-radius:999px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  min-height:680px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  color:#fff;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7,20,42,.90),
+      rgba(7,20,42,.56),
+      rgba(7,20,42,.18)
+    ),
+    url("https://loremflickr.com/1800/1100/el,hierro,canary,islands")
+    center/cover no-repeat;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      180deg,
+      transparent 55%,
+      rgba(7,20,42,.48)
+    );
+  pointer-events:none;
+}
+
+.hero-grid{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:60px;
+  align-items:center;
+}
+
+.ey{
+  color:var(--blue);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.hero .ey{
+  color:#8fc1ff;
+}
+
+.hero h1{
+  margin:15px 0 20px;
+  font-size:clamp(52px,7vw,80px);
+  line-height:.95;
+  letter-spacing:-.06em;
+}
+
+.hero h1 em{
+  color:#78b8ff;
+  font-style:normal;
+}
+
+.hero p{
+  max-width:650px;
+  color:#e7eefb;
+  font-size:19px;
+  line-height:1.6;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:27px;
+}
+
+.btn{
+  display:inline-block;
+  border:0;
+  border-radius:14px;
+  padding:14px 18px;
+  font-weight:850;
+  cursor:pointer;
+}
+
+.primary{
+  background:var(--blue);
+  color:#fff;
+}
+
+.primary:hover{
+  opacity:.9;
+}
+
+.secondary{
+  background:#fff;
+  border:1px solid var(--line);
+}
+
+.hero .secondary{
+  background:rgba(255,255,255,.12);
+  border-color:rgba(255,255,255,.35);
+  color:#fff;
+  backdrop-filter:blur(10px);
+}
+
+/* =========================
+   HERO PANEL
+========================= */
+
+.hero-panel{
+  background:rgba(255,255,255,.95);
+  color:var(--dark);
+  border:1px solid rgba(255,255,255,.5);
+  border-radius:28px;
+  padding:24px;
+  box-shadow:0 25px 70px rgba(0,0,0,.25);
+  backdrop-filter:blur(12px);
+}
+
+.panel-title{
+  font-weight:900;
+  font-size:19px;
+  margin-bottom:14px;
+}
+
+.plan-row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:13px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.plan-row:last-child{
+  border-bottom:0;
+}
+
+.plan-icon{
+  width:44px;
+  height:44px;
+  border-radius:14px;
+  background:var(--soft);
+  display:grid;
+  place-items:center;
+  font-size:21px;
+  flex-shrink:0;
+}
+
+.plan-row strong{
+  display:block;
+  font-size:14px;
+}
+
+.plan-row span{
+  display:block;
+  color:var(--muted);
+  font-size:12px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+  padding:76px 0;
+}
+
+.center{
+  text-align:center;
+}
+
+.title{
+  margin:8px 0 12px;
+  font-size:38px;
+  letter-spacing:-.045em;
+}
+
+.lead{
+  max-width:760px;
+  margin:auto;
+  color:var(--muted);
+  line-height:1.65;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro{
+  background:#fff;
+}
+
+.intro-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+  margin-top:40px;
+}
+
+.info-card{
+  border:1px solid var(--line);
+  border-radius:23px;
+  padding:26px;
+  background:#fff;
+}
+
+.info-card:hover{
+  box-shadow:0 15px 40px rgba(16,32,74,.08);
+}
+
+.info-icon{
+  width:50px;
+  height:50px;
+  border-radius:15px;
+  background:var(--soft);
+  display:grid;
+  place-items:center;
+  font-size:24px;
+}
+
+.info-card h3{
+  margin:15px 0 8px;
+  font-size:21px;
+}
+
+.info-card p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.6;
+  font-size:14px;
+}
+
+/* =========================
+   HIGHLIGHTS
+========================= */
+
+.highlights{
+  background:var(--bg);
+}
+
+.highlight-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:38px;
+}
+
+.highlight{
+  overflow:hidden;
+  border-radius:22px;
+  background:#fff;
+  border:1px solid var(--line);
+}
+
+.highlight-photo{
+  height:210px;
+  overflow:hidden;
+}
+
+.highlight-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:.35s ease;
+}
+
+.highlight:hover .highlight-photo img{
+  transform:scale(1.05);
+}
+
+.highlight-content{
+  padding:21px;
+}
+
+.highlight-content h3{
+  margin:0 0 7px;
+  font-size:20px;
+}
+
+.highlight-content p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.55;
+  font-size:13px;
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experiences{
+  background:#fff;
+}
+
+.experience-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:38px;
+}
+
+.experience{
+  border:1px solid var(--line);
+  border-radius:21px;
+  padding:23px;
+  background:#fff;
+}
+
+.experience-icon{
+  font-size:29px;
+}
+
+.experience h3{
+  margin:12px 0 7px;
+  font-size:19px;
+}
+
+.experience p{
+  margin:0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.55;
+}
+
+/* =========================
+   IMAGE BANNER
+========================= */
+
+.banner{
+  min-height:430px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  color:#fff;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7,20,42,.86),
+      rgba(7,20,42,.30)
+    ),
+    url("https://loremflickr.com/1800/900/el,hierro,volcano")
+    center/cover no-repeat;
+}
+
+.banner-content{
+  position:relative;
+  z-index:2;
+  max-width:650px;
+}
+
+.banner h2{
+  font-size:44px;
+  line-height:1;
+  letter-spacing:-.05em;
+  margin:10px 0 15px;
+}
+
+.banner p{
+  color:#e7eefb;
+  line-height:1.6;
+  font-size:17px;
+}
+
+/* =========================
+   PERFECT MATCH
+========================= */
+
+.match{
+  background:var(--dark);
+  color:#fff;
+}
+
+.match-box{
+  margin-top:35px;
+  background:#fff;
+  color:var(--dark);
+  border-radius:27px;
+  padding:30px;
+  box-shadow:0 20px 60px rgba(0,0,0,.22);
+}
+
+.match-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.match-option{
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:20px;
+  background:#fff;
+}
+
+.match-option-icon{
+  font-size:27px;
+}
+
+.match-option strong{
+  display:block;
+  margin-top:8px;
+  font-size:15px;
+}
+
+.match-option span{
+  display:block;
+  color:var(--muted);
+  font-size:12px;
+  margin-top:4px;
+}
+
+.match-note{
+  margin-top:22px;
+  padding:18px;
+  background:var(--soft);
+  border-radius:17px;
+  color:var(--dark);
+  font-size:14px;
+  line-height:1.55;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+  background:var(--bg);
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:38px;
+}
+
+.service{
+  border:1px solid var(--line);
+  border-radius:21px;
+  padding:23px;
+  background:#fff;
+}
+
+.service-icon{
+  width:45px;
+  height:45px;
+  border-radius:14px;
+  background:var(--soft);
+  display:grid;
+  place-items:center;
+  font-size:22px;
+}
+
+.service h3{
+  margin:14px 0 7px;
+  font-size:18px;
+}
+
+.service p{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.5;
+  margin:0 0 15px;
+}
+
+.service .btn{
+  padding:10px 13px;
+  font-size:12px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+  background:#fff;
+}
+
+.cta-box{
+  background:
+    linear-gradient(
+      135deg,
+      #eef6ff,
+      #f8fbff
+    );
+  border:1px solid #dbe9f8;
+  border-radius:27px;
+  padding:40px;
+  text-align:center;
+}
+
+.cta-box h2{
+  margin:7px 0 10px;
+  font-size:36px;
+  letter-spacing:-.045em;
+}
+
+.cta-box p{
+  max-width:650px;
+  margin:auto;
+  color:var(--muted);
+  line-height:1.6;
+}
+
+/* =========================
+   DISCLOSURE
+========================= */
+
+.disclosure{
+  border-top:1px solid var(--line);
+  padding:45px 0;
+}
+
+.disclosure p{
+  max-width:780px;
+  margin:auto;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  border-top:1px solid var(--line);
+  padding:30px 0;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.foot{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+  .links{
+    display:none;
+  }
+
+  .hero-grid,
+  .intro-grid{
+    grid-template-columns:1fr;
+  }
+
+  .highlight-grid,
+  .experience-grid,
+  .service-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+@media(max-width:650px){
+
+  .w{
+    padding:0 18px;
+  }
+
+  .hero{
+    min-height:800px;
+  }
+
+  .hero-grid{
+    gap:35px;
+  }
+
+  .hero h1{
+    font-size:48px;
+  }
+
+  .title{
+    font-size:30px;
+  }
+
+  .highlight-grid,
+  .experience-grid,
+  .service-grid,
+  .match-grid{
+    grid-template-columns:1fr;
+  }
+
+  .banner{
+    min-height:500px;
+  }
+
+  .banner h2{
+    font-size:36px;
+  }
+
+  .cta-box{
+    padding:30px 20px;
+  }
+
+  .cta-box h2{
+    font-size:30px;
+  }
+
+  .foot{
+    display:block;
+  }
+
+  .foot div+div{
+    margin-top:12px;
+  }
+
+}
+</style>
+  <link rel="canonical" href="https://stayperfect.jos-iul88.workers.dev/elhierro.html">
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="w">
+
+<nav>
+
+<a class="logo" href="index.html">
+Stay<span>Perfect</span>
+</a>
+
+<div class="links">
+
+<a href="index.html#destinations">
+Destinations
+</a>
+
+<a href="index.html#services">
+Travel Services
+</a>
+
+<a href="index.html#how">
+How it works
+</a>
+
+<a href="index.html#match">
+Perfect Match
+</a>
+
+<a class="pill" href="#contact">
+Contact
+</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<div class="w hero-grid">
+
+<div>
+
+<div class="ey">
+<a href="canary-islands.html">Canary Islands</a> · Spain
+</div>
+
+<h1>
+Discover <em>El Hierro.</em>
+</h1>
+
+<p>
+A remote Atlantic island shaped by volcanoes, wild landscapes, crystal-clear waters and a slower way of travelling.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="#discover">
+Explore El Hierro ↓
+</a>
+
+<a class="btn secondary" href="index.html#match">
+Perfect Match ✨
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-panel">
+
+<div class="panel-title">
+🌋 El Hierro at a glance
+</div>
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🌋
+</div>
+
+<div>
+
+<strong>
+Volcanic landscapes
+</strong>
+
+<span>
+Unique geological scenery
+</span>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🌊
+</div>
+
+<div>
+
+<strong>
+Natural pools
+</strong>
+
+<span>
+Atlantic swimming spots
+</span>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🤿
+</div>
+
+<div>
+
+<strong>
+Diving
+</strong>
+
+<span>
+Clear waters and marine life
+</span>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🥾
+</div>
+
+<div>
+
+<strong>
+Hiking
+</strong>
+
+<span>
+Trails through wild landscapes
+</span>
+
+</div>
+
+</div>
+
+
+<div class="plan-row">
+
+<div class="plan-icon">
+🌿
+</div>
+
+<div>
+
+<strong>
+Nature
+</strong>
+
+<span>
+Peaceful island experiences
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section id="discover" class="intro">
+
+<div class="w center">
+
+<div class="ey">
+Why El Hierro
+</div>
+
+<h2 class="title">
+A different side of the Canary Islands
+</h2>
+
+<p class="lead">
+El Hierro is ideal for travellers who want nature, tranquillity, adventure and authentic island landscapes rather than large resorts and busy tourist areas.
+</p>
+
+</div>
+
+
+<div class="w intro-grid">
+
+<div class="info-card">
+
+<div class="info-icon">
+🌿
+</div>
+
+<h3>
+Wild & peaceful
+</h3>
+
+<p>
+Discover a quieter Canary Island where dramatic coastlines, volcanic terrain and green landscapes create a naturally relaxed atmosphere.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="info-icon">
+🤿
+</div>
+
+<h3>
+Made for exploration
+</h3>
+
+<p>
+From hiking and diving to natural swimming pools and scenic drives, El Hierro rewards travellers who enjoy discovering places at their own pace.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="info-icon">
+🌋
+</div>
+
+<h3>
+Volcanic character
+</h3>
+
+<p>
+Volcanic formations, lava landscapes and rugged coastlines give the island a distinctive identity that feels very different from mainland Spain.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="info-icon">
+🧘
+</div>
+
+<h3>
+Slow travel
+</h3>
+
+<p>
+El Hierro works particularly well for travellers looking to disconnect from crowds and enjoy a slower, more peaceful island experience.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     HIGHLIGHTS
+========================= -->
+
+<section class="highlights">
+
+<div class="w center">
+
+<div class="ey">
+Places to discover
+</div>
+
+<h2 class="title">
+El Hierro highlights
+</h2>
+
+<p class="lead">
+Explore some of the island's landscapes and experiences that make it special.
+</p>
+
+</div>
+
+
+<div class="w highlight-grid">
+
+
+<div class="highlight">
+
+<div class="highlight-photo">
+
+<img
+src="https://loremflickr.com/900/600/el,hierro,volcano"
+alt="Volcanic landscape in El Hierro"
+loading="lazy"
+>
+
+</div>
+
+<div class="highlight-content">
+
+<h3>
+Volcanic landscapes
+</h3>
+
+<p>
+Explore rugged volcanic scenery, lava formations and dramatic viewpoints across the island.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="highlight">
+
+<div class="highlight-photo">
+
+<img
+src="https://loremflickr.com/900/600/el,hierro,natural,pool"
+alt="Natural pool in El Hierro"
+loading="lazy"
+>
+
+</div>
+
+<div class="highlight-content">
+
+<h3>
+Natural pools
+</h3>
+
+<p>
+Swim in Atlantic waters surrounded by volcanic rock and beautiful coastal scenery.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="highlight">
+
+<div class="highlight-photo">
+
+<img
+src="https://loremflickr.com/900/600/el,hierro,coast"
+alt="Coast of El Hierro"
+loading="lazy"
+>
+
+</div>
+
+<div class="highlight-content">
+
+<h3>
+Wild coastline
+</h3>
+
+<p>
+Discover dramatic cliffs, remote coves and panoramic Atlantic views.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="highlight">
+
+<div class="highlight-photo">
+
+<img
+src="https://loremflickr.com/900/600/el,hierro,diving"
+alt="Diving in El Hierro"
+loading="lazy"
+>
+
+</div>
+
+<div class="highlight-content">
+
+<h3>
+Diving
+</h3>
+
+<p>
+The island is known for clear waters and impressive underwater landscapes.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="highlight">
+
+<div class="highlight-photo">
+
+<img
+src="https://loremflickr.com/900/600/el,hierro,hiking"
+alt="Hiking in El Hierro"
+loading="lazy"
+>
+
+</div>
+
+<div class="highlight-content">
+
+<h3>
+Hiking
+</h3>
+
+<p>
+Walk through forests, volcanic terrain and spectacular viewpoints.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="highlight">
+
+<div class="highlight-photo">
+
+<img
+src="https://loremflickr.com/900/600/el,hierro,mirador"
+alt="Viewpoint in El Hierro"
+loading="lazy"
+>
+
+</div>
+
+<div class="highlight-content">
+
+<h3>
+Scenic viewpoints
+</h3>
+
+<p>
+Take in wide Atlantic panoramas from some of the island's spectacular viewpoints.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCES
+========================= -->
+
+<section class="experiences">
+
+<div class="w center">
+
+<div class="ey">
+Travel your way
+</div>
+
+<h2 class="title">
+What can you do in El Hierro?
+</h2>
+
+<p class="lead">
+Choose the experiences that best fit the kind of trip you want to create.
+</p>
+
+</div>
+
+
+<div class="w experience-grid">
+
+
+<div class="experience">
+
+<div class="experience-icon">
+🥾
+</div>
+
+<h3>
+Hiking & nature
+</h3>
+
+<p>
+Explore trails through volcanic landscapes, forests and dramatic coastal scenery.
+</p>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-icon">
+🤿
+</div>
+
+<h3>
+Diving & ocean
+</h3>
+
+<p>
+Discover the underwater world around the island with clear Atlantic waters and marine life.
+</p>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-icon">
+🏊
+</div>
+
+<h3>
+Natural swimming
+</h3>
+
+<p>
+Enjoy a refreshing swim in volcanic natural pools and sheltered coastal spots.
+</p>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-icon">
+🚗
+</div>
+
+<h3>
+Scenic road trips
+</h3>
+
+<p>
+Rent a car and explore the island's viewpoints, villages, coastlines and landscapes.
+</p>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-icon">
+📸
+</div>
+
+<h3>
+Photography
+</h3>
+
+<p>
+Capture dramatic volcanic terrain, ocean views, forests and unforgettable sunsets.
+</p>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-icon">
+🧘
+</div>
+
+<h3>
+Slow travel
+</h3>
+
+<p>
+Take your time, avoid crowds and enjoy a peaceful island atmosphere.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     BANNER
+========================= -->
+
+<section class="banner">
+
+<div class="w">
+
+<div class="banner-content">
+
+<div class="ey">
+Atlantic island escape
+</div>
+
+<h2>
+Come for the landscapes.
+Stay for the feeling.
+</h2>
+
+<p>
+El Hierro is a destination for travellers who want to slow down, explore nature and experience a quieter side of the Canary Islands.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="index.html#services">
+Plan Your Trip →
+</a>
+
+<a class="btn secondary" href="index.html#match">
+Find Your Perfect Match ✨
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PERFECT MATCH
+========================= -->
+
+<section class="match">
+
+<div class="w center">
+
+<div class="ey">
+StayPerfect recommendation
+</div>
+
+<h2 class="title">
+Is El Hierro right for you?
+</h2>
+
+<p class="lead">
+El Hierro can be an excellent match if you value nature, adventure and tranquillity.
+</p>
+
+</div>
+
+
+<div class="w">
+
+<div class="match-box">
+
+<div class="match-grid">
+
+
+<div class="match-option">
+
+<div class="match-option-icon">
+🌿
+</div>
+
+<strong>
+Nature lovers
+</strong>
+
+<span>
+Excellent match
+</span>
+
+</div>
+
+
+<div class="match-option">
+
+<div class="match-option-icon">
+🥾
+</div>
+
+<strong>
+Adventure travellers
+</strong>
+
+<span>
+Excellent match
+</span>
+
+</div>
+
+
+<div class="match-option">
+
+<div class="match-option-icon">
+🧘
+</div>
+
+<strong>
+Slow travellers
+</strong>
+
+<span>
+Excellent match
+</span>
+
+</div>
+
+
+<div class="match-option">
+
+<div class="match-option-icon">
+🤿
+</div>
+
+<strong>
+Diving enthusiasts
+</strong>
+
+<span>
+Excellent match
+</span>
+
+</div>
+
+
+<div class="match-option">
+
+<div class="match-option-icon">
+❤️
+</div>
+
+<strong>
+Couples
+</strong>
+
+<span>
+Very good match
+</span>
+
+</div>
+
+
+<div class="match-option">
+
+<div class="match-option-icon">
+🌙
+</div>
+
+<strong>
+Nightlife seekers
+</strong>
+
+<span>
+Less suitable
+</span>
+
+</div>
+
+</div>
+
+
+<div class="match-note">
+
+<strong>✨ StayPerfect insight</strong><br>
+
+If your ideal holiday means nature, quiet surroundings, outdoor activities and discovering somewhere different, El Hierro is likely to be a strong destination match.
+
+</div>
+
+
+<div class="buttons">
+
+<a class="btn primary" href="index.html#match">
+Take the Perfect Match →
+</a>
+
+<a class="btn secondary" href="index.html#destinations">
+Explore More Destinations
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="services">
+
+<div class="w center">
+
+<div class="ey">
+Plan your journey
+</div>
+
+<h2 class="title">
+Travel services for El Hierro
+</h2>
+
+<p class="lead">
+Use StayPerfect's travel services to organise the important parts of your trip.
+</p>
+
+</div>
+
+
+<div class="w service-grid">
+
+
+<div class="service">
+
+<div class="service-icon">
+✈️
+</div>
+
+<h3>
+Flights
+</h3>
+
+<p>
+Search flight options for your journey to the Canary Islands.
+</p>
+
+<a
+class="btn primary"
+href="https://aviasales.tpx.gr/xaccp3pU"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Search Flights →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🚗
+</div>
+
+<h3>
+Car rental
+</h3>
+
+<p>
+A rental car can make exploring El Hierro much easier.
+</p>
+
+<a
+class="btn primary"
+href="https://autoeurope.tpx.gr/PYK42wVM"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Rent a Car →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🏨
+</div>
+
+<h3>
+Hotels & activities
+</h3>
+
+<p>
+Discover accommodation, attractions and travel experiences.
+</p>
+
+<a
+class="btn primary"
+href="https://klook.tpx.gr/HyAQ5Z8G"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Explore Klook →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🎟️
+</div>
+
+<h3>
+Activities
+</h3>
+
+<p>
+Find tours and experiences for your island adventure.
+</p>
+
+<a
+class="btn primary"
+href="https://kkday.tpx.gr/lk2ssfVX"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Explore Activities →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🚐
+</div>
+
+<h3>
+Airport transfers
+</h3>
+
+<p>
+Arrange a smoother transfer for your arrival and departure.
+</p>
+
+<a
+class="btn primary"
+href="https://intui.tpx.gr/JsoT6ciu"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Book Transfer →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+📱
+</div>
+
+<h3>
+Travel eSIM
+</h3>
+
+<p>
+Stay connected while exploring the island.
+</p>
+
+<a
+class="btn primary"
+href="https://saily.tpx.gr/qqzwC6gB"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Get an eSIM →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta" id="contact">
+
+<div class="w">
+
+<div class="cta-box">
+
+<div class="ey">
+Your next island escape
+</div>
+
+<h2>
+Could El Hierro be your Perfect Match? 🌋
+</h2>
+
+<p>
+Tell StayPerfect how you like to travel and discover the destination that fits your preferences.
+</p>
+
+<div class="buttons" style="justify-content:center">
+
+<a class="btn primary" href="index.html#match">
+Find My Perfect Match ✨
+</a>
+
+<a class="btn secondary" href="index.html#destinations">
+Back to Destinations
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     DISCLOSURE
+========================= -->
+
+<section class="disclosure">
+
+<div class="w center">
+
+<div class="ey">
+Transparency
+</div>
+
+<h2 class="title" style="font-size:28px">
+Affiliate disclosure
+</h2>
+
+<p>
+Some links on StayPerfect are affiliate links. If you click a link and make a qualifying purchase, StayPerfect may receive a commission at no additional cost to you.
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="w foot">
+
+<div>
+<strong>StayPerfect</strong> — Find your perfect trip.
+</div>
+
+<div>
+© 2026 StayPerfect ·
+<a href="privacy.html">Privacy</a>
+·
+<a href="index.html#contact">Contact</a>
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
