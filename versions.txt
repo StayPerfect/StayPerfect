@@ -1,0 +1,73 @@
+
+ ⛅️ wrangler 4.124.0 (update available 4.127.1)
+───────────────────────────────────────────────
+Version ID:  a700bf4c-c388-45c3-8f7d-ce7680a419e3
+Created:     2026-08-27T14:26:27.637Z
+Author:      jos.iul88@gmx.es
+Source:      Unknown (version_upload)
+Tag:         -
+Message:     -
+
+Version ID:  01dc41f9-2616-41a7-9161-f0e713991e5f
+Created:     2026-08-27T19:01:10.173Z
+Author:      jos.iul88@gmx.es
+Source:      Unknown (version_upload)
+Tag:         -
+Message:     -
+
+Version ID:  c5895e3d-a733-47ce-b372-030b41d9ec13
+Created:     2026-08-28T19:10:28.491Z
+Author:      jos.iul88@gmx.es
+Source:      Unknown (version_upload)
+Tag:         -
+Message:     -
+
+Version ID:  2419c43f-f71b-47ff-8d4e-7a9425125a36
+Created:     2026-08-28T19:15:01.701Z
+Author:      jos.iul88@gmx.es
+Source:      Unknown (version_upload)
+Tag:         -
+Message:     -
+
+Version ID:  5ea1e616-0892-45d7-a9ca-4a64cca66eff
+Created:     2026-08-29T17:29:45.647Z
+Author:      jos.iul88@gmx.es
+Source:      Unknown (version_upload)
+Tag:         -
+Message:     -
+
+Version ID:  d8224728-f944-4dbd-8e6a-930adf8bdcb5
+Created:     2026-08-29T17:56:46.926Z
+Author:      jos.iul88@gmx.es
+Source:      Unknown (version_upload)
+Tag:         -
+Message:     -
+
+Version ID:  568c8637-635f-437c-8e65-fde9f28063fb
+Created:     2026-08-30T14:04:45.651Z
+Author:      jos.iul88@gmx.es
+Source:      Unknown (version_upload)
+Tag:         -
+Message:     -
+
+Version ID:  c62fef2d-bb43-4a63-adb6-20e62c15c336
+Created:     2026-08-30T14:14:47.056Z
+Author:      jos.iul88@gmx.es
+Source:      Unknown (version_upload)
+Tag:         -
+Message:     -
+
+Version ID:  7d91f2b8-6808-4f7c-bc08-74e1d64e3e32
+Created:     2026-08-30T14:23:14.816Z
+Author:      jos.iul88@gmx.es
+Source:      Unknown (version_upload)
+Tag:         -
+Message:     -
+
+Version ID:  a3f79027-1ced-40f3-83b4-1c549b5abab5
+Created:     2026-08-30T15:51:14.146Z
+Author:      jos.iul88@gmx.es
+Source:      Unknown (version_upload)
+Tag:         -
+Message:     -
+

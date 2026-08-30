@@ -1,0 +1,1848 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Gran Canaria — Find Your Perfect Trip | StayPerfect</title>
+
+<meta name="description" content="Discover Gran Canaria with StayPerfect. Explore beaches, mountains, dunes, nature, nightlife, activities, car rentals, flights and travel services.">
+
+<style>
+
+:root{
+  --blue:#1769e8;
+  --dark:#10204a;
+  --muted:#68758b;
+  --soft:#eef6ff;
+  --line:#e4eaf2;
+  --bg:#f7f9fc;
+  --white:#fff;
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--dark);
+  background:#fff;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font-family:inherit;
+}
+
+.w{
+  max-width:1150px;
+  margin:auto;
+  padding:0 22px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+nav{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:25px;
+  font-weight:900;
+  letter-spacing:-.05em;
+}
+
+.logo span{
+  color:var(--blue);
+}
+
+.links{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  font-size:14px;
+  font-weight:750;
+}
+
+.links a:hover{
+  color:var(--blue);
+}
+
+.pill{
+  color:#fff!important;
+  background:var(--blue);
+  padding:10px 16px;
+  border-radius:999px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  min-height:680px;
+  display:flex;
+  align-items:flex-end;
+  position:relative;
+  overflow:hidden;
+  color:#fff;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8,20,48,.88),
+      rgba(8,20,48,.48),
+      rgba(8,20,48,.14)
+    ),
+    url("https://loremflickr.com/1800/1100/gran,canaria")
+    center/cover no-repeat;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent 45%,
+      rgba(8,20,48,.72) 100%
+    );
+
+  pointer-events:none;
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  width:100%;
+  padding-bottom:75px;
+}
+
+.ey{
+  color:#8fc1ff;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.hero h1{
+  margin:14px 0 18px;
+  font-size:clamp(50px,8vw,86px);
+  line-height:.92;
+  letter-spacing:-.065em;
+}
+
+.hero p{
+  max-width:720px;
+  color:#edf4ff;
+  font-size:19px;
+  line-height:1.6;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:27px;
+}
+
+.btn{
+  display:inline-block;
+  border:0;
+  border-radius:14px;
+  padding:14px 18px;
+  font-weight:850;
+  cursor:pointer;
+}
+
+.primary{
+  background:var(--blue);
+  color:#fff;
+}
+
+.primary:hover{
+  opacity:.9;
+}
+
+.secondary{
+  background:#fff;
+  border:1px solid var(--line);
+}
+
+.hero .secondary{
+  background:rgba(255,255,255,.12);
+  border-color:rgba(255,255,255,.35);
+  color:#fff;
+  backdrop-filter:blur(10px);
+}
+
+/* =========================
+   QUICK INFO
+========================= */
+
+.quick{
+  margin-top:-45px;
+  position:relative;
+  z-index:5;
+}
+
+.quick-box{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:24px;
+  box-shadow:0 18px 55px rgba(16,32,74,.14);
+  padding:22px;
+
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+
+.quick-item{
+  padding:14px;
+  border-right:1px solid var(--line);
+}
+
+.quick-item:last-child{
+  border-right:0;
+}
+
+.quick-icon{
+  font-size:24px;
+  margin-bottom:6px;
+}
+
+.quick-item strong{
+  display:block;
+  font-size:14px;
+}
+
+.quick-item span{
+  display:block;
+  color:var(--muted);
+  font-size:12px;
+  margin-top:3px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+  padding:78px 0;
+}
+
+.center{
+  text-align:center;
+}
+
+.title{
+  margin:8px 0 12px;
+  font-size:38px;
+  letter-spacing:-.045em;
+}
+
+.lead{
+  max-width:760px;
+  margin:auto;
+  color:var(--muted);
+  line-height:1.65;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:50px;
+  align-items:center;
+}
+
+.intro-image{
+  min-height:390px;
+  border-radius:27px;
+  overflow:hidden;
+
+  background:
+    url("https://loremflickr.com/1100/850/gran,canaria,mountains")
+    center/cover no-repeat;
+}
+
+.intro-copy h2{
+  margin:8px 0 15px;
+  font-size:42px;
+  letter-spacing:-.05em;
+}
+
+.intro-copy p{
+  color:var(--muted);
+  line-height:1.7;
+}
+
+.check-list{
+  display:grid;
+  gap:10px;
+  margin-top:22px;
+}
+
+.check{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  font-size:14px;
+}
+
+.check b{
+  color:var(--blue);
+}
+
+/* =========================
+   EXPERIENCES
+========================= */
+
+.experiences{
+  background:var(--bg);
+}
+
+.experience-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:38px;
+}
+
+.experience{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  overflow:hidden;
+  transition:.2s ease;
+}
+
+.experience:hover{
+  transform:translateY(-4px);
+  box-shadow:0 18px 45px rgba(16,32,74,.12);
+}
+
+.experience-photo{
+  height:190px;
+  overflow:hidden;
+}
+
+.experience-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .35s ease;
+}
+
+.experience:hover img{
+  transform:scale(1.05);
+}
+
+.experience-content{
+  padding:20px;
+}
+
+.experience-icon{
+  font-size:25px;
+}
+
+.experience h3{
+  margin:9px 0 7px;
+  font-size:21px;
+}
+
+.experience p{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.55;
+  margin:0;
+}
+
+/* =========================
+   DUNES
+========================= */
+
+.dunes{
+  background:var(--dark);
+  color:#fff;
+}
+
+.dunes-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:50px;
+  align-items:center;
+}
+
+.dunes-image{
+  min-height:430px;
+  border-radius:27px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,0,0,.04),
+      rgba(0,0,0,.35)
+    ),
+    url("https://loremflickr.com/1100/850/maspalomas,dunes")
+    center/cover no-repeat;
+}
+
+.dunes-copy .ey{
+  color:#8fc1ff;
+}
+
+.dunes-copy h2{
+  font-size:42px;
+  margin:8px 0 15px;
+  letter-spacing:-.05em;
+}
+
+.dunes-copy p{
+  color:#ccd6e8;
+  line-height:1.7;
+}
+
+.dunes-points{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-top:24px;
+}
+
+.dunes-point{
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:15px;
+  padding:14px;
+  font-size:13px;
+}
+
+/* =========================
+   AREAS
+========================= */
+
+.areas{
+  background:#fff;
+}
+
+.area-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+  margin-top:38px;
+}
+
+.area{
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:24px;
+  background:#fff;
+}
+
+.area:hover{
+  box-shadow:0 14px 40px rgba(16,32,74,.09);
+}
+
+.area-top{
+  display:flex;
+  align-items:center;
+  gap:13px;
+}
+
+.area-icon{
+  width:48px;
+  height:48px;
+  border-radius:14px;
+  background:var(--soft);
+  display:grid;
+  place-items:center;
+  font-size:22px;
+}
+
+.area h3{
+  margin:0;
+  font-size:19px;
+}
+
+.area p{
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.55;
+}
+
+/* =========================
+   PERFECT MATCH
+========================= */
+
+.match-section{
+  background:var(--bg);
+}
+
+.match-card{
+  margin-top:35px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:27px;
+  padding:30px;
+  box-shadow:0 18px 55px rgba(16,32,74,.10);
+
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:30px;
+  align-items:center;
+}
+
+.match-score{
+  text-align:center;
+  min-width:150px;
+}
+
+.match-score strong{
+  display:block;
+  color:var(--blue);
+  font-size:55px;
+  line-height:1;
+  letter-spacing:-.06em;
+}
+
+.match-score span{
+  color:var(--muted);
+  font-size:12px;
+  font-weight:800;
+}
+
+.match-card h3{
+  margin:0 0 8px;
+  font-size:24px;
+}
+
+.match-card p{
+  color:var(--muted);
+  line-height:1.55;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+  background:#fff;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:36px;
+}
+
+.service{
+  border:1px solid var(--line);
+  border-radius:21px;
+  padding:23px;
+  background:#fff;
+}
+
+.service-icon{
+  width:45px;
+  height:45px;
+  border-radius:14px;
+  background:var(--soft);
+  display:grid;
+  place-items:center;
+  font-size:21px;
+}
+
+.service h3{
+  margin:14px 0 7px;
+}
+
+.service p{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.55;
+}
+
+.service .btn{
+  margin-top:8px;
+  padding:11px 14px;
+  font-size:13px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+  background:var(--dark);
+  color:#fff;
+}
+
+.cta-box{
+  text-align:center;
+  max-width:780px;
+  margin:auto;
+}
+
+.cta h2{
+  font-size:45px;
+  line-height:1;
+  letter-spacing:-.055em;
+  margin:10px 0 15px;
+}
+
+.cta p{
+  color:#ccd6e8;
+  line-height:1.6;
+}
+
+/* =========================
+   DISCLOSURE
+========================= */
+
+.disclosure{
+  border-top:1px solid var(--line);
+  padding:42px 0;
+}
+
+.disclosure p{
+  max-width:780px;
+  margin:auto;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  border-top:1px solid var(--line);
+  padding:30px 0;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.foot{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+  .links{
+    display:none;
+  }
+
+  .quick-box{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .quick-item{
+    border-right:0;
+    border-bottom:1px solid var(--line);
+  }
+
+  .intro-grid,
+  .dunes-grid{
+    grid-template-columns:1fr;
+  }
+
+  .experience-grid,
+  .service-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .area-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media(max-width:650px){
+
+  .w{
+    padding:0 18px;
+  }
+
+  .hero{
+    min-height:720px;
+  }
+
+  .hero h1{
+    font-size:50px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  section{
+    padding:60px 0;
+  }
+
+  .title{
+    font-size:30px;
+  }
+
+  .intro-copy h2,
+  .dunes-copy h2{
+    font-size:34px;
+  }
+
+  .quick{
+    margin-top:-25px;
+  }
+
+  .quick-box{
+    grid-template-columns:1fr;
+  }
+
+  .quick-item{
+    border-bottom:1px solid var(--line);
+  }
+
+  .quick-item:last-child{
+    border-bottom:0;
+  }
+
+  .experience-grid,
+  .service-grid{
+    grid-template-columns:1fr;
+  }
+
+  .dunes-points{
+    grid-template-columns:1fr;
+  }
+
+  .match-card{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .match-score{
+    order:-1;
+  }
+
+  .foot{
+    display:block;
+  }
+
+  .foot div+div{
+    margin-top:12px;
+  }
+
+}
+
+</style>
+  <link rel="canonical" href="https://stayperfect.jos-iul88.workers.dev/gran-canaria.html">
+</head>
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="w">
+
+<nav>
+
+<a class="logo" href="index.html">
+Stay<span>Perfect</span>
+</a>
+
+<div class="links">
+
+<a href="index.html#destinations">
+Destinations
+</a>
+
+<a href="index.html#services">
+Travel Services
+</a>
+
+<a href="index.html#how">
+How it works
+</a>
+
+<a href="index.html#match">
+Perfect Match
+</a>
+
+<a class="pill" href="index.html#contact">
+Contact
+</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<div class="w hero-content">
+
+<div class="ey">
+<a href="canary-islands.html">Canary Islands</a> · Spain
+</div>
+
+<h1>
+Gran Canaria 🇪🇸
+</h1>
+
+<p>
+Golden beaches, dramatic mountains, desert-like dunes, lively resorts and beautiful Atlantic landscapes — discover Gran Canaria and find the side of the island that fits your travel style.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn primary"
+href="index.html#match"
+>
+Find My Perfect Match ✨
+</a>
+
+<a
+class="btn secondary"
+href="#experiences"
+>
+Explore Gran Canaria
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     QUICK INFO
+========================= -->
+
+<div class="quick">
+
+<div class="w">
+
+<div class="quick-box">
+
+<div class="quick-item">
+
+<div class="quick-icon">
+🏖️
+</div>
+
+<strong>Beaches</strong>
+
+<span>
+Long beaches and Atlantic coastlines
+</span>
+
+</div>
+
+
+<div class="quick-item">
+
+<div class="quick-icon">
+🏜️
+</div>
+
+<strong>Maspalomas Dunes</strong>
+
+<span>
+One of the island's iconic landscapes
+</span>
+
+</div>
+
+
+<div class="quick-item">
+
+<div class="quick-icon">
+🏔️
+</div>
+
+<strong>Mountains</strong>
+
+<span>
+Hiking, viewpoints and inland villages
+</span>
+
+</div>
+
+
+<div class="quick-item">
+
+<div class="quick-icon">
+🌙
+</div>
+
+<strong>Nightlife</strong>
+
+<span>
+Restaurants, bars and entertainment
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section>
+
+<div class="w intro-grid">
+
+<div class="intro-image"></div>
+
+<div class="intro-copy">
+
+<div class="ey">
+Why Gran Canaria?
+</div>
+
+<h2>
+An island of surprising variety.
+</h2>
+
+<p>
+Gran Canaria combines different landscapes in a relatively compact destination. You can spend the morning on the coast, drive into the mountains for dramatic views and finish the day beside the Atlantic.
+</p>
+
+<p>
+Its combination of beaches, outdoor activities, resorts, villages and restaurants makes it one of the most flexible Canary Islands for different types of travellers.
+</p>
+
+<div class="check-list">
+
+<div class="check">
+<b>✓</b>
+<span>Excellent choice for beach holidays</span>
+</div>
+
+<div class="check">
+<b>✓</b>
+<span>Great variety of outdoor activities</span>
+</div>
+
+<div class="check">
+<b>✓</b>
+<span>Suitable for couples, families, friends and solo travellers</span>
+</div>
+
+<div class="check">
+<b>✓</b>
+<span>Easy to combine coast, mountains and culture</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCES
+========================= -->
+
+<section id="experiences" class="experiences">
+
+<div class="w center">
+
+<div class="ey">
+Discover Gran Canaria
+</div>
+
+<h2 class="title">
+What can you experience?
+</h2>
+
+<p class="lead">
+Gran Canaria can feel completely different depending on where you go and what you want from your trip.
+</p>
+
+</div>
+
+
+<div class="w experience-grid">
+
+
+<!-- Beaches -->
+
+<div class="experience">
+
+<div class="experience-photo">
+
+<img
+src="https://loremflickr.com/900/600/gran,canaria,beach"
+alt="Beach in Gran Canaria"
+loading="lazy"
+>
+
+</div>
+
+<div class="experience-content">
+
+<div class="experience-icon">
+🏖️
+</div>
+
+<h3>
+Beaches & Ocean
+</h3>
+
+<p>
+Relax on beautiful beaches, swim in the Atlantic and discover different coastal landscapes.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Dunes -->
+
+<div class="experience">
+
+<div class="experience-photo">
+
+<img
+src="https://loremflickr.com/900/600/maspalomas,dunes"
+alt="Maspalomas dunes Gran Canaria"
+loading="lazy"
+>
+
+</div>
+
+<div class="experience-content">
+
+<div class="experience-icon">
+🏜️
+</div>
+
+<h3>
+Maspalomas Dunes
+</h3>
+
+<p>
+Explore one of Gran Canaria's most recognisable landscapes beside the Atlantic coast.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Mountains -->
+
+<div class="experience">
+
+<div class="experience-photo">
+
+<img
+src="https://loremflickr.com/900/600/gran,canaria,mountains"
+alt="Mountains in Gran Canaria"
+loading="lazy"
+>
+
+</div>
+
+<div class="experience-content">
+
+<div class="experience-icon">
+🏔️
+</div>
+
+<h3>
+Mountains & Hiking
+</h3>
+
+<p>
+Discover mountain roads, hiking trails, viewpoints and spectacular inland landscapes.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Adventure -->
+
+<div class="experience">
+
+<div class="experience-photo">
+
+<img
+src="https://loremflickr.com/900/600/gran,canaria,hiking"
+alt="Hiking in Gran Canaria"
+loading="lazy"
+>
+
+</div>
+
+<div class="experience-content">
+
+<div class="experience-icon">
+🥾
+</div>
+
+<h3>
+Outdoor Adventure
+</h3>
+
+<p>
+Hiking, cycling, watersports, boat trips and outdoor experiences create plenty of options.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Family -->
+
+<div class="experience">
+
+<div class="experience-photo">
+
+<img
+src="https://loremflickr.com/900/600/gran,canaria,family"
+alt="Family holiday Gran Canaria"
+loading="lazy"
+>
+
+</div>
+
+<div class="experience-content">
+
+<div class="experience-icon">
+👨‍👩‍👧
+</div>
+
+<h3>
+Family Travel
+</h3>
+
+<p>
+Beaches, attractions, easy excursions and family-friendly resorts make planning simple.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Nightlife -->
+
+<div class="experience">
+
+<div class="experience-photo">
+
+<img
+src="https://loremflickr.com/900/600/gran,canaria,nightlife"
+alt="Gran Canaria nightlife"
+loading="lazy"
+>
+
+</div>
+
+<div class="experience-content">
+
+<div class="experience-icon">
+🌙
+</div>
+
+<h3>
+Nightlife & Dining
+</h3>
+
+<p>
+Enjoy restaurants, bars, live entertainment and lively coastal areas after sunset.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     MASPALOMAS
+========================= -->
+
+<section class="dunes">
+
+<div class="w dunes-grid">
+
+<div class="dunes-image"></div>
+
+<div class="dunes-copy">
+
+<div class="ey">
+Iconic Gran Canaria
+</div>
+
+<h2>
+Maspalomas Dunes 🏜️
+</h2>
+
+<p>
+The Maspalomas dunes are one of Gran Canaria's most recognisable natural landscapes, where golden sand meets the Atlantic Ocean.
+</p>
+
+<p>
+The surrounding area also offers beaches, restaurants, accommodation and easy access to some of the island's most popular experiences.
+</p>
+
+<div class="dunes-points">
+
+<div class="dunes-point">
+🏜️ Golden sand dunes
+</div>
+
+<div class="dunes-point">
+🌊 Atlantic coastline
+</div>
+
+<div class="dunes-point">
+📸 Photography
+</div>
+
+<div class="dunes-point">
+🌅 Beautiful sunsets
+</div>
+
+</div>
+
+<div class="buttons">
+
+<a
+class="btn primary"
+href="https://www.google.com/search?q=Maspalomas+Dunes+Gran+Canaria"
+target="_blank"
+rel="noopener noreferrer"
+>
+Discover Maspalomas →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     AREAS
+========================= -->
+
+<section class="areas">
+
+<div class="w center">
+
+<div class="ey">
+Where to stay
+</div>
+
+<h2 class="title">
+Different areas, different Gran Canaria
+</h2>
+
+<p class="lead">
+Choosing the right base can completely change your experience of the island.
+</p>
+
+</div>
+
+
+<div class="w area-grid">
+
+
+<div class="area">
+
+<div class="area-top">
+
+<div class="area-icon">
+🏖️
+</div>
+
+<h3>
+Maspalomas
+</h3>
+
+</div>
+
+<p>
+A strong choice for beaches, dunes, resorts, restaurants and a classic Gran Canaria holiday atmosphere.
+</p>
+
+</div>
+
+
+<div class="area">
+
+<div class="area-top">
+
+<div class="area-icon">
+🌊
+</div>
+
+<h3>
+Puerto Rico
+</h3>
+
+</div>
+
+<p>
+A sunny southern base with beaches, water activities, restaurants and a lively holiday atmosphere.
+</p>
+
+</div>
+
+
+<div class="area">
+
+<div class="area-top">
+
+<div class="area-icon">
+🎉
+</div>
+
+<h3>
+Playa del Inglés
+</h3>
+
+</div>
+
+<p>
+A lively destination with nightlife, entertainment, restaurants, shopping and easy access to the coast.
+</p>
+
+</div>
+
+
+<div class="area">
+
+<div class="area-top">
+
+<div class="area-icon">
+🏙️
+</div>
+
+<h3>
+Las Palmas
+</h3>
+
+</div>
+
+<p>
+The island's main city, ideal for travellers who want urban life, culture, restaurants and city beaches.
+</p>
+
+</div>
+
+
+<div class="area">
+
+<div class="area-top">
+
+<div class="area-icon">
+🌿
+</div>
+
+<h3>
+Puerto de Mogán
+</h3>
+
+</div>
+
+<p>
+A picturesque coastal area with canals, restaurants, harbour views and a more relaxed atmosphere.
+</p>
+
+</div>
+
+
+<div class="area">
+
+<div class="area-top">
+
+<div class="area-icon">
+🏔️
+</div>
+
+<h3>
+Tejeda
+</h3>
+
+</div>
+
+<p>
+An inland mountain destination for travellers looking for landscapes, hiking and a quieter side of Gran Canaria.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PERFECT MATCH
+========================= -->
+
+<section class="match-section">
+
+<div class="w center">
+
+<div class="ey">
+StayPerfect recommendation
+</div>
+
+<h2 class="title">
+Could Gran Canaria be your Perfect Match?
+</h2>
+
+<p class="lead">
+Gran Canaria is particularly strong for travellers looking for variety — beaches, mountains, outdoor activities, nightlife and family-friendly options in one destination.
+</p>
+
+</div>
+
+
+<div class="w">
+
+<div class="match-card">
+
+<div>
+
+<h3>
+✨ Gran Canaria Perfect Match
+</h3>
+
+<p>
+Tell StayPerfect what matters most to you and compare Gran Canaria with Tenerife, Lanzarote, Fuerteventura and other destinations.
+</p>
+
+<a
+class="btn primary"
+href="index.html#match"
+>
+Take the Perfect Match Quiz →
+</a>
+
+</div>
+
+<div class="match-score">
+
+<strong>
+95%
+</strong>
+
+<span>
+Potential match
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     TRAVEL SERVICES
+========================= -->
+
+<section class="services">
+
+<div class="w center">
+
+<div class="ey">
+Plan your trip
+</div>
+
+<h2 class="title">
+Gran Canaria travel services
+</h2>
+
+<p class="lead">
+Use StayPerfect's travel services to organise the essential parts of your journey.
+</p>
+
+</div>
+
+
+<div class="w service-grid">
+
+
+<div class="service">
+
+<div class="service-icon">
+✈️
+</div>
+
+<h3>
+Flights
+</h3>
+
+<p>
+Search flight options for your journey to Gran Canaria.
+</p>
+
+<a
+class="btn primary"
+href="https://aviasales.tpx.gr/xaccp3pU"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Search Flights →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🚗
+</div>
+
+<h3>
+Car Rental
+</h3>
+
+<p>
+Compare rental options and explore the island independently.
+</p>
+
+<a
+class="btn primary"
+href="https://autoeurope.tpx.gr/PYK42wVM"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Rent a Car →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🎟️
+</div>
+
+<h3>
+Activities
+</h3>
+
+<p>
+Discover tours, attractions and experiences around Gran Canaria.
+</p>
+
+<a
+class="btn primary"
+href="https://kkday.tpx.gr/lk2ssfVX"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Explore Activities →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🏨
+</div>
+
+<h3>
+Hotels & Experiences
+</h3>
+
+<p>
+Find accommodation, attractions and travel experiences.
+</p>
+
+<a
+class="btn primary"
+href="https://klook.tpx.gr/HyAQ5Z8G"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Explore Klook →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🚐
+</div>
+
+<h3>
+Airport Transfers
+</h3>
+
+<p>
+Arrange a smoother transfer between the airport and your accommodation.
+</p>
+
+<a
+class="btn primary"
+href="https://intui.tpx.gr/JsoT6ciu"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Book Transfer →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+📱
+</div>
+
+<h3>
+Travel eSIM
+</h3>
+
+<p>
+Stay connected while exploring Gran Canaria.
+</p>
+
+<a
+class="btn primary"
+href="https://saily.tpx.gr/qqzwC6gB"
+target="_blank"
+rel="sponsored noopener noreferrer"
+>
+Get an eSIM →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+<div class="w">
+
+<div class="cta-box">
+
+<div class="ey">
+Ready to discover Gran Canaria?
+</div>
+
+<h2>
+Find out if Gran Canaria fits you.
+</h2>
+
+<p>
+Answer a few simple questions and let StayPerfect compare Gran Canaria with other destinations based on your travel style.
+</p>
+
+<div class="buttons" style="justify-content:center">
+
+<a
+class="btn primary"
+href="index.html#match"
+>
+Find My Perfect Match ✨
+</a>
+
+<a
+class="btn secondary"
+href="index.html#destinations"
+>
+Explore More Destinations
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     DISCLOSURE
+========================= -->
+
+<section class="disclosure">
+
+<div class="w center">
+
+<div class="ey">
+Transparency
+</div>
+
+<h2 class="title" style="font-size:28px">
+Affiliate disclosure
+</h2>
+
+<p>
+Some links on StayPerfect are affiliate links. If you click a link and make a qualifying purchase, StayPerfect may receive a commission at no additional cost to you.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section>
+
+<div class="w center">
+
+<div class="ey">
+StayPerfect
+</div>
+
+<h2 class="title" style="font-size:30px">
+Build your perfect Gran Canaria trip
+</h2>
+
+<p class="lead">
+Discover destinations, experiences and travel services selected around the way you want to travel.
+</p>
+
+<div class="buttons" style="justify-content:center">
+
+<a
+class="btn primary"
+href="mailto:stayperfectofficial@outlook.com"
+>
+Contact StayPerfect
+</a>
+
+<a
+class="btn secondary"
+href="index.html"
+>
+Back to StayPerfect
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="w foot">
+
+<div>
+<strong>StayPerfect</strong> — Find your perfect trip.
+</div>
+
+<div>
+© 2026 StayPerfect ·
+<a href="privacy.html">Privacy</a>
+·
+<a href="index.html#contact">Contact</a>
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>

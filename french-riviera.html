@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>French Riviera — Find Your Perfect Match | StayPerfect</title>
+
+<meta name="description" content="Discover the French Riviera with StayPerfect. Explore Nice, Cannes, coastal villages, beaches, food, culture and elegant Mediterranean experiences.">
+
+<link rel="canonical" href="https://stayperfect.jos-iul88.workers.dev/french-riviera.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="French Riviera — Find Your Perfect Match | StayPerfect">
+<meta property="og:description" content="Discover the French Riviera with StayPerfect. Find beaches, cities, culture, food, romance and Mediterranean experiences along the Côte d'Azur.">
+<meta property="og:url" content="https://stayperfect.jos-iul88.workers.dev/french-riviera.html">
+<meta property="og:site_name" content="StayPerfect">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="French Riviera — Find Your Perfect Match | StayPerfect">
+<meta name="twitter:description" content="Explore Nice, Cannes, Antibes, Monaco, Menton and the Côte d'Azur.">
+
+<style>
+:root{
+  --b:#1769e8;
+  --i:#10204a;
+  --m:#68758b;
+  --s:#eef6ff;
+  --l:#e4eaf2;
+  --bg:#f7f9fc;
+  --gold:#f2a900;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--i);background:#fff}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit}
+button,a{-webkit-tap-highlight-color:transparent}
+img{display:block;max-width:100%}
+.w{max-width:1120px;margin:auto;padding:0 22px}
+
+nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:900;letter-spacing:-.04em}
+.logo span{color:var(--b)}
+.links{display:flex;gap:20px;align-items:center;font-size:14px;font-weight:750}
+.links a:hover{color:var(--b)}
+.links .pill:hover{color:#fff;opacity:.9}
+.pill{background:var(--b);color:#fff;padding:10px 16px;border-radius:999px}
+
+.hero{
+  min-height:700px;
+  display:flex;
+  align-items:center;
+  background:
+    linear-gradient(90deg,rgba(8,22,50,.88),rgba(8,22,50,.55),rgba(8,22,50,.15)),
+    url("https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?auto=format&fit=crop&w=2200&q=88")
+    center/cover no-repeat;
+  color:#fff;
+}
+.hero-content{max-width:760px;padding:100px 0}
+.ey{font-size:12px;color:#8fc0ff;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.hero h1{font-size:clamp(50px,7vw,82px);line-height:.93;letter-spacing:-.065em;margin:15px 0 22px}
+.hero h1 em{color:#8fc0ff;font-style:normal}
+.hero p{max-width:700px;font-size:19px;line-height:1.65;color:#e7eef9}
+.buttons{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 18px;border-radius:14px;font-weight:850;cursor:pointer;border:0;transition:opacity .2s ease,transform .2s ease,background .2s ease,border-color .2s ease}
+.btn:hover{transform:translateY(-1px)}
+.primary{background:var(--b);color:#fff!important}
+.primary:hover{opacity:.92}
+.secondary{background:#fff!important;color:var(--i)!important;border:1px solid var(--l)}
+.secondary:hover{background:#f4f8fd!important}
+
+section{padding:78px 0}
+.center{text-align:center}
+.title{font-size:38px;letter-spacing:-.045em;margin:8px 0 12px}
+.lead{max-width:780px;margin:auto;color:var(--m);line-height:1.65}
+
+.quick{background:var(--bg);padding:25px 0}
+.quick-list{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.quick-list a{background:#fff;border:1px solid var(--l);border-radius:999px;padding:9px 14px;font-size:13px;font-weight:800}
+.quick-list a:hover{color:var(--b);border-color:#a9c7f4}
+
+.intro{background:#fff}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.intro-photo{height:470px;border-radius:26px;overflow:hidden;background:#e9eef5}
+.intro-photo img{width:100%;height:100%;object-fit:cover}
+.intro-text h2{font-size:40px;letter-spacing:-.045em;margin:8px 0 15px}
+.intro-text p{color:var(--m);line-height:1.7}
+.highlight-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}
+.highlight{background:var(--bg);border-radius:15px;padding:15px}
+.highlight strong{display:block;font-size:14px}
+.highlight span{display:block;color:var(--m);font-size:12px;margin-top:4px}
+
+.match{
+  background:radial-gradient(circle at 90% 10%,rgba(38,121,255,.28),transparent 30%),var(--i);
+  color:#fff
+}
+.match .lead{color:#cbd4e5}
+.quiz{max-width:900px;margin:40px auto 0;background:#fff;color:var(--i);border-radius:28px;padding:30px;box-shadow:0 20px 70px rgba(0,0,0,.18)}
+.quiz-progress{height:8px;background:#e9eef5;border-radius:999px;overflow:hidden;margin-bottom:28px}
+.quiz-progress-bar{height:100%;width:0%;background:var(--b);transition:width .3s ease}
+.question{display:none}.question.active{display:block}
+.question-number{color:var(--b);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+.question h3{font-size:28px;letter-spacing:-.035em;margin:8px 0 20px}
+.answers{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.answer{border:1px solid var(--l);background:#fff;border-radius:17px;padding:17px;text-align:left;cursor:pointer;font-weight:750;color:var(--i);transition:border-color .2s ease,background .2s ease,transform .2s ease}
+.answer:hover{border-color:#9fc3f6;background:#f7fbff;transform:translateY(-1px)}
+.answer.selected{border-color:var(--b);background:#eef6ff}
+.quiz-controls{display:flex;justify-content:space-between;gap:12px;margin-top:25px}
+.quiz-btn{padding:12px 18px;border-radius:13px;border:1px solid var(--l);background:#fff;font-weight:800;cursor:pointer}
+.quiz-btn.next{background:var(--b);color:#fff;border-color:var(--b)}
+.result{display:none;margin-top:25px;border-radius:22px;background:#f7f9fc;padding:28px;text-align:center}
+.result.show{display:block}.result-icon{font-size:48px}.result h3{font-size:30px;margin:8px 0}.result p{max-width:650px;margin:0 auto;color:var(--m);line-height:1.65}.result-link{display:inline-block;margin-top:20px}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+.card{border:1px solid var(--l);border-radius:22px;overflow:hidden;background:#fff}
+.card-photo{height:220px;overflow:hidden;background:#e9eef5}
+.card-photo img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.card:hover .card-photo img{transform:scale(1.04)}
+.card-content{padding:22px}
+.card h3{margin:0 0 8px;font-size:22px}
+.card p{color:var(--m);font-size:14px;line-height:1.6}
+.card .btn{padding:11px 14px;font-size:13px}
+
+.cities{background:var(--bg)}
+.city-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+.city-card{border:1px solid var(--l);border-radius:22px;overflow:hidden;background:#fff}
+.city-photo{height:230px;overflow:hidden;background:#e9eef5}
+.city-photo img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.city-card:hover .city-photo img{transform:scale(1.04)}
+.city-content{padding:22px}
+.city-content h3{margin:0 0 8px;font-size:22px}
+.city-content p{color:var(--m);font-size:14px;line-height:1.6}
+.city-content .btn{padding:11px 14px;font-size:13px}
+
+.styles{background:#fff}
+.style-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:38px}
+.style-card{background:#fff;border:1px solid var(--l);border-radius:20px;padding:22px}
+.style-icon{font-size:29px}
+.style-card h3{margin:12px 0 7px}
+.style-card p{color:var(--m);font-size:13px;line-height:1.55}
+
+.experiences{background:#fff}
+.experience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+.experience{border:1px solid var(--l);border-radius:21px;padding:23px;background:#fff}
+.experience-icon{width:50px;height:50px;border-radius:15px;background:var(--s);display:grid;place-items:center;font-size:23px}
+.experience h3{margin:15px 0 8px}
+.experience p{color:var(--m);font-size:14px;line-height:1.6}
+
+.services{background:var(--bg)}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+.service{border:1px solid var(--l);border-radius:20px;padding:23px;background:#fff}
+.service-icon{width:46px;height:46px;border-radius:14px;background:var(--s);display:grid;place-items:center;font-size:22px}
+.service h3{margin:14px 0 7px}
+.service p{color:var(--m);font-size:14px;line-height:1.55}
+.service .btn{padding:11px 14px;font-size:13px}
+
+.cta{background:radial-gradient(circle at 80% 20%,#2b82ff 0,transparent 30%),var(--i);color:#fff;text-align:center}
+.cta .lead{color:#cbd4e5}
+.cta .buttons{justify-content:center}
+
+.disclosure{padding:45px 0;background:#fff;border-top:1px solid var(--l)}
+.disclosure p{max-width:780px;margin:auto;color:var(--m);font-size:13px;line-height:1.6}
+
+footer{border-top:1px solid var(--l);padding:30px 0;color:var(--m);font-size:13px}
+.foot{display:flex;justify-content:space-between;gap:20px}
+.foot a:hover{color:var(--b)}
+
+@media(max-width:850px){
+  .links{display:none}
+  .intro-grid{grid-template-columns:1fr}
+  .cards,.city-grid,.experience-grid,.service-grid{grid-template-columns:1fr 1fr}
+  .style-grid{grid-template-columns:1fr 1fr}
+  .hero{min-height:600px}
+}
+@media(max-width:600px){
+  .w{padding:0 18px}
+  section{padding:60px 0}
+  .hero h1{font-size:46px}
+  .hero p{font-size:17px}
+  .cards,.city-grid,.experience-grid,.service-grid,.style-grid{grid-template-columns:1fr}
+  .answers{grid-template-columns:1fr}
+  .quiz{padding:20px;border-radius:22px}
+  .quiz h3{font-size:23px}
+  .intro-photo{height:340px}
+  .title{font-size:30px}
+  .highlight-grid{grid-template-columns:1fr}
+  .foot{display:block}
+  .foot div+div{margin-top:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important}
+}
+</style>
+
+<script>
+(function(){
+  var script=document.createElement("script");
+  script.async=true;
+  script.setAttribute("data-cmp-ab","2");
+  script.src="https://tp-em.com/NTYyMDY1.js?t=562065";
+  document.head.appendChild(script);
+})();
+</script>
+</head>
+
+<body>
+<header>
+<div class="w">
+<nav>
+<a class="logo" href="france.html" aria-label="StayPerfect France">Stay<span>Perfect</span></a>
+<div class="links">
+<a href="france.html#destinations">France</a>
+<a href="france.html#cities">Cities</a>
+<a href="french-riviera.html">French Riviera</a>
+<a href="france.html#perfect-match">Perfect Match</a>
+<a class="pill" href="#services">Plan Trip</a>
+</div>
+</nav>
+</div>
+</header>
+
+<main>
+
+<section class="hero">
+<div class="w">
+<div class="hero-content">
+<div class="ey">France · Mediterranean · Côte d'Azur</div>
+<h1>Discover <em>French Riviera.</em></h1>
+<p>From the blue waters of Nice and the glamour of Cannes to the charm of Antibes, Menton and Monaco, the French Riviera combines Mediterranean beaches, elegant towns, exceptional food, culture and unforgettable coastal experiences.</p>
+<div class="buttons">
+<a class="btn primary" href="#perfect-match">Find My Perfect Match →</a>
+<a class="btn secondary" href="#destinations">Explore Riviera</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="quick">
+<div class="w">
+<div class="quick-list">
+<a href="#perfect-match">Perfect Match</a>
+<a href="#destinations">Destinations</a>
+<a href="#cities">Cities</a>
+<a href="#styles">Travel Styles</a>
+<a href="#experiences">Experiences</a>
+<a href="#services">Travel Services</a>
+</div>
+</div>
+</section>
+
+<section class="intro">
+<div class="w intro-grid">
+<div class="intro-photo">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=88" alt="Mediterranean coast on the French Riviera" loading="eager">
+</div>
+<div class="intro-text">
+<div class="ey">Why French Riviera?</div>
+<h2>Where Mediterranean beauty meets French elegance.</h2>
+<p>The Côte d'Azur is one of Europe's most iconic coastal destinations, combining beaches, turquoise water, elegant promenades, historic old towns, art, gastronomy and spectacular scenery.</p>
+<p>Whether you want a romantic escape, a relaxing beach holiday, a glamorous city break or an active Mediterranean adventure, the French Riviera gives you countless ways to build your perfect trip.</p>
+<div class="highlight-grid">
+<div class="highlight"><strong>🏖️ Beaches</strong><span>Turquoise Mediterranean water and coastal beaches</span></div>
+<div class="highlight"><strong>🌴 Coast</strong><span>Promenades, coves and spectacular sea views</span></div>
+<div class="highlight"><strong>🏛️ Culture</strong><span>Historic towns, art, museums and architecture</span></div>
+<div class="highlight"><strong>🍷 Food</strong><span>Provençal cuisine, seafood, markets and wine</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="perfect-match" class="match">
+<div class="w center">
+<div class="ey">Your Perfect Match</div>
+<h2 class="title">Which Riviera is right for you?</h2>
+<p class="lead">Answer a few quick questions and StayPerfect will suggest the French Riviera experience that best matches the way you travel.</p>
+</div>
+
+<div class="w">
+<div class="quiz">
+<div class="quiz-progress"><div id="progressBar" class="quiz-progress-bar"></div></div>
+
+<div class="question active" data-question="1">
+<div class="question-number">Question 1 of 5</div>
+<h3>What would you most like to do?</h3>
+<div class="answers">
+<button class="answer" data-score="beach">🏖️ Relax by the sea</button>
+<button class="answer" data-score="city">🏙️ Explore beautiful towns</button>
+<button class="answer" data-score="nature">🌿 Discover landscapes</button>
+<button class="answer" data-score="food">🍷 Eat and enjoy local cuisine</button>
+</div>
+</div>
+
+<div class="question" data-question="2">
+<div class="question-number">Question 2 of 5</div>
+<h3>What atmosphere sounds best?</h3>
+<div class="answers">
+<button class="answer" data-score="relax">🧘 Peaceful and relaxed</button>
+<button class="answer" data-score="glamour">✨ Elegant and glamorous</button>
+<button class="answer" data-score="romance">❤️ Romantic and intimate</button>
+<button class="answer" data-score="adventure">🥾 Active and adventurous</button>
+</div>
+</div>
+
+<div class="question" data-question="3">
+<div class="question-number">Question 3 of 5</div>
+<h3>Who are you travelling with?</h3>
+<div class="answers">
+<button class="answer" data-score="couple">❤️ My partner</button>
+<button class="answer" data-score="family">👨‍👩‍👧 Family</button>
+<button class="answer" data-score="friends">👯 Friends</button>
+<button class="answer" data-score="solo">🧭 Solo</button>
+</div>
+</div>
+
+<div class="question" data-question="4">
+<div class="question-number">Question 4 of 5</div>
+<h3>Which landscape attracts you most?</h3>
+<div class="answers">
+<button class="answer" data-score="sea">🌊 Blue Mediterranean coast</button>
+<button class="answer" data-score="oldtown">🏘️ Historic old towns</button>
+<button class="answer" data-score="mountains">⛰️ Mountains and countryside</button>
+<button class="answer" data-score="cityscape">🏙️ Elegant coastal cities</button>
+</div>
+</div>
+
+<div class="question" data-question="5">
+<div class="question-number">Question 5 of 5</div>
+<h3>What matters most?</h3>
+<div class="answers">
+<button class="answer" data-score="beach">☀️ Sun and sea</button>
+<button class="answer" data-score="culture">🏛️ Culture and history</button>
+<button class="answer" data-score="nature">🌿 Nature and outdoor experiences</button>
+<button class="answer" data-score="food">🍽️ Food and local experiences</button>
+</div>
+</div>
+
+<div class="quiz-controls">
+<button id="backBtn" class="quiz-btn" type="button">← Back</button>
+<button id="nextBtn" class="quiz-btn next" type="button">Next →</button>
+</div>
+
+<div id="result" class="result">
+<div id="resultIcon" class="result-icon">🇫🇷</div>
+<h3 id="resultTitle">Your Riviera Match</h3>
+<p id="resultText"></p>
+<a id="resultLink" class="btn primary result-link" href="#destinations">Explore Your Match →</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="destinations">
+<div class="w center">
+<div class="ey">Explore the Côte d'Azur</div>
+<h2 class="title">Where will the Riviera take you?</h2>
+<p class="lead">Discover the destinations that make the French Riviera one of Europe's most unforgettable coastal regions.</p>
+</div>
+
+<div class="w cards">
+<div class="card">
+<div class="card-photo"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=85" alt="Nice and the French Riviera" loading="lazy"></div>
+<div class="card-content"><h3>🌊 Nice</h3><p>The perfect Riviera base, combining the Promenade des Anglais, Old Town, beaches, markets, food and easy access to the coast.</p><a class="btn primary" href="nice.html">Explore Nice →</a></div>
+</div>
+
+<div class="card">
+<div class="card-photo"><img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1200&q=85" alt="Cannes French Riviera" loading="lazy"></div>
+<div class="card-content"><h3>✨ Cannes</h3><p>Known for glamour, the Croisette, beaches, luxury shopping, restaurants and the famous international film festival.</p><a class="btn primary" href="#cities">Explore Cannes →</a></div>
+</div>
+
+<div class="card">
+<div class="card-photo"><img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1200&q=85" alt="Antibes Mediterranean coast" loading="lazy"></div>
+<div class="card-content"><h3>⚓ Antibes</h3><p>A charming coastal town with an atmospheric old quarter, marina, beaches, markets and beautiful Mediterranean views.</p><a class="btn primary" href="#cities">Explore Antibes →</a></div>
+</div>
+
+<div class="card">
+<div class="card-photo"><img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1200&q=85" alt="Menton French Riviera" loading="lazy"></div>
+<div class="card-content"><h3>🍋 Menton</h3><p>A colourful eastern Riviera town famous for gardens, citrus, old streets, beaches and its location close to Italy.</p><a class="btn primary" href="#cities">Explore Menton →</a></div>
+</div>
+
+<div class="card">
+<div class="card-photo"><img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=85" alt="Monaco Mediterranean coast" loading="lazy"></div>
+<div class="card-content"><h3>👑 Monaco</h3><p>Experience the glamour of Monte Carlo, the harbour, spectacular views, luxury hotels and one of the world's most famous coastal city-states.</p><a class="btn primary" href="#cities">Explore Monaco →</a></div>
+</div>
+
+<div class="card">
+<div class="card-photo"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85" alt="Villefranche-sur-Mer French Riviera" loading="lazy"></div>
+<div class="card-content"><h3>⛵ Villefranche-sur-Mer</h3><p>A beautiful seaside village with a natural harbour, colourful waterfront, clear water and a relaxed Mediterranean atmosphere.</p><a class="btn primary" href="#experiences">Explore the Coast →</a></div>
+</div>
+</div>
+</section>
+
+<section id="cities" class="cities">
+<div class="w center">
+<div class="ey">Riviera Destinations</div>
+<h2 class="title">Explore the Côte d'Azur</h2>
+<p class="lead">Each Riviera town has its own personality, from the energy of Nice to the glamour of Cannes and the charm of the smaller coastal towns.</p>
+</div>
+
+<div class="w city-grid">
+<div class="city-card"><div class="city-photo"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1400&q=90" alt="Nice France" loading="lazy"></div><div class="city-content"><h3>🇫🇷 Nice</h3><p>Beaches, Old Town, markets, museums, restaurants and the iconic Promenade des Anglais.</p><a class="btn primary" href="nice.html">Explore Nice →</a></div></div>
+<div class="city-card"><div class="city-photo"><img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1400&q=90" alt="Cannes France" loading="lazy"></div><div class="city-content"><h3>✨ Cannes</h3><p>Luxury, beaches, the Croisette, restaurants, shopping and glamorous Mediterranean evenings.</p><a class="btn primary" href="#experiences">Explore Cannes →</a></div></div>
+<div class="city-card"><div class="city-photo"><img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1400&q=90" alt="Antibes France" loading="lazy"></div><div class="city-content"><h3>⚓ Antibes</h3><p>Old-town charm, beaches, marina life, markets and a classic Mediterranean atmosphere.</p><a class="btn primary" href="#experiences">Explore Antibes →</a></div></div>
+<div class="city-card"><div class="city-photo"><img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1400&q=90" alt="Menton France" loading="lazy"></div><div class="city-content"><h3>🍋 Menton</h3><p>Colourful streets, gardens, citrus, beaches and a distinctive Italian-influenced atmosphere.</p><a class="btn primary" href="#experiences">Explore Menton →</a></div></div>
+<div class="city-card"><div class="city-photo"><img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1400&q=90" alt="Monaco Mediterranean" loading="lazy"></div><div class="city-content"><h3>👑 Monaco</h3><p>Monte Carlo glamour, yachts, luxury, dramatic coastal scenery and iconic landmarks.</p><a class="btn primary" href="#experiences">Explore Monaco →</a></div></div>
+<div class="city-card"><div class="city-photo"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=90" alt="Villefranche-sur-Mer" loading="lazy"></div><div class="city-content"><h3>⛵ Villefranche-sur-Mer</h3><p>A picturesque harbour town surrounded by hills and some of the Riviera's most beautiful coastal scenery.</p><a class="btn primary" href="#experiences">Explore Villefranche →</a></div></div>
+</div>
+</section>
+
+<section id="styles" class="styles">
+<div class="w center">
+<div class="ey">Travel Your Way</div>
+<h2 class="title">Choose your Riviera</h2>
+<p class="lead">The French Riviera can be relaxing, romantic, glamorous, cultural, adventurous or simply delicious.</p>
+</div>
+
+<div class="w style-grid">
+<div class="style-card"><div class="style-icon">🏖️</div><h3>Beach Escape</h3><p>Spend your days swimming, relaxing on Mediterranean beaches and discovering hidden coastal spots.</p></div>
+<div class="style-card"><div class="style-icon">❤️</div><h3>Couples</h3><p>Sunset walks, beautiful restaurants, coastal villages and romantic Mediterranean scenery.</p></div>
+<div class="style-card"><div class="style-icon">👨‍👩‍👧</div><h3>Family</h3><p>Combine beaches, easy-going towns, attractions and outdoor activities for a memorable family trip.</p></div>
+<div class="style-card"><div class="style-icon">✨</div><h3>Glamour</h3><p>Discover luxury hotels, yachts, designer shopping, elegant restaurants and Riviera nightlife.</p></div>
+<div class="style-card"><div class="style-icon">🏛️</div><h3>Culture</h3><p>Explore old towns, museums, historic buildings, art and the cultural heritage of the Côte d'Azur.</p></div>
+<div class="style-card"><div class="style-icon">🌿</div><h3>Nature</h3><p>Explore coastal trails, hills, gardens, viewpoints and landscapes above the Mediterranean.</p></div>
+<div class="style-card"><div class="style-icon">🍷</div><h3>Food & Wine</h3><p>Enjoy Provençal flavours, seafood, local markets, cafés, wine and Mediterranean cuisine.</p></div>
+<div class="style-card"><div class="style-icon">🧭</div><h3>Adventure</h3><p>Hike coastal paths, sail, cycle, swim and discover the Riviera beyond its famous cities.</p></div>
+</div>
+</section>
+
+<section id="experiences" class="experiences">
+<div class="w center">
+<div class="ey">French Riviera Experiences</div>
+<h2 class="title">What can you experience?</h2>
+<p class="lead">Build your trip around the experiences you enjoy most.</p>
+</div>
+
+<div class="w experience-grid">
+<div class="experience"><div class="experience-icon">🏖️</div><h3>Mediterranean Beaches</h3><p>Relax beside the blue Mediterranean, swim in clear water and discover beautiful coastal spots.</p></div>
+<div class="experience"><div class="experience-icon">🚶</div><h3>Old Towns</h3><p>Wander through colourful streets, local markets, small squares and historic neighbourhoods.</p></div>
+<div class="experience"><div class="experience-icon">⛵</div><h3>Boat Trips</h3><p>See the coastline from the water and discover bays, harbours and spectacular sea views.</p></div>
+<div class="experience"><div class="experience-icon">🍷</div><h3>Food & Markets</h3><p>Taste Mediterranean cuisine, seafood, Provençal specialities and fresh local produce.</p></div>
+<div class="experience"><div class="experience-icon">🥾</div><h3>Coastal Walks</h3><p>Follow scenic paths above the sea and discover viewpoints between the Riviera towns.</p></div>
+<div class="experience"><div class="experience-icon">🌅</div><h3>Riviera Sunsets</h3><p>Finish the day with spectacular Mediterranean sunsets from beaches, promenades and viewpoints.</p></div>
+</div>
+</section>
+
+<section id="services" class="services">
+<div class="w center">
+<div class="ey">Travel Services</div>
+<h2 class="title">Plan your French Riviera trip</h2>
+<p class="lead">Use our travel partners to organise flights, transport, activities and connectivity.</p>
+</div>
+
+<div class="w service-grid">
+<div class="service"><div class="service-icon">✈️</div><h3>Flights</h3><p>Search flight options for your journey to Nice and the French Riviera.</p><a class="btn primary" href="https://aviasales.tpx.gr/xaccp3pU" target="_blank" rel="sponsored noopener noreferrer">Search Flights →</a></div>
+<div class="service"><div class="service-icon">🚗</div><h3>Car Rentals</h3><p>Compare rental cars for exploring the Riviera and surrounding Provence.</p><a class="btn primary" href="https://autoeurope.tpx.gr/PYK42wVM" target="_blank" rel="sponsored noopener noreferrer">Rent a Car →</a><br><br><a class="btn secondary" href="https://economybookings.tpx.gr/JR0hRPPw" target="_blank" rel="sponsored noopener noreferrer">More Car Options →</a></div>
+<div class="service"><div class="service-icon">🎟️</div><h3>Activities</h3><p>Discover tours, attractions and experiences across the French Riviera.</p><a class="btn primary" href="https://kkday.tpx.gr/lk2ssfVX" target="_blank" rel="sponsored noopener noreferrer">Explore Activities →</a><br><br><a class="btn secondary" href="https://wegotrip.tpx.gr/1cZDpzjP" target="_blank" rel="sponsored noopener noreferrer">More Experiences →</a></div>
+<div class="service"><div class="service-icon">🏨</div><h3>Hotels & Activities</h3><p>Discover hotels, attractions, tours and experiences with Klook.</p><a class="btn primary" href="https://klook.tpx.gr/HyAQ5Z8G" target="_blank" rel="sponsored noopener noreferrer">Explore Klook →</a></div>
+<div class="service"><div class="service-icon">🚐</div><h3>Airport Transfers</h3><p>Arrange airport transfers for a smoother arrival and departure.</p><a class="btn primary" href="https://intui.tpx.gr/JsoT6ciu" target="_blank" rel="sponsored noopener noreferrer">Book a Transfer →</a></div>
+<div class="service"><div class="service-icon">🚕</div><h3>Private Transfers</h3><p>Find private and airport transfer options with GetTransfer.</p><a class="btn primary" href="https://gettransfer.tpx.gr/I1UPhx3j" target="_blank" rel="sponsored noopener noreferrer">Find a Transfer →</a></div>
+<div class="service"><div class="service-icon">📱</div><h3>Travel eSIM</h3><p>Stay connected while travelling throughout France and the Riviera.</p><a class="btn primary" href="https://saily.tpx.gr/qqzwC6gB" target="_blank" rel="sponsored noopener noreferrer">Get an eSIM →</a></div>
+<div class="service"><div class="service-icon">🛫</div><h3>Flight Compensation</h3><p>Explore available compensation information after a disrupted flight.</p><a class="btn primary" href="https://compensair.tpx.gr/oenuQeYD" target="_blank" rel="sponsored noopener noreferrer">Check Compensation →</a></div>
+<div class="service"><div class="service-icon">🚲</div><h3>Bike Rental</h3><p>Find bicycle rental options for exploring the Riviera on two wheels.</p><a class="btn primary" href="https://bikesbooking.tpx.gr/9t1J9s1c" target="_blank" rel="sponsored noopener noreferrer">Find Bikes →</a></div>
+</div>
+</section>
+
+<section class="cta">
+<div class="w">
+<div class="ey">Your Riviera Trip</div>
+<h2 class="title">Ready to find your French Riviera?</h2>
+<p class="lead">Take the Perfect Match quiz, discover the destination that fits you and start planning your next Côte d'Azur adventure.</p>
+<div class="buttons">
+<a class="btn primary" href="#perfect-match">Take the Perfect Match →</a>
+<a class="btn secondary" href="france.html">Back to France →</a>
+</div>
+</div>
+</section>
+
+<section class="disclosure">
+<div class="w center">
+<div class="ey">Transparency</div>
+<h2 class="title" style="font-size:28px">Affiliate disclosure</h2>
+<p>Some links on StayPerfect are affiliate links. If you click a link and make a qualifying purchase, StayPerfect may receive a commission at no additional cost to you. Affiliate relationships do not change the price you pay. We aim to keep recommendations useful and transparent.</p>
+</div>
+</section>
+
+<section id="contact" style="padding:50px 0">
+<div class="w center">
+<div class="ey">StayPerfect</div>
+<h2 class="title" style="font-size:28px">Build your perfect French Riviera trip</h2>
+<p class="lead">StayPerfect is evolving into a destination and travel discovery platform focused on matching travellers with the options that fit them best.</p>
+<div class="buttons" style="justify-content:center">
+<a class="btn primary" href="mailto:hello@stayperfect.example">Contact StayPerfect</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="w foot">
+<div><strong>StayPerfect</strong> — Find your perfect trip.</div>
+<div>© 2026 StayPerfect · <a href="france.html">France</a> · <a href="privacy.html">Privacy</a> · <a href="#contact">Contact</a></div>
+</div>
+</footer>
+
+<script>
+(function(){
+  var questions=document.querySelectorAll(".question");
+  var nextBtn=document.getElementById("nextBtn");
+  var backBtn=document.getElementById("backBtn");
+  var progressBar=document.getElementById("progressBar");
+  var result=document.getElementById("result");
+  var resultIcon=document.getElementById("resultIcon");
+  var resultTitle=document.getElementById("resultTitle");
+  var resultText=document.getElementById("resultText");
+  var resultLink=document.getElementById("resultLink");
+  var current=0,answers=[];
+
+  function showQuestion(index){
+    questions.forEach(function(q,i){q.classList.toggle("active",i===index)});
+    progressBar.style.width=((index+1)/questions.length)*100+"%";
+    backBtn.style.visibility=index===0?"hidden":"visible";
+    nextBtn.textContent=index===questions.length-1?"Show My Match →":"Next →";
+  }
+
+  document.querySelectorAll(".answer").forEach(function(button){
+    button.addEventListener("click",function(){
+      var parent=button.closest(".question");
+      parent.querySelectorAll(".answer").forEach(function(item){item.classList.remove("selected")});
+      button.classList.add("selected");
+      answers[current]=button.getAttribute("data-score");
+    });
+  });
+
+  nextBtn.addEventListener("click",function(){
+    if(!answers[current]) return;
+    if(current<questions.length-1){current++;showQuestion(current);return}
+    showResult();
+  });
+
+  backBtn.addEventListener("click",function(){
+    if(current>0){current--;showQuestion(current)}
+  });
+
+  function showResult(){
+    var scores={beach:0,city:0,nature:0,food:0,relax:0,glamour:0,romance:0,adventure:0,couple:0,family:0,friends:0,solo:0,sea:0,oldtown:0,mountains:0,cityscape:0,culture:0};
+    answers.forEach(function(a){if(Object.prototype.hasOwnProperty.call(scores,a))scores[a]++});
+
+    var beach=scores.beach+scores.sea+scores.relax;
+    var culture=scores.city+scores.oldtown+scores.cityscape+scores.culture;
+    var nature=scores.nature+scores.mountains+scores.adventure;
+    var romantic=scores.romance+scores.couple+scores.sea;
+    var glamour=scores.glamour+scores.cityscape;
+    var food=scores.food+scores.culture;
+
+    var data;
+    if(romantic>=culture&&romantic>=nature&&romantic>=beach&&romantic>=food){
+      data={icon:"❤️",title:"Your Match: Romantic Riviera",text:"The French Riviera is made for your style. Think beautiful coastal towns, Mediterranean sunsets, elegant restaurants, sea views and unforgettable moments together.",link:"#destinations"};
+    }else if(glamour>=culture&&glamour>=nature&&glamour>=food){
+      data={icon:"✨",title:"Your Match: Glamorous Riviera",text:"You are drawn to the elegant side of the Côte d'Azur. Cannes, Monaco, luxury experiences, beautiful hotels, yachts and sophisticated evenings are likely to suit you.",link:"#cities"};
+    }else if(beach>=culture&&beach>=nature&&beach>=food){
+      data={icon:"🏖️",title:"Your Match: Mediterranean Escape",text:"You are made for blue water and relaxed coastal days. Look for beaches, promenades, swimming, boat trips and beautiful Mediterranean scenery.",link:"#experiences"};
+    }else if(nature>=culture&&nature>=food){
+      data={icon:"🌿",title:"Your Match: Riviera Nature & Adventure",text:"Your ideal Riviera goes beyond the beach. Explore coastal paths, hills, viewpoints, outdoor activities and spectacular landscapes above the Mediterranean.",link:"#experiences"};
+    }else if(food>=culture){
+      data={icon:"🍷",title:"Your Match: Food & Culture",text:"Experience the Riviera through its food, markets, old towns and local traditions. Mediterranean flavours, Provençal cuisine and historic streets are perfect for you.",link:"#experiences"};
+    }else{
+      data={icon:"🏛️",title:"Your Match: Riviera Cities & Culture",text:"Your perfect Riviera is vibrant and cultural. Explore historic centres, museums, architecture, restaurants, shopping and the distinctive personality of each coastal city.",link:"#cities"};
+    }
+
+    resultIcon.textContent=data.icon;
+    resultTitle.textContent=data.title;
+    resultText.textContent=data.text;
+    resultLink.href=data.link;
+    result.classList.add("show");
+    nextBtn.style.display="none";
+    backBtn.style.display="none";
+    result.scrollIntoView({behavior:"smooth",block:"center"});
+  }
+
+  showQuestion(0);
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Madrid Travel Guide | Explore Madrid, Spain</title>
+
+    <meta name="description" content="Discover Madrid with StayPerfect. Explore museums, historic neighbourhoods, parks, restaurants, nightlife, culture and the energy of Spain's capital.">
+
+    <meta name="keywords"
+          content="Madrid, Madrid Spain, Madrid travel guide, Madrid tourism, things to do in Madrid, Madrid attractions, Spain travel">
+
+    <meta name="author" content="Explore Spain">
+
+    <meta property="og:title" content="Madrid Travel Guide | Explore Madrid">
+    <meta property="og:description"
+          content="Discover the best places, experiences, attractions and things to do in Madrid, Spain.">
+    <meta property="og:type" content="website">
+
+    <link rel="canonical" href="https://stayperfect.jos-iul88.workers.dev/madrid.html">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f5f1;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+
+            background: rgba(255,255,255,0.96);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
+
+            padding: 18px 30px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.45rem;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #b85c38;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 92vh;
+            margin-top: 72px;
+
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.48),
+                    rgba(0,0,0,0.58)
+                ),
+                url("https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=2200&q=85")
+                center/cover no-repeat;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 40px 25px;
+            color: white;
+        }
+
+        .hero-label {
+            display: inline-block;
+
+            margin-bottom: 20px;
+            padding: 9px 20px;
+
+            border: 1px solid rgba(255,255,255,0.65);
+            border-radius: 30px;
+
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 {
+            font-size: clamp(3.5rem, 9vw, 7rem);
+            line-height: 0.92;
+
+            margin-bottom: 25px;
+
+            font-weight: 800;
+        }
+
+        .hero p {
+            max-width: 720px;
+            margin: auto;
+
+            font-size: 1.15rem;
+            opacity: 0.95;
+        }
+
+        .hero-buttons {
+            margin-top: 35px;
+
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 14px 28px;
+
+            border-radius: 30px;
+
+            font-weight: 700;
+
+            transition: 0.3s ease;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #222;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            border: 1px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #222;
+        }
+
+
+        /* =========================
+           GENERAL
+        ========================= */
+
+        .section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 90px 30px;
+        }
+
+        .section-header {
+            max-width: 750px;
+            margin-bottom: 50px;
+        }
+
+        .section-label {
+            color: #b85c38;
+
+            font-size: 0.8rem;
+            font-weight: 800;
+
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            margin-bottom: 10px;
+        }
+
+        .section h2 {
+            font-size: clamp(2.2rem, 5vw, 4rem);
+
+            line-height: 1.05;
+
+            margin-bottom: 18px;
+        }
+
+        .section-header p {
+            color: #666;
+            font-size: 1.05rem;
+        }
+
+
+        /* =========================
+           INTRO
+        ========================= */
+
+        .intro {
+            display: grid;
+
+            grid-template-columns:
+                1.1fr
+                0.9fr;
+
+            gap: 60px;
+
+            align-items: center;
+        }
+
+        .intro-text p {
+            margin-bottom: 18px;
+
+            color: #555;
+
+            font-size: 1.05rem;
+        }
+
+        .intro-image {
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 15px 40px rgba(0,0,0,0.12);
+        }
+
+        .intro-image img {
+            height: 480px;
+            object-fit: cover;
+        }
+
+
+        /* =========================
+           HIGHLIGHTS
+        ========================= */
+
+        .highlights {
+            background: #ebe7df;
+        }
+
+        .cards {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+
+            border-radius: 18px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 8px 30px rgba(0,0,0,0.07);
+
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+
+            box-shadow:
+                0 15px 40px rgba(0,0,0,0.12);
+        }
+
+        .card-image {
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-content h3 {
+            font-size: 1.35rem;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+
+        /* =========================
+           EXPERIENCES
+        ========================= */
+
+        .experience-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap: 25px;
+        }
+
+        .experience {
+            min-height: 280px;
+
+            border-radius: 18px;
+
+            padding: 30px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            color: white;
+
+            overflow: hidden;
+
+            position: relative;
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .experience::before {
+            content: "";
+
+            position: absolute;
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    transparent 20%,
+                    rgba(0,0,0,0.82)
+                );
+        }
+
+        .experience-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .experience h3 {
+            font-size: 1.7rem;
+            margin-bottom: 6px;
+        }
+
+        .experience p {
+            opacity: 0.9;
+        }
+
+        .experience-1 {
+            background-image:
+                url("https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=1600&q=85");
+        }
+
+        .experience-2 {
+            background-image:
+                url("https://images.unsplash.com/photo-1564399579883-451a5d44ec08?auto=format&fit=crop&w=1600&q=85");
+        }
+
+        .experience-3 {
+            background-image:
+                url("https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=1600&q=85");
+        }
+
+        .experience-4 {
+            background-image:
+                url("https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1600&q=85");
+        }
+
+
+        /* =========================
+           FOOD
+        ========================= */
+
+        .food-section {
+            background: #222;
+            color: white;
+        }
+
+        .food-section .section-header p {
+            color: #bbb;
+        }
+
+        .food-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 20px;
+        }
+
+        .food-card {
+            border: 1px solid rgba(255,255,255,0.15);
+
+            border-radius: 15px;
+
+            padding: 25px;
+
+            background:
+                rgba(255,255,255,0.04);
+        }
+
+        .food-card span {
+            font-size: 2rem;
+
+            display: block;
+
+            margin-bottom: 15px;
+        }
+
+        .food-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .food-card p {
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+
+
+        /* =========================
+           AREAS
+        ========================= */
+
+        .areas-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 20px;
+        }
+
+        .area {
+            padding: 28px;
+
+            background: white;
+
+            border-radius: 15px;
+
+            border: 1px solid #e6e2da;
+        }
+
+        .area h3 {
+            margin-bottom: 8px;
+        }
+
+        .area p {
+            color: #666;
+            font-size: 0.92rem;
+        }
+
+
+        /* =========================
+           TIPS
+        ========================= */
+
+        .tips {
+            background: #ebe7df;
+        }
+
+        .tips-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 20px;
+        }
+
+        .tip {
+            background: white;
+
+            padding: 25px;
+
+            border-radius: 15px;
+        }
+
+        .tip strong {
+            display: block;
+
+            margin-bottom: 8px;
+
+            font-size: 1.05rem;
+        }
+
+        .tip p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            padding: 90px 30px;
+
+            text-align: center;
+        }
+
+        .cta-box {
+            padding: 75px 30px;
+
+            border-radius: 25px;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.55),
+                    rgba(0,0,0,0.55)
+                ),
+                url("https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=2200&q=85")
+                center/cover no-repeat;
+        }
+
+        .cta-box h2 {
+            font-size: clamp(2.3rem,5vw,4rem);
+
+            margin-bottom: 18px;
+        }
+
+        .cta-box p {
+            max-width: 650px;
+
+            margin: auto;
+
+            opacity: 0.9;
+        }
+
+        .cta-box .btn {
+            margin-top: 28px;
+
+            background: white;
+            color: #222;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #111;
+
+            color: #aaa;
+
+            padding: 50px 30px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 30px;
+
+            flex-wrap: wrap;
+        }
+
+        .footer-brand {
+            color: white;
+
+            font-size: 1.2rem;
+
+            font-weight: 700;
+        }
+
+        .footer-links {
+            display: flex;
+
+            gap: 25px;
+
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            transition: 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .copyright {
+            max-width: 1200px;
+
+            margin: 30px auto 0;
+
+            padding-top: 25px;
+
+            border-top:
+                1px solid rgba(255,255,255,0.1);
+
+            font-size: 0.85rem;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .intro {
+                grid-template-columns: 1fr;
+            }
+
+            .cards {
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+            .food-grid {
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+            .areas-grid {
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+            .tips-grid {
+                grid-template-columns:
+                    1fr 1fr;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .nav-container {
+                padding: 16px 20px;
+            }
+
+            .hero {
+                min-height: 82vh;
+            }
+
+            .section {
+                padding: 65px 20px;
+            }
+
+            .cards,
+            .experience-grid,
+            .food-grid,
+            .areas-grid,
+            .tips-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .intro-image img {
+                height: 350px;
+            }
+
+            .hero h1 {
+                font-size: 3.7rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .experience {
+                min-height: 250px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            Explore Spain
+        </a>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="spain.html">Spain</a>
+                </li>
+
+                <li>
+                    <a href="barcelona.html">Barcelona</a>
+                </li>
+
+                <li>
+                    <a href="https://stayperfect.jos-iul88.workers.dev/madrid.html">Madrid</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            Spain · Capital City
+        </span>
+
+        <h1>
+            Madrid
+        </h1>
+
+        <p>
+            Discover the vibrant heart of Spain — a city of grand
+            boulevards, royal architecture, world-class art,
+            incredible food and unforgettable nights.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+                href="#discover"
+                class="btn btn-primary"
+            >
+                Discover Madrid
+            </a>
+
+            <a
+                href="spain.html"
+                class="btn btn-outline"
+            >
+                Back to Spain
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     INTRODUCTION
+========================= -->
+
+<section
+    class="section"
+    id="discover"
+>
+
+    <div class="intro">
+
+        <div class="intro-text">
+
+            <div class="section-label">
+                Welcome to Madrid
+            </div>
+
+            <h2>
+                The energetic heart of Spain.
+            </h2>
+
+            <p>
+                Madrid is a city where historic Spain and modern
+                European life meet. From elegant royal palaces and
+                famous museums to lively plazas, local markets and
+                late-night streets, the capital offers something
+                for every kind of traveler.
+            </p>
+
+            <p>
+                Spend your morning discovering masterpieces at the
+                Prado, enjoy lunch with traditional Spanish flavors,
+                walk through Retiro Park in the afternoon and finish
+                the day with tapas and drinks in one of the city's
+                lively neighborhoods.
+            </p>
+
+            <p>
+                Whether you're visiting for a weekend or staying
+                longer, Madrid rewards travelers who take their time
+                and explore beyond the main sights.
+            </p>
+
+        </div>
+
+
+        <div class="intro-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1400&q=85"
+                alt="Madrid city skyline and architecture"
+                loading="lazy"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     HIGHLIGHTS
+========================= -->
+
+<section class="section highlights">
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Must See
+        </div>
+
+        <h2>
+            Madrid highlights
+        </h2>
+
+        <p>
+            Start your journey with some of the city's most iconic
+            landmarks and experiences.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <!-- ROYAL PALACE -->
+
+        <article class="card">
+
+            <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=1400&q=85"
+                alt="Royal Palace of Madrid"
+                loading="lazy"
+            >
+
+            <div class="card-content">
+
+                <h3>
+                    Royal Palace
+                </h3>
+
+                <p>
+                    Explore one of Europe's most impressive royal
+                    residences and discover magnificent rooms,
+                    historic collections and grand architecture.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRADO -->
+
+        <article class="card">
+
+            <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1564399579883-451a5d44ec08?auto=format&fit=crop&w=1400&q=85"
+                alt="Art museum in Madrid"
+                loading="lazy"
+            >
+
+            <div class="card-content">
+
+                <h3>
+                    Prado Museum
+                </h3>
+
+                <p>
+                    Discover one of Europe's great art collections
+                    and explore masterpieces from Spain and beyond.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- RETIRO -->
+
+        <article class="card">
+
+            <img
+                class="card-image"
+                src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=1400&q=85"
+                alt="Retiro Park Madrid"
+                loading="lazy"
+            >
+
+            <div class="card-content">
+
+                <h3>
+                    Retiro Park
+                </h3>
+
+                <p>
+                    Escape the city streets in Madrid's famous green
+                    oasis, perfect for walking, relaxing and discovering
+                    the Crystal Palace and its lake.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCES
+========================= -->
+
+<section class="section">
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Experience
+        </div>
+
+        <h2>
+            Things to do in Madrid
+        </h2>
+
+        <p>
+            Go beyond sightseeing and experience the atmosphere
+            that makes Madrid unique.
+        </p>
+
+    </div>
+
+
+    <div class="experience-grid">
+
+
+        <article class="experience experience-1">
+
+            <div class="experience-content">
+
+                <h3>
+                    Royal Madrid
+                </h3>
+
+                <p>
+                    Walk around the Royal Palace, Plaza de Oriente
+                    and the historic heart of the capital.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="experience experience-2">
+
+            <div class="experience-content">
+
+                <h3>
+                    Art & Culture
+                </h3>
+
+                <p>
+                    Explore the Prado and Madrid's famous Golden
+                    Triangle of Art.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="experience experience-3">
+
+            <div class="experience-content">
+
+                <h3>
+                    Retiro & Green Spaces
+                </h3>
+
+                <p>
+                    Slow down with a walk through El Retiro and
+                    discover one of the city's most beautiful parks.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="experience experience-4">
+
+            <div class="experience-content">
+
+                <h3>
+                    Gran Vía
+                </h3>
+
+                <p>
+                    Experience Madrid's iconic avenue, shopping,
+                    architecture, restaurants and nightlife.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOD
+========================= -->
+
+<section class="section food-section">
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Taste Madrid
+        </div>
+
+        <h2>
+            Eat like a local.
+        </h2>
+
+        <p>
+            Madrid is one of Spain's best cities for discovering
+            traditional dishes, tapas and modern Spanish cuisine.
+        </p>
+
+    </div>
+
+
+    <div class="food-grid">
+
+
+        <article class="food-card">
+
+            <span>🥘</span>
+
+            <h3>
+                Traditional Cuisine
+            </h3>
+
+            <p>
+                Try classic Castilian and Madrileño dishes in
+                traditional restaurants across the city.
+            </p>
+
+        </article>
+
+
+        <article class="food-card">
+
+            <span>🍢</span>
+
+            <h3>
+                Tapas
+            </h3>
+
+            <p>
+                Discover small plates, local bars and lively streets
+                where eating becomes part of the experience.
+            </p>
+
+        </article>
+
+
+        <article class="food-card">
+
+            <span>☕</span>
+
+            <h3>
+                Cafés
+            </h3>
+
+            <p>
+                Take a break in historic cafés and modern coffee
+                shops throughout Madrid.
+            </p>
+
+        </article>
+
+
+        <article class="food-card">
+
+            <span>🍷</span>
+
+            <h3>
+                Nightlife
+            </h3>
+
+            <p>
+                From relaxed wine bars to energetic nightlife,
+                Madrid stays alive long after sunset.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     NEIGHBORHOODS
+========================= -->
+
+<section class="section">
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Explore
+        </div>
+
+        <h2>
+            Madrid's neighborhoods
+        </h2>
+
+        <p>
+            Each area of Madrid has its own personality,
+            atmosphere and rhythm.
+        </p>
+
+    </div>
+
+
+    <div class="areas-grid">
+
+
+        <article class="area">
+
+            <h3>
+                Centro
+            </h3>
+
+            <p>
+                The historic heart of Madrid, ideal for first-time
+                visitors and major landmarks.
+            </p>
+
+        </article>
+
+
+        <article class="area">
+
+            <h3>
+                Malasaña
+            </h3>
+
+            <p>
+                Creative, youthful and full of independent shops,
+                cafés, bars and nightlife.
+            </p>
+
+        </article>
+
+
+        <article class="area">
+
+            <h3>
+                Chueca
+            </h3>
+
+            <p>
+                One of Madrid's most vibrant neighborhoods,
+                known for restaurants, design and nightlife.
+            </p>
+
+        </article>
+
+
+        <article class="area">
+
+            <h3>
+                La Latina
+            </h3>
+
+            <p>
+                A historic neighborhood famous for traditional tapas,
+                plazas and Sunday street life.
+            </p>
+
+        </article>
+
+
+        <article class="area">
+
+            <h3>
+                Salamanca
+            </h3>
+
+            <p>
+                Elegant streets, luxury shopping, fine dining
+                and beautiful architecture.
+            </p>
+
+        </article>
+
+
+        <article class="area">
+
+            <h3>
+                Lavapiés
+            </h3>
+
+            <p>
+                Multicultural, artistic and full of alternative
+                restaurants, galleries and local life.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TRAVEL TIPS
+========================= -->
+
+<section class="section tips">
+
+    <div class="section-header">
+
+        <div class="section-label">
+            Travel Tips
+        </div>
+
+        <h2>
+            Before you go
+        </h2>
+
+        <p>
+            A few simple tips will help you get the most out
+            of your Madrid trip.
+        </p>
+
+    </div>
+
+
+    <div class="tips-grid">
+
+
+        <article class="tip">
+
+            <strong>
+                Best time to visit
+            </strong>
+
+            <p>
+                Spring and autumn are especially pleasant
+                for exploring the city on foot.
+            </p>
+
+        </article>
+
+
+        <article class="tip">
+
+            <strong>
+                Getting around
+            </strong>
+
+            <p>
+                Madrid has an extensive metro and public transport
+                network, while many central sights are walkable.
+            </p>
+
+        </article>
+
+
+        <article class="tip">
+
+            <strong>
+                How long to stay
+            </strong>
+
+            <p>
+                Three to four days is a great starting point
+                for discovering Madrid's main attractions.
+            </p>
+
+        </article>
+
+
+        <article class="tip">
+
+            <strong>
+                Take your time
+            </strong>
+
+            <p>
+                Madrid comes alive later in the day, so leave room
+                for long lunches and evening walks.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+    <div class="cta-box">
+
+        <h2>
+            Ready to discover Madrid?
+        </h2>
+
+        <p>
+            Explore Spain's vibrant capital and continue your journey
+            through the country's most unforgettable destinations.
+        </p>
+
+        <a
+            href="spain.html"
+            class="btn"
+        >
+            Explore Spain
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            Explore Spain
+        </div>
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="spain.html">
+                Spain
+            </a>
+
+            <a href="barcelona.html">
+                Barcelona
+            </a>
+
+            <a href="https://stayperfect.jos-iul88.workers.dev/madrid.html">
+                Madrid
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+        © 2026 Explore Spain. All rights reserved.
+    </div>
+
+</footer>
+
+
+</body>
+</html>

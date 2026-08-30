@@ -1,0 +1,255 @@
+9:<title>StayPerfect — Trova la tua destinazione di viaggio perfetta</title>
+1041:<a class="logo" href="index.html">
+1042:Stay<span>Perfect</span>
+1046:<a href="#destinations">Destinations</a>
+1047:<a href="#services">Travel Services</a>
+1048:<a href="#how">How it works</a>
+1049:<a href="#match">Perfect Match</a>
+1050:<a class="pill" href="#contact">Contact</a>
+1053:  <button type="button" class="language-button" aria-haspopup="true" aria-expanded="false">
+1057:    <a href="/it/">🇮🇹 Italiano</a>
+1058:    <a href="/">🇬🇧 English</a>
+1059:    <a href="/es/">🇪🇸 Español</a>
+1060:    <a href="/fr/">🇫🇷 Français</a>
+1061:    <a href="/de/">🇩🇪 Deutsch</a>
+1062:    <a href="/ru/">🇷🇺 Русский</a>
+1065:<a href="contact.html">Contact</a>
+1084:<h1>
+1088:<p>
+1094:<a class="btn primary" href="#match">
+1098:<a class="btn secondary" href="#destinations">
+1111:  <h3>Travel Services</h3>
+1116:    <a class="btn primary" href="https://aviasales.tpx.gr/xaccp3pU" target="_blank" rel="sponsored noopener noreferrer">
+1120:    <a class="btn primary" href="https://autoeurope.tpx.gr/PYK42wVM" target="_blank" rel="sponsored noopener noreferrer">
+1124:    <a class="btn primary" href="https://kkday.tpx.gr/lk2ssfVX" target="_blank" rel="sponsored noopener noreferrer">
+1128:    <a class="btn primary" href="https://klook.tpx.gr/HyAQ5Z8G" target="_blank" rel="sponsored noopener noreferrer">
+1132:    <a class="btn primary" href="https://intui.tpx.gr/JsoT6ciu" target="_blank" rel="sponsored noopener noreferrer">
+1136:    <a class="btn primary" href="https://gettransfer.tpx.gr/I1UPhx3j" target="_blank" rel="sponsored noopener noreferrer">
+1140:    <a class="btn primary" href="https://saily.tpx.gr/qqzwC6gB" target="_blank" rel="sponsored noopener noreferrer">
+1144:    <a class="btn primary" href="https://compensair.tpx.gr/oenuQeYD" target="_blank" rel="sponsored noopener noreferrer">
+1148:    <a class="btn primary" href="https://bikesbooking.tpx.gr/9t1J9s1c" target="_blank" rel="sponsored noopener noreferrer">
+1152:    <a class="btn primary" href="https://tiqets.tpx.gr/MwCCHoIr" target="_blank" rel="sponsored noopener noreferrer">
+1167:<span>Perfect Match</span>
+1168:<span>96%</span>
+1194:<h2 class="title">
+1213:<h3>Spain</h3>
+1215:<p>
+1220:  <a class="btn primary" href="#spain">
+1224:  <a class="btn secondary" href="#match">
+1237:<h3>France</h3>
+1239:<p>
+1245:<a class="btn primary" href="#france">
+1249:<a class="btn secondary" href="#match">
+1265:<h3>Portugal</h3>
+1267:<p>
+1272:  <a class="btn primary" href="#portugal">
+1276:  <a class="btn secondary" href="#match">
+1297:<h2 class="title">
+1327:<h4>Barcelona</h4>
+1329:<p>
+1333:<a class="btn primary" href="barcelona.html">
+1357:<h4>Madrid</h4>
+1359:<p>
+1363:<a class="btn primary" href="madrid.html">
+1388:<h4>Valencia</h4>
+1390:<p>
+1394:<a class="btn primary" href="valencia.html">
+1418:<h4>Alicante</h4>
+1420:<p>
+1424:<a class="btn primary" href="alicante.html">
+1448:<h4>Andalusia</h4>
+1450:<p>
+1454:<a class="btn primary" href="andalusia.html">
+1478:<h4>Costa del Sol</h4>
+1480:<p>
+1484:<a class="btn primary" href="costa-del-sol.html">
+1508:<h4>Cádiz</h4>
+1510:<p>
+1514:<a class="btn primary" href="cadiz.html">
+1538:<h4>Galicia</h4>
+1540:<p>
+1544:<a class="btn primary" href="galicia.html">
+1568:<h4>Asturias</h4>
+1570:<p>
+1574:<a class="btn primary" href="asturia.html">
+1594:<h2 class="title">
+1603:<a class="btn primary" href="balearic-islands.html#perfect-match" style="display:inline-block;">
+1625:<h4>Mallorca</h4>
+1627:<p>
+1631:<a class="btn primary" href="mallorca.html">
+1650:<h4>Menorca</h4>
+1652:<p>
+1656:<a class="btn primary" href="menorca.html">
+1675:<h4>Ibiza</h4>
+1677:<p>
+1681:<a class="btn primary" href="ibiza.html">
+1700:<h4>Formentera</h4>
+1702:<p>
+1706:<a class="btn primary" href="formentera.html">
+1725:<h4>Cabrera</h4>
+1727:<p>
+1731:<a class="btn primary" href="cabrera.html">
+1750:<h4>Dragonera</h4>
+1752:<p>
+1756:<a class="btn primary" href="dragonera.html">
+1777:<h2 class="title">
+1786:<a class="btn primary" href="canary-islands.html#perfect-match" style="display:inline-block;">
+1803:<h4>Tenerife</h4>
+1804:<p>Beaches, Teide, nature, activities and exceptional variety.</p>
+1805:<a class="btn primary" href="tenerife.html">Explore Tenerife →</a>
+1816:<h4>Gran Canaria</h4>
+1817:<p>Beaches, mountains, resorts, activities and nightlife.</p>
+1818:<a class="btn primary" href="gran-canaria.html">Explore Gran Canaria →</a>
+1829:<h4>Fuerteventura</h4>
+1830:<p>Outstanding beaches, watersports and relaxed escapes.</p>
+1831:<a class="btn primary" href="fuerteventura.html">Explore Fuerteventura →</a>
+1842:<h4>Lanzarote</h4>
+1843:<p>Volcanic landscapes, beaches and unique scenery.</p>
+1844:<a class="btn primary" href="lanzarote.html">Explore Lanzarote →</a>
+1855:<h4>La Palma</h4>
+1856:<p>Forests, hiking, volcanic landscapes and peaceful travel.</p>
+1857:<a class="btn primary" href="lapalma.html">Explore La Palma →</a>
+1868:<h4>La Gomera</h4>
+1869:<p>Hiking, nature and a quieter island atmosphere.</p>
+1870:<a class="btn primary" href="lagomera.html">Explore La Gomera →</a>
+1881:<h4>El Hierro</h4>
+1882:<p>Remote nature, diving, hiking and authentic island life.</p>
+1883:<a class="btn primary" href="elhierro.html">Explore El Hierro →</a>
+1894:<h4>La Graciosa</h4>
+1895:<p>Quiet beaches, cycling, nature and slow island life.</p>
+1896:<a class="btn primary" href="lagraciosa.html">Explore La Graciosa →</a>
+1918:<h2 class="title">
+1941:<h4>Lisbon</h4>
+1942:<p>Historic neighbourhoods, viewpoints, food, culture and nightlife.</p>
+1943:<a class="btn primary" href="lisbon.html">Explore Lisbon →</a>
+1957:<h4>Porto</h4>
+1958:<p>Historic streets, river views, architecture, food and wine.</p>
+1959:<a class="btn primary" href="porto.html">Explore Porto →</a>
+1973:<h4>Algarve</h4>
+1974:<p>Golden beaches, cliffs, coastal towns and sunshine.</p>
+1975:<a class="btn primary" href="algarve.html">Explore Algarve →</a>
+1989:<h4>Madeira</h4>
+1990:<p>Mountains, levadas, dramatic coastline, nature and hiking.</p>
+1991:<a class="btn primary" href="madeira.html">Explore Madeira →</a>
+2005:<h4>Azores</h4>
+2006:<p>Volcanic landscapes, lakes, hiking, whales and wild Atlantic nature.</p>
+2007:<a class="btn primary" href="azores.html">Explore Azores →</a>
+2021:<h4>Sintra</h4>
+2022:<p>Palaces, forests, historic architecture and romantic landscapes.</p>
+2023:<a class="btn primary" href="lisbon.html">Explore Sintra →</a>
+2037:<h4>Cascais</h4>
+2038:<p>Coastal scenery, beaches, restaurants and relaxed Portuguese atmosphere.</p>
+2039:<a class="btn primary" href="lisbon.html">Explore Cascais →</a>
+2053:<h4>Funchal</h4>
+2054:<p>Madeira's vibrant capital, gardens, food, ocean views and culture.</p>
+2055:<a class="btn primary" href="madeira.html">Explore Funchal →</a>
+2069:<h4>São Miguel</h4>
+2070:<p>Volcanic lakes, hot springs, green landscapes and Atlantic nature.</p>
+2071:<a class="btn primary" href="azores.html">Explore São Miguel →</a>
+2093:<h2 class="title">
+2121:<h4>Paris</h4>
+2123:<p>
+2127:<a class="btn primary" href="paris.html">
+2150:<h4>Nice</h4>
+2152:<p>
+2156:<a class="btn primary" href="nice.html">
+2179:<h4>Marseille</h4>
+2181:<p>
+2185:<a class="btn primary" href="marseille.html">
+2208:<h4>Lyon</h4>
+2210:<p>
+2214:<a class="btn primary" href="lyon.html">
+2237:<h4>Bordeaux</h4>
+2239:<p>
+2243:<a class="btn primary" href="bordeaux.html">
+2266:<h4>Strasbourg</h4>
+2268:<p>
+2272:<a class="btn primary" href="strasbourg.html">
+2295:<h4>Annecy</h4>
+2297:<p>
+2301:<a class="btn primary" href="annecy.html">
+2324:<h4>Toulouse</h4>
+2326:<p>
+2330:<a class="btn primary" href="toulouse.html">
+2351:<h2 class="title">
+2379:<h4>Provence</h4>
+2381:<p>
+2385:<a class="btn primary" href="provence.html">
+2408:<h4>French Riviera</h4>
+2410:<p>
+2414:<a class="btn primary" href="french-riviera.html">
+2437:<h4>Normandy</h4>
+2439:<p>
+2443:<a class="btn primary" href="france.html">
+2466:<h4>Brittany</h4>
+2468:<p>
+2472:<a class="btn primary" href="france.html">
+2495:<h4>Loire Valley</h4>
+2497:<p>
+2501:<a class="btn primary" href="france.html">
+2524:<h4>Alsace</h4>
+2526:<p>
+2530:<a class="btn primary" href="strasbourg.html">
+2553:<h4>French Alps</h4>
+2555:<p>
+2559:<a class="btn primary" href="annecy.html">
+2582:<h4>Corsica</h4>
+2584:<p>
+2588:<a class="btn primary" href="corsica.html">
+2611:<h4>Dordogne</h4>
+2613:<p>
+2617:<a class="btn primary" href="france.html">
+2640:<h4>Champagne</h4>
+2642:<p>
+2646:<a class="btn primary" href="france.html">
+2673:<h2 class="title">
+2687:<h3>Describe your trip</h3>
+2688:<p>Tell us what kind of experience you are looking for.</p>
+2693:<h3>Find your Perfect Match</h3>
+2694:<p>Your preferences are compared with destination profiles to calculate a personalised match.</p>
+2699:<h3>Choose with confidence</h3>
+2700:<p>Understand why a destination matches your travel style and explore your options.</p>
+2720:<h2 class="title">
+2734:<h3>Flights</h3>
+2735:<p>Search flight options for your journey.</p>
+2736:<a class="btn primary" href="https://aviasales.tpx.gr/xaccp3pU" target="_blank" rel="sponsored noopener noreferrer">Search Flights →</a>
+2741:<h3>Car Rentals</h3>
+2742:<p>Compare rental options and explore independently.</p>
+2743:<a class="btn primary" href="https://autoeurope.tpx.gr/PYK42wVM" target="_blank" rel="sponsored noopener noreferrer">Rent a Car →</a>
+2748:<h3>Activities</h3>
+2749:<p>Discover tours, attractions and experiences.</p>
+2750:<a class="btn primary" href="https://kkday.tpx.gr/lk2ssfVX" target="_blank" rel="sponsored noopener noreferrer">Explore Activities →</a>
+2755:<h3>Hotels & Activities</h3>
+2756:<p>Discover hotels, attractions and experiences with Klook.</p>
+2757:<a class="btn primary" href="https://klook.tpx.gr/HyAQ5Z8G" target="_blank" rel="sponsored noopener noreferrer">Explore Klook →</a>
+2762:<h3>Airport Transfers</h3>
+2763:<p>Arrange a smoother arrival and departure.</p>
+2764:<a class="btn primary" href="https://intui.tpx.gr/JsoT6ciu" target="_blank" rel="sponsored noopener noreferrer">Book Transfer →</a>
+2769:<h3>Private Transfers</h3>
+2770:<p>Find private transfer options.</p>
+2771:<a class="btn primary" href="https://gettransfer.tpx.gr/I1UPhx3j" target="_blank" rel="sponsored noopener noreferrer">Find Transfer →</a>
+2776:<h3>Travel eSIM</h3>
+2777:<p>Stay connected while travelling.</p>
+2778:<a class="btn primary" href="https://saily.tpx.gr/qqzwC6gB" target="_blank" rel="sponsored noopener noreferrer">Get an eSIM →</a>
+2783:<h3>Flight Compensation</h3>
+2784:<p>Explore compensation options after disrupted flights.</p>
+2785:<a class="btn primary" href="https://compensair.tpx.gr/oenuQeYD" target="_blank" rel="sponsored noopener noreferrer">Check Compensation →</a>
+2790:<h3>Bike Rental</h3>
+2791:<p>Find bicycle rental options for exploring destinations.</p>
+2792:<a class="btn primary" href="https://bikesbooking.tpx.gr/9t1J9s1c" target="_blank" rel="sponsored noopener noreferrer">Find Bikes →</a>
+2797:<h3>Tickets & Attractions</h3>
+2798:<p>Book tickets for attractions, museums and experiences.</p>
+2799:<a class="btn primary" href="https://tiqets.tpx.gr/MwCCHoIr" target="_blank" rel="sponsored noopener noreferrer">Book Tickets →</a>
+2821:<h2 class="title">
+2835:<a class="choice" href="spain.html">
+2836:<span class="choice-icon">🇪🇸</span>
+2841:<a class="choice" href="canary-islands.html">
+2842:<span class="choice-icon">🌋</span>
+2847:<a class="choice" href="balearic-islands.html">
+2848:<span class="choice-icon">🏝️</span>
+2853:<a class="choice" href="portogallo.html">
+2854:<span class="choice-icon">🇵🇹</span>
+2859:<a class="choice" href="france.html">
+2860:<span class="choice-icon">🇫🇷</span>
+2884:<a href="privacy.html">Privacy</a>
+2886:<a href="#contact">Contact</a>

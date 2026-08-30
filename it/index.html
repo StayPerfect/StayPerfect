@@ -1,0 +1,2828 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta name="google-site-verification" content="x7EqEsuBshPrdKDbKyKiRTneohNQTj-axfkTLXNe2AA" />
+
+<title>StayPerfect — Trova la tua destinazione di viaggio perfetta</title>
+
+<meta name="description" content="Scopri le migliori destinazioni in Spagna, Portogallo, Francia e nelle loro isole. Esplora luoghi, esperienze e servizi di viaggio con StayPerfect.">
+
+<meta name="robots" content="index, follow">
+
+<style>
+:root{
+  --blue:#1769e8;
+  --dark:#10204a;
+  --muted:#68758b;
+  --soft:#eef6ff;
+  --line:#e4eaf2;
+  --bg:#f7f9fc;
+  --white:#fff;
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--dark);
+  background:#fff;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font-family:inherit;
+}
+
+.w{
+  max-width:1150px;
+  margin:auto;
+  padding:0 22px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+nav{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:25px;
+  font-weight:900;
+  letter-spacing:-.05em;
+}
+
+.logo span{
+  color:var(--blue);
+}
+
+.links{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  font-size:14px;
+  font-weight:750;
+}
+
+.links a:hover{
+  color:var(--blue);
+}
+
+.pill{
+  color:#fff!important;
+  background:var(--blue);
+  padding:10px 16px;
+  border-radius:999px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  min-height:720px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  color:#fff;
+  background:
+    linear-gradient(90deg,rgba(8,20,48,.88),rgba(8,20,48,.50),rgba(8,20,48,.18)),
+    url("https://loremflickr.com/1800/1100/spain,travel") center/cover no-repeat;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    180deg,
+    transparent 65%,
+    rgba(8,20,48,.45)
+  );
+  pointer-events:none;
+}
+
+.hero-grid{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:60px;
+  align-items:center;
+}
+
+.ey{
+  color:var(--blue);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.hero .ey{
+  color:#8fc1ff;
+}
+
+.hero h1{
+  margin:15px 0 20px;
+  font-size:clamp(48px,7vw,78px);
+  line-height:.95;
+  letter-spacing:-.06em;
+}
+
+.hero h1 em{
+  color:#76b4ff;
+  font-style:normal;
+}
+
+.hero p{
+  max-width:650px;
+  color:#e7eefb;
+  font-size:19px;
+  line-height:1.6;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:27px;
+}
+
+.btn{
+  display:inline-block;
+  border:0;
+  border-radius:14px;
+  padding:14px 18px;
+  font-weight:850;
+  cursor:pointer;
+}
+
+.primary{
+  background:var(--blue);
+  color:#fff;
+}
+
+.primary:hover{
+  opacity:.9;
+}
+
+.secondary{
+  background:#fff;
+  border:1px solid var(--line);
+}
+
+.hero .secondary{
+  background:rgba(255,255,255,.12);
+  border-color:rgba(255,255,255,.35);
+  color:#fff;
+  backdrop-filter:blur(10px);
+}
+
+/* =========================
+   HERO PANEL
+========================= */
+
+.hero-panel{
+  background:rgba(255,255,255,.95);
+  color:var(--dark);
+  border:1px solid rgba(255,255,255,.5);
+  border-radius:28px;
+  padding:24px;
+  box-shadow:0 25px 70px rgba(0,0,0,.25);
+  backdrop-filter:blur(12px);
+}
+
+.panel-title{
+  font-weight:900;
+  font-size:19px;
+  margin-bottom:14px;
+}
+
+.plan-row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:13px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.plan-icon,
+.icon{
+  width:44px;
+  height:44px;
+  border-radius:14px;
+  background:var(--soft);
+  display:grid;
+  place-items:center;
+  font-size:21px;
+  flex-shrink:0;
+}
+
+.plan-row strong{
+  display:block;
+  font-size:14px;
+}
+
+.plan-row span{
+  display:block;
+  color:var(--muted);
+  font-size:12px;
+}
+
+.score{
+  margin-top:17px;
+  background:var(--soft);
+  border-radius:16px;
+  padding:16px;
+}
+
+.score-top{
+  display:flex;
+  justify-content:space-between;
+  font-weight:900;
+}
+
+.bar{
+  height:8px;
+  margin-top:9px;
+  background:#dfe9f5;
+  border-radius:99px;
+  overflow:hidden;
+}
+
+.bar i{
+  display:block;
+  width:96%;
+  height:100%;
+  background:var(--blue);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+  padding:76px 0;
+}
+
+.center{
+  text-align:center;
+}
+
+.title{
+  margin:8px 0 12px;
+  font-size:38px;
+  letter-spacing:-.045em;
+}
+
+.lead{
+  max-width:750px;
+  margin:auto;
+  color:var(--muted);
+  line-height:1.65;
+}
+
+.destinations{
+  background:var(--bg);
+}
+
+/* =========================
+   DESTINATION CARDS
+========================= */
+
+.destination-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+  margin-top:36px;
+}
+
+.destination-card{
+  position:relative;
+  overflow:hidden;
+  min-height:340px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  border-radius:26px;
+  padding:30px;
+  color:#fff;
+  background:#17233d;
+  box-shadow:0 15px 45px rgba(16,32,74,.14);
+}
+
+.destination-card:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,0,0,.03) 20%,
+      rgba(0,0,0,.72) 100%
+    );
+  z-index:0;
+}
+
+.destination-card > *{
+  position:relative;
+  z-index:1;
+}
+
+.destination-card .icon{
+  background:rgba(255,255,255,.16);
+  backdrop-filter:blur(8px);
+  width:50px;
+  height:50px;
+}
+
+.destination-card h3{
+  margin:15px 0 7px;
+  font-size:32px;
+  letter-spacing:-.04em;
+}
+
+.destination-card p{
+  color:#edf3fc;
+  line-height:1.55;
+  font-size:14px;
+  max-width:580px;
+}
+
+.destination-card .btn{
+  width:max-content;
+  margin-top:10px;
+}
+
+.destination-card .buttons{
+  margin-top:10px;
+  gap:10px;
+}
+
+.destination-card .buttons .btn{
+  margin-top:0;
+}
+
+.destination-card .buttons .secondary{
+  background:#fff;
+  color:var(--dark);
+  border:1px solid var(--line);
+}
+
+.destination-card .buttons .secondary:hover{
+  color:var(--blue);
+  border-color:#9fc3f5;
+}
+
+/* Destination backgrounds */
+
+.destination-spain{
+  background:url("https://loremflickr.com/1200/800/barcelona,spain") center/cover;
+}
+
+.destination-portugal{
+  background:url("https://loremflickr.com/1200/800/lisbon,portugal") center/cover;
+}
+
+.destination-france{
+position:relative;
+overflow:hidden;
+
+background-image:
+linear-gradient(
+180deg,
+rgba(0,0,0,.08) 0%,
+rgba(0,0,0,.68) 100%
+),
+url("https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1800&q=85");
+
+background-position:center;
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+
+/* =========================
+   DESTINATION IMAGE CARDS
+========================= */
+
+.islands{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:32px;
+}
+
+.island{
+  overflow:hidden;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:21px;
+  padding:0;
+  transition:.2s ease;
+}
+
+.island:hover{
+  transform:translateY(-4px);
+  box-shadow:0 18px 45px rgba(16,32,74,.13);
+}
+
+.island-photo{
+  position:relative;
+  height:210px;
+  overflow:hidden;
+  background:#dce8f6;
+}
+
+.island-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .35s ease;
+}
+
+.island:hover .island-photo img{
+  transform:scale(1.05);
+}
+
+.island-photo:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    180deg,
+    transparent 45%,
+    rgba(0,0,0,.35)
+  );
+  pointer-events:none;
+}
+
+.island-content{
+  padding:20px;
+}
+
+.island-icon{
+  font-size:27px;
+}
+
+.island h4{
+  margin:8px 0 5px;
+  font-size:20px;
+}
+
+.island p{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.5;
+  margin:0 0 15px;
+}
+
+.island .btn{
+  padding:10px 13px;
+  font-size:12px;
+}
+
+/* =========================
+   OTHER SECTIONS
+========================= */
+
+.cards,
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:36px;
+}
+
+.card,
+.service{
+  border:1px solid var(--line);
+  border-radius:21px;
+  padding:24px;
+  background:#fff;
+}
+
+.card:hover,
+.service:hover{
+  box-shadow:0 12px 35px rgba(16,32,74,.08);
+}
+
+.num{
+  width:42px;
+  height:42px;
+  border-radius:12px;
+  background:var(--soft);
+  display:grid;
+  place-items:center;
+  color:var(--blue);
+  font-weight:900;
+  font-size:20px;
+}
+
+.card h3,
+.service h3{
+  margin:15px 0 8px;
+}
+
+.card p,
+.service p{
+  color:var(--muted);
+  line-height:1.55;
+  font-size:14px;
+}
+
+.service .btn{
+  padding:11px 14px;
+  font-size:13px;
+}
+
+.dark{
+  background:var(--dark);
+  color:#fff;
+}
+
+.dark .lead{
+  color:#cbd4e5;
+}
+
+/* =========================
+   MATCH
+========================= */
+
+.match-box{
+  margin-top:36px;
+  background:#fff;
+  color:var(--dark);
+  border-radius:27px;
+  padding:29px;
+  box-shadow:0 20px 60px rgba(0,0,0,.2);
+}
+
+.match-progress{
+  height:7px;
+  background:#dfe9f5;
+  border-radius:99px;
+  overflow:hidden;
+  margin-bottom:26px;
+}
+
+.match-progress i{
+  display:block;
+  width:25%;
+  height:100%;
+  background:var(--blue);
+  transition:.25s ease;
+}
+
+.match-step{
+  display:none;
+}
+
+.match-step.active{
+  display:block;
+}
+
+.step-kicker{
+  color:var(--blue);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.match-step h3{
+  margin:7px 0 8px;
+  font-size:27px;
+  letter-spacing:-.035em;
+}
+
+.match-step p{
+  color:var(--muted);
+  line-height:1.55;
+}
+
+.choice-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin-top:20px;
+}
+
+.choice{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:16px;
+  padding:18px 13px;
+  text-align:left;
+  cursor:pointer;
+  transition:.15s ease;
+}
+
+.choice:hover{
+  border-color:#9fc3f5;
+  transform:translateY(-1px);
+}
+
+.choice.selected{
+  border:2px solid var(--blue);
+  background:var(--soft);
+  padding:17px 12px;
+}
+
+.choice-icon{
+  display:block;
+  font-size:25px;
+  margin-bottom:7px;
+}
+
+.choice strong{
+  display:block;
+  font-size:14px;
+}
+
+.choice small{
+  display:block;
+  margin-top:4px;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.35;
+}
+
+.step-actions{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:25px;
+}
+
+.back{
+  background:transparent;
+  border:0;
+  color:var(--muted);
+  padding:12px;
+  cursor:pointer;
+  font-weight:800;
+}
+
+.next{
+  border:0;
+  background:var(--blue);
+  color:#fff;
+  border-radius:13px;
+  padding:12px 18px;
+  cursor:pointer;
+  font-weight:850;
+}
+
+.next:disabled{
+  opacity:.45;
+  cursor:not-allowed;
+}
+
+.result-card{
+  display:none;
+  margin-top:25px;
+  background:#fff;
+  color:var(--dark);
+  border-radius:24px;
+  padding:27px;
+}
+
+.result-card.show{
+  display:block;
+}
+
+.result-head{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.result-card h3{
+  font-size:29px;
+  margin:6px 0;
+}
+
+.result-card p{
+  color:var(--muted);
+  line-height:1.55;
+}
+
+.result-score{
+  text-align:right;
+}
+
+.result-score strong{
+  color:var(--blue);
+  font-size:45px;
+  letter-spacing:-.05em;
+}
+
+.result-score span{
+  display:block;
+  color:var(--muted);
+  font-size:12px;
+  font-weight:800;
+}
+
+.result-reasons{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin:21px 0;
+}
+
+.reason{
+  background:var(--bg);
+  border-radius:14px;
+  padding:13px;
+  font-size:13px;
+}
+
+.reason b{
+  display:block;
+  margin-bottom:3px;
+}
+
+.match-alternatives{
+  padding-top:22px;
+  border-top:1px solid var(--line);
+}
+
+.match-alternatives-title{
+  font-size:13px;
+  font-weight:900;
+  margin-bottom:12px;
+}
+
+.alternative-list{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+
+.alternative{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:13px;
+}
+
+.alternative strong{
+  display:block;
+  font-size:13px;
+}
+
+.alternative span{
+  color:var(--muted);
+  font-size:12px;
+}
+
+/* =========================
+   FEATURED
+========================= */
+
+.featured{
+  background:var(--bg);
+}
+
+.featured-box{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:25px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:23px;
+  padding:30px;
+}
+
+.featured-box p{
+  color:var(--muted);
+  line-height:1.55;
+}
+
+.disclosure{
+  border-top:1px solid var(--line);
+  padding:45px 0;
+}
+
+.disclosure p{
+  max-width:780px;
+  margin:auto;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6;
+}
+
+footer{
+  border-top:1px solid var(--line);
+  padding:30px 0;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.foot{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+  .links{
+    display:none;
+  }
+
+  .hero-grid,
+  .destination-grid{
+    grid-template-columns:1fr;
+  }
+
+  .cards,
+  .service-grid,
+  .islands{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:650px){
+
+  .w{
+    padding:0 18px;
+  }
+
+  .hero{
+    min-height:800px;
+  }
+
+  .hero-grid{
+    gap:35px;
+  }
+
+  .hero h1{
+    font-size:46px;
+  }
+
+  .title{
+    font-size:30px;
+  }
+
+  .cards,
+  .service-grid,
+  .islands,
+  .choice-grid{
+    grid-template-columns:1fr;
+  }
+
+  .destination-card{
+    min-height:320px;
+  }
+
+  .result-head{
+    display:block;
+  }
+
+  .result-score{
+    text-align:left;
+    margin-top:12px;
+  }
+
+  .result-reasons,
+  .alternative-list{
+    grid-template-columns:1fr;
+  }
+
+  .featured-box{
+    display:block;
+  }
+
+  .featured-box .btn{
+    margin-top:15px;
+  }
+
+  .foot{
+    display:block;
+  }
+
+  .foot div+div{
+    margin-top:12px;
+  }
+}
+</style>
+<link rel="canonical" href="https://stayperfect.jos-iul88.workers.dev/it/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="StayPerfect — Trova la tua destinazione di viaggio perfetta">
+<meta property="og:description" content="Scopri destinazioni, esperienze e servizi di viaggio in Spagna, Portogallo, Francia e nelle loro isole.">
+<meta property="og:url" content="https://stayperfect.jos-iul88.workers.dev/it/">
+<meta property="og:site_name" content="StayPerfect">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="StayPerfect — Trova la tua destinazione di viaggio perfetta">
+<meta name="twitter:description" content="Scopri destinazioni, esperienze e servizi di viaggio in Spagna, Portogallo, Francia e nelle loro isole.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://stayperfect.jos-iul88.workers.dev/it/#website",
+      "url": "https://stayperfect.jos-iul88.workers.dev/it/",
+      "name": "StayPerfect",
+      "description": "Scopri le migliori destinazioni in Spagna, Portogallo, Francia e nelle loro isole. Esplora luoghi, esperienze e servizi di viaggio con StayPerfect.",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://stayperfect.jos-iul88.workers.dev/it/#organization",
+      "name": "StayPerfect",
+      "url": "https://stayperfect.jos-iul88.workers.dev/it/",
+      "description": "StayPerfect helps travelers discover destinations, experiences and travel services that fit the way they want to travel."
+    }
+  ]
+}
+</script>
+
+
+<!-- STAYPERFECT HREFLANG START -->
+<link rel="alternate" hreflang="en" href="https://stayperfect.jos-iul88.workers.dev/">
+<link rel="alternate" hreflang="it" href="https://stayperfect.jos-iul88.workers.dev/it/">
+<link rel="alternate" hreflang="fr" href="https://stayperfect.jos-iul88.workers.dev/fr/">
+<link rel="alternate" hreflang="de" href="https://stayperfect.jos-iul88.workers.dev/de/">
+<link rel="alternate" hreflang="es" href="https://stayperfect.jos-iul88.workers.dev/es/">
+<link rel="alternate" hreflang="ru" href="https://stayperfect.jos-iul88.workers.dev/ru/">
+<link rel="alternate" hreflang="x-default" href="https://stayperfect.jos-iul88.workers.dev/">
+<!-- STAYPERFECT HREFLANG END -->
+</head>
+
+<body>
+
+<header>
+<div class="w">
+<nav>
+
+<a class="logo" href="index.html">
+Stay<span>Perfect</span>
+</a>
+
+<div class="links">
+<a href="#destinations">Destinations</a>
+<a href="#services">Travel Services</a>
+<a href="#how">How it works</a>
+<a href="#match">Perfect Match</a>
+<a class="pill" href="#contact">Contact</a>
+</div>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+
+<main>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<div class="w hero-grid">
+
+<div>
+
+<div class="ey">Travel discovery, reimagined</div>
+
+<h1>
+Find the trip that fits <em>you.</em>
+</h1>
+
+<p>
+Discover Spain, Portugal and their islands with destinations, activities and travel services selected around the way you want to travel.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="#match">
+Find My Perfect Match
+</a>
+
+<a class="btn secondary" href="#destinations">
+Explore Destinations
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-panel">
+
+<div>
+  <div class="eyebrow">✨ Your perfect trip</div>
+
+  <h3>Travel Services</h3>
+
+
+  <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;">
+
+    <a class="btn primary" href="https://aviasales.tpx.gr/xaccp3pU" target="_blank" rel="sponsored noopener noreferrer">
+      ✈️ Search Flights
+    </a>
+
+    <a class="btn primary" href="https://autoeurope.tpx.gr/PYK42wVM" target="_blank" rel="sponsored noopener noreferrer">
+      🚗 Rent a Car
+    </a>
+
+    <a class="btn primary" href="https://kkday.tpx.gr/lk2ssfVX" target="_blank" rel="sponsored noopener noreferrer">
+      🎟️ Explore Activities
+    </a>
+
+    <a class="btn primary" href="https://klook.tpx.gr/HyAQ5Z8G" target="_blank" rel="sponsored noopener noreferrer">
+      🌍 Explore Klook
+    </a>
+
+    <a class="btn primary" href="https://intui.tpx.gr/JsoT6ciu" target="_blank" rel="sponsored noopener noreferrer">
+      🚐 Book Transfer
+    </a>
+
+    <a class="btn primary" href="https://gettransfer.tpx.gr/I1UPhx3j" target="_blank" rel="sponsored noopener noreferrer">
+      🚕 Find Transfer
+    </a>
+
+    <a class="btn primary" href="https://saily.tpx.gr/qqzwC6gB" target="_blank" rel="sponsored noopener noreferrer">
+      📱 Get an eSIM
+    </a>
+
+    <a class="btn primary" href="https://compensair.tpx.gr/oenuQeYD" target="_blank" rel="sponsored noopener noreferrer">
+      💶 Check Compensation
+    </a>
+
+    <a class="btn primary" href="https://bikesbooking.tpx.gr/9t1J9s1c" target="_blank" rel="sponsored noopener noreferrer">
+      🚲 Find Bikes
+    </a>
+
+    <a class="btn primary" href="https://tiqets.tpx.gr/MwCCHoIr" target="_blank" rel="sponsored noopener noreferrer">
+      🎫 Book Tickets
+    </a>
+
+  </div>
+</div>
+
+
+
+
+
+
+<div class="score">
+
+<div class="score-top">
+<span>Perfect Match</span>
+<span>96%</span>
+</div>
+
+<div class="bar">
+<i></i>
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- =========================
+     DESTINATIONS
+========================= -->
+
+<section id="destinations" class="destinations">
+
+<div class="w center">
+
+<div class="ey">
+Explore with StayPerfect
+</div>
+
+<h2 class="title">
+Where will you go? 🌍
+</h2>
+
+<p class="lead">
+Explore Spain and Portugal together with their islands, cities, beaches, nature and unique experiences.
+</p>
+
+</div>
+
+
+<div class="w destination-grid">
+
+<!-- SPAIN -->
+
+<div class="destination-card destination-spain">
+
+<div class="icon">🇪🇸</div>
+
+<h3>Spain</h3>
+
+<p>
+Explore mainland Spain together with the Balearic and Canary Islands.
+</p>
+
+<div class="buttons">
+  <a class="btn primary" href="#spain">
+    Explore Spain →
+  </a>
+
+  <a class="btn secondary" href="#match">
+    Perfect Match ✨
+  </a>
+</div>
+
+</div>
+
+<!-- FRANCE -->
+
+<div class="destination-card destination-france">
+
+<div class="icon">🇫🇷</div>
+
+<h3>France</h3>
+
+<p>
+Discover France through iconic cities, Mediterranean coastlines, historic regions, mountains, countryside and unforgettable French experiences.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="#france">
+Explore France →
+</a>
+
+<a class="btn secondary" href="#match">
+Perfect Match ✨
+</a>
+
+</div>
+
+</div>
+
+
+
+<!-- PORTUGAL -->
+
+<div class="destination-card destination-portugal">
+
+<div class="icon">🇵🇹</div>
+
+<h3>Portugal</h3>
+
+<p>
+Discover Portugal, Madeira and the Azores — from vibrant cities to Atlantic island escapes.
+</p>
+
+<div class="buttons">
+  <a class="btn primary" href="#portugal">
+    Explore Portugal →
+  </a>
+
+  <a class="btn secondary" href="#match">
+    Perfect Match ✨
+  </a>
+</div>
+
+</div>
+
+</div>
+
+<!-- =========================
+     SPAIN
+========================= -->
+
+<div class="w" id="spain" style="margin-top:70px">
+
+<div class="center">
+
+<div class="ey">
+Discover Spain
+</div>
+
+<h2 class="title">
+Spain 🇪🇸
+</h2>
+
+<p class="lead">
+Explore the country's most interesting cities and regions, followed by its Mediterranean Balearic Islands and volcanic Canary Islands.
+</p>
+
+</div>
+
+
+<div class="islands">
+
+
+<!-- Barcelona -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://loremflickr.com/900/600/barcelona,spain"
+alt="Barcelona Spain"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🏛️</div>
+
+<h4>Barcelona</h4>
+
+<p>
+Architecture, culture, beaches, restaurants and Mediterranean city life.
+</p>
+
+<a class="btn primary" href="barcelona.html">
+Explore Barcelona →
+</a>
+
+</div>
+</div>
+
+
+<!-- Madrid -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://loremflickr.com/900/600/madrid,spain"
+alt="Madrid Spain"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🌆</div>
+
+<h4>Madrid</h4>
+
+<p>
+Museums, restaurants, nightlife, culture and the energy of Spain's capital.
+</p>
+
+<a class="btn primary" href="madrid.html">
+Explore Madrid →
+</a>
+
+</div>
+</div>
+
+
+<!-- Valencia -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://loremflickr.com/900/600/valencia,spain"
+alt="Valencia Spain"
+loading="lazy"
+onerror="this.onerror=null;this.src='https://loremflickr.com/900/600/valencia,city';"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🌊</div>
+
+<h4>Valencia</h4>
+
+<p>
+Beaches, food, architecture and an excellent Mediterranean atmosphere.
+</p>
+
+<a class="btn primary" href="valencia.html">
+Explore Valencia →
+</a>
+
+</div>
+</div>
+
+
+<!-- Alicante -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://loremflickr.com/900/600/alicante,spain"
+alt="Alicante Spain"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🏖️</div>
+
+<h4>Alicante</h4>
+
+<p>
+Sunny beaches, coastal towns and relaxed Mediterranean travel.
+</p>
+
+<a class="btn primary" href="alicante.html">
+Explore Alicante →
+</a>
+
+</div>
+</div>
+
+
+<!-- Andalusia -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://loremflickr.com/900/600/andalusia,spain"
+alt="Andalusia Spain"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">☀️</div>
+
+<h4>Andalusia</h4>
+
+<p>
+Culture, beaches, historic cities, food and unforgettable landscapes.
+</p>
+
+<a class="btn primary" href="andalusia.html">
+Explore Andalusia →
+</a>
+
+</div>
+</div>
+
+
+<!-- Costa del Sol -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://loremflickr.com/900/600/costa,del,sol,spain"
+alt="Costa del Sol Spain"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🏖️</div>
+
+<h4>Costa del Sol</h4>
+
+<p>
+Beautiful beaches, resorts, restaurants, sunshine and Mediterranean travel.
+</p>
+
+<a class="btn primary" href="costa-del-sol.html">
+Explore Costa del Sol →
+</a>
+
+</div>
+</div>
+
+
+<!-- Cadiz -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://loremflickr.com/900/600/cadiz,spain"
+alt="Cadiz Spain"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🏄</div>
+
+<h4>Cádiz</h4>
+
+<p>
+Atlantic beaches, surfing, seafood, history and authentic Andalusian atmosphere.
+</p>
+
+<a class="btn primary" href="cadiz.html">
+Explore Cádiz →
+</a>
+
+</div>
+</div>
+
+
+<!-- Galicia -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://loremflickr.com/900/600/galicia,spain"
+alt="Galicia Spain"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🌿</div>
+
+<h4>Galicia</h4>
+
+<p>
+Wild Atlantic landscapes, seafood, hiking and beautiful coastal scenery.
+</p>
+
+<a class="btn primary" href="galicia.html">
+Explore Galicia →
+</a>
+
+</div>
+</div>
+
+
+<!-- Asturias -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://loremflickr.com/900/600/asturias,spain"
+alt="Asturias Spain"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🏔️</div>
+
+<h4>Asturias</h4>
+
+<p>
+Green mountains, dramatic coastline, hiking and authentic northern Spain.
+</p>
+
+<a class="btn primary" href="asturia.html">
+Explore Asturias →
+</a>
+
+</div>
+</div>
+
+</div>
+
+
+<!-- BALEARIC ISLANDS -->
+
+<div style="margin-top:55px">
+
+<div class="center">
+
+<div class="ey">
+Mediterranean islands
+</div>
+
+<h2 class="title">
+Balearic Islands 🇪🇸
+</h2>
+
+<p class="lead">
+The Balearic Islands are part of Spain and include Mallorca, Menorca, Ibiza, Formentera and protected natural escapes.
+</p>
+
+<p style="text-align:center; margin:25px 0;">
+<a class="btn primary" href="balearic-islands.html#perfect-match" style="display:inline-block;">
+Perfect Match Balearic Islands ✨
+</a>
+</p>
+
+</div>
+
+
+<div class="islands">
+
+
+<!-- Mallorca -->
+
+<div class="island">
+
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/mallorca,spain" alt="Mallorca" loading="lazy">
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🏝️</div>
+<h4>Mallorca</h4>
+
+<p>
+Beaches, mountains, villages, resorts, food and endless variety.
+</p>
+
+<a class="btn primary" href="mallorca.html">
+Explore Mallorca →
+</a>
+
+</div>
+</div>
+
+
+<!-- Menorca -->
+
+<div class="island">
+
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/menorca,spain" alt="Menorca" loading="lazy">
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🌿</div>
+<h4>Menorca</h4>
+
+<p>
+Quiet coves, nature, relaxed beaches and a slower Mediterranean rhythm.
+</p>
+
+<a class="btn primary" href="menorca.html">
+Explore Menorca →
+</a>
+
+</div>
+</div>
+
+
+<!-- Ibiza -->
+
+<div class="island">
+
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/ibiza,spain" alt="Ibiza" loading="lazy">
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🎶</div>
+<h4>Ibiza</h4>
+
+<p>
+World-famous nightlife combined with beaches and hidden escapes.
+</p>
+
+<a class="btn primary" href="ibiza.html">
+Explore Ibiza →
+</a>
+
+</div>
+</div>
+
+
+<!-- Formentera -->
+
+<div class="island">
+
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/formentera,spain" alt="Formentera" loading="lazy">
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">💎</div>
+<h4>Formentera</h4>
+
+<p>
+Turquoise water, beautiful beaches and an intimate island atmosphere.
+</p>
+
+<a class="btn primary" href="formentera.html">
+Explore Formentera →
+</a>
+
+</div>
+</div>
+
+
+<!-- Cabrera -->
+
+<div class="island">
+
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/cabrera,spain" alt="Cabrera" loading="lazy">
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🏞️</div>
+<h4>Cabrera</h4>
+
+<p>
+Protected nature, crystal-clear waters and peaceful Mediterranean scenery.
+</p>
+
+<a class="btn primary" href="cabrera.html">
+Explore Cabrera →
+</a>
+
+</div>
+</div>
+
+
+<!-- Dragonera -->
+
+<div class="island">
+
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/dragonera,mallorca" alt="Dragonera" loading="lazy">
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🌊</div>
+<h4>Dragonera</h4>
+
+<p>
+Wild landscapes, hiking, coastal scenery and peaceful nature.
+</p>
+
+<a class="btn primary" href="dragonera.html">
+Explore Dragonera →
+</a>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+<!-- CANARY ISLANDS -->
+
+<div style="margin-top:55px">
+
+<div class="center">
+
+<div class="ey">
+Atlantic islands
+</div>
+
+<h2 class="title">
+Canary Islands 🇪🇸
+</h2>
+
+<p class="lead">
+Volcanic landscapes, beaches, mountains, adventure and unique island experiences.
+</p>
+
+<p style="text-align:center; margin:25px 0;">
+<a class="btn primary" href="canary-islands.html#perfect-match" style="display:inline-block;">
+Perfect Match Canary Islands ✨
+</a>
+</p>
+
+</div>
+
+
+<div class="islands">
+
+
+<div class="island">
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/tenerife,canary,islands" alt="Tenerife" loading="lazy">
+</div>
+<div class="island-content">
+<div class="island-icon">🌋</div>
+<h4>Tenerife</h4>
+<p>Beaches, Teide, nature, activities and exceptional variety.</p>
+<a class="btn primary" href="tenerife.html">Explore Tenerife →</a>
+</div>
+</div>
+
+
+<div class="island">
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/gran,canaria" alt="Gran Canaria" loading="lazy">
+</div>
+<div class="island-content">
+<div class="island-icon">🌴</div>
+<h4>Gran Canaria</h4>
+<p>Beaches, mountains, resorts, activities and nightlife.</p>
+<a class="btn primary" href="gran-canaria.html">Explore Gran Canaria →</a>
+</div>
+</div>
+
+
+<div class="island">
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/fuerteventura" alt="Fuerteventura" loading="lazy">
+</div>
+<div class="island-content">
+<div class="island-icon">🌊</div>
+<h4>Fuerteventura</h4>
+<p>Outstanding beaches, watersports and relaxed escapes.</p>
+<a class="btn primary" href="fuerteventura.html">Explore Fuerteventura →</a>
+</div>
+</div>
+
+
+<div class="island">
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/lanzarote" alt="Lanzarote" loading="lazy">
+</div>
+<div class="island-content">
+<div class="island-icon">🌋</div>
+<h4>Lanzarote</h4>
+<p>Volcanic landscapes, beaches and unique scenery.</p>
+<a class="btn primary" href="lanzarote.html">Explore Lanzarote →</a>
+</div>
+</div>
+
+
+<div class="island">
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/la,palma,canary,islands" alt="La Palma" loading="lazy">
+</div>
+<div class="island-content">
+<div class="island-icon">🌿</div>
+<h4>La Palma</h4>
+<p>Forests, hiking, volcanic landscapes and peaceful travel.</p>
+<a class="btn primary" href="lapalma.html">Explore La Palma →</a>
+</div>
+</div>
+
+
+<div class="island">
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/la,gomera" alt="La Gomera" loading="lazy">
+</div>
+<div class="island-content">
+<div class="island-icon">🏞️</div>
+<h4>La Gomera</h4>
+<p>Hiking, nature and a quieter island atmosphere.</p>
+<a class="btn primary" href="lagomera.html">Explore La Gomera →</a>
+</div>
+</div>
+
+
+<div class="island">
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/el,hierro" alt="El Hierro" loading="lazy">
+</div>
+<div class="island-content">
+<div class="island-icon">🌊</div>
+<h4>El Hierro</h4>
+<p>Remote nature, diving, hiking and authentic island life.</p>
+<a class="btn primary" href="elhierro.html">Explore El Hierro →</a>
+</div>
+</div>
+
+
+<div class="island">
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/la,graciosa" alt="La Graciosa" loading="lazy">
+</div>
+<div class="island-content">
+<div class="island-icon">🏝️</div>
+<h4>La Graciosa</h4>
+<p>Quiet beaches, cycling, nature and slow island life.</p>
+<a class="btn primary" href="lagraciosa.html">Explore La Graciosa →</a>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<!-- =========================
+     PORTUGAL
+========================= -->
+
+<div class="w" id="portugal" style="margin-top:80px">
+
+<div class="center">
+
+<div class="ey">
+Discover Portugal
+</div>
+
+<h2 class="title">
+Portugal 🇵🇹
+</h2>
+
+<p class="lead">
+Explore Portugal from its historic mainland cities and Atlantic coastline to the volcanic Azores and subtropical Madeira.
+</p>
+
+</div>
+
+
+<div class="islands">
+
+
+<!-- Lisbon -->
+
+<div class="island">
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/lisbon,portugal" alt="Lisbon Portugal" loading="lazy">
+</div>
+
+<div class="island-content">
+<div class="island-icon">🏛️</div>
+<h4>Lisbon</h4>
+<p>Historic neighbourhoods, viewpoints, food, culture and nightlife.</p>
+<a class="btn primary" href="lisbon.html">Explore Lisbon →</a>
+</div>
+</div>
+
+
+<!-- Porto -->
+
+<div class="island">
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/porto,portugal" alt="Porto Portugal" loading="lazy">
+</div>
+
+<div class="island-content">
+<div class="island-icon">🍷</div>
+<h4>Porto</h4>
+<p>Historic streets, river views, architecture, food and wine.</p>
+<a class="btn primary" href="porto.html">Explore Porto →</a>
+</div>
+</div>
+
+
+<!-- Algarve -->
+
+<div class="island">
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/algarve,portugal" alt="Algarve Portugal" loading="lazy">
+</div>
+
+<div class="island-content">
+<div class="island-icon">🏖️</div>
+<h4>Algarve</h4>
+<p>Golden beaches, cliffs, coastal towns and sunshine.</p>
+<a class="btn primary" href="algarve.html">Explore Algarve →</a>
+</div>
+</div>
+
+
+<!-- Madeira -->
+
+<div class="island">
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/madeira,portugal" alt="Madeira Portugal" loading="lazy">
+</div>
+
+<div class="island-content">
+<div class="island-icon">🌿</div>
+<h4>Madeira</h4>
+<p>Mountains, levadas, dramatic coastline, nature and hiking.</p>
+<a class="btn primary" href="madeira.html">Explore Madeira →</a>
+</div>
+</div>
+
+
+<!-- Azores -->
+
+<div class="island">
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/azores,portugal" alt="Azores Portugal" loading="lazy">
+</div>
+
+<div class="island-content">
+<div class="island-icon">🌋</div>
+<h4>Azores</h4>
+<p>Volcanic landscapes, lakes, hiking, whales and wild Atlantic nature.</p>
+<a class="btn primary" href="azores.html">Explore Azores →</a>
+</div>
+</div>
+
+
+<!-- Sintra -->
+
+<div class="island">
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/sintra,portugal" alt="Sintra Portugal" loading="lazy">
+</div>
+
+<div class="island-content">
+<div class="island-icon">🏰</div>
+<h4>Sintra</h4>
+<p>Palaces, forests, historic architecture and romantic landscapes.</p>
+<a class="btn primary" href="lisbon.html">Explore Sintra →</a>
+</div>
+</div>
+
+
+<!-- Cascais -->
+
+<div class="island">
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/cascais,portugal" alt="Cascais Portugal" loading="lazy">
+</div>
+
+<div class="island-content">
+<div class="island-icon">🌊</div>
+<h4>Cascais</h4>
+<p>Coastal scenery, beaches, restaurants and relaxed Portuguese atmosphere.</p>
+<a class="btn primary" href="lisbon.html">Explore Cascais →</a>
+</div>
+</div>
+
+
+<!-- Madeira additional -->
+
+<div class="island">
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/funchal,madeira" alt="Funchal Madeira" loading="lazy">
+</div>
+
+<div class="island-content">
+<div class="island-icon">🌴</div>
+<h4>Funchal</h4>
+<p>Madeira's vibrant capital, gardens, food, ocean views and culture.</p>
+<a class="btn primary" href="madeira.html">Explore Funchal →</a>
+</div>
+</div>
+
+
+<!-- Azores additional -->
+
+<div class="island">
+<div class="island-photo">
+<img src="https://loremflickr.com/900/600/sao,miguel,azores" alt="São Miguel Azores" loading="lazy">
+</div>
+
+<div class="island-content">
+<div class="island-icon">🌋</div>
+<h4>São Miguel</h4>
+<p>Volcanic lakes, hot springs, green landscapes and Atlantic nature.</p>
+<a class="btn primary" href="azores.html">Explore São Miguel →</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+     FRANCE
+========================= -->
+
+<div class="w" id="france" style="margin-top:80px">
+
+<div class="center">
+
+<div class="ey">
+Discover France
+</div>
+
+<h2 class="title">
+France 🇫🇷
+</h2>
+
+<p class="lead">
+Discover France through iconic cities, Mediterranean coastlines, historic regions, mountains, countryside and unforgettable French experiences.
+</p>
+
+</div>
+
+<div class="islands">
+
+<!-- Paris -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=85"
+alt="Paris France"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🗼</div>
+
+<h4>Paris</h4>
+
+<p>
+Culture, iconic landmarks, museums, restaurants, shopping and unforgettable city life.
+</p>
+
+<a class="btn primary" href="paris.html">
+Explore Paris →
+</a>
+
+</div>
+</div>
+
+<!-- Nice -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=85"
+alt="Nice France"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🌊</div>
+
+<h4>Nice</h4>
+
+<p>
+Mediterranean beaches, the Promenade des Anglais, food, culture and Riviera atmosphere.
+</p>
+
+<a class="btn primary" href="nice.html">
+Explore Nice →
+</a>
+
+</div>
+</div>
+
+<!-- Marseille -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&fit=crop&w=1200&q=85"
+alt="Marseille France"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">⚓</div>
+
+<h4>Marseille</h4>
+
+<p>
+Mediterranean atmosphere, the Old Port, seafood, culture and spectacular coastal scenery.
+</p>
+
+<a class="btn primary" href="marseille.html">
+Explore Marseille →
+</a>
+
+</div>
+</div>
+
+<!-- Lyon -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=85"
+alt="Lyon France"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🍷</div>
+
+<h4>Lyon</h4>
+
+<p>
+French gastronomy, historic neighbourhoods, architecture and an elegant city atmosphere.
+</p>
+
+<a class="btn primary" href="lyon.html">
+Explore Lyon →
+</a>
+
+</div>
+</div>
+
+<!-- Bordeaux -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1529516548873-9ce57c8f155e?auto=format&fit=crop&w=1200&q=85"
+alt="Bordeaux France"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🍇</div>
+
+<h4>Bordeaux</h4>
+
+<p>
+Wine, gastronomy, elegant architecture and beautiful surroundings in southwest France.
+</p>
+
+<a class="btn primary" href="bordeaux.html">
+Explore Bordeaux →
+</a>
+
+</div>
+</div>
+
+<!-- Strasbourg -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1549144511-f099e773c147?auto=format&fit=crop&w=1200&q=85"
+alt="Strasbourg France"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🏰</div>
+
+<h4>Strasbourg</h4>
+
+<p>
+Historic streets, Alsatian culture, architecture, food and a unique European atmosphere.
+</p>
+
+<a class="btn primary" href="strasbourg.html">
+Explore Strasbourg →
+</a>
+
+</div>
+</div>
+
+<!-- Annecy -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85"
+alt="Annecy France"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🏔️</div>
+
+<h4>Annecy</h4>
+
+<p>
+A beautiful alpine lake, mountains, outdoor activities and charming historic streets.
+</p>
+
+<a class="btn primary" href="annecy.html">
+Explore Annecy →
+</a>
+
+</div>
+</div>
+
+<!-- Toulouse -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85"
+alt="Toulouse France"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🌸</div>
+
+<h4>Toulouse</h4>
+
+<p>
+Southern French culture, gastronomy, architecture and a lively city atmosphere.
+</p>
+
+<a class="btn primary" href="toulouse.html">
+Explore Toulouse →
+</a>
+
+</div>
+</div>
+
+</div>
+
+<!-- =========================
+     FRENCH REGIONS
+========================= -->
+
+<div style="margin-top:55px">
+
+<div class="center">
+
+<div class="ey">
+French regions & experiences
+</div>
+
+<h2 class="title">
+Explore beyond the cities 🇫🇷
+</h2>
+
+<p class="lead">
+From Mediterranean beaches and vineyards to Atlantic coastlines, mountains and historic countryside, France offers an extraordinary variety of travel experiences.
+</p>
+
+</div>
+
+<div class="islands">
+
+<!-- Provence -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1499002238440-d264edd596ec?auto=format&fit=crop&w=1200&q=85"
+alt="Provence France"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">💜</div>
+
+<h4>Provence</h4>
+
+<p>
+Lavender fields, villages, Mediterranean landscapes, food, wine and relaxed travel.
+</p>
+
+<a class="btn primary" href="provence.html">
+Explore Provence →
+</a>
+
+</div>
+</div>
+
+<!-- French Riviera -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=85"
+alt="French Riviera"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">☀️</div>
+
+<h4>French Riviera</h4>
+
+<p>
+Nice, Cannes, Antibes, Saint-Tropez and the glamorous Mediterranean coast.
+</p>
+
+<a class="btn primary" href="french-riviera.html">
+Explore French Riviera →
+</a>
+
+</div>
+</div>
+
+<!-- Normandy -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85"
+alt="Normandy France"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🌊</div>
+
+<h4>Normandy</h4>
+
+<p>
+Atlantic coastlines, historic sites, charming towns and dramatic landscapes.
+</p>
+
+<a class="btn primary" href="france.html">
+Explore Normandy →
+</a>
+
+</div>
+</div>
+
+<!-- Brittany -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85"
+alt="Brittany France"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🌊</div>
+
+<h4>Brittany</h4>
+
+<p>
+Wild coastlines, seafood, historic villages and authentic Atlantic experiences.
+</p>
+
+<a class="btn primary" href="france.html">
+Explore Brittany →
+</a>
+
+</div>
+</div>
+
+<!-- Loire Valley -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85"
+alt="Loire Valley France"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🏰</div>
+
+<h4>Loire Valley</h4>
+
+<p>
+Fairytale castles, gardens, countryside, cycling and French heritage.
+</p>
+
+<a class="btn primary" href="france.html">
+Explore Loire Valley →
+</a>
+
+</div>
+</div>
+
+<!-- Alsace -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1549144511-f099e773c147?auto=format&fit=crop&w=1200&q=85"
+alt="Alsace France"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🍷</div>
+
+<h4>Alsace</h4>
+
+<p>
+Wine villages, colourful architecture, gastronomy and beautiful countryside.
+</p>
+
+<a class="btn primary" href="strasbourg.html">
+Explore Alsace →
+</a>
+
+</div>
+</div>
+
+<!-- French Alps -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1200&q=85"
+alt="French Alps"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🏔️</div>
+
+<h4>French Alps</h4>
+
+<p>
+Mountain scenery, lakes, hiking, skiing and spectacular outdoor adventures.
+</p>
+
+<a class="btn primary" href="annecy.html">
+Explore French Alps →
+</a>
+
+</div>
+</div>
+
+<!-- Corsica -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1200&q=85"
+alt="Corsica France"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🏝️</div>
+
+<h4>Corsica</h4>
+
+<p>
+Turquoise waters, beaches, mountains, hiking and spectacular Mediterranean nature.
+</p>
+
+<a class="btn primary" href="corsica.html">
+Explore Corsica →
+</a>
+
+</div>
+</div>
+
+<!-- Dordogne -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85"
+alt="Dordogne France"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🌿</div>
+
+<h4>Dordogne</h4>
+
+<p>
+Medieval villages, castles, rivers, countryside and traditional French cuisine.
+</p>
+
+<a class="btn primary" href="france.html">
+Explore Dordogne →
+</a>
+
+</div>
+</div>
+
+<!-- Champagne -->
+
+<div class="island">
+
+<div class="island-photo">
+<img
+src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=85"
+alt="Champagne France"
+loading="lazy"
+>
+</div>
+
+<div class="island-content">
+
+<div class="island-icon">🥂</div>
+
+<h4>Champagne</h4>
+
+<p>
+Vineyards, elegant towns, historic cellars and the world-famous Champagne region.
+</p>
+
+<a class="btn primary" href="france.html">
+Explore Champagne →
+</a>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- =========================
+     HOW IT WORKS
+========================= -->
+
+<section id="how">
+
+<div class="w center">
+
+<div class="ey">
+Simple by design
+</div>
+
+<h2 class="title">
+Tell us what you want. We find the match.
+</h2>
+
+<p class="lead">
+StayPerfect is built around one simple idea: travel discovery should understand traveller intent.
+</p>
+
+</div>
+
+<div class="w cards">
+
+<div class="card">
+<div class="num">1</div>
+<h3>Describe your trip</h3>
+<p>Tell us what kind of experience you are looking for.</p>
+</div>
+
+<div class="card">
+<div class="num">2</div>
+<h3>Find your Perfect Match</h3>
+<p>Your preferences are compared with destination profiles to calculate a personalised match.</p>
+</div>
+
+<div class="card">
+<div class="num">3</div>
+<h3>Choose with confidence</h3>
+<p>Understand why a destination matches your travel style and explore your options.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section id="services">
+
+<div class="w center">
+
+<div class="ey">
+Travel Services
+</div>
+
+<h2 class="title">
+Everything you need to plan your trip
+</h2>
+
+<p class="lead">
+Use our travel services to organise flights, cars, activities, transfers and connectivity.
+</p>
+
+</div>
+
+<div class="w service-grid">
+
+<div class="service">
+<div class="icon">✈️</div>
+<h3>Flights</h3>
+<p>Search flight options for your journey.</p>
+<a class="btn primary" href="https://aviasales.tpx.gr/xaccp3pU" target="_blank" rel="sponsored noopener noreferrer">Search Flights →</a>
+</div>
+
+<div class="service">
+<div class="icon">🚗</div>
+<h3>Car Rentals</h3>
+<p>Compare rental options and explore independently.</p>
+<a class="btn primary" href="https://autoeurope.tpx.gr/PYK42wVM" target="_blank" rel="sponsored noopener noreferrer">Rent a Car →</a>
+</div>
+
+<div class="service">
+<div class="icon">🎟️</div>
+<h3>Activities</h3>
+<p>Discover tours, attractions and experiences.</p>
+<a class="btn primary" href="https://kkday.tpx.gr/lk2ssfVX" target="_blank" rel="sponsored noopener noreferrer">Explore Activities →</a>
+</div>
+
+<div class="service">
+<div class="icon">🏨</div>
+<h3>Hotels & Activities</h3>
+<p>Discover hotels, attractions and experiences with Klook.</p>
+<a class="btn primary" href="https://klook.tpx.gr/HyAQ5Z8G" target="_blank" rel="sponsored noopener noreferrer">Explore Klook →</a>
+</div>
+
+<div class="service">
+<div class="icon">🚐</div>
+<h3>Airport Transfers</h3>
+<p>Arrange a smoother arrival and departure.</p>
+<a class="btn primary" href="https://intui.tpx.gr/JsoT6ciu" target="_blank" rel="sponsored noopener noreferrer">Book Transfer →</a>
+</div>
+
+<div class="service">
+<div class="icon">🚕</div>
+<h3>Private Transfers</h3>
+<p>Find private transfer options.</p>
+<a class="btn primary" href="https://gettransfer.tpx.gr/I1UPhx3j" target="_blank" rel="sponsored noopener noreferrer">Find Transfer →</a>
+</div>
+
+<div class="service">
+<div class="icon">📱</div>
+<h3>Travel eSIM</h3>
+<p>Stay connected while travelling.</p>
+<a class="btn primary" href="https://saily.tpx.gr/qqzwC6gB" target="_blank" rel="sponsored noopener noreferrer">Get an eSIM →</a>
+</div>
+
+<div class="service">
+<div class="icon">🛫</div>
+<h3>Flight Compensation</h3>
+<p>Explore compensation options after disrupted flights.</p>
+<a class="btn primary" href="https://compensair.tpx.gr/oenuQeYD" target="_blank" rel="sponsored noopener noreferrer">Check Compensation →</a>
+</div>
+
+<div class="service">
+<div class="icon">🚲</div>
+<h3>Bike Rental</h3>
+<p>Find bicycle rental options for exploring destinations.</p>
+<a class="btn primary" href="https://bikesbooking.tpx.gr/9t1J9s1c" target="_blank" rel="sponsored noopener noreferrer">Find Bikes →</a>
+</div>
+
+<div class="service">
+<div class="icon">🎫</div>
+<h3>Tickets & Attractions</h3>
+<p>Book tickets for attractions, museums and experiences.</p>
+<a class="btn primary" href="https://tiqets.tpx.gr/MwCCHoIr" target="_blank" rel="sponsored noopener noreferrer">Book Tickets →</a>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PERFECT MATCH
+========================= -->
+
+<section id="match" class="dark">
+
+<div class="w">
+
+<div class="center">
+
+<div class="ey">
+Our core experience
+</div>
+
+<h2 class="title">
+Perfect Match
+</h2>
+
+<p class="lead">
+Choose the destination that matches the way you want to travel.
+</p>
+
+</div>
+
+<div class="match-box">
+
+<div class="choice-grid">
+
+<a class="choice" href="spain.html">
+<span class="choice-icon">🇪🇸</span>
+<strong>Spain</strong>
+<small>Cities, beaches, culture and unforgettable Spanish escapes</small>
+</a>
+
+<a class="choice" href="canary-islands.html">
+<span class="choice-icon">🌋</span>
+<strong>Canary Islands</strong>
+<small>Volcanic landscapes, beaches, nature and island adventures</small>
+</a>
+
+<a class="choice" href="balearic-islands.html">
+<span class="choice-icon">🏝️</span>
+<strong>Balearic Islands</strong>
+<small>Mediterranean beaches, island life and coastal experiences</small>
+</a>
+
+<a class="choice" href="portogallo.html">
+<span class="choice-icon">🇵🇹</span>
+<strong>Portugal &amp; Islands</strong>
+<small>Portugal, Madeira, the Azores and Atlantic escapes</small>
+</a>
+
+<a class="choice" href="france.html">
+<span class="choice-icon">🇫🇷</span>
+<strong>France &amp; Corsica</strong>
+<small>Paris, the French Riviera, Provence, Corsica and more</small>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="w foot">
+
+<div>
+<strong>StayPerfect</strong> — Find your perfect trip.
+</div>
+
+<div>
+© 2026 StayPerfect ·
+<a href="privacy.html">Privacy</a>
+·
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+
+</footer>

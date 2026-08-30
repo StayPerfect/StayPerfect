@@ -1,0 +1,2361 @@
+```html
+<!doctype html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Ibiza — Find Your Perfect Stay | StayPerfect</title>
+
+<meta name="description" content="Discover Ibiza beyond nightlife with beautiful beaches, hidden coves, nature, villages, food and unforgettable Mediterranean experiences.">
+
+<link rel="canonical" href="https://stayperfect.jos-iul88.workers.dev/ibiza.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ibiza — Find Your Perfect Stay | StayPerfect">
+<meta property="og:description" content="Discover Ibiza beaches, coves, villages, culture, nature, nightlife and unforgettable Mediterranean experiences.">
+<meta property="og:url" content="https://stayperfect.jos-iul88.workers.dev/ibiza.html">
+<meta property="og:site_name" content="StayPerfect">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ibiza — Find Your Perfect Stay | StayPerfect">
+<meta name="twitter:description" content="Discover beaches, nightlife, villages, nature and experiences across Ibiza.">
+
+<style>
+
+:root{
+  --blue:#1769e8;
+  --blue-light:#8fc0ff;
+  --navy:#10204a;
+  --navy-2:#182957;
+  --muted:#68758b;
+  --soft:#eef6ff;
+  --line:#e4eaf2;
+  --bg:#f7f9fc;
+  --green:#147a55;
+  --white:#fff;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--navy);
+  background:#fff;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font-family:inherit;
+}
+
+a,
+button{
+  -webkit-tap-highlight-color:transparent;
+}
+
+.w{
+  width:100%;
+  max-width:1120px;
+  margin:auto;
+  padding:0 22px;
+}
+
+section{
+  padding:78px 0;
+}
+
+.center{
+  text-align:center;
+}
+
+.ey{
+  color:var(--blue);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+}
+
+.title{
+  margin:8px 0 13px;
+  font-size:38px;
+  line-height:1.08;
+  letter-spacing:-.045em;
+}
+
+.lead{
+  max-width:760px;
+  margin:auto;
+  color:var(--muted);
+  line-height:1.7;
+}
+
+.buttons{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 18px;
+  border-radius:14px;
+  font-weight:850;
+  transition:.2s ease;
+}
+
+.btn:hover{
+  transform:translateY(-1px);
+}
+
+.primary{
+  background:var(--blue);
+  color:#fff!important;
+}
+
+.primary:hover{
+  opacity:.9;
+}
+
+.secondary{
+  background:#fff!important;
+  color:var(--navy)!important;
+  border:1px solid var(--line);
+}
+
+.secondary:hover{
+  border-color:#a9bfdc;
+  background:#f5f8fc!important;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+}
+
+nav{
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:25px;
+  font-weight:900;
+  letter-spacing:-.045em;
+}
+
+.logo span{
+  color:var(--blue);
+}
+
+.links{
+  display:flex;
+  align-items:center;
+  gap:21px;
+  font-size:14px;
+  font-weight:750;
+}
+
+.links a:hover{
+  color:var(--blue);
+}
+
+.links .pill:hover{
+  color:#fff;
+}
+
+.pill{
+  padding:10px 16px;
+  border-radius:999px;
+  background:var(--blue);
+  color:#fff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  min-height:670px;
+  display:flex;
+  align-items:center;
+  color:#fff;
+
+  background-color:#17385d;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(7,24,52,.9),
+      rgba(7,24,52,.58),
+      rgba(7,24,52,.18)
+    ),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2200&q=88");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.hero-content{
+  max-width:760px;
+  padding:100px 0;
+}
+
+.hero .ey{
+  color:var(--blue-light);
+}
+
+.hero h1{
+  margin:16px 0 22px;
+  font-size:clamp(50px,7vw,82px);
+  line-height:.94;
+  letter-spacing:-.065em;
+}
+
+.hero h1 em{
+  color:var(--blue-light);
+  font-style:normal;
+}
+
+.hero p{
+  max-width:700px;
+  margin:0;
+  color:#e7eef9;
+  font-size:19px;
+  line-height:1.65;
+}
+
+
+/* =========================
+   QUICK NAV
+========================= */
+
+.quick{
+  padding:24px 0;
+  background:var(--bg);
+  border-bottom:1px solid var(--line);
+}
+
+.quick-list{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.quick-list a{
+  padding:9px 14px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:#fff;
+  font-size:13px;
+  font-weight:800;
+}
+
+.quick-list a:hover{
+  color:var(--blue);
+  border-color:#a9c7f4;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro{
+  background:#fff;
+}
+
+.intro-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:48px;
+  align-items:center;
+}
+
+.intro-photo{
+  min-height:430px;
+  border-radius:26px;
+
+  background:
+    url("https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1300&q=88")
+    center/cover no-repeat;
+}
+
+.intro-text h2{
+  margin:9px 0 16px;
+  font-size:40px;
+  line-height:1.05;
+  letter-spacing:-.05em;
+}
+
+.intro-text p{
+  color:var(--muted);
+  line-height:1.72;
+}
+
+.highlight-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:25px;
+}
+
+.highlight{
+  padding:16px;
+  border-radius:16px;
+  background:var(--bg);
+}
+
+.highlight strong{
+  display:block;
+  font-size:14px;
+}
+
+.highlight span{
+  display:block;
+  margin-top:5px;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.45;
+}
+
+
+/* =========================
+   EXPERIENCES
+========================= */
+
+.experiences{
+  background:#fff;
+}
+
+.experience-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:38px;
+}
+
+.experience{
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:#fff;
+}
+
+.experience-photo{
+  height:215px;
+  background-color:#dce7f1;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.photo-beach{
+  background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1100&q=88");
+}
+
+.photo-night{
+  background-image:url("https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1100&q=88");
+}
+
+.photo-village{
+  background-image:url("https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1100&q=88");
+}
+
+.photo-nature{
+  background-image:url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1100&q=88");
+}
+
+.photo-family{
+  background-image:url("https://images.unsplash.com/photo-1472162072942-cd5147eb3902?auto=format&fit=crop&w=1100&q=88");
+}
+
+.photo-adventure{
+  background-image:url("https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1100&q=88");
+}
+
+.experience-content{
+  padding:22px;
+}
+
+.experience h3{
+  margin:0 0 8px;
+  font-size:21px;
+}
+
+.experience p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.62;
+}
+
+
+/* =========================
+   BEACHES
+========================= */
+
+.beaches{
+  background:var(--bg);
+}
+
+.beach-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  margin-top:38px;
+}
+
+.beach-card{
+  padding:25px;
+  border:1px solid var(--line);
+  border-radius:21px;
+  background:#fff;
+}
+
+.beach-card .icon{
+  width:48px;
+  height:48px;
+  display:grid;
+  place-items:center;
+  border-radius:14px;
+  background:var(--soft);
+  font-size:22px;
+}
+
+.beach-card h3{
+  margin:15px 0 8px;
+  font-size:21px;
+}
+
+.beach-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.65;
+}
+
+
+/* =========================
+   PERFECT FOR
+========================= */
+
+.perfect{
+  color:#fff;
+  background:var(--navy);
+}
+
+.perfect .ey{
+  color:var(--blue-light);
+}
+
+.perfect .lead{
+  color:#cbd4e5;
+}
+
+.perfect-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+  margin-top:38px;
+}
+
+.perfect-card{
+  padding:21px;
+  border:1px solid #2c3d69;
+  border-radius:19px;
+  background:var(--navy-2);
+}
+
+.perfect-icon{
+  font-size:27px;
+}
+
+.perfect-card h3{
+  margin:12px 0 7px;
+}
+
+.perfect-card p{
+  margin:0;
+  color:#cbd4e5;
+  font-size:13px;
+  line-height:1.58;
+}
+
+
+/* =========================
+   DALT VILA
+========================= */
+
+.ibiza-town{
+  background:#fff;
+}
+
+.ibiza-town-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:42px;
+  align-items:center;
+}
+
+.ibiza-town-photo{
+  min-height:450px;
+  border-radius:25px;
+
+  background:
+    url("https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1300&q=88")
+    center/cover no-repeat;
+}
+
+.ibiza-town-text h2{
+  margin:9px 0 16px;
+  font-size:40px;
+  line-height:1.05;
+  letter-spacing:-.05em;
+}
+
+.ibiza-town-text p{
+  color:var(--muted);
+  line-height:1.72;
+}
+
+
+/* =========================
+   NATURE
+========================= */
+
+.nature{
+  background:var(--bg);
+}
+
+.nature-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:38px;
+}
+
+.nature-card{
+  padding:25px;
+  border:1px solid var(--line);
+  border-radius:21px;
+  background:#fff;
+}
+
+.nature-icon{
+  width:46px;
+  height:46px;
+  display:grid;
+  place-items:center;
+  border-radius:13px;
+  background:var(--soft);
+  font-size:21px;
+}
+
+.nature-card h3{
+  margin:14px 0 8px;
+}
+
+.nature-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.62;
+}
+
+
+/* =========================
+   ACTIVITIES
+========================= */
+
+.activities{
+  background:#fff;
+}
+
+.activity-list{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin-top:38px;
+}
+
+.activity{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  padding:19px;
+  border:1px solid var(--line);
+  border-radius:18px;
+}
+
+.activity-icon{
+  width:43px;
+  height:43px;
+  flex-shrink:0;
+  display:grid;
+  place-items:center;
+  border-radius:12px;
+  background:var(--soft);
+  font-size:20px;
+}
+
+.activity strong{
+  display:block;
+  margin-bottom:5px;
+}
+
+.activity span{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.55;
+}
+
+
+/* =========================
+   TRAVEL STYLES
+========================= */
+
+.styles{
+  background:var(--bg);
+}
+
+.style-table{
+  margin-top:38px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:#fff;
+}
+
+.style-row{
+  display:grid;
+  grid-template-columns:190px 1fr;
+  border-bottom:1px solid var(--line);
+}
+
+.style-row:last-child{
+  border-bottom:0;
+}
+
+.style-row strong{
+  padding:19px;
+  background:#f8fbff;
+}
+
+.style-row span{
+  padding:19px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.58;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+  background:#fff;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:38px;
+}
+
+.service{
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:21px;
+  background:#fff;
+}
+
+.service .icon{
+  width:47px;
+  height:47px;
+  display:grid;
+  place-items:center;
+  border-radius:14px;
+  background:var(--soft);
+  font-size:22px;
+}
+
+.service h3{
+  margin:14px 0 8px;
+}
+
+.service p{
+  min-height:45px;
+  margin:0 0 17px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.58;
+}
+
+.service .btn{
+  padding:11px 14px;
+  font-size:13px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+  color:#fff;
+  text-align:center;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      #2b82ff 0,
+      transparent 31%
+    ),
+    var(--navy);
+}
+
+.cta .ey{
+  color:var(--blue-light);
+}
+
+.cta .lead{
+  color:#cbd4e5;
+}
+
+.cta .buttons{
+  justify-content:center;
+}
+
+
+/* =========================
+   DISCLOSURE
+========================= */
+
+.disclosure{
+  padding:48px 0;
+  border-top:1px solid var(--line);
+  background:#fff;
+}
+
+.disclosure .title{
+  font-size:28px;
+}
+
+.disclosure p{
+  max-width:780px;
+  margin:auto;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.65;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+  padding:55px 0;
+  background:#fff;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  padding:30px 0;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:13px;
+}
+
+.foot{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.foot a:hover{
+  color:var(--blue);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:850px){
+
+  .links{
+    display:none;
+  }
+
+  .intro-grid,
+  .ibiza-town-grid{
+    grid-template-columns:1fr;
+  }
+
+  .experience-grid,
+  .nature-grid,
+  .service-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .perfect-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .hero{
+    min-height:590px;
+  }
+
+  .hero-content{
+    padding:80px 0;
+  }
+
+  .hero h1{
+    font-size:54px;
+  }
+
+}
+
+
+@media(max-width:600px){
+
+  .w{
+    padding:0 18px;
+  }
+
+  section{
+    padding:62px 0;
+  }
+
+  .hero h1{
+    font-size:46px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  .experience-grid,
+  .nature-grid,
+  .service-grid,
+  .beach-grid,
+  .activity-list{
+    grid-template-columns:1fr;
+  }
+
+  .perfect-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .highlight-grid{
+    grid-template-columns:1fr;
+  }
+
+  .style-row{
+    grid-template-columns:1fr;
+  }
+
+  .style-row strong{
+    padding-bottom:8px;
+  }
+
+  .style-row span{
+    padding-top:8px;
+  }
+
+  .intro-photo,
+  .ibiza-town-photo{
+    min-height:320px;
+  }
+
+  .title{
+    font-size:31px;
+  }
+
+  .intro-text h2,
+  .ibiza-town-text h2{
+    font-size:34px;
+  }
+
+  .foot{
+    display:block;
+  }
+
+  .foot div+div{
+    margin-top:12px;
+  }
+
+}
+
+
+@media(max-width:430px){
+
+  .perfect-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .buttons .btn{
+    width:100%;
+    text-align:center;
+  }
+
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media(prefers-reduced-motion:reduce){
+
+  html{
+    scroll-behavior:auto;
+  }
+
+  *,
+  *::before,
+  *::after{
+    transition:none!important;
+  }
+
+}
+
+</style>
+
+
+<!-- =========================
+     TRAVELPAYOUTS TRACKING
+========================= -->
+
+<script>
+
+(function(){
+
+  var script = document.createElement("script");
+
+  script.async = true;
+
+  script.setAttribute("data-cmp-ab","2");
+
+  script.src =
+    "https://tp-em.com/NTYyMDY1.js?t=562065";
+
+  document.head.appendChild(script);
+
+})();
+
+</script>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="w">
+
+<nav>
+
+<a
+  class="logo"
+  href="index.html"
+  aria-label="StayPerfect home"
+>
+Stay<span>Perfect</span>
+</a>
+
+<div class="links">
+
+<a href="index.html#destinations">
+Destinations
+</a>
+
+<a href="#experiences">
+Ibiza
+</a>
+
+<a href="#activities">
+Activities
+</a>
+
+<a href="#services">
+Travel Services
+</a>
+
+<a
+  class="pill"
+  href="#contact"
+>
+Contact
+</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<div class="w">
+
+<div class="hero-content">
+
+<div class="ey">
+Balearic Islands · Spain
+</div>
+
+<h1>
+Discover <em>Ibiza.</em>
+</h1>
+
+<p>
+An island of turquoise coves, Mediterranean villages, legendary
+nightlife, peaceful countryside and unforgettable sunsets. Discover
+the side of Ibiza that matches the way you want to travel.
+</p>
+
+<div class="buttons">
+
+<a
+  class="btn primary"
+  href="#experiences"
+>
+Explore Ibiza
+</a>
+
+<a
+  class="btn secondary"
+  href="balearic-islands.html"
+>
+← Balearic Islands
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     QUICK NAV
+========================= -->
+
+<section class="quick">
+
+<div class="w">
+
+<div class="quick-list">
+
+<a href="#experiences">Travel Styles</a>
+<a href="#beaches">Beaches</a>
+<a href="#ibiza-town">Dalt Vila</a>
+<a href="#nature">Nature</a>
+<a href="#activities">Activities</a>
+<a href="#services">Travel Services</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     INTRO
+========================= -->
+
+<section class="intro">
+
+<div class="w intro-grid">
+
+<div class="intro-photo"></div>
+
+<div class="intro-text">
+
+<div class="ey">
+Why Ibiza?
+</div>
+
+<h2>
+One island. Many ways to travel.
+</h2>
+
+<p>
+Ibiza is famous around the world for its nightlife, but the island
+offers far more than clubs and parties. Turquoise coves, pine-covered
+hills, whitewashed villages, historic streets, Mediterranean cuisine
+and spectacular sunsets create a destination with many different
+personalities.
+</p>
+
+<p>
+Whether you want a relaxing escape, a romantic break, a family
+holiday, an active adventure or unforgettable nights with friends,
+choosing the right part of Ibiza can completely change your experience.
+</p>
+
+<div class="highlight-grid">
+
+<div class="highlight">
+<strong>🏖️ Beaches</strong>
+<span>Turquoise water, sandy beaches and secluded coves.</span>
+</div>
+
+<div class="highlight">
+<strong>🌙 Nightlife</strong>
+<span>World-famous clubs, beach venues and evening experiences.</span>
+</div>
+
+<div class="highlight">
+<strong>🏛️ Culture</strong>
+<span>Dalt Vila, historic streets and traditional villages.</span>
+</div>
+
+<div class="highlight">
+<strong>🌅 Sunsets</strong>
+<span>Memorable Mediterranean sunsets along the west coast.</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCES
+========================= -->
+
+<section
+  id="experiences"
+  class="experiences"
+>
+
+<div class="w center">
+
+<div class="ey">
+Choose Your Ibiza
+</div>
+
+<h2 class="title">
+What kind of Ibiza are you looking for?
+</h2>
+
+<p class="lead">
+The island can feel completely different depending on where you stay,
+what you do and the atmosphere you want from your holiday.
+</p>
+
+</div>
+
+<div class="w experience-grid">
+
+
+<div class="experience">
+
+<div class="experience-photo photo-beach"></div>
+
+<div class="experience-content">
+
+<h3>🏖️ Beach Escape</h3>
+
+<p>
+Spend your days swimming in clear Mediterranean water, relaxing
+on beaches and discovering beautiful coastal coves.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-photo photo-night"></div>
+
+<div class="experience-content">
+
+<h3>🌙 Nightlife & Clubs</h3>
+
+<p>
+Experience the island's famous nightlife with clubs, bars,
+beach venues, music and late-night experiences.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-photo photo-village"></div>
+
+<div class="experience-content">
+
+<h3>🏛️ Villages & Culture</h3>
+
+<p>
+Discover traditional villages, whitewashed architecture,
+historic streets and the quieter character of Ibiza.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-photo photo-nature"></div>
+
+<div class="experience-content">
+
+<h3>🌿 Nature & Relax</h3>
+
+<p>
+Explore pine forests, countryside roads, coastal landscapes
+and peaceful areas away from the busiest resorts.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-photo photo-family"></div>
+
+<div class="experience-content">
+
+<h3>👨‍👩‍👧 Family Travel</h3>
+
+<p>
+Combine quieter beaches, boat trips and activities with
+accommodation in areas suited to a more relaxed holiday.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="experience">
+
+<div class="experience-photo photo-adventure"></div>
+
+<div class="experience-content">
+
+<h3>⛵ Adventure</h3>
+
+<p>
+Combine boat trips, hiking, cycling, snorkelling and other
+outdoor experiences for an active Ibiza escape.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     BEACHES
+========================= -->
+
+<section
+  id="beaches"
+  class="beaches"
+>
+
+<div class="w center">
+
+<div class="ey">
+Mediterranean Coast
+</div>
+
+<h2 class="title">
+Ibiza beaches & coves
+</h2>
+
+<p class="lead">
+From famous beaches to smaller calas, Ibiza offers a wide range
+of coastal experiences for different types of travellers.
+</p>
+
+</div>
+
+<div class="w beach-grid">
+
+
+<div class="beach-card">
+
+<div class="icon">🌊</div>
+
+<h3>Cala Comte</h3>
+
+<p>
+A spectacular coastal area known for clear Mediterranean water,
+small beaches and memorable sunset views.
+</p>
+
+</div>
+
+
+<div class="beach-card">
+
+<div class="icon">🏝️</div>
+
+<h3>Cala d'Hort</h3>
+
+<p>
+A scenic southwest-coast setting with dramatic sea views and
+the iconic island landscape of Es Vedrà nearby.
+</p>
+
+</div>
+
+
+<div class="beach-card">
+
+<div class="icon">☀️</div>
+
+<h3>Talamanca</h3>
+
+<p>
+A convenient beach area close to Ibiza Town, combining the sea
+with restaurants, walks and easy access to the city.
+</p>
+
+</div>
+
+
+<div class="beach-card">
+
+<div class="icon">💙</div>
+
+<h3>Hidden Calas</h3>
+
+<p>
+Smaller coves around the island can provide a quieter atmosphere
+for travellers looking to escape the busiest areas.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PERFECT FOR
+========================= -->
+
+<section class="perfect">
+
+<div class="w center">
+
+<div class="ey">
+Perfect Match
+</div>
+
+<h2 class="title">
+Who is Ibiza perfect for?
+</h2>
+
+<p class="lead">
+There is no single Ibiza experience. The right location and travel
+style can make the island work for very different travellers.
+</p>
+
+</div>
+
+<div class="w perfect-grid">
+
+
+<div class="perfect-card">
+
+<div class="perfect-icon">❤️</div>
+
+<h3>Couples</h3>
+
+<p>
+Sunset dinners, beautiful coves, boutique stays and romantic
+Mediterranean experiences.
+</p>
+
+</div>
+
+
+<div class="perfect-card">
+
+<div class="perfect-icon">👯</div>
+
+<h3>Friends</h3>
+
+<p>
+Beach days, nightlife, restaurants, boat trips and unforgettable
+group experiences.
+</p>
+
+</div>
+
+
+<div class="perfect-card">
+
+<div class="perfect-icon">👨‍👩‍👧</div>
+
+<h3>Families</h3>
+
+<p>
+Quieter beaches, activities and accommodation away from the
+busiest nightlife areas.
+</p>
+
+</div>
+
+
+<div class="perfect-card">
+
+<div class="perfect-icon">🧘</div>
+
+<h3>Relax Travellers</h3>
+
+<p>
+Peaceful countryside, beaches, wellness experiences and slow
+Mediterranean days.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     IBIZA TOWN
+========================= -->
+
+<section
+  id="ibiza-town"
+  class="ibiza-town"
+>
+
+<div class="w ibiza-town-grid">
+
+<div class="ibiza-town-photo"></div>
+
+<div class="ibiza-town-text">
+
+<div class="ey">
+City & Culture
+</div>
+
+<h2>
+Ibiza Town & Dalt Vila
+</h2>
+
+<p>
+Ibiza Town combines Mediterranean atmosphere, restaurants,
+shopping, harbour views, nightlife and historic streets.
+</p>
+
+<p>
+Above the city, Dalt Vila offers a completely different side of
+Ibiza, with historic walls, narrow streets, viewpoints and a rich
+cultural atmosphere.
+</p>
+
+<div class="buttons">
+
+<a
+  class="btn primary"
+  href="#activities"
+>
+Explore Activities →
+</a>
+
+<a
+  class="btn secondary"
+  href="#services"
+>
+Plan Your Trip
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     NATURE
+========================= -->
+
+<section
+  id="nature"
+  class="nature"
+>
+
+<div class="w center">
+
+<div class="ey">
+Beyond The Nightlife
+</div>
+
+<h2 class="title">
+Nature & landscapes
+</h2>
+
+<p class="lead">
+Ibiza's quieter personality appears in its countryside, pine forests,
+coastal paths, rural roads and Mediterranean landscapes.
+</p>
+
+</div>
+
+<div class="w nature-grid">
+
+
+<div class="nature-card">
+
+<div class="nature-icon">🌲</div>
+
+<h3>Pine Forests</h3>
+
+<p>
+Explore Mediterranean landscapes covered with pine trees and
+quiet countryside scenery.
+</p>
+
+</div>
+
+
+<div class="nature-card">
+
+<div class="nature-icon">🥾</div>
+
+<h3>Hiking</h3>
+
+<p>
+Discover coastal walks, countryside routes and trails with
+beautiful views across the island.
+</p>
+
+</div>
+
+
+<div class="nature-card">
+
+<div class="nature-icon">🚴</div>
+
+<h3>Cycling</h3>
+
+<p>
+Explore rural roads, coastal routes and quieter parts of Ibiza
+by bicycle.
+</p>
+
+</div>
+
+
+<div class="nature-card">
+
+<div class="nature-icon">🌿</div>
+
+<h3>Countryside</h3>
+
+<p>
+Traditional houses, rural landscapes and peaceful roads reveal
+a slower side of the island.
+</p>
+
+</div>
+
+
+<div class="nature-card">
+
+<div class="nature-icon">🌅</div>
+
+<h3>Sunset Views</h3>
+
+<p>
+The west coast is particularly attractive for travellers looking
+for memorable Mediterranean sunsets.
+</p>
+
+</div>
+
+
+<div class="nature-card">
+
+<div class="nature-icon">⛵</div>
+
+<h3>Sea & Coast</h3>
+
+<p>
+Boat trips provide another perspective on Ibiza's coastline,
+coves and surrounding waters.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ACTIVITIES
+========================= -->
+
+<section
+  id="activities"
+  class="activities"
+>
+
+<div class="w center">
+
+<div class="ey">
+Things To Do
+</div>
+
+<h2 class="title">
+Activities in Ibiza
+</h2>
+
+<p class="lead">
+Build your trip around the experiences that matter most to you.
+</p>
+
+</div>
+
+<div class="w activity-list">
+
+
+<div class="activity">
+
+<div class="activity-icon">⛵</div>
+
+<div>
+<strong>Boat Trips</strong>
+<span>
+Explore Ibiza's coastline, coves and Mediterranean waters by boat.
+</span>
+</div>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">🥾</div>
+
+<div>
+<strong>Hiking</strong>
+<span>
+Discover coastal paths, countryside trails and natural landscapes.
+</span>
+</div>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">🚴</div>
+
+<div>
+<strong>Cycling</strong>
+<span>
+Explore rural and coastal routes by bicycle.
+</span>
+</div>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">🤿</div>
+
+<div>
+<strong>Water Activities</strong>
+<span>
+Enjoy swimming, snorkelling, diving and other water experiences.
+</span>
+</div>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">🍷</div>
+
+<div>
+<strong>Food & Dining</strong>
+<span>
+Discover Mediterranean restaurants, local products and
+sunset dining experiences.
+</span>
+</div>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">🏛️</div>
+
+<div>
+<strong>Culture & History</strong>
+<span>
+Explore Dalt Vila, Ibiza Town, villages and island heritage.
+</span>
+</div>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">🌅</div>
+
+<div>
+<strong>Sunset Experiences</strong>
+<span>
+Enjoy memorable evenings along Ibiza's western coastline.
+</span>
+</div>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">🎶</div>
+
+<div>
+<strong>Nightlife</strong>
+<span>
+Discover bars, clubs and the legendary Ibiza nightlife scene.
+</span>
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     TRAVEL STYLES
+========================= -->
+
+<section class="styles">
+
+<div class="w center">
+
+<div class="ey">
+Choose Your Style
+</div>
+
+<h2 class="title">
+Which Ibiza is right for you?
+</h2>
+
+<p class="lead">
+There is no single way to experience the island.
+</p>
+
+</div>
+
+<div class="w style-table">
+
+
+<div class="style-row">
+
+<strong>🏖️ Beach</strong>
+
+<span>
+Focus on beaches, swimming, coves, boat trips and relaxed days
+by the sea.
+</span>
+
+</div>
+
+
+<div class="style-row">
+
+<strong>🌙 Nightlife</strong>
+
+<span>
+Choose lively areas and combine clubs, restaurants, bars and
+evening experiences.
+</span>
+
+</div>
+
+
+<div class="style-row">
+
+<strong>🧘 Relax</strong>
+
+<span>
+Look for quieter areas, peaceful beaches, countryside and slower
+Mediterranean days.
+</span>
+
+</div>
+
+
+<div class="style-row">
+
+<strong>🏄 Adventure</strong>
+
+<span>
+Combine hiking, cycling, water activities, boat trips and outdoor
+exploration.
+</span>
+
+</div>
+
+
+<div class="style-row">
+
+<strong>👨‍👩‍👧 Family</strong>
+
+<span>
+Look for quieter beaches, practical accommodation and activities
+suited to a relaxed holiday.
+</span>
+
+</div>
+
+
+<div class="style-row">
+
+<strong>❤️ Couple</strong>
+
+<span>
+Combine sunsets, beaches, restaurants, villages and romantic
+Mediterranean experiences.
+</span>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section
+  id="services"
+  class="services"
+>
+
+<div class="w center">
+
+<div class="ey">
+Travel Services
+</div>
+
+<h2 class="title">
+Plan your Ibiza trip
+</h2>
+
+<p class="lead">
+Use these services to organise flights, transport, activities,
+connectivity and other practical parts of your journey.
+</p>
+
+</div>
+
+<div class="w service-grid">
+
+
+<div class="service">
+
+<div class="icon">✈️</div>
+
+<h3>Flights</h3>
+
+<p>
+Search flight options for your journey to Ibiza.
+</p>
+
+<a
+  class="btn primary"
+  href="https://aviasales.tpx.gr/xaccp3pU"
+  target="_blank"
+  rel="sponsored noopener noreferrer"
+>
+Search Flights →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🚗</div>
+
+<h3>Car Rentals</h3>
+
+<p>
+Compare rental options and explore Ibiza independently.
+</p>
+
+<a
+  class="btn primary"
+  href="https://autoeurope.tpx.gr/PYK42wVM"
+  target="_blank"
+  rel="sponsored noopener noreferrer"
+>
+Rent a Car →
+</a>
+
+<br><br>
+
+<a
+  class="btn secondary"
+  href="https://economybookings.tpx.gr/JR0hRPPw"
+  target="_blank"
+  rel="sponsored noopener noreferrer"
+>
+More Car Options →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🎟️</div>
+
+<h3>Activities</h3>
+
+<p>
+Discover tours, attractions and experiences in Ibiza.
+</p>
+
+<a
+  class="btn primary"
+  href="https://kkday.tpx.gr/lk2ssfVX"
+  target="_blank"
+  rel="sponsored noopener noreferrer"
+>
+Explore Activities →
+</a>
+
+<br><br>
+
+<a
+  class="btn secondary"
+  href="https://wegotrip.tpx.gr/1cZDpzjP"
+  target="_blank"
+  rel="sponsored noopener noreferrer"
+>
+More Experiences →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🏨</div>
+
+<h3>Hotels & Activities</h3>
+
+<p>
+Discover hotels, attractions, tours and experiences with Klook.
+</p>
+
+<a
+  class="btn primary"
+  href="https://klook.tpx.gr/HyAQ5Z8G"
+  target="_blank"
+  rel="sponsored noopener noreferrer"
+>
+Explore Klook →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🚐</div>
+
+<h3>Airport Transfers</h3>
+
+<p>
+Arrange a transfer for a smoother arrival and departure.
+</p>
+
+<a
+  class="btn primary"
+  href="https://intui.tpx.gr/JsoT6ciu"
+  target="_blank"
+  rel="sponsored noopener noreferrer"
+>
+Book a Transfer →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🚕</div>
+
+<h3>Private Transfers</h3>
+
+<p>
+Find private and airport transfer options with GetTransfer.
+</p>
+
+<a
+  class="btn primary"
+  href="https://gettransfer.tpx.gr/I1UPhx3j"
+  target="_blank"
+  rel="sponsored noopener noreferrer"
+>
+Find a Transfer →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">📱</div>
+
+<h3>Travel eSIM</h3>
+
+<p>
+Stay connected while travelling around Ibiza.
+</p>
+
+<a
+  class="btn primary"
+  href="https://saily.tpx.gr/qqzwC6gB"
+  target="_blank"
+  rel="sponsored noopener noreferrer"
+>
+Get an eSIM →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🛫</div>
+
+<h3>Flight Compensation</h3>
+
+<p>
+Explore available compensation information after a disrupted flight.
+</p>
+
+<a
+  class="btn primary"
+  href="https://compensair.tpx.gr/oenuQeYD"
+  target="_blank"
+  rel="sponsored noopener noreferrer"
+>
+Check Compensation →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🚲</div>
+
+<h3>Bike Rental</h3>
+
+<p>
+Find bicycle rental options for exploring Ibiza on two wheels.
+</p>
+
+<a
+  class="btn primary"
+  href="https://bikesbooking.tpx.gr/9t1J9s1c"
+  target="_blank"
+  rel="sponsored noopener noreferrer"
+>
+Find Bikes →
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🗺️</div>
+
+<h3>More Travel Experiences</h3>
+
+<p>
+Discover additional tours, activities and travel experiences.
+</p>
+
+<a
+  class="btn primary"
+  href="https://ektatraveling.tpx.gr/cq9ta1K6"
+  target="_blank"
+  rel="sponsored noopener noreferrer"
+>
+Explore More →
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+<div class="w">
+
+<div class="ey">
+Your Ibiza Trip
+</div>
+
+<h2 class="title">
+Ready to discover Ibiza?
+</h2>
+
+<p class="lead">
+Explore the island, compare experiences and build a trip around
+the way you actually want to travel.
+</p>
+
+<div class="buttons">
+
+<a
+  class="btn primary"
+  href="#services"
+>
+Start Planning →
+</a>
+
+<a
+  class="btn secondary"
+  href="balearic-islands.html"
+>
+Explore the Balearic Islands
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     DISCLOSURE
+========================= -->
+
+<section class="disclosure">
+
+<div class="w center">
+
+<div class="ey">
+Transparency
+</div>
+
+<h2 class="title">
+Affiliate disclosure
+</h2>
+
+<p>
+Some links on StayPerfect are affiliate links. If you click a link
+and make a qualifying purchase, StayPerfect may receive a commission
+at no additional cost to you. Affiliate relationships do not change
+the price you pay. We aim to keep recommendations useful and
+transparent.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section
+  id="contact"
+  class="contact"
+>
+
+<div class="w center">
+
+<div class="ey">
+StayPerfect
+</div>
+
+<h2 class="title">
+Build your perfect Ibiza trip
+</h2>
+
+<p class="lead">
+StayPerfect is evolving into a destination and travel discovery
+platform focused on matching travellers with the options that fit
+them best.
+</p>
+
+<div
+  class="buttons"
+  style="justify-content:center"
+>
+
+<a
+  class="btn primary"
+  href="mailto:hello@stayperfect.example"
+>
+Contact StayPerfect
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="w foot">
+
+<div>
+<strong>StayPerfect</strong>
+— Find your perfect trip.
+</div>
+
+<div>
+
+© 2026 StayPerfect ·
+
+<a href="privacy.html">
+Privacy
+</a>
+
+·
+
+<a href="#contact">
+Contact
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
+```
