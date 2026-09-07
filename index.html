@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -938,35 +938,7 @@ footer{
   }
 }
 </style>
-<link rel="canonical" href="https://stayperfect.jos-iul88.workers.dev/">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://stayperfect.jos-iul88.workers.dev/#website",
-      "url": "https://stayperfect.jos-iul88.workers.dev/",
-      "name": "StayPerfect",
-      "description": "StayPerfect helps travellers discover destinations, accommodation and travel services based on what matters to them."
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://stayperfect.jos-iul88.workers.dev/#organization",
-      "url": "https://stayperfect.jos-iul88.workers.dev/",
-      "name": "StayPerfect"
-    }
-  ]
-}
-</script>
-<link rel="alternate" hreflang="en" href="https://stayperfect.jos-iul88.workers.dev/">
-<link rel="alternate" hreflang="it" href="https://stayperfect.jos-iul88.workers.dev/it/">
-<link rel="alternate" hreflang="fr" href="https://stayperfect.jos-iul88.workers.dev/fr/">
-<link rel="alternate" hreflang="de" href="https://stayperfect.jos-iul88.workers.dev/de/">
-<link rel="alternate" hreflang="es" href="https://stayperfect.jos-iul88.workers.dev/es/">
-<link rel="alternate" hreflang="ru" href="https://stayperfect.jos-iul88.workers.dev/ru/">
-<link rel="alternate" hreflang="x-default" href="https://stayperfect.jos-iul88.workers.dev/">
-
+  <link rel="canonical" href="https://stayperfect.jos-iul88.workers.dev/index.html">
 </head>
 
 <body>
@@ -986,7 +958,7 @@ Stay<span>Perfect</span>
 <a href="#match">Perfect Match</a>
 <a class="pill" href="#contact">Contact</a>
 </div>
-<a href="contact.html">Contact</a>
+
 </nav>
 </div>
 </header>
@@ -1034,6 +1006,10 @@ Explore Destinations
 
   <h3>Travel Services</h3>
 
+  <p>
+    Everything you need to build your perfect trip — flights, cars,
+    activities, transfers, eSIMs, tickets and more.
+  </p>
 
   <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;">
 
@@ -1145,9 +1121,9 @@ Explore mainland Spain together with the Balearic and Canary Islands.
     Explore Spain →
   </a>
 
-  <a class="btn secondary" href="#match">
-    Perfect Match ✨
-  </a>
+  <a class="btn secondary perfect-match-country" href="#match" data-country="spain">
+Perfect Match ✨
+</a>
 </div>
 
 </div>
@@ -1170,7 +1146,7 @@ Discover France through iconic cities, Mediterranean coastlines, historic region
 Explore France →
 </a>
 
-<a class="btn secondary" href="#match">
+<a class="btn secondary perfect-match-country" href="#match" data-country="france">
 Perfect Match ✨
 </a>
 
@@ -1197,14 +1173,15 @@ Discover Portugal, Madeira and the Azores — from vibrant cities to Atlantic is
     Explore Portugal →
   </a>
 
-  <a class="btn secondary" href="#match">
-    Perfect Match ✨
-  </a>
+  <a class="btn secondary perfect-match-country" href="#match" data-country="portugal">
+Perfect Match ✨
+</a>
 </div>
 
 </div>
 
 </div>
+
 
 <!-- =========================
      SPAIN
@@ -1523,11 +1500,7 @@ Balearic Islands 🇪🇸
 The Balearic Islands are part of Spain and include Mallorca, Menorca, Ibiza, Formentera and protected natural escapes.
 </p>
 
-<p style="text-align:center; margin:25px 0;">
-<a class="btn primary" href="balearic-islands.html#perfect-match" style="display:inline-block;">
-Perfect Match Balearic Islands ✨
-</a>
-</p>
+
 
 </div>
 
@@ -1704,12 +1677,6 @@ Canary Islands 🇪🇸
 
 <p class="lead">
 Volcanic landscapes, beaches, mountains, adventure and unique island experiences.
-</p>
-
-<p style="text-align:center; margin:25px 0;">
-<a class="btn primary" href="canary-islands.html#perfect-match" style="display:inline-block;">
-Perfect Match Canary Islands ✨
-</a>
 </p>
 
 </div>
@@ -2747,69 +2714,87 @@ Perfect Match
 </h2>
 
 <p class="lead">
-Tell us what matters to you and discover which destination fits your travel style best.
+Choose your country and answer 7 quick questions to discover the destination type that fits you best.
 </p>
 
 </div>
 
-
 <div class="match-box">
+
+<div class="match-country-selector">
+
+<div class="step-kicker">
+Choose your country
+</div>
+
+<div class="country-match-buttons">
+
+<button type="button" class="country-match-btn" data-country-select="spain">
+🇪🇸 Spain
+</button>
+
+<button type="button" class="country-match-btn" data-country-select="france">
+🇫🇷 France
+</button>
+
+<button type="button" class="country-match-btn" data-country-select="portugal">
+🇵🇹 Portugal
+</button>
+
+</div>
+
+<p id="selectedCountryText" class="selected-country-text">
+Select a country to begin.
+</p>
+
+</div>
+
 
 <div class="match-progress">
 <i id="matchProgress"></i>
 </div>
 
 
+<!-- QUESTION 1 -->
+
 <div class="match-step active" data-step="1">
 
 <div class="step-kicker">
-Step 1 of 4
+Question 1 of 7
 </div>
 
 <h3>
-What are you looking for?
+What type of beach do you prefer?
 </h3>
 
 <p>
-Choose the type of experience you want most.
+Choose the kind of coastline that sounds most like your perfect trip.
 </p>
 
 <div class="choice-grid">
 
-<button class="choice" data-group="experience" data-value="beach">
+<button class="choice" data-group="beach" data-value="classic">
 <span class="choice-icon">🏖️</span>
-<strong>Beach</strong>
-<small>Sun, sea and coastal escapes</small>
+<strong>Classic beach</strong>
+<small>Easy beaches, sunshine and Mediterranean comfort</small>
 </button>
 
-<button class="choice" data-group="experience" data-value="nature">
-<span class="choice-icon">🌿</span>
-<strong>Nature</strong>
-<small>Landscapes, hiking and outdoors</small>
+<button class="choice" data-group="beach" data-value="wild">
+<span class="choice-icon">🌊</span>
+<strong>Wild & natural</strong>
+<small>Rugged coastlines and beautiful natural surroundings</small>
 </button>
 
-<button class="choice" data-group="experience" data-value="adventure">
-<span class="choice-icon">🏄</span>
-<strong>Adventure</strong>
-<small>Activities and exciting experiences</small>
+<button class="choice" data-group="beach" data-value="turquoise">
+<span class="choice-icon">💎</span>
+<strong>Turquoise water</strong>
+<small>Crystal-clear water and spectacular island beaches</small>
 </button>
 
-<button class="choice" data-group="experience" data-value="nightlife">
-<span class="choice-icon">🌙</span>
-<strong>Nightlife</strong>
-<small>Restaurants, bars and evening life</small>
-</button>
-
-<button class="choice" data-group="experience" data-value="relax">
-<span class="choice-icon">🧘</span>
-<strong>Relax</strong>
-<small>Slow travel and peaceful escapes</small>
-</button>
-
-<button class="choice" data-group="experience" data-value="family">
-<span class="choice-icon">👨‍👩‍👧</span>
-<strong>Family</strong>
-<small>Easy and enjoyable family travel</small>
+<button class="choice" data-group="beach" data-value="atlantic">
+<span class="choice-icon">🌅</span>
+<strong>Atlantic coast</strong>
+<small>Ocean landscapes, cliffs and a dramatic coastline</small>
 </button>
 
 </div>
@@ -2822,47 +2807,53 @@ Choose the type of experience you want most.
 </div>
 
 
+<!-- QUESTION 2 -->
+
 <div class="match-step" data-step="2">
 
 <div class="step-kicker">
-Step 2 of 4
+Question 2 of 7
 </div>
 
 <h3>
-What is your budget style?
+What atmosphere are you looking for?
 </h3>
 
 <p>
-Choose the level that best describes your trip.
+Think about the feeling you want during your holiday.
 </p>
 
 <div class="choice-grid">
 
-<button class="choice" data-group="budget" data-value="1">
-<span class="choice-icon">€</span>
-<strong>Budget</strong>
-<small>Keep costs low and value high</small>
+<button class="choice" data-group="atmosphere" data-value="lively">
+<span class="choice-icon">✨</span>
+<strong>Lively</strong>
+<small>Restaurants, nightlife and plenty happening</small>
 </button>
 
-<button class="choice" data-group="budget" data-value="2">
-<span class="choice-icon">€€</span>
-<strong>Comfort</strong>
-<small>A balance of price and comfort</small>
+<button class="choice" data-group="atmosphere" data-value="relaxed">
+<span class="choice-icon">🧘</span>
+<strong>Relaxed</strong>
+<small>Peace, slow days and a calm atmosphere</small>
 </button>
 
-<button class="choice" data-group="budget" data-value="3">
-<span class="choice-icon">€€€</span>
-<strong>Premium</strong>
-<small>More comfort and flexibility</small>
+<button class="choice" data-group="atmosphere" data-value="authentic">
+<span class="choice-icon">🏘️</span>
+<strong>Authentic</strong>
+<small>Local character, culture and traditional places</small>
+</button>
+
+<button class="choice" data-group="atmosphere" data-value="romantic">
+<span class="choice-icon">❤️</span>
+<strong>Romantic</strong>
+<small>Beautiful scenery and memorable shared moments</small>
 </button>
 
 </div>
 
 <div class="step-actions">
 
-<button class="back" data-back="1">
-← Back
-</button>
+<button class="back" data-back="1">← Back</button>
 
 <button class="next" id="next2" disabled>
 Next →
@@ -2873,53 +2864,53 @@ Next →
 </div>
 
 
+<!-- QUESTION 3 -->
+
 <div class="match-step" data-step="3">
 
 <div class="step-kicker">
-Step 3 of 4
+Question 3 of 7
 </div>
 
 <h3>
-How are you travelling?
+Which landscape attracts you most?
 </h3>
 
 <p>
-Tell us who you are travelling with.
+Choose the scenery you would most like to explore.
 </p>
 
 <div class="choice-grid">
 
-<button class="choice" data-group="style" data-value="couple">
-<span class="choice-icon">❤️</span>
-<strong>Couple</strong>
-<small>Romantic or shared experiences</small>
+<button class="choice" data-group="landscape" data-value="mediterranean">
+<span class="choice-icon">🌴</span>
+<strong>Mediterranean</strong>
+<small>Sea, beaches, villages and warm landscapes</small>
 </button>
 
-<button class="choice" data-group="style" data-value="family">
-<span class="choice-icon">👨‍👩‍👧</span>
-<strong>Family</strong>
-<small>Comfort and family-friendly options</small>
+<button class="choice" data-group="landscape" data-value="volcanic">
+<span class="choice-icon">🌋</span>
+<strong>Volcanic</strong>
+<small>Volcanoes, dramatic terrain and unusual scenery</small>
 </button>
 
-<button class="choice" data-group="style" data-value="friends">
-<span class="choice-icon">👯</span>
-<strong>Friends</strong>
-<small>Social trips and activities</small>
+<button class="choice" data-group="landscape" data-value="mountains">
+<span class="choice-icon">⛰️</span>
+<strong>Mountains & nature</strong>
+<small>Green landscapes, hiking and outdoor scenery</small>
 </button>
 
-<button class="choice" data-group="style" data-value="solo">
-<span class="choice-icon">🧳</span>
-<strong>Solo</strong>
-<small>Freedom and independent travel</small>
+<button class="choice" data-group="landscape" data-value="coastal">
+<span class="choice-icon">🌊</span>
+<strong>Coastal & countryside</strong>
+<small>Cliffs, countryside and beautiful coastal views</small>
 </button>
 
 </div>
 
 <div class="step-actions">
 
-<button class="back" data-back="2">
-← Back
-</button>
+<button class="back" data-back="2">← Back</button>
 
 <button class="next" id="next3" disabled>
 Next →
@@ -2930,49 +2921,226 @@ Next →
 </div>
 
 
+<!-- QUESTION 4 -->
+
 <div class="match-step" data-step="4">
 
 <div class="step-kicker">
-Step 4 of 4
+Question 4 of 7
 </div>
 
 <h3>
-One last preference
+How much do you want to explore?
 </h3>
 
 <p>
-What matters most when choosing your destination?
+Choose the travel style that feels most natural to you.
 </p>
 
 <div class="choice-grid">
 
-<button class="choice" data-group="priority" data-value="activities">
-<span class="choice-icon">🎯</span>
-<strong>Activities</strong>
-<small>Things to see and do</small>
+<button class="choice" data-group="exploration" data-value="base">
+<span class="choice-icon">🏨</span>
+<strong>One comfortable base</strong>
+<small>Stay somewhere great and explore nearby</small>
 </button>
 
-<button class="choice" data-group="priority" data-value="location">
-<span class="choice-icon">📍</span>
-<strong>Location</strong>
-<small>Easy access and variety</small>
+<button class="choice" data-group="exploration" data-value="roadtrip">
+<span class="choice-icon">🚗</span>
+<strong>Road trip</strong>
+<small>Move around and discover different places</small>
 </button>
 
-<button class="choice" data-group="priority" data-value="value">
-<span class="choice-icon">💎</span>
-<strong>Value</strong>
-<small>Get more from your budget</small>
+<button class="choice" data-group="exploration" data-value="island">
+<span class="choice-icon">🗺️</span>
+<strong>Island exploring</strong>
+<small>See beaches, villages and different landscapes</small>
+</button>
+
+<button class="choice" data-group="exploration" data-value="slow">
+<span class="choice-icon">🐚</span>
+<strong>Slow exploration</strong>
+<small>Take your time and enjoy fewer places deeply</small>
 </button>
 
 </div>
 
 <div class="step-actions">
 
-<button class="back" data-back="3">
-← Back
+<button class="back" data-back="3">← Back</button>
+
+<button class="next" id="next4" disabled>
+Next →
 </button>
 
-<button class="next" id="calculate">
+</div>
+
+</div>
+
+
+<!-- QUESTION 5 -->
+
+<div class="match-step" data-step="5">
+
+<div class="step-kicker">
+Question 5 of 7
+</div>
+
+<h3>
+Which activity would you choose?
+</h3>
+
+<p>
+Pick the experience that sounds most exciting.
+</p>
+
+<div class="choice-grid">
+
+<button class="choice" data-group="activity" data-value="culture">
+<span class="choice-icon">🏛️</span>
+<strong>Culture & food</strong>
+<small>History, architecture, restaurants and local life</small>
+</button>
+
+<button class="choice" data-group="activity" data-value="outdoor">
+<span class="choice-icon">🥾</span>
+<strong>Outdoor adventure</strong>
+<small>Hiking, nature and active experiences</small>
+</button>
+
+<button class="choice" data-group="activity" data-value="sea">
+<span class="choice-icon">🤿</span>
+<strong>Sea & water</strong>
+<small>Swimming, sailing, diving and water activities</small>
+</button>
+
+<button class="choice" data-group="activity" data-value="relax">
+<span class="choice-icon">☀️</span>
+<strong>Relaxing</strong>
+<small>Beach days, wellness and taking it easy</small>
+</button>
+
+</div>
+
+<div class="step-actions">
+
+<button class="back" data-back="4">← Back</button>
+
+<button class="next" id="next5" disabled>
+Next →
+</button>
+
+</div>
+
+</div>
+
+
+<!-- QUESTION 6 -->
+
+<div class="match-step" data-step="6">
+
+<div class="step-kicker">
+Question 6 of 7
+</div>
+
+<h3>
+What type of holiday do you imagine?
+</h3>
+
+<p>
+Choose the overall trip that sounds best to you.
+</p>
+
+<div class="choice-grid">
+
+<button class="choice" data-group="holiday" data-value="city">
+<span class="choice-icon">🏙️</span>
+<strong>City & culture</strong>
+<small>Urban experiences, food and things to discover</small>
+</button>
+
+<button class="choice" data-group="holiday" data-value="beach">
+<span class="choice-icon">🏝️</span>
+<strong>Beach escape</strong>
+<small>Sun, sea and plenty of time outdoors</small>
+</button>
+
+<button class="choice" data-group="holiday" data-value="nature">
+<span class="choice-icon">🌿</span>
+<strong>Nature escape</strong>
+<small>Landscapes, hiking and peaceful surroundings</small>
+</button>
+
+<button class="choice" data-group="holiday" data-value="mix">
+<span class="choice-icon">✨</span>
+<strong>A bit of everything</strong>
+<small>Variety, flexibility and different experiences</small>
+</button>
+
+</div>
+
+<div class="step-actions">
+
+<button class="back" data-back="5">← Back</button>
+
+<button class="next" id="next6" disabled>
+Next →
+</button>
+
+</div>
+
+</div>
+
+
+<!-- QUESTION 7 -->
+
+<div class="match-step" data-step="7">
+
+<div class="step-kicker">
+Question 7 of 7
+</div>
+
+<h3>
+What rhythm do you prefer?
+</h3>
+
+<p>
+Choose the pace that best describes your ideal holiday.
+</p>
+
+<div class="choice-grid">
+
+<button class="choice" data-group="rhythm" data-value="slow">
+<span class="choice-icon">🌿</span>
+<strong>Slow</strong>
+<small>Relax, enjoy and leave plenty of free time</small>
+</button>
+
+<button class="choice" data-group="rhythm" data-value="balanced">
+<span class="choice-icon">⚖️</span>
+<strong>Balanced</strong>
+<small>A comfortable mix of relaxation and exploring</small>
+</button>
+
+<button class="choice" data-group="rhythm" data-value="active">
+<span class="choice-icon">⚡</span>
+<strong>Active</strong>
+<small>Make the most of every day</small>
+</button>
+
+<button class="choice" data-group="rhythm" data-value="flexible">
+<span class="choice-icon">🧳</span>
+<strong>Flexible</strong>
+<small>Follow your mood and discover as you go</small>
+</button>
+
+</div>
+
+<div class="step-actions">
+
+<button class="back" data-back="6">← Back</button>
+
+<button class="next" id="calculate" disabled>
 Find My Match →
 </button>
 
@@ -2980,6 +3148,8 @@ Find My Match →
 
 </div>
 
+
+<!-- RESULT -->
 
 <div class="result-card" id="resultCard">
 
@@ -3016,7 +3186,7 @@ Perfect Match
 <div class="match-alternatives">
 
 <div class="match-alternatives-title">
-Other destinations that may suit you
+Other options
 </div>
 
 <div class="alternative-list" id="alternativeList"></div>
@@ -3042,35 +3212,42 @@ Start Again
 
 </section>
 
-
 <!-- =========================
      FEATURED
 ========================= -->
 
-<!-- =========================
-     MORE DESTINATIONS
-========================= -->
+<section class="featured">
 
-<section class="more-destinations">
+<div class="w">
 
-  <div class="w center">
+<div class="featured-box">
 
-    <div class="ey">
-      StayPerfect
-    </div>
+<div>
 
-    <h2 class="title">
-      More destinations coming soon
-    </h2>
+<div class="ey">
+Featured destination
+</div>
 
-    <p>
-      StayPerfect is growing. More destinations, travel styles and
-      unforgettable experiences are coming soon.
-    </p>
+<h2 class="title">
+Start with Tenerife 🇪🇸
+</h2>
 
-  </div>
+<p>
+Explore beaches, Teide, nature, activities and travel services.
+</p>
+
+</div>
+
+<a class="btn primary" href="tenerife.html">
+Explore Tenerife →
+</a>
+
+</div>
+
+</div>
 
 </section>
+
 
 <section class="disclosure">
 
@@ -3150,293 +3327,20 @@ Contact StayPerfect
 "use strict";
 
 /* =========================
-   PERFECT MATCH
+   PERFECT MATCH — COUNTRY QUIZ
 ========================= */
 
 const answers = {
-  experience: null,
-  budget: null,
-  style: null,
-  priority: null
+  beach:null,
+  atmosphere:null,
+  landscape:null,
+  exploration:null,
+  activity:null,
+  holiday:null,
+  rhythm:null
 };
 
-
-/* =========================
-   DESTINATION PROFILES
-========================= */
-
-const destinationProfiles = {
-
-"Barcelona":{
-  beach:9,nature:7,adventure:7,nightlife:10,relax:7,family:9,
-  budget1:6,budget2:8,budget3:10,
-  couple:10,family:9,friends:10,solo:10,
-  activities:10,location:10,value:7
-},
-
-"Madrid":{
-  beach:2,nature:6,adventure:6,nightlife:10,relax:7,family:9,
-  budget1:8,budget2:9,budget3:10,
-  couple:10,family:9,friends:10,solo:10,
-  activities:10,location:10,value:9
-},
-
-"Valencia":{
-  beach:10,nature:7,adventure:7,nightlife:8,relax:9,family:10,
-  budget1:9,budget2:10,budget3:9,
-  couple:9,family:10,friends:9,solo:9,
-  activities:9,location:10,value:10
-},
-
-"Alicante":{
-  beach:10,nature:7,adventure:7,nightlife:8,relax:10,family:10,
-  budget1:9,budget2:9,budget3:9,
-  couple:9,family:10,friends:9,solo:8,
-  activities:8,location:9,value:10
-},
-
-"Andalusia":{
-  beach:9,nature:9,adventure:9,nightlife:10,relax:8,family:9,
-  budget1:9,budget2:9,budget3:10,
-  couple:10,family:9,friends:10,solo:9,
-  activities:10,location:10,value:9
-},
-
-"Costa del Sol":{
-  beach:10,nature:7,adventure:7,nightlife:9,relax:10,family:10,
-  budget1:8,budget2:9,budget3:10,
-  couple:10,family:10,friends:9,solo:8,
-  activities:9,location:10,value:9
-},
-
-"Cádiz":{
-  beach:10,nature:9,adventure:9,nightlife:7,relax:9,family:8,
-  budget1:9,budget2:9,budget3:8,
-  couple:9,family:8,friends:9,solo:9,
-  activities:9,location:8,value:10
-},
-
-"Galicia":{
-  beach:8,nature:10,adventure:9,nightlife:5,relax:10,family:7,
-  budget1:10,budget2:9,budget3:8,
-  couple:9,family:7,friends:8,solo:10,
-  activities:9,location:7,value:10
-},
-
-"Asturias":{
-  beach:8,nature:10,adventure:10,nightlife:4,relax:10,family:8,
-  budget1:10,budget2:9,budget3:8,
-  couple:9,family:8,friends:8,solo:10,
-  activities:9,location:7,value:10
-},
-
-"Mallorca":{
-  beach:10,nature:9,adventure:8,nightlife:9,relax:9,family:10,
-  budget1:8,budget2:10,budget3:10,
-  couple:10,family:10,friends:9,solo:9,
-  activities:10,location:10,value:9
-},
-
-"Menorca":{
-  beach:10,nature:10,adventure:7,nightlife:5,relax:10,family:9,
-  budget1:8,budget2:9,budget3:8,
-  couple:10,family:9,friends:7,solo:9,
-  activities:8,location:8,value:9
-},
-
-"Ibiza":{
-  beach:9,nature:7,adventure:8,nightlife:10,relax:8,family:6,
-  budget1:6,budget2:8,budget3:10,
-  couple:10,family:5,friends:10,solo:8,
-  activities:10,location:9,value:6
-},
-
-"Formentera":{
-  beach:10,nature:9,adventure:7,nightlife:3,relax:10,family:7,
-  budget1:6,budget2:8,budget3:10,
-  couple:10,family:7,friends:6,solo:8,
-  activities:7,location:7,value:6
-},
-
-"Cabrera":{
-  beach:10,nature:10,adventure:8,nightlife:1,relax:10,family:6,
-  budget1:7,budget2:8,budget3:7,
-  couple:9,family:6,friends:6,solo:9,
-  activities:8,location:5,value:7
-},
-
-"Dragonera":{
-  beach:7,nature:10,adventure:9,nightlife:1,relax:10,family:6,
-  budget1:9,budget2:8,budget3:7,
-  couple:9,family:6,friends:7,solo:10,
-  activities:8,location:5,value:9
-},
-
-"Tenerife":{
-  beach:9,nature:10,adventure:10,nightlife:10,relax:8,family:10,
-  budget1:8,budget2:9,budget3:10,
-  couple:10,family:10,friends:10,solo:10,
-  activities:10,location:10,value:9
-},
-
-"Gran Canaria":{
-  beach:10,nature:8,adventure:9,nightlife:9,relax:9,family:9,
-  budget1:9,budget2:10,budget3:9,
-  couple:9,family:9,friends:10,solo:9,
-  activities:10,location:9,value:10
-},
-
-"Fuerteventura":{
-  beach:10,nature:8,adventure:10,nightlife:6,relax:10,family:8,
-  budget1:9,budget2:9,budget3:8,
-  couple:9,family:8,friends:9,solo:10,
-  activities:9,location:8,value:10
-},
-
-"Lanzarote":{
-  beach:9,nature:10,adventure:9,nightlife:7,relax:9,family:8,
-  budget1:8,budget2:9,budget3:9,
-  couple:9,family:8,friends:8,solo:9,
-  activities:10,location:9,value:9
-},
-
-"La Palma":{
-  beach:5,nature:10,adventure:10,nightlife:4,relax:10,family:7,
-  budget1:10,budget2:9,budget3:7,
-  couple:9,family:7,friends:7,solo:10,
-  activities:9,location:7,value:9
-},
-
-"La Gomera":{
-  beach:5,nature:10,adventure:9,nightlife:3,relax:10,family:6,
-  budget1:9,budget2:8,budget3:7,
-  couple:9,family:6,friends:7,solo:10,
-  activities:9,location:6,value:9
-},
-
-"El Hierro":{
-  beach:5,nature:10,adventure:9,nightlife:2,relax:10,family:5,
-  budget1:9,budget2:8,budget3:6,
-  couple:8,family:5,friends:6,solo:10,
-  activities:8,location:5,value:9
-},
-
-"La Graciosa":{
-  beach:10,nature:9,adventure:8,nightlife:2,relax:10,family:7,
-  budget1:8,budget2:8,budget3:6,
-  couple:10,family:7,friends:6,solo:9,
-  activities:7,location:5,value:8
-},
-
-"Lisbon":{
-  beach:7,nature:6,adventure:6,nightlife:10,relax:8,family:9,
-  budget1:7,budget2:9,budget3:10,
-  couple:10,family:9,friends:10,solo:10,
-  activities:10,location:10,value:8
-},
-
-"Porto":{
-  beach:5,nature:6,adventure:5,nightlife:8,relax:8,family:8,
-  budget1:9,budget2:9,budget3:9,
-  couple:10,family:8,friends:9,solo:9,
-  activities:9,location:9,value:10
-},
-
-"Algarve":{
-  beach:10,nature:8,adventure:8,nightlife:8,relax:10,family:10,
-  budget1:8,budget2:9,budget3:10,
-  couple:10,family:10,friends:9,solo:8,
-  activities:9,location:9,value:9
-},
-
-"Madeira":{
-  beach:6,nature:10,adventure:10,nightlife:6,relax:10,family:8,
-  budget1:8,budget2:9,budget3:10,
-  couple:10,family:8,friends:9,solo:10,
-  activities:10,location:8,value:9
-},
-
-"Azores":{
-  beach:6,nature:10,adventure:10,nightlife:3,relax:10,family:7,
-  budget1:8,budget2:9,budget3:8,
-  couple:10,family:7,friends:8,solo:10,
-  activities:10,location:7,value:9
-},
-
-"Sintra":{
-  beach:6,nature:9,adventure:7,nightlife:5,relax:9,family:9,
-  budget1:8,budget2:9,budget3:10,
-  couple:10,family:9,friends:8,solo:9,
-  activities:10,location:9,value:9
-},
-
-"Cascais":{
-  beach:10,nature:7,adventure:7,nightlife:7,relax:10,family:9,
-  budget1:7,budget2:9,budget3:10,
-  couple:10,family:9,friends:8,solo:8,
-  activities:8,location:9,value:7
-},
-
-"Funchal":{
-  beach:6,nature:9,adventure:9,nightlife:7,relax:9,family:8,
-  budget1:8,budget2:9,budget3:10,
-  couple:10,family:8,friends:9,solo:9,
-  activities:10,location:9,value:9
-},
-
-"São Miguel":{
-  beach:6,nature:10,adventure:10,nightlife:3,relax:10,family:7,
-  budget1:8,budget2:9,budget3:8,
-  couple:10,family:7,friends:8,solo:10,
-  activities:10,location:7,value:9
-}
-
-};
-
-
-/* =========================
-   DESTINATION LINKS
-========================= */
-
-const destinationLinks = {
-  "Barcelona":"barcelona.html",
-  "Madrid":"madrid.html",
-  "Valencia":"valencia.html",
-  "Alicante":"alicante.html",
-  "Andalusia":"andalusia.html",
-  "Costa del Sol":"costa-del-sol.html",
-  "Cádiz":"cadiz.html",
-  "Galicia":"galicia.html",
-  "Asturias":"asturias.html",
-  "Mallorca":"mallorca.html",
-  "Menorca":"menorca.html",
-  "Ibiza":"ibiza.html",
-  "Formentera":"formentera.html",
-  "Cabrera":"cabrera.html",
-  "Dragonera":"dragonera.html",
-  "Tenerife":"tenerife.html",
-  "Gran Canaria":"gran-canaria.html",
-  "Fuerteventura":"fuerteventura.html",
-  "Lanzarote":"lanzarote.html",
-  "La Palma":"la-palma.html",
-  "La Gomera":"la-gomera.html",
-  "El Hierro":"el-hierro.html",
-  "La Graciosa":"la-graciosa.html",
-  "Lisbon":"lisbon.html",
-  "Porto":"porto.html",
-  "Algarve":"algarve.html",
-  "Madeira":"madeira.html",
-  "Azores":"azores.html",
-  "Sintra":"sintra.html",
-  "Cascais":"cascais.html",
-  "Funchal":"funchal.html",
-  "São Miguel":"sao-miguel.html"
-};
-
-
-/* =========================
-   DOM
-========================= */
+let selectedCountry = null;
 
 const steps =
   document.querySelectorAll(".match-step");
@@ -3465,20 +3369,196 @@ const resultLink =
 const alternativeList =
   document.getElementById("alternativeList");
 
-const next1 =
-  document.getElementById("next1");
+const selectedCountryText =
+  document.getElementById("selectedCountryText");
 
-const next2 =
-  document.getElementById("next2");
 
-const next3 =
-  document.getElementById("next3");
+/* =========================
+   COUNTRY DATA
+========================= */
 
-const calculate =
-  document.getElementById("calculate");
+const countryNames = {
+  spain:"Spain",
+  france:"France",
+  portugal:"Portugal"
+};
 
-const restart =
-  document.getElementById("restart");
+const resultData = {
+
+  spain:{
+
+    "Mainland Spain":{
+      intro:"Your answers point towards mainland Spain: a great choice if you want variety, culture, beaches, food, cities and the freedom to explore different regions.",
+      link:"#spain",
+      scores:{
+        beach:{classic:4,wild:2,turquoise:1,atlantic:2},
+        atmosphere:{lively:4,relaxed:2,authentic:4,romantic:3},
+        landscape:{mediterranean:4,volcanic:0,mountains:4,coastal:4},
+        exploration:{base:2,roadtrip:5,island:0,slow:3},
+        activity:{culture:5,outdoor:4,sea:3,relax:2},
+        holiday:{city:5,beach:3,nature:4,mix:5},
+        rhythm:{slow:2,balanced:4,active:5,flexible:5}
+      }
+    },
+
+    "Canary Islands":{
+      intro:"The Canary Islands are your strongest match: ideal if you are drawn to volcanic landscapes, outdoor adventures, beaches, sunshine and island variety.",
+      link:"#canary-islands",
+      scores:{
+        beach:{classic:3,wild:4,turquoise:4,atlantic:4},
+        atmosphere:{lively:3,relaxed:4,authentic:4,romantic:4},
+        landscape:{mediterranean:2,volcanic:5,mountains:5,coastal:4},
+        exploration:{base:3,roadtrip:4,island:5,slow:4},
+        activity:{culture:2,outdoor:5,sea:5,relax:3},
+        holiday:{city:1,beach:5,nature:5,mix:5},
+        rhythm:{slow:3,balanced:4,active:5,flexible:5}
+      }
+    },
+
+    "Balearic Islands":{
+      intro:"The Balearic Islands are your strongest match: beautiful Mediterranean beaches, turquoise water, island life, relaxed days and plenty of options for couples, friends and explorers.",
+      link:"#balearic-islands",
+      scores:{
+        beach:{classic:5,wild:3,turquoise:5,atlantic:1},
+        atmosphere:{lively:4,relaxed:5,authentic:4,romantic:5},
+        landscape:{mediterranean:5,volcanic:0,mountains:3,coastal:4},
+        exploration:{base:4,roadtrip:4,island:5,slow:5},
+        activity:{culture:3,outdoor:3,sea:5,relax:5},
+        holiday:{city:2,beach:5,nature:4,mix:5},
+        rhythm:{slow:5,balanced:5,active:3,flexible:5}
+      }
+    }
+
+  },
+
+  france:{
+
+    "France":{
+      intro:"France is your strongest match: a destination with exceptional cities, culture, food, countryside, mountains and Mediterranean or Atlantic coastlines.",
+      link:"#france",
+      scores:{
+        beach:{classic:3,wild:4,turquoise:2,atlantic:4},
+        atmosphere:{lively:4,relaxed:4,authentic:5,romantic:5},
+        landscape:{mediterranean:4,volcanic:0,mountains:5,coastal:5},
+        exploration:{base:3,roadtrip:5,island:0,slow:4},
+        activity:{culture:5,outdoor:4,sea:3,relax:3},
+        holiday:{city:5,beach:3,nature:4,mix:5},
+        rhythm:{slow:4,balanced:5,active:4,flexible:5}
+      }
+    },
+
+    "Corsica":{
+      intro:"Corsica is your strongest match: a beautiful island escape combining turquoise beaches, mountains, wild nature, authentic villages and outdoor adventure.",
+      link:"corsica.html",
+      scores:{
+        beach:{classic:4,wild:5,turquoise:5,atlantic:2},
+        atmosphere:{lively:2,relaxed:5,authentic:5,romantic:5},
+        landscape:{mediterranean:5,volcanic:2,mountains:5,coastal:5},
+        exploration:{base:3,roadtrip:5,island:5,slow:5},
+        activity:{culture:3,outdoor:5,sea:5,relax:4},
+        holiday:{city:1,beach:5,nature:5,mix:5},
+        rhythm:{slow:5,balanced:5,active:5,flexible:5}
+      }
+    }
+
+  },
+
+  portugal:{
+
+    "Mainland Portugal":{
+      intro:"Mainland Portugal is your strongest match: ideal for cities, food, Atlantic coastlines, culture, relaxed travel and discovering different regions.",
+      link:"#portugal",
+      scores:{
+        beach:{classic:4,wild:4,turquoise:2,atlantic:5},
+        atmosphere:{lively:4,relaxed:4,authentic:5,romantic:5},
+        landscape:{mediterranean:3,volcanic:0,mountains:3,coastal:5},
+        exploration:{base:3,roadtrip:5,island:0,slow:4},
+        activity:{culture:5,outdoor:3,sea:4,relax:3},
+        holiday:{city:5,beach:4,nature:3,mix:5},
+        rhythm:{slow:4,balanced:5,active:3,flexible:5}
+      }
+    },
+
+    "Portuguese Islands":{
+      intro:"Madeira and the Azores are your strongest match: perfect for dramatic Atlantic landscapes, nature, hiking, adventure and a slower island rhythm.",
+      link:"madeira.html",
+      scores:{
+        beach:{classic:2,wild:5,turquoise:3,atlantic:5},
+        atmosphere:{lively:2,relaxed:5,authentic:5,romantic:5},
+        landscape:{mediterranean:1,volcanic:5,mountains:5,coastal:5},
+        exploration:{base:3,roadtrip:4,island:5,slow:5},
+        activity:{culture:2,outdoor:5,sea:5,relax:4},
+        holiday:{city:1,beach:3,nature:5,mix:5},
+        rhythm:{slow:5,balanced:5,active:5,flexible:5}
+      }
+    }
+
+  }
+
+};
+
+
+/* =========================
+   COUNTRY SELECTION
+========================= */
+
+function selectCountry(country){
+
+  selectedCountry = country;
+
+  document
+    .querySelectorAll("[data-country-select]")
+    .forEach(function(button){
+
+      button.classList.toggle(
+        "selected",
+        button.dataset.countrySelect === country
+      );
+
+    });
+
+  selectedCountryText.textContent =
+    "Perfect Match for " +
+    countryNames[country] +
+    " 🇪🇺";
+
+  resetAnswers();
+
+  showStep(1);
+
+  resultCard.classList.remove("show");
+
+}
+
+
+/* Buttons inside destination cards */
+
+document
+  .querySelectorAll(".perfect-match-country")
+  .forEach(function(button){
+
+    button.addEventListener("click",function(){
+
+      selectCountry(this.dataset.country);
+
+    });
+
+  });
+
+
+/* Buttons inside quiz */
+
+document
+  .querySelectorAll("[data-country-select]")
+  .forEach(function(button){
+
+    button.addEventListener("click",function(){
+
+      selectCountry(this.dataset.countrySelect);
+
+    });
+
+  });
 
 
 /* =========================
@@ -3497,13 +3577,111 @@ function showStep(step){
   });
 
   progress.style.width =
-    (step * 25) + "%";
+    ((step - 1) / 7 * 100) + "%";
+
 }
 
 
+/* =========================
+   CHOICE SELECTION
+========================= */
+
+document
+  .querySelectorAll(".choice")
+  .forEach(function(choice){
+
+    choice.addEventListener("click",function(){
+
+      const group =
+        this.dataset.group;
+
+      document
+        .querySelectorAll(
+          '.choice[data-group="' + group + '"]'
+        )
+        .forEach(function(item){
+
+          item.classList.remove("selected");
+
+        });
+
+      this.classList.add("selected");
+
+      answers[group] =
+        this.dataset.value;
+
+      const step =
+        Number(
+          this.closest(".match-step").dataset.step
+        );
+
+      const nextButton =
+        document.getElementById("next" + step);
+
+      if(nextButton){
+        nextButton.disabled = false;
+      }
+
+      if(step === 7){
+        document.getElementById("calculate").disabled = false;
+      }
+
+    });
+
+  });
+
+
+/* =========================
+   NEXT BUTTONS
+========================= */
+
+for(let i = 1; i <= 6; i++){
+
+  const button =
+    document.getElementById("next" + i);
+
+  if(!button) continue;
+
+  button.addEventListener("click",function(){
+
+    showStep(i + 1);
+
+    scrollMatch();
+
+  });
+
+}
+
+
+/* =========================
+   BACK BUTTONS
+========================= */
+
+document
+  .querySelectorAll(".back")
+  .forEach(function(button){
+
+    button.addEventListener("click",function(){
+
+      showStep(
+        Number(this.dataset.back)
+      );
+
+      scrollMatch();
+
+    });
+
+  });
+
+
+/* =========================
+   SCROLL
+========================= */
+
 function scrollMatch(){
 
-  document.getElementById("match")
+  document
+    .getElementById("match")
     .scrollIntoView({
       behavior:"smooth",
       block:"start"
@@ -3513,146 +3691,55 @@ function scrollMatch(){
 
 
 /* =========================
-   CHOICE SELECTION
+   SCORE
 ========================= */
 
-document.querySelectorAll(".choice")
-.forEach(function(choice){
-
-  choice.addEventListener("click",function(){
-
-    const group =
-      this.dataset.group;
-
-    document.querySelectorAll(
-      '.choice[data-group="' + group + '"]'
-    ).forEach(function(item){
-
-      item.classList.remove("selected");
-
-    });
-
-    this.classList.add("selected");
-
-    answers[group] =
-      this.dataset.value;
-
-
-    if(group === "experience"){
-      next1.disabled = false;
-    }
-
-    if(group === "budget"){
-      next2.disabled = false;
-    }
-
-    if(group === "style"){
-      next3.disabled = false;
-    }
-
-  });
-
-});
-
-
-/* =========================
-   NEXT BUTTONS
-========================= */
-
-next1.addEventListener("click",function(){
-
-  if(!answers.experience) return;
-
-  showStep(2);
-  scrollMatch();
-
-});
-
-
-next2.addEventListener("click",function(){
-
-  if(!answers.budget) return;
-
-  showStep(3);
-  scrollMatch();
-
-});
-
-
-next3.addEventListener("click",function(){
-
-  if(!answers.style) return;
-
-  showStep(4);
-  scrollMatch();
-
-});
-
-
-/* =========================
-   BACK BUTTONS
-========================= */
-
-document.querySelectorAll(".back")
-.forEach(function(button){
-
-  button.addEventListener("click",function(){
-
-    showStep(
-      Number(this.dataset.back)
-    );
-
-    scrollMatch();
-
-  });
-
-});
-
-
-/* =========================
-   SCORING
-========================= */
-
-function scoreDestination(name){
+function scoreResult(resultName){
 
   const profile =
-    destinationProfiles[name];
+    resultData[selectedCountry][resultName].scores;
 
   let score = 0;
+  let total = 0;
 
-  score +=
-    (profile[answers.experience] || 0) * 4;
+  Object.keys(answers).forEach(function(group){
 
-  score +=
-    (profile["budget" + answers.budget] || 0) * 2;
+    const value = answers[group];
 
-  score +=
-    (profile[answers.style] || 0) * 2;
+    if(!value) return;
 
-  score +=
-    (profile[answers.priority] || 0) * 2;
+    score +=
+      profile[group][value] || 0;
 
-  return Math.round(score);
+    total += 5;
+
+  });
+
+  return total
+    ? Math.round((score / total) * 100)
+    : 0;
 
 }
 
 
-function ranked(){
+function rankedResults(){
 
-  return Object.keys(destinationProfiles)
-    .map(function(name){
+  return Object.keys(
+    resultData[selectedCountry]
+  )
+  .map(function(name){
 
-      return {
-        name:name,
-        score:scoreDestination(name)
-      };
+    return {
+      name:name,
+      score:scoreResult(name)
+    };
 
-    })
-    .sort(function(a,b){
+  })
+  .sort(function(a,b){
 
-      return b.score - a.score;
+    return b.score - a.score;
 
-    });
+  });
 
 }
 
@@ -3661,70 +3748,56 @@ function ranked(){
    HUMAN FRIENDLY TEXT
 ========================= */
 
-const experienceText = {
+const answerText = {
 
-  beach:
-    "you are looking for beaches, sunshine and coastal experiences",
+  beach:{
+    classic:"you prefer classic beach holidays",
+    wild:"you are attracted to wild and natural coastlines",
+    turquoise:"you love crystal-clear turquoise water",
+    atlantic:"you prefer dramatic Atlantic coastlines"
+  },
 
-  nature:
-    "you prefer nature, landscapes and outdoor experiences",
+  atmosphere:{
+    lively:"you enjoy lively places with plenty happening",
+    relaxed:"you value calm and relaxing surroundings",
+    authentic:"you want local character and authentic experiences",
+    romantic:"you are looking for beautiful and romantic surroundings"
+  },
 
-  adventure:
-    "you want activities, adventure and experiences",
+  landscape:{
+    mediterranean:"you are drawn to Mediterranean landscapes",
+    volcanic:"you are attracted to volcanic scenery",
+    mountains:"you love mountains and natural landscapes",
+    coastal:"you prefer coastal and countryside scenery"
+  },
 
-  nightlife:
-    "you enjoy restaurants, nightlife and an active atmosphere",
+  exploration:{
+    base:"you prefer having one comfortable base",
+    roadtrip:"you enjoy discovering several places on a road trip",
+    island:"you want to explore different parts of an island",
+    slow:"you prefer slower, deeper exploration"
+  },
 
-  relax:
-    "you value relaxation, slower travel and peaceful places",
+  activity:{
+    culture:"you are especially interested in culture and food",
+    outdoor:"you enjoy outdoor activities and adventure",
+    sea:"you want sea and water experiences",
+    relax:"you want plenty of time to relax"
+  },
 
-  family:
-    "you are looking for an easy and family-friendly trip"
+  holiday:{
+    city:"you imagine a city and culture holiday",
+    beach:"you picture a classic beach escape",
+    nature:"you want a nature-focused escape",
+    mix:"you want a varied holiday with a bit of everything"
+  },
 
-};
-
-
-const budgetText = {
-
-  "1":
-    "you prefer strong value and keeping travel costs under control",
-
-  "2":
-    "you want a comfortable balance between price and quality",
-
-  "3":
-    "you are comfortable prioritising comfort and flexibility"
-
-};
-
-
-const styleText = {
-
-  couple:
-    "it fits a couple looking for shared experiences",
-
-  family:
-    "it works particularly well for family travel",
-
-  friends:
-    "it offers plenty of options for travelling with friends",
-
-  solo:
-    "it works well for independent solo travel"
-
-};
-
-
-const priorityText = {
-
-  activities:
-    "there is plenty to see and do",
-
-  location:
-    "the destination offers a strong mix of location and accessibility",
-
-  value:
-    "it offers a strong overall value proposition"
+  rhythm:{
+    slow:"you prefer a slow and relaxed rhythm",
+    balanced:"you like a balanced mix of exploring and relaxing",
+    active:"you enjoy making the most of every day",
+    flexible:"you prefer freedom and flexibility"
+  }
 
 };
 
@@ -3733,334 +3806,176 @@ const priorityText = {
    RESULT
 ========================= */
 
-calculate.addEventListener("click",function(){
+document
+  .getElementById("calculate")
+  .addEventListener("click",function(){
 
-  if(
-    !answers.experience ||
-    !answers.budget ||
-    !answers.style ||
-    !answers.priority
-  ){
-    return;
-  }
+    if(!selectedCountry) return;
 
+    const complete =
+      Object.keys(answers)
+        .every(function(key){
+          return answers[key];
+        });
 
-  const list =
-    ranked();
+    if(!complete) return;
 
-  const winner =
-    list[0];
+    const list =
+      rankedResults();
 
+    const winner =
+      list[0];
 
-  /* SCORE */
+    resultScore.textContent =
+      winner.score + "%";
 
-  resultScore.textContent =
-    winner.score + "%";
+    resultTitle.textContent =
+      "✨ " + winner.name;
 
+    resultIntro.textContent =
+      resultData[selectedCountry][winner.name].intro;
 
-  /* TITLE */
 
-  resultTitle.textContent =
-    "✨ " + winner.name;
+    /* Reasons */
 
+    resultReasons.innerHTML = "";
 
-  /* INTRO */
+    Object.keys(answers)
+      .slice(0,4)
+      .forEach(function(group){
 
-  const personalizedDescriptions = {
+        const div =
+          document.createElement("div");
 
-  "Tenerife":
-    "You’re looking for sunshine, beaches and relaxation, while still having the freedom to discover nature and unique experiences. Tenerife offers an excellent balance between ocean escapes, volcanic landscapes, activities and comfortable travel.",
+        div.className = "reason";
 
-  "Barcelona":
-    "You want a destination where you can combine beaches, culture, restaurants and an energetic atmosphere. Barcelona gives you the perfect mix of Mediterranean lifestyle, architecture, nightlife and things to discover.",
+        div.innerHTML =
+          "<b>✓ " +
+          group.charAt(0).toUpperCase() +
+          group.slice(1) +
+          "</b>" +
+          answerText[group][answers[group]];
 
-  "Madrid":
-    "You’re looking for culture, great food, nightlife and a lively city atmosphere. Madrid is an excellent choice if you want to spend your trip discovering museums, restaurants, neighbourhoods and Spanish city life.",
+        resultReasons.appendChild(div);
 
-  "Valencia":
-    "You want the best of both worlds: a relaxed Mediterranean atmosphere together with culture, food and activities. Valencia offers beaches, great cuisine and a comfortable city experience.",
+      });
 
-  "Alicante":
-    "You’re looking for sunshine, beaches and a relaxed Mediterranean escape without giving up restaurants and things to explore. Alicante is a strong match for an easy and enjoyable coastal trip.",
 
-  "Andalusia":
-    "You want variety. Beaches, historic cities, food, culture, nightlife and beautiful landscapes all come together here. Andalusia is ideal if you want a trip packed with different experiences.",
+    /* Main link */
 
-  "Costa del Sol":
-    "You’re looking for sunshine, beaches, comfort and relaxation with plenty of restaurants and activities nearby. Costa del Sol is a great fit for an easy Mediterranean escape.",
+    resultLink.href =
+      resultData[selectedCountry][winner.name].link;
 
-  "Cádiz":
-    "You’re attracted to authentic coastal experiences, beaches, nature and a more relaxed atmosphere. Cádiz combines Atlantic scenery, great food, history and a genuine Andalusian feel.",
+    resultLink.textContent =
+      "Explore " +
+      winner.name +
+      " →";
 
-  "Galicia":
-    "You prefer nature, dramatic landscapes and slower travel. Galicia is a strong match for exploring the Atlantic coast, enjoying excellent food and discovering beautiful outdoor scenery.",
 
-  "Asturias":
-    "You’re looking for mountains, nature, adventure and a quieter side of Spain. Asturias offers dramatic coastlines, green landscapes and excellent opportunities for outdoor exploration.",
+    /* Alternatives */
 
-  "Mallorca":
-    "You want variety: beautiful beaches, nature, villages, activities and plenty of places to explore. Mallorca is one of the most versatile choices for a Mediterranean holiday.",
+    alternativeList.innerHTML = "";
 
-  "Menorca":
-    "You’re looking for peaceful beaches, nature and a slower Mediterranean rhythm. Menorca is particularly well suited to travellers who value relaxation and beautiful natural surroundings.",
+    list.slice(1)
+      .forEach(function(item){
 
-  "Ibiza":
-    "You want beaches, energy, social experiences and nightlife. Ibiza gives you the opportunity to combine beautiful Mediterranean scenery with restaurants, entertainment and unforgettable evenings.",
+        const div =
+          document.createElement("div");
 
-  "Formentera":
-    "You’re looking for beautiful beaches, turquoise water and a peaceful island atmosphere. Formentera is ideal for slowing down and enjoying a more intimate Mediterranean escape.",
+        div.className =
+          "alternative";
 
-  "Cabrera":
-    "You value nature, peaceful surroundings and escaping the crowds. Cabrera is a strong match for discovering protected landscapes, clear waters and a quieter Mediterranean environment.",
+        const data =
+          resultData[selectedCountry][item.name];
 
-  "Dragonera":
-    "You’re drawn to wild nature, hiking and peaceful coastal landscapes. Dragonera is a great fit if you want to disconnect and experience a more untouched side of the Mediterranean.",
+        div.innerHTML =
+          "<strong>" +
+          item.name +
+          "</strong>" +
+          "<span>" +
+          item.score +
+          "% match</span>" +
+          '<br><a href="' +
+          data.link +
+          '" style="display:inline-block;margin-top:8px;color:var(--blue);font-size:12px;font-weight:800">Explore →</a>';
 
-  "Gran Canaria":
-    "You want beaches, activities, sunshine and plenty of variety. Gran Canaria offers a combination of coastal escapes, mountains, entertainment and experiences that works for many different travel styles.",
+        alternativeList.appendChild(div);
 
-  "Fuerteventura":
-    "You’re looking for beaches, adventure and open landscapes. Fuerteventura is especially suited to travellers who enjoy watersports, nature and a relaxed island lifestyle.",
+      });
 
-  "Lanzarote":
-    "You want something different: volcanic landscapes, beaches, nature and unique scenery. Lanzarote offers a distinctive island experience with plenty to explore.",
 
-  "La Palma":
-    "You’re looking for nature, hiking, adventure and peaceful surroundings. La Palma is a strong match for discovering forests, volcanic landscapes and spectacular viewpoints.",
+    steps.forEach(function(step){
+      step.classList.remove("active");
+    });
 
-  "La Gomera":
-    "You prefer nature, hiking and a quieter island atmosphere. La Gomera offers beautiful landscapes and a slower pace that is ideal for travellers who want to disconnect.",
+    resultCard.classList.add("show");
 
-  "El Hierro":
-    "You’re looking for something remote and authentic. El Hierro is a strong match for nature lovers, divers and travellers who want to escape the busiest tourist destinations.",
+    progress.style.width = "100%";
 
-  "La Graciosa":
-    "You want beaches, nature and slow island life. La Graciosa is ideal if your perfect trip means relaxing, cycling, exploring quiet landscapes and enjoying beautiful coastal scenery.",
+    setTimeout(function(){
 
-  "Lisbon":
-    "You want culture, restaurants, nightlife and beautiful surroundings with the possibility of enjoying the coast. Lisbon offers an excellent mix of historic streets, viewpoints, food and city energy.",
+      resultCard.scrollIntoView({
+        behavior:"smooth",
+        block:"center"
+      });
 
-  "Porto":
-    "You’re looking for culture, food, wine and a relaxed city atmosphere. Porto is a great match for discovering historic streets, river views, local cuisine and Portuguese character.",
-
-  "Algarve":
-    "You’re looking for sunshine, beaches, relaxation and beautiful coastal scenery. The Algarve offers a comfortable combination of beaches, restaurants, charming towns and outdoor experiences.",
-
-  "Madeira":
-    "You want nature, adventure and beautiful landscapes while still having access to comfortable travel and great food. Madeira is especially suited to travellers who want an active but relaxing island escape.",
-
-  "Azores":
-    "You’re drawn to nature, adventure and dramatic landscapes. The Azores are a strong match for hiking, volcanic scenery, lakes, wildlife and authentic Atlantic experiences.",
-
-  "Sintra":
-    "You want culture, nature and beautiful scenery. Sintra is ideal for exploring historic palaces, forests and romantic landscapes while staying close to Lisbon.",
-
-  "Cascais":
-    "You’re looking for beaches, relaxation and an attractive coastal atmosphere. Cascais offers a comfortable mix of ocean views, restaurants, beaches and easy access to Lisbon.",
-
-  "Funchal":
-    "You want to combine nature, comfort, food and activities. Funchal is a great base for experiencing Madeira while enjoying gardens, ocean views, restaurants and Portuguese culture.",
-
-  "São Miguel":
-    "You’re looking for nature, adventure and unique landscapes. São Miguel offers volcanic lakes, hot springs, green scenery and outdoor experiences for an unforgettable Atlantic escape."
-
-};
-
-
-resultIntro.textContent =
-  personalizedDescriptions[winner.name] ||
-  (
-    "Based on your preferences, " +
-    winner.name +
-    " is a strong match for the way you want to travel."
-  );
-
-
-  /* =========================
-     SPECIFIC REASONS
-  ========================= */
-
-  resultReasons.innerHTML = "";
-
-
-  const reasons = [
-
-    {
-      title:"Your travel style",
-      text:
-        experienceText[answers.experience]
-    },
-
-    {
-      title:"Your budget",
-      text:
-        budgetText[answers.budget]
-    },
-
-    {
-      title:"Who you travel with",
-      text:
-        styleText[answers.style]
-    },
-
-    {
-      title:"Your priority",
-      text:
-        priorityText[answers.priority]
-    }
-
-  ];
-
-
-  reasons.forEach(function(reason){
-
-    const div =
-      document.createElement("div");
-
-    div.className =
-      "reason";
-
-    div.innerHTML =
-      "<b>✓ " +
-      reason.title +
-      "</b>" +
-      reason.text;
-
-    resultReasons.appendChild(div);
+    },100);
 
   });
 
 
-  /* =========================
-     MAIN LINK
-  ========================= */
+/* =========================
+   RESET
+========================= */
 
-  resultLink.href =
-    destinationLinks[winner.name] ||
-    "#destinations";
+function resetAnswers(){
 
-  resultLink.textContent =
-    "Explore " +
-    winner.name +
-    " →";
+  Object.keys(answers)
+    .forEach(function(key){
+      answers[key] = null;
+    });
 
+  document
+    .querySelectorAll(".choice")
+    .forEach(function(choice){
+      choice.classList.remove("selected");
+    });
 
-  /* =========================
-     ALTERNATIVES
-  ========================= */
+  for(let i = 1; i <= 6; i++){
+
+    const button =
+      document.getElementById("next" + i);
+
+    if(button){
+      button.disabled = true;
+    }
+
+  }
+
+  document.getElementById("calculate").disabled = true;
+
+  resultCard.classList.remove("show");
 
   alternativeList.innerHTML = "";
 
-
-  list.slice(1,4)
-  .forEach(function(item){
-
-    const div =
-      document.createElement("div");
-
-    div.className =
-      "alternative";
-
-
-    const link =
-      destinationLinks[item.name];
-
-
-    if(link){
-
-      div.innerHTML =
-        "<strong>" +
-        item.name +
-        "</strong>" +
-        "<span>" +
-        item.score +
-        "% match</span>" +
-        '<br><a href="' +
-        link +
-        '" style="display:inline-block;margin-top:8px;color:var(--blue);font-size:12px;font-weight:800">Explore →</a>';
-
-    }else{
-
-      div.innerHTML =
-        "<strong>" +
-        item.name +
-        "</strong>" +
-        "<span>" +
-        item.score +
-        "% match</span>";
-
-    }
-
-
-    alternativeList.appendChild(div);
-
-  });
-
-
-  /* =========================
-     SHOW RESULT
-  ========================= */
-
-  steps.forEach(function(step){
-
-    step.classList.remove("active");
-
-  });
-
-
-  resultCard.classList.add("show");
-
-  progress.style.width =
-    "100%";
-
-
-  setTimeout(function(){
-
-    resultCard.scrollIntoView({
-      behavior:"smooth",
-      block:"center"
-    });
-
-  },100);
-
-});
+}
 
 
 /* =========================
    RESTART
 ========================= */
 
-restart.addEventListener("click",function(){
+document
+  .getElementById("restart")
+  .addEventListener("click",function(){
 
-  answers.experience = null;
-  answers.budget = null;
-  answers.style = null;
-  answers.priority = null;
+    resetAnswers();
 
+    showStep(1);
 
-  document.querySelectorAll(".choice")
-  .forEach(function(choice){
-
-    choice.classList.remove("selected");
+    scrollMatch();
 
   });
-
-
-  next1.disabled = true;
-  next2.disabled = true;
-  next3.disabled = true;
-
-
-  resultCard.classList.remove("show");
-
-  alternativeList.innerHTML = "";
-
-
-  showStep(1);
-
-  scrollMatch();
-
-});
 
 
 /* =========================
