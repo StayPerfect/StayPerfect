@@ -1,0 +1,23 @@
+name: Deploy StayPerfect to Cloudflare
+
+on:
+  push:
+    branches:
+      - gh-pages-new
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy to Cloudflare
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy --name stayperfect --compatibility-date 2026-09-07 --assets .
