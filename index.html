@@ -24,6 +24,7 @@
   "name": "StayPerfect",
   "url": "https://stayperfect.jos-iul88.workers.dev/"
 }
+
 </script>
     
 <style>
@@ -951,6 +952,217 @@ footer{
     margin-top:12px;
   }
 }
+
+/* =========================
+   WINTER & CHRISTMAS ESCAPES
+========================= */
+
+.winter-seasonal {
+  display: none;
+  margin: 0 auto 42px;
+  max-width: 1180px;
+}
+
+.winter-seasonal.is-active {
+  display: block;
+}
+
+.winter-seasonal-box {
+  position: relative;
+  overflow: hidden;
+  padding: 34px;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(255,255,255,.16), transparent 28%),
+    linear-gradient(135deg, #10243a 0%, #183f5f 48%, #245f72 100%);
+  color: #fff;
+  box-shadow: 0 18px 50px rgba(15, 42, 61, .18);
+}
+
+.winter-seasonal-box::before {
+  content: "❄️";
+  position: absolute;
+  right: 28px;
+  top: 18px;
+  font-size: 72px;
+  opacity: .16;
+  pointer-events: none;
+}
+
+.winter-seasonal-eyebrow {
+  margin-bottom: 8px;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  opacity: .78;
+}
+
+.winter-seasonal h2 {
+  margin: 0;
+  max-width: 720px;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.05;
+}
+
+.winter-seasonal-intro {
+  max-width: 720px;
+  margin: 12px 0 24px;
+  line-height: 1.65;
+  opacity: .9;
+}
+
+.winter-seasonal-choices {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.winter-seasonal-choice {
+  display: block;
+  padding: 18px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 18px;
+  background: rgba(255,255,255,.09);
+  color: #fff;
+  text-decoration: none;
+  transition: transform .2s ease, background .2s ease, border-color .2s ease;
+}
+
+.winter-seasonal-choice:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,.15);
+  border-color: rgba(255,255,255,.35);
+}
+
+.winter-seasonal-choice-icon {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.7rem;
+}
+
+.winter-seasonal-choice strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.winter-seasonal-choice span {
+  display: block;
+  font-size: .84rem;
+  line-height: 1.45;
+  opacity: .78;
+}
+
+@media (max-width: 900px) {
+  .winter-seasonal-choices {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .winter-seasonal {
+    margin-bottom: 30px;
+  }
+
+  .winter-seasonal-box {
+    padding: 24px 20px;
+    border-radius: 22px;
+  }
+
+  .winter-seasonal-choices {
+    grid-template-columns: 1fr;
+  }
+}
+
+.winter-seasonal-results {
+  margin-top: 28px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(255,255,255,.16);
+}
+
+.winter-seasonal-results-head {
+  margin-bottom: 18px;
+}
+
+.winter-seasonal-results-head h3 {
+  margin: 0 0 6px;
+  font-size: 1.35rem;
+}
+
+.winter-seasonal-results-head p {
+  margin: 0;
+  font-size: .92rem;
+  line-height: 1.55;
+  opacity: .78;
+}
+
+.winter-seasonal-destinations {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.winter-destination-card {
+  display: block;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 18px;
+  background: rgba(255,255,255,.08);
+  color: #fff;
+  text-decoration: none;
+  transition: transform .2s ease, background .2s ease, border-color .2s ease;
+}
+
+.winter-destination-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,.13);
+  border-color: rgba(255,255,255,.3);
+}
+
+.winter-destination-card-icon {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+}
+
+.winter-destination-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1.05rem;
+}
+
+.winter-destination-card span {
+  display: block;
+  font-size: .84rem;
+  line-height: 1.5;
+  opacity: .78;
+}
+
+.winter-destination-card.is-new::after {
+  content: "Seasonal destination";
+  display: inline-block;
+  margin-top: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.12);
+  font-size: .7rem;
+  font-weight: 700;
+  opacity: .8;
+}
+
+@media (max-width: 900px) {
+  .winter-seasonal-destinations {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .winter-seasonal-destinations {
+    grid-template-columns: 1fr;
+  }
+}
+
 </style>
   <link rel="canonical" href="https://stayperfect.jos-iul88.workers.dev/">
 </head>
@@ -978,6 +1190,76 @@ Stay<span>Perfect</span>
 </header>
 
 <main>
+
+
+<!-- =========================
+     WINTER & CHRISTMAS ESCAPES
+========================= -->
+
+<section class="winter-seasonal" id="winterEscapes" aria-label="Winter and Christmas Escapes">
+
+  <div class="winter-seasonal-box">
+
+    <div class="winter-seasonal-eyebrow">❄️ Seasonal extra · November–February</div>
+
+    <h2>Winter &amp; Christmas Escapes</h2>
+
+    <p class="winter-seasonal-intro">
+      What kind of winter escape are you looking for?
+      Choose your perfect atmosphere and discover destinations
+      selected around the way you want to travel.
+    </p>
+
+    <div class="winter-seasonal-choices">
+
+      <a class="winter-seasonal-choice" href="#winter-snow">
+        <span class="winter-seasonal-choice-icon">🏔️</span>
+        <strong>Snow &amp; Mountains</strong>
+        <span>Snow, skiing, mountains, winter landscapes and cosy escapes.</span>
+      </a>
+
+      <a class="winter-seasonal-choice" href="#winter-christmas">
+        <span class="winter-seasonal-choice-icon">🎄</span>
+        <strong>Christmas Magic</strong>
+        <span>Markets, lights, festive cities and Christmas atmosphere.</span>
+      </a>
+
+      <a class="winter-seasonal-choice" href="#winter-sun">
+        <span class="winter-seasonal-choice-icon">☀️</span>
+        <strong>Winter Sun &amp; Beaches</strong>
+        <span>Warm weather, beaches, sea and an escape from the cold.</span>
+      </a>
+
+      <a class="winter-seasonal-choice" href="#winter-islands">
+        <span class="winter-seasonal-choice-icon">🌴</span>
+        <strong>Warm Island Escape</strong>
+        <span>Tropical islands, nature, sea and relaxing winter getaways.</span>
+      </a>
+
+      <a class="winter-seasonal-choice" href="#winter-city">
+        <span class="winter-seasonal-choice-icon">🏙️</span>
+        <strong>Winter City Break</strong>
+        <span>Culture, food, shopping and unforgettable winter weekends.</span>
+      </a>
+
+    </div>
+
+    <div class="winter-seasonal-results" id="winterSeasonalResults" aria-live="polite">
+
+      <div class="winter-seasonal-results-head">
+        <h3 id="winterSeasonalTitle">Choose your escape</h3>
+        <p id="winterSeasonalDescription">
+          Select a travel style above to discover seasonal destinations.
+        </p>
+      </div>
+
+      <div class="winter-seasonal-destinations" id="winterSeasonalDestinations"></div>
+
+    </div>
+
+  </div>
+
+</section>
 
 <!-- =========================
      HERO
@@ -3999,4 +4281,157 @@ document
 showStep(1);
 
 })();
+/* =========================
+   WINTER & CHRISTMAS SEASON
+========================= */
+
+(function () {
+  const winterEscapes = document.getElementById("winterEscapes");
+
+  if (!winterEscapes) return;
+
+  const now = new Date();
+  const month = now.getMonth(); // 0 = January, 11 = December
+
+  const isWinterSeason = month >= 10 || month <= 1;
+
+  winterEscapes.classList.toggle("is-active", isWinterSeason);
+})();
+
+/* =========================
+   WINTER DESTINATION DATA
+========================= */
+
+(function () {
+  const buttons = document.querySelectorAll(".winter-seasonal-choice");
+  const title = document.getElementById("winterSeasonalTitle");
+  const description = document.getElementById("winterSeasonalDescription");
+  const destinations = document.getElementById("winterSeasonalDestinations");
+
+  if (!buttons.length || !title || !description || !destinations) return;
+
+  const winterDestinations = {
+    snow: {
+      title: "Snow & Mountains",
+      description: "Winter landscapes, snowy cities and mountain escapes.",
+      items: [
+        ["🇫🇮", "Helsinki", "Snowy Nordic atmosphere and winter city charm.", "helsinki.html"],
+        ["🇸🇪", "Stockholm", "Scandinavian winter, design and festive atmosphere.", "stockholm.html"],
+        ["🇳🇴", "Oslo", "Nordic culture, winter landscapes and outdoor escapes.", "oslo.html"],
+        ["🇨🇭", "Geneva", "Alpine surroundings, winter elegance and lake views.", "geneva.html"],
+        ["🇵🇹", "Madeira", "Mild winter, dramatic mountains and Atlantic nature.", "madeira.html"]
+      ]
+    },
+
+    christmas: {
+      title: "Christmas Magic",
+      description: "Festive cities, lights, markets and classic Christmas atmosphere.",
+      items: [
+        ["🇫🇷", "Paris", "Lights, culture, shopping and winter city atmosphere.", "paris.html"],
+        ["🇩🇪", "Berlin", "Christmas markets, museums and a lively winter scene.", "berlin.html"],
+        ["🇺🇸", "New York", "Iconic Christmas atmosphere, lights and winter city energy.", "new-york.html"],
+        ["🎄", "Strasbourg", "A classic festive escape in the heart of Alsace.", "france.html"]
+      ]
+    },
+
+    sun: {
+      title: "Winter Sun & Beaches",
+      description: "Warm-weather escapes for leaving the cold behind.",
+      items: [
+        ["🇪🇸", "Tenerife", "Atlantic beaches, volcanic landscapes and mild winter.", "tenerife.html"],
+        ["🇪🇸", "Gran Canaria", "Beaches, sunshine and varied island landscapes.", "gran-canaria.html"],
+        ["🇪🇸", "Lanzarote", "Volcanic scenery, beaches and Atlantic winter sun.", "lanzarote.html"],
+        ["🇺🇸", "Miami", "Beach life, warm weather and a vibrant city break.", "miami.html"],
+        ["🇲🇽", "Mexico City", "Culture, food and a different kind of winter escape.", "mexico-city.html"]
+      ]
+    },
+
+    islands: {
+      title: "Warm Island Escape",
+      description: "Island destinations for a relaxing winter getaway.",
+      items: [
+        ["🇵🇹", "Madeira", "Green mountains, ocean views and mild winter weather.", "madeira.html"],
+        ["🇪🇸", "Mallorca", "Mediterranean scenery, villages and winter tranquillity.", "mallorca.html"],
+        ["🇪🇸", "Menorca", "Quiet coves, nature and a slower island escape.", "menorca.html"],
+        ["🇪🇸", "Ibiza", "Island landscapes, food and a quieter winter side.", "ibiza.html"],
+        ["🌴", "Seychelles", "Tropical islands, beaches and an Indian Ocean escape.", "seychelles.html"],
+        ["🌴", "Madagascar", "Wild landscapes, tropical nature and a unique island journey.", "madagascar.html"],
+        ["🇹🇭", "Bangkok", "Warm weather, food, culture and a gateway to Thailand.", "bangkok.html"]
+      ]
+    },
+
+    city: {
+      title: "Winter City Break",
+      description: "Culture, food, shopping and memorable winter weekends.",
+      items: [
+        ["🇫🇷", "Paris", "Art, food, shopping and winter city walks.", "paris.html"],
+        ["🇪🇸", "Barcelona", "Architecture, food and Mediterranean winter atmosphere.", "barcelona.html"],
+        ["🇺🇸", "New York", "Museums, shopping, lights and iconic city experiences.", "new-york.html"],
+        ["🇩🇪", "Berlin", "Culture, history, nightlife and winter city life.", "berlin.html"],
+        ["🇹🇭", "Bangkok", "Street food, temples, shopping and warm-weather city energy.", "bangkok.html"]
+      ]
+    }
+  };
+
+  function categoryFromHref(href) {
+    return href.replace("#winter-", "");
+  }
+
+  function renderCategory(category) {
+    const data = winterDestinations[category];
+    if (!data) return;
+
+    title.textContent = data.title;
+    description.textContent = data.description;
+
+    destinations.innerHTML = data.items.map(([icon, name, text, href]) => {
+      const isExisting = [
+        "tenerife.html",
+        "gran-canaria.html",
+        "lanzarote.html",
+        "fuerteventura.html",
+        "madeira.html",
+        "mallorca.html",
+        "menorca.html",
+        "ibiza.html",
+        "paris.html",
+        "barcelona.html",
+        "france.html",
+        "spain.html"
+      ].includes(href);
+
+      if (isExisting) {
+        return `
+          <a class="winter-destination-card" href="${href}">
+            <span class="winter-destination-card-icon">${icon}</span>
+            <strong>${name}</strong>
+            <span>${text}</span>
+          </a>
+        `;
+      }
+
+      return `
+        <article class="winter-destination-card is-new">
+          <span class="winter-destination-card-icon">${icon}</span>
+          <strong>${name}</strong>
+          <span>${text}</span>
+        </article>
+      `;
+    }).join("");
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener("click", event => {
+      event.preventDefault();
+      renderCategory(categoryFromHref(button.getAttribute("href")));
+      document.getElementById("winterSeasonalResults")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    });
+  });
+
+  renderCategory("snow");
+})();
+
 </script>
