@@ -1012,6 +1012,18 @@ footer{
   opacity: .9;
 }
 
+.winter-offer-banner {
+  margin: 18px auto 22px;
+  padding: 12px 18px;
+  max-width: 680px;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(30, 90, 140, 0.18);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
 .winter-seasonal-choices {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -1209,6 +1221,10 @@ Stay<span>Perfect</span>
       Choose your perfect atmosphere and discover destinations
       selected around the way you want to travel.
     </p>
+
+    <div class="winter-offer-banner" id="winterOfferBanner">
+      ✨ Winter offers start November 1
+    </div>
 
     <div class="winter-seasonal-choices">
 
@@ -4293,9 +4309,28 @@ showStep(1);
   const now = new Date();
   const month = now.getMonth(); // 0 = January, 11 = December
 
-  const isWinterSeason = month >= 10 || month <= 1;
+  const isWinterSeason = true;
 
   winterEscapes.classList.toggle("is-active", isWinterSeason);
+})();
+
+/* =========================
+   WINTER OFFERS
+========================= */
+
+(function () {
+  const banner = document.getElementById("winterOfferBanner");
+
+  if (!banner) return;
+
+  const now = new Date();
+  const month = now.getMonth(); // 0 = January, 10 = November
+
+  if (month >= 10 || month <= 1) {
+    banner.textContent = "🔥 Winter offers are now available";
+  } else {
+    banner.textContent = "✨ Winter offers start November 1";
+  }
 })();
 
 /* =========================
